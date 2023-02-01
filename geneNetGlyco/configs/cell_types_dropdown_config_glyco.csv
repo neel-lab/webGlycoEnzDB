@@ -1,0 +1,26 @@
+cell_type_id,tissue
+all,all
+bladder,bladder
+blood,blood
+bone_marrow,bone marrow
+eye,eye
+fat,fat
+heart,heart
+kidney,kidney
+large_intestine,large intestine
+liver,liver
+lung,lung
+lymph_node,lymph_node
+mammary,mammary
+muscle,muscle
+pancreas,pancreas
+prostate,prostate
+salivary_gland,salivary gland
+skin,skin
+small_intestine,small intestine
+spleen,spleen
+thymus,thymus
+tongue,tongue
+trachea,trachea
+uterus,uterus
+vasculature,vasculature

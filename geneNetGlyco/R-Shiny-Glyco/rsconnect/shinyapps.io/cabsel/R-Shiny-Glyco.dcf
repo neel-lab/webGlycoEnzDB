@@ -1,0 +1,13 @@
+name: R-Shiny-Glyco
+title: R-Shiny-Glyco
+username:
+account: cabsel
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8109358
+bundleId: 6769898
+url: https://cabsel.shinyapps.io/R-Shiny-Glyco/
+when: 1674591583.84086
+lastSyncTime: 1674591583.84088
+asMultiple: FALSE
+asStatic: FALSE

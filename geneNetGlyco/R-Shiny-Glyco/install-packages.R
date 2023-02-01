@@ -1,0 +1,7 @@
+install.packages("DBI")
+install.packages("visNetwork")
+# install.packages("RPostgreSQL")
+install.packages("RPostgres")
+install.packages("shiny")
+install.packages("shinydashboard")
+install.packages("DT")

@@ -1,0 +1,19 @@
+FROM r-base:4.2.1
+
+EXPOSE 3838
+
+WORKDIR /r-shiny-app
+# CMD ["/bin/bash"]
+
+RUN apt-get update && apt-get -y install libpq-dev libssl-dev
+
+COPY install-packages.R .
+
+RUN ["Rscript", "install-packages.R"]
+
+COPY . .
+
+# CMD ["Rscript", "server.R"]
+# CMD ["Rscript", "start-server.R"]
+
+CMD ["R", "-e", "shiny::runApp('/r-shiny-app', host='0.0.0.0', port=3838)"]
