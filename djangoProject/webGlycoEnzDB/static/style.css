@@ -1,0 +1,50 @@
+li .submenu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+    .header {
+      background-color: #5056d9;
+      padding: 1px 16px;
+      height: 50px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+        color: white;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      left: 0;
+      top: 50px;
+      background-color: #f1f1f1;
+      overflow-x: hidden;
+    }
+
+    .sidebar2 {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      left: 200px;
+      top: 50px;
+      background-color: #f1f1f1;
+      overflow-x: hidden;
+    }
+
+    .main-content {
+      margin-left: 400px;
+      margin-top: 50px;
+      padding: 1px 16px;
+      height: 1000px;
+      overflow: scroll;
+    }
+
+        button.active {
+      background-color: #4CAF50;
+      color: white;
+    }
