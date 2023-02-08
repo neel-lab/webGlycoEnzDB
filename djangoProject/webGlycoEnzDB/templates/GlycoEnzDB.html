@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GlycoEnzDB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+{% load static %}
+{% load custom_filters %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+<script src="{% static 'script.js' %}"></script>
+<script type="text/javascript" >
+    let gene_names = JSON.parse("{{ gene_names|escapejs }}");
+
+    function showGenes(key) {
+        let inner_html = "";
+        for (let i = 0;  i < gene_names[key].length; i++ ){
+            inner_html += `<div style="text-align: center;">${ gene_names[key][i]}</div>`;
+        }
+        document.getElementById("Gene_Names_list").innerHTML = inner_html;
+    }
+</script>
+
+<div class="header">
+    GlycoEnzDB
+</div>
+
+<div class="sidebar card py-2 mb-4">
+    <b>Search By:</b>
+    <button id="btnElement1" onclick="showFunctions()"> Functions</button>
+    <button id="btnElement2" onclick="showPathways()"> Pathways</button>
+    {# Function Tree Menu below #}
+    <div id="element1" class="element1">
+        <ul class="nav flex-column" id="nav_accordion">
+            {% for func in onto_graph_functions %}
+                {% if func != 'NULL' %}
+                    <li class="nav-item {% if onto_graph_functions|get:func|length > 0 %} has-submenu {% endif %}" id="{{ func }}">
+                        <a class="nav-link" href="#" onclick="showGenes('{{ func }}_NULL_NULL_NULL')"> {{ func }} </a>
+                        {% if onto_graph_functions|get:func|length > 0 %}
+                            <ul class="submenu collapse">
+                            {% for s_f in onto_graph_functions|get:func %}
+                                {% if s_f != 'NULL' %}
+                                <li>
+                                    <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_NULL_NULL')"> {{ s_f }} </a>
+                                {% if onto_graph_functions|get:func|get:s_f|length > 0 %}
+                                    <ul class="submenu collapse">
+                                    {% for s_s_f in onto_graph_functions|get:func|get:s_f %}
+                                        {% if s_s_f != 'NULL' %}
+                                        <li>
+                                            <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_{{ s_s_f }}_NULL')">{{ s_s_f }}</a>
+                                            {% if onto_graph_functions|get:func|get:s_f|get:s_s_f|length > 0 %}
+                                                <ul class="submenu collapse">
+                                                {% for s_s_s_f in onto_graph_functions|get:func|get:s_f|get:s_s_f %}
+                                                {% if s_s_s_f != 'NULL' %}
+                                                    <li>
+                                                    <a class="nav-link" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_{{ s_s_f }}_{{ s_s_s_f }}')">{{ s_s_s_f }}</a>
+                                                    </li>
+                                                {% endif %}
+                                                {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                        </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                    </ul>
+                                {% endif %}
+                                </li>
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div id="element2" class="element2">
+        <ul class="nav flex-column" id="nav_accordion">
+            {% for path in onto_graph_pathways %}
+                {% if path != 'NULL' %}
+                    <li class="nav-item {% if onto_graph_pathways|get:path|length > 0 %} has-submenu {% endif %}" id="{{ path }}">
+                        <a class="nav-link" href="#" onclick="showGenes('{{ path }}_NULL_NULL_NULL')"> {{ path }} </a>
+                        {% if onto_graph_pathways|get:path|length > 0 %}
+                            <ul class="submenu collapse">
+                            {% for s_p in onto_graph_pathways|get:path %}
+                                {% if s_p != 'NULL' %}
+                                <li>
+                                    <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_NULL_NULL')"> {{ s_p }} </a>
+                                {% if onto_graph_pathways|get:path|get:s_p|length > 0 %}
+                                    <ul class="submenu collapse">
+                                    {% for s_s_p in onto_graph_pathways|get:path|get:s_p %}
+                                        {% if s_s_p != 'NULL' %}
+                                        <li>
+                                            <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_NULL')">{{ s_s_p }}</a>
+                                            {% if onto_graph_pathways|get:path|get:s_p|get:s_s_p|length > 0 %}
+                                                <ul class="submenu collapse">
+                                                {% for s_s_s_p in onto_graph_pathways|get:path|get:s_p|get:s_s_p %}
+                                                {% if s_s_s_p != 'NULL' %}
+                                                    <li>
+                                                    <a class="nav-link" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}')">{{ s_s_s_p }}</a>
+                                                    </li>
+                                                {% endif %}
+                                                {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                        </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                    </ul>
+                                {% endif %}
+                                </li>
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+
+</div>
+</div>
+
+<div class="sidebar2">
+    <h4>Gene Names</h4>
+    <div id="Gene_Names_list"></div>
+</div>
+
+<div class="main-content">
+    <h3>Gene Details</h3>
+    {{ onto_graph_functions }}
+    <hr>
+    {{ onto_graph_pathways }}
+    <hr>
+    {{ gene_names }}
+</div>
+
+</body>
+</html>
