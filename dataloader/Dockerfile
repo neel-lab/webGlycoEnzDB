@@ -1,18 +1,22 @@
-FROM python:3.8-slim
+# FROM python:3.8-slim
 
-WORKDIR /app
+# WORKDIR /app
 
-RUN apt-get update
-RUN apt-get install -y python3-dev default-libmysqlclient-dev build-essential libpq-dev
-#RUN apt-get install -y
-RUN pip install --upgrade pip
+# RUN apt-get update
+# RUN apt-get install -y python3-dev default-libmysqlclient-dev build-essential libpq-dev
+# #RUN apt-get install -y
+# RUN pip install --upgrade pip
 
-COPY requirements.txt /app
+# COPY requirements.txt /app
 
-RUN pip install -r requirements.txt
+# RUN pip install -r requirements.txt
 
-COPY . /app
+# COPY . /app
 
 
-CMD ["python", "loadGlycoEnzOnto.py"]
+# CMD ["python", "loadGlycoEnzOnto.py"]
+
+FROM ubuntu:latest
+
+CMD [ "bash" ]
 
