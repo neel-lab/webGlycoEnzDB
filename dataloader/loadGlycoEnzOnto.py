@@ -25,7 +25,7 @@ df = pd.read_excel(FILE)
 df = df.where((pd.notnull(df)), 'NULL')
 
 # Drop the table
-drop_table_query = f"DROP TABLE {TABLE_NAME};";
+drop_table_query = f"DROP TABLE IF EXISTS {TABLE_NAME};";
 cursor.execute(drop_table_query)
 
 # Create the table

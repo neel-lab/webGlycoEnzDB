@@ -21,12 +21,12 @@ Simpler way to take care of all the dependencies is to use Docker:
 2. Build the project using Docker command:
 ``` docker build -t web-glycoenzdb . ```
 3. Run the project using Docker command (for development purpose):
-``` docker run --rm -p 8000:8000 -v $(pwd):/app  web-glycoenzdb ```
+``` docker run --rm -p 8000:8000 -v $(pwd):/app --add-host=host.docker.internal:host-gateway web-glycoenzdb ```
 This will run on port 8000, if we want to change we can use any other port in the argument like-
-``` docker run --rm -p <PORT>:8000 -v $(pwd):/app  web-glycoenzdb ```
+``` docker run --rm -p <PORT>:8000 -v $(pwd):/app --add-host=host.docker.internal:host-gateway web-glycoenzdb ```
 
 4. To run the server we can run the server in detached mode:
-``` docker run --rm -p 8000:8000 -d web-glycoenzdb ```
+``` docker run --rm -p 8000:8000 -d --add-host=host.docker.internal:host-gateway web-glycoenzdb ```
 This would output the containerid which can be used later to stop the server
 5. To stop the server we can stop the container using the following command:
 ``` docker stop <continer_id> ```
