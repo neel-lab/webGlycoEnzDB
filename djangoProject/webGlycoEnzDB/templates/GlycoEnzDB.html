@@ -42,25 +42,25 @@
             {% for func in onto_graph_functions %}
                 {% if func != 'NULL' %}
                     <li class="nav-item {% if onto_graph_functions|get:func|length > 0 %} has-submenu {% endif %}" id="{{ func }}">
-                        <a class="nav-link" href="#" onclick="showGenes('{{ func }}_NULL_NULL_NULL')"> {{ func }} </a>
+                        <a class="nav-link" href="#" onclick="showGenes('{{ func }}_NULL_NULL_NULL')" id="{{ func }}_NULL_NULL_NULL"> {{ func }} </a>
                         {% if onto_graph_functions|get:func|length > 0 %}
                             <ul class="submenu collapse">
                             {% for s_f in onto_graph_functions|get:func %}
                                 {% if s_f != 'NULL' %}
                                 <li>
-                                    <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_NULL_NULL')"> {{ s_f }} </a>
+                                    <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_NULL_NULL')" id="{{ func }}_{{ s_f }}_NULL_NULL"> {{ s_f }} </a>
                                 {% if onto_graph_functions|get:func|get:s_f|length > 0 %}
                                     <ul class="submenu collapse">
                                     {% for s_s_f in onto_graph_functions|get:func|get:s_f %}
                                         {% if s_s_f != 'NULL' %}
                                         <li>
-                                            <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_{{ s_s_f }}_NULL')">{{ s_s_f }}</a>
+                                            <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_{{ s_s_f }}_NULL')" id="{{ func }}_{{ s_f }}_{{ s_s_f }}_NULL">{{ s_s_f }}</a>
                                             {% if onto_graph_functions|get:func|get:s_f|get:s_s_f|length > 0 %}
                                                 <ul class="submenu collapse">
                                                 {% for s_s_s_f in onto_graph_functions|get:func|get:s_f|get:s_s_f %}
                                                 {% if s_s_s_f != 'NULL' %}
                                                     <li>
-                                                    <a class="nav-link" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_{{ s_s_f }}_{{ s_s_s_f }}')">{{ s_s_s_f }}</a>
+                                                    <a class="nav-link" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_{{ s_s_f }}_{{ s_s_s_f }}')" id="{{ func }}_{{ s_f }}_{{ s_s_f }}_{{ s_s_s_f }}">{{ s_s_s_f }}</a>
                                                     </li>
                                                 {% endif %}
                                                 {% endfor %}
@@ -87,25 +87,47 @@
             {% for path in onto_graph_pathways %}
                 {% if path != 'NULL' %}
                     <li class="nav-item {% if onto_graph_pathways|get:path|length > 0 %} has-submenu {% endif %}" id="{{ path }}">
-                        <a class="nav-link" href="#" onclick="showGenes('{{ path }}_NULL_NULL_NULL')"> {{ path }} </a>
+                        <a class="nav-link" href="#" onclick="showGenes('{{ path }}_NULL_NULL_NULL_NULL_NULL')" id="{{ path }}_NULL_NULL_NULL_NULL_NULL"> {{ path }} </a>
                         {% if onto_graph_pathways|get:path|length > 0 %}
                             <ul class="submenu collapse">
                             {% for s_p in onto_graph_pathways|get:path %}
                                 {% if s_p != 'NULL' %}
                                 <li>
-                                    <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_NULL_NULL')"> {{ s_p }} </a>
+                                    <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_NULL_NULL_NULL_NULL')" id="{{ path }}_{{ s_p }}_NULL_NULL_NULL_NULL"> {{ s_p }} </a>
                                 {% if onto_graph_pathways|get:path|get:s_p|length > 0 %}
                                     <ul class="submenu collapse">
                                     {% for s_s_p in onto_graph_pathways|get:path|get:s_p %}
                                         {% if s_s_p != 'NULL' %}
                                         <li>
-                                            <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_NULL')">{{ s_s_p }}</a>
+                                            <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_NULL_NULL_NULL')" id="{{ path }}_{{ s_p }}_{{ s_s_p }}_NULL_NULL_NULL">{{ s_s_p }}</a>
                                             {% if onto_graph_pathways|get:path|get:s_p|get:s_s_p|length > 0 %}
                                                 <ul class="submenu collapse">
                                                 {% for s_s_s_p in onto_graph_pathways|get:path|get:s_p|get:s_s_p %}
                                                 {% if s_s_s_p != 'NULL' %}
                                                     <li>
-                                                    <a class="nav-link" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}')">{{ s_s_s_p }}</a>
+                                                    <a class="nav-link" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_NULL_NULL')" id="{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_NULL_NULL">{{ s_s_s_p }}</a>
+                                                    {% if onto_graph_pathways|get:path|get:s_p|get:s_s_p|get:s_s_s_p|length > 0 %}
+                                                    <ul class="submenu collapse">
+                                                    {% for s_s_s_s_p in onto_graph_pathways|get:path|get:s_p|get:s_s_p|get:s_s_s_p %}
+                                                    {% if s_s_s_s_p != 'NULL' %}
+                                                        <li>
+                                                        <a class="nav-link" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_{{s_s_s_s_p}}_NULL')" id="{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_{{s_s_s_s_p}}_NULL">{{ s_s_s_s_p }}</a>
+                                                        {% if onto_graph_pathways|get:path|get:s_p|get:s_s_p|get:s_s_s_p|get:s_s_s_s_p|length > 0 %}
+                                                        <ul class="submenu collapse">
+                                                        {% for s_s_s_s_s_p in onto_graph_pathways|get:path|get:s_p|get:s_s_p|get:s_s_s_p|get:s_s_s_s_p %}
+                                                        {% if s_s_s_s_s_p != 'NULL' %}
+                                                            <li>
+                                                            <a class="nav-link" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_{{s_s_s_s_p}}_{{s_s_s_s_s_p}}')" id="{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_{{s_s_s_s_p}}_{{s_s_s_s_s_p}}">{{ s_s_s_s_s_p }}</a>
+                                                            </li>
+                                                        {% endif %}
+                                                        {% endfor %}
+                                                        </ul>
+                                                    {% endif %}
+                                                        </li>
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                    </ul>
+                                                {% endif %}
                                                     </li>
                                                 {% endif %}
                                                 {% endfor %}

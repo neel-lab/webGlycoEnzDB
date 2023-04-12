@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'glycoEnzDB',
+        'NAME': 'glycoenzdb',
         'USER': 'postgres',
         'PASSWORD': '847468',
-        'HOST': 'host.docker.internal',
+        'HOST': 'localhost',
         'PORT': '',
     }
 }

@@ -1,10 +1,10 @@
 import psycopg2
 import pandas as pd
 
-HOST = "host.docker.internal"
+HOST = "localhost"
 USER = "postgres"
 PASSWORD = "847468"
-DATABASE = "glycoEnzDB"
+DATABASE = "glycoenzdb"
 FILE = "data/GlycoEnzOntoDB.xlsx"
 TABLE_NAME = "GlycoDB"
 

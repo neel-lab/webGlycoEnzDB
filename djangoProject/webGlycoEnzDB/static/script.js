@@ -17,9 +17,25 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('.sidebar .nav-link').forEach(function (element) {
 
         element.addEventListener('click', function (e) {
-            console.log(element)
             let nextEl = element.nextElementSibling;
             let parentEl = element.parentElement;
+
+            // Styling the element - START
+
+            //  Clear all syblings and sub links styles            
+            if (parentEl && parentEl.parentElement){
+            const childNodes = parentEl.parentElement.querySelectorAll('a');
+            childNodes.forEach(childNode => {
+                childNode.classList.remove('fw-bold');
+                childNode.classList.remove('text-primary');
+            });
+
+        }
+            // Bold the current link
+            element.classList.add('fw-bold');
+            element.classList.add('text-primary');
+
+            // Styling - END
 
             if (nextEl) {
                 e.preventDefault();

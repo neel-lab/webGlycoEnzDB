@@ -18,7 +18,7 @@ li .submenu{
 
     .sidebar {
       height: 100%;
-      width: 200px;
+      width: 250px;
       position: fixed;
       left: 0;
       top: 50px;
@@ -30,14 +30,14 @@ li .submenu{
       height: 100%;
       width: 200px;
       position: fixed;
-      left: 200px;
+      left: 250px;
       top: 50px;
       background-color: #f1f1f1;
       overflow-x: hidden;
     }
 
     .main-content {
-      margin-left: 400px;
+      margin-left: 450px;
       margin-top: 50px;
       padding: 1px 16px;
       height: 1000px;
