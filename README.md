@@ -47,10 +47,11 @@ Configrations can be changed in the python file.
 Note: `use host.docker.internal` instead of `localhost` when running from docker.
 
 ## New Setup (No longer using docker)
+0. Env exported using ```conda env export --from-history > glyco-env.yml```
 1. Create a conda environment using :
-```conda env create --file conda-env/glyco-env.txt```
+```conda env create --name glyco-env --file conda-env/glyco-env.txt```
 2. Activate the environment
-```conda Activate glyco-env```
+```conda activate glyco-env```
 
 ### Database
 
