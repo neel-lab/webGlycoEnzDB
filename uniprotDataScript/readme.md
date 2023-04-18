@@ -19,4 +19,18 @@ populated. The input is an Excel file with a list of genes.
 
 ## Some Info Needed:
 - Brenda, Rhea, etc. are IDs associated with other databases that can be constructed with hyperlinks
+  - Brenda: https://www.brenda-enzymes.org/enzyme.php?ecno=2.8.2.20&UniProtAcc=O60507
+    - ecno will be the Brendan ID and UniProtAcc field is the Uniprot ID
+  - Rhea: https://www.rhea-db.org/rhea?query=ec:2.8.2.20
+    - ec is the rhea ID
+  - Reactome: https://reactome.org/PathwayBrowser/#R-HSA-156584&FLG=O60507
+    - The reactome ID will be placed after the # symbol and FLG is the uniprot ID
+  - CAZy: http://www.cazy.org/CBM13.html
+    - CAZy ID replacing CMB13
+  - HGNC: https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:12020
+    - Replace the HGNC:12020 or replace the 12020 for new hyperlink
+  - NCBI (aka GeneID): https://www.ncbi.nlm.nih.gov/gene/2683
+    - Replace the last 4 numbers
+    - KEGG value -> same as NCBI value 4 numbers
+  - EC
 - Some database fields don't have the same amount of references because some reaction don't have it

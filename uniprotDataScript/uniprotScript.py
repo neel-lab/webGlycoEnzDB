@@ -46,15 +46,21 @@ def accessDataFromCall(json, returnFields, gene):
         newRow.loc[0, 'Catalytic: Rhea'] = catalytic_act_rhea_values
         newRow.loc[0, 'Catalytic: EC'] = catalytic_act_ec_values
 
-        shortName = omim_values = hgnc_values = brenda_values = reactome_values = cazy_values = geneId_values = ""
+        shortName = alternativeNames = omim_values = hgnc_values = brenda_values = reactome_values = cazy_values = geneId_values = ""
 
-        for styleName in json['results'][0]['proteinDescription']['recommendedName'].keys():
-            if styleName == 'shortNames':
-                for name in json['results'][0]['proteinDescription']['recommendedName']['shortNames']:
-                    shortName += name.get('value') + ';'
-            if styleName == 'fullName':
-                newRow.loc[0, 'Recommended Name'] = json['results'][0]['proteinDescription']['recommendedName']['fullName'].get('value')
+        for proteinDescriptionName in json['results'][0]['proteinDescription']:
+            if proteinDescriptionName == 'recommendedName':
+                for styleName in json['results'][0]['proteinDescription']['recommendedName'].keys():
+                    if styleName == 'shortNames':
+                        for name in json['results'][0]['proteinDescription']['recommendedName']['shortNames']:
+                            shortName += name.get('value') + ';'
+                    if styleName == 'fullName':
+                        newRow.loc[0, 'Recommended Name'] = json['results'][0]['proteinDescription']['recommendedName']['fullName'].get('value')
+            if proteinDescriptionName == 'alternativeNames':
+                for name in json['results'][0]['proteinDescription']['alternativeNames']:
+                    alternativeNames += name['fullName'].get('value') +';'
 
+        newRow.loc[0, 'Alternative Names'] = alternativeNames
         newRow.loc[0, 'Short Names'] = shortName
 
         for database in json['results'][0]['uniProtKBCrossReferences']:
@@ -76,7 +82,7 @@ def accessDataFromCall(json, returnFields, gene):
         newRow.loc[0, 'CAZy'] = cazy_values
         newRow.loc[0, 'HGNC number'] = hgnc_values
         newRow.loc[0, 'GeneID'] = geneId_values
-        newRow.loc[0, 'OMIN-Gene'] = omim_values
+        newRow.loc[0, 'OMIM'] = omim_values
 
     return newRow
 
@@ -92,6 +98,7 @@ if __name__ == '__main__':
 
     geneList, required_fields = load_genes()
     for gene in geneList.values:
+    #gene='TPST1'
         print(gene)
         newRow = pd.DataFrame(columns=required_fields.columns.tolist())
         responseValue = uniprot_API_call(gene[0])
@@ -100,4 +107,3 @@ if __name__ == '__main__':
 
     # If you want to save it to a new file, you can just change the name results.csv into something else
     required_fields.to_csv(path_or_buf="output_file/results.csv")
-
