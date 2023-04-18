@@ -18,23 +18,23 @@ populated. The input is an Excel file with a list of genes.
 5. The script will produce the csv file in the output file directory.
 
 ## Add links (examples given below for B4GALT1):
-1.	General information: 
-HGNC: https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:924\n
-NCBI: https://www.ncbi.nlm.nih.gov/gene/2683\n
-UniProt: https://www.uniprot.org/uniprotkb/P15291/entry\n
-CAZy: http://www.cazy.org/GT7.html\n
-GlyGen: https://glygen.org/protein/P15291\n
+1.	General information:
+HGNC: https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:924
+NCBI: https://www.ncbi.nlm.nih.gov/gene/2683
+UniProt: https://www.uniprot.org/uniprotkb/P15291/entry
+CAZy: http://www.cazy.org/GT7.html
+GlyGen: https://glygen.org/protein/P15291
 
-2. Notes:\n
-This is available in original database output\n
+2. Notes:
+This is available in original database output
 
-3. Catalytic activity:\n
-Reactions are available but we need to convert these to DawGlycan format\n
+3. Catalytic activity:
+Reactions are available, but we need to convert these to DawGlycan format
 
-4. Reaction and disease links:\n
-Rhea: https://www.rhea-db.org/rhea/12404\n
-E.C. Number (IUBMB): https://iubmb.qmul.ac.uk/enzyme/EC2/4/1/22.html\n
-Brenda: https://www.brenda-enzymes.org/enzyme.php?ecno=2.4.1.256\n
-Reactome: https://reactome.org/PathwayBrowser/#R-HSA-1912420\n
-KEGG: https://www.genome.jp/dbget-bin/www_bget?hsa:2683\n
+4. Reaction and disease links:
+Rhea: https://www.rhea-db.org/rhea/12404
+E.C. Number (IUBMB): https://iubmb.qmul.ac.uk/enzyme/EC2/4/1/22.html
+Brenda: https://www.brenda-enzymes.org/enzyme.php?ecno=2.4.1.256
+Reactome: https://reactome.org/PathwayBrowser/#R-HSA-1912420
+KEGG: https://www.genome.jp/dbget-bin/www_bget?hsa:2683
 OMIM: https://www.omim.org/entry/137060
