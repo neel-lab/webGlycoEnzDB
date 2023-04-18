@@ -22,7 +22,7 @@ populated. The input is an Excel file with a list of genes.
 HGNC: https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:924  
 NCBI: https://www.ncbi.nlm.nih.gov/gene/2683  
 UniProt: https://www.uniprot.org/uniprotkb/P15291/entry  
-CAZy: http://www.cazy.org/GT7.html
+CAZy: http://www.cazy.org/GT7.html  
 GlyGen: https://glygen.org/protein/P15291
 
 2. Notes:
