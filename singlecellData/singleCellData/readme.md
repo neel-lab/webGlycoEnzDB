@@ -11,13 +11,11 @@ From the decontaminated UMI counts obtained from TS,
 	- Subset data to glycogenes
 
 In each compartment folder(endothelial, epithelial, stromal, immune), 5 files are available:
-1. *_expr.csv files contain gene expression in cellsXglycogenes table format.
+1. *_expr.csv files contain raw gene expression data in cellsXglycogenes table format. This is a large file.
 
-2. *_metadata.csv files contain cell metadata in cellsXmetadata format. The most relevant columns for creating the violin plots are: tissue_in_publication, cell_type and compartment to group the cells by.
+2. *_metadata.csv files contain cell metadata in cellsXmetadata format. The most relevant columns for creating the violin plots are: tissue_in_publication, cell_type and compartment. Data are grouped based on these three categories below. The files below can thus be used for box plots but if we need violin plots then the original data in 1) [i.e. *_expr.csv] above needs to be accessed.
 
-The following 3 files in each folder are specifically calculated for box plots. To create violin plots, the original *_expr.csv has to be used instead. 
-
-3. *._stats_celltype.csv files contain groupwise summary stats for each celltype in each tissue for each of the 400 glycogenes.  For each combination (tissue, cell_type, gene), the following stats are computed based on the expression:
+3. *._stats_celltype.csv files contain groupwise summary stats for each celltype in each tissue for each of the 400 glycogenes. For each combination (tissue, cell_type, gene), the following stats are computed based on the expression:
 	- Mean, std, min(minimum expression), 25%(1st quartile), 50%(median), 75%(3rd quartile), max(maximum expression), iqr(inter-quartile range)
 	In addition, 2 columns are created specifically for creating the whiskers for box and whisker plots(not required for violin plots):
 	- Upper = Minimum value between max expression and (3rdquartile+1.5*iqr)
@@ -25,7 +23,7 @@ The following 3 files in each folder are specifically calculated for box plots. 
 
 4. *_stats_tissue.csv files contain groupwise summary stats for each tissue for each of the 400 glycogenes. Each row is for a combination of (tissue, gene). The other columns follow same meaning as in _stats_celltype.csv files described above.
 
-5. *_stats_tissue.csv files contain summary stats for the entire compartment for each of the 400 glycogenes. Each row is for a gene. The other columns follow same meaning as in _stats_celltype.csv files described above.
+5. *_stats_compartment.csv files contain summary stats for the entire compartment for each of the 400 glycogenes. Each row is for a gene. The other columns follow same meaning as in _stats_celltype.csv files described above.
 
 Information for plotting[Vishnu]: 
 1. To create Violin/Boxplots, use the plotly-dash python package framework. Instructions for creating violin plots are as explained in the link: https://plotly.com/python/violin/ which takes a dataframe as input.
