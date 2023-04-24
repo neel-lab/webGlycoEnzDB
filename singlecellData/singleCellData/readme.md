@@ -2,13 +2,13 @@ Data from tabula sapiens single-cell data split by individual compartments.
 
 Citation: Tabula Sapiens Consortium*, Jones, R. C., et al. (2022). The Tabula Sapiens: A multiple-organ, single-cell transcriptomic atlas of humans. Science, 376(6594), eabl4896.
 
-The preprocessing steps for the dataset are as follows:
-From the decontaminated UMI counts obtained from TS, 
-	- Remove cells which have less than 200 genes detected.
-	- Remove genes which are detected inless than 3 cells
-	- Scale data such that each cell has a total sum of 10000 reads. For each cell, (expr/sum(expr))*10000
-	- Log transform data. ln(1+expr)
-	- Subset data to glycogenes
+The preprocessing steps for the dataset are as follows:<br/>
+From the decontaminated UMI counts obtained from TS, <br/> 
+	- Remove cells which have less than 200 genes detected.<br/>
+	- Remove genes which are detected inless than 3 cells<br/>
+	- Scale data such that each cell has a total sum of 10000 reads. For each cell, (expr/sum(expr))*10000<br/>
+	- Log transform data. ln(1+expr)<br/>
+	- Subset data to glycogenes<br/>
 
 In each compartment folder(endothelial, epithelial, stromal, immune), 5 files are available:
 1. *_expr.csv files contain raw gene expression data in cellsXglycogenes table format. This is a large file.
