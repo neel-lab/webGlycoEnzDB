@@ -3,6 +3,8 @@ function showFunctions() {
     document.getElementById("element2").style.display = "none";
     document.getElementById("btnElement1").classList.add("active");
     document.getElementById("btnElement2").classList.remove("active");
+    localStorage.setItem('searchBy', 'functions');
+    localStorage.removeItem('key');
 }
 
 function showPathways() {
@@ -10,13 +12,62 @@ function showPathways() {
     document.getElementById("element2").style.display = "block";
     document.getElementById("btnElement1").classList.remove("active");
     document.getElementById("btnElement2").classList.add("active");
+    localStorage.setItem('searchBy', 'pathways');
+    localStorage.removeItem('key');
+}
+
+function opened_submenu() {
+    const searchBy = localStorage.getItem('searchBy');
+    const key = localStorage.getItem('key');
+
+    const currentUrl = window.location.href;
+    const pattern = /^https?:\/\/(?:www\.)?.+?\/GlycoEnzDB\/human\/.+\/?$/i;
+
+    const part = currentUrl.split("/");
+    part.pop();
+    const gene_name = part.pop();
+    
+    n_subclass = 4;
+    if (searchBy == 'pathways') {
+        showPathways()
+        n_subclass = 6;
+    } else {
+        showFunctions();
+        n_subclass = 4;
+    }
+
+    if (pattern.test(currentUrl) && key) {
+        const key_arr = key.split("_")
+        for (i = 0; i < n_subclass; i++) {
+            if(key_arr[i] === "NULL"){
+                break;
+            }
+            const id = [...key_arr].splice(0, i+1).join("_") + ("_NULL".repeat(n_subclass - i - 1));
+            const element = document.getElementById(id);
+            if (element) {
+                setTimeout( () => {element.click();}, 10);
+            }
+        }
+        console.log("gene name: " + gene_name);
+        setTimeout( () => {
+            selected_gene_ele = document.getElementById(gene_name);
+            console.log(selected_gene_ele);
+            if (selected_gene_ele) {
+                selected_gene_ele.classList.add('fw-bold');
+                selected_gene_ele.classList.add('text-primary');
+            }
+        }, 100);
+
+    } else {
+      localStorage.clear();
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
     const RIGHT_ARROW = '▶';
     const DOWN_ARROW = '▼';
 
-    showFunctions();
+    opened_submenu();
     document.querySelectorAll('.sidebar .nav-link').forEach(function (element) {
 
         element.addEventListener('click', function (e) {

@@ -71,7 +71,7 @@ Note: `use host.docker.internal` instead of `localhost` when running from docker
     ```python manage.py migrate```
 3. ~~python manage.py createsuperuser (glucoAdmin/admin)~~
 4. Start the server using the following command:
-    ```python manage.py runserver 0.0.0.0:8080```
+    ```python manage.py runserver 0.0.0.0:8000```
  
 
 
