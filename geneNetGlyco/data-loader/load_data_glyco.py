@@ -35,7 +35,7 @@ print(sys.argv[1:])
 
 for filename in sys.argv[1:]:
     fileno += 1
-    cell_type_id = filename.split('/')[1].split('.')[0]
+    cell_type_id = filename.split('/')[-1].split('.')[0]
 
     file = open(filename, 'r')
     lines = file.readlines()
@@ -50,6 +50,7 @@ for filename in sys.argv[1:]:
         print(f'##### {fileno}/{total_files} {cell_type_id}.txt [{ "#" * progress }{ "-" *(10 - progress)}]', end='\r')
         data = line.split('\t')
         query += f"('{cell_type_id}','{data[0]}','{data[1]}','{float(data[2])}'),"
+
 
     query = query.strip(',')
     cur.execute(query) 

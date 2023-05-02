@@ -33,8 +33,9 @@ body <- dashboardBody(
                DT::dataTableOutput('top_tfs')
            ),
            box(width = NULL, status = "warning",
+               actionButton("deselect_all", "Deselect All"),
                uiOutput("checkbox")
-           )
+           ),
     )
   )
 )

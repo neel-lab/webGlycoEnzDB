@@ -23,7 +23,9 @@ con <- dbConnect(RPostgres::Postgres(),
 cell_main_types = read.csv(cell_type_config_file)
 glycoEnzOnto = read.csv(glycoEnzOnto_file)
 
-function(input, output) {
+rv <- reactiveValues()
+
+function(input, output, session) {
   
   get_data <- reactive({
 
@@ -41,7 +43,7 @@ function(input, output) {
     output$checkbox <- renderUI({
       checkboxGroupInput("checkbox","Genes in Pathway", choices = glycogenes, selected = glycogenes)
     })
-    print(glycogenes)
+    # print(glycogenes)
     
     glycogenes_txt = paste0(shQuote(glycogenes), collapse=", ") 
     target_gene_list = unlist(strsplit(toupper(input$target_genes), split="\n"))
@@ -65,21 +67,31 @@ result = dbFetch(cell_type)
 result = result[order(-result$confidence),]
 result
   })
-
-render_page <- function(result) {
-  output$table <- DT::renderDataTable(
-    DT::datatable(result, options = list(pageLength = 25), 
-                  selection = list(mode = 'multiple', selected = 1:100))
-  )
   
-  value_count <-as.data.frame( table(result$tf))
+render_page <- function() {
+
+  output$table <- DT::renderDataTable(
+    DT::datatable(rv$selected_result, options = list(pageLength = 25), 
+                  #selection = list(mode = 'multiple', selected = 1:100)
+                  )
+  )
+
+  value_count <-as.data.frame(table(rv$selected_result$tf))
   
   value_count = value_count[order(-value_count$Freq),]
   
   output$top_tfs <- DT::renderDataTable(DT::datatable(value_count))
   
   output$mynetworkid <- renderVisNetwork({
-    result_top100 = head(result, input$max_nodes)
+    
+    # If data is empty, return empty
+    if (nrow(rv$selected_result) == 0) {
+      return(NULL)
+    }
+    # print(nrow(rv$selected_result))
+    
+    
+    result_top100 = head(rv$selected_result, input$max_nodes)
     links <- result_top100
     names(links)[1] <- "from"
     names(links)[2] <- "to"
@@ -158,12 +170,23 @@ render_page <- function(result) {
    
    observeEvent(input$searchButton, {
     # print("Search")
-    result = get_data()
-    render_page(result)
+     rv$result = get_data()
+     rv$selected_result = rv$result
+    render_page()
    })
    
    observeEvent(input$checkbox, {
-    print(input$checkbox)
+     
+     if (length(input$checkbox) > 0) {
+     select_target_genes <- strsplit(input$checkbox, " ")
+     } else {
+       select_target_genes = c()
+     }
+     rv$selected_result = rv$result[rv$result$target %in% select_target_genes,]
+   }, ignoreNULL= F)
+   
+   observeEvent(input$deselect_all, {
+     updateCheckboxGroupInput(session, "checkbox", selected = character(0))
    })
    
     output$cell_main <- renderUI({
