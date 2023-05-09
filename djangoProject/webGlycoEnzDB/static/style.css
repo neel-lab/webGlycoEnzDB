@@ -40,7 +40,7 @@ li .submenu{
       margin-left: 450px;
       margin-top: 50px;
       padding: 1px 16px;
-      height: 1000px;
+      height: 100%;
       overflow: scroll;
     }
 

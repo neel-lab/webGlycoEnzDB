@@ -257,7 +257,7 @@
         </div>
     </div>
 
-    <h4>Reaction Links</h4>
+    <h4>Reaction and Disease Links</h4>
     <!-- <table>
         <thead>
             <tr>
@@ -279,23 +279,13 @@
         </tbody>
     </table> -->
     <div style="padding-left: 10px;">
-        <b>Rhea:</b> {% for rhea in gene_general_info|get:'Catalytic: Rhea' %} 
-        <a target=”_blank” href="https://www.rhea-db.org/rhea/{{rhea}}">{{rhea}}</a>
-        {% endfor %}
-    </div>
-    <div style="padding-left: 10px;">
-        <b>EC# :</b> {% for ec in gene_general_info|get:'Catalytic: EC' %} 
+        <b>EC # (IUBMB):</b> {% for ec in gene_general_info|get:'Catalytic: EC' %} 
         <a target=”_blank” href="https://iubmb.qmul.ac.uk/enzyme/EC{{ec.url}}.html">{{ec.name}}</a>
         {% endfor %}
     </div>
     <div style="padding-left: 10px;">
         <b>Brenda:</b> {% for brenda in gene_general_info.Brenda %} 
         <a target=”_blank” href="https://www.brenda-enzymes.org/enzyme.php?ecno={{brenda}}">{{brenda}}</a>
-        {% endfor %}
-    </div>
-    <div style="padding-left: 10px;">
-        <b>Reactome :</b> {% for reactome in gene_general_info|get:'Reactome ID' %} 
-        <a target=”_blank” href="https://reactome.org/PathwayBrowser/#{{reactome}}">{{reactome}}</a>
         {% endfor %}
     </div>
     <div style="padding-left: 10px;">
@@ -306,9 +296,18 @@
     <div style="padding-left: 10px;">
         <b>KEGG:</b> <a target="_blank" href="https://www.genome.jp/dbget-bin/www_bget?hsa:{{gene_general_info.GeneID}}">{{gene_general_info.GeneID}}</a>
     </div>
-
-<hr>
-<iframe srcdoc='{{ gene_html }}' height="600px" width="600px"></iframe>
+    <div style="padding-left: 10px;">
+        <b>Rhea:</b> {% for rhea in gene_general_info|get:'Catalytic: Rhea' %} 
+        <a target=”_blank” href="https://www.rhea-db.org/rhea/{{rhea}}">{{rhea}}</a>
+        {% endfor %}
+    </div>
+    <div style="padding-left: 10px;">
+        <b>Reactome :</b> {% for reactome in gene_general_info|get:'Reactome ID' %} 
+        <a target=”_blank” href="https://reactome.org/PathwayBrowser/#{{reactome}}">{{reactome}}</a>
+        {% endfor %}
+    </div>
+    <hr>
+    <iframe srcdoc='{{ gene_html }}' height="600px" width="600px"></iframe>
     <!-- {{gene_general_info}} -->
     {% endif %}
 </div>
