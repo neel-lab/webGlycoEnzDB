@@ -48,10 +48,8 @@ function opened_submenu() {
                 setTimeout( () => {element.click();}, 10);
             }
         }
-        console.log("gene name: " + gene_name);
         setTimeout( () => {
             selected_gene_ele = document.getElementById(gene_name);
-            console.log(selected_gene_ele);
             if (selected_gene_ele) {
                 selected_gene_ele.classList.add('fw-bold');
                 selected_gene_ele.classList.add('text-primary');
@@ -61,6 +59,32 @@ function opened_submenu() {
     } else {
       localStorage.clear();
     }
+}
+
+function clear_link_styles(element) {
+    const RIGHT_ARROW = '▶';
+    const DOWN_ARROW = '▼';
+
+    const childNodes = element.parentElement.querySelectorAll('a');
+
+    const symbol_span = element.querySelector('span');
+    if (symbol_span && symbol_span.innerHTML === DOWN_ARROW){
+        symbol_span.innerHTML = RIGHT_ARROW;
+    }
+    else if (symbol_span && symbol_span.innerHTML === RIGHT_ARROW){
+        symbol_span.innerHTML = DOWN_ARROW;
+    }
+
+    childNodes.forEach(childNode => {
+        childNode.classList.remove('fw-bold');
+        childNode.classList.remove('text-primary');
+
+        if (element !== childNode){
+            const symbol_span =  childNode.querySelector('span');
+            symbol_span.innerHTML = RIGHT_ARROW;
+
+        }
+    });
 }
 
 document.addEventListener("DOMContentLoaded", function () {

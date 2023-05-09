@@ -27,6 +27,19 @@
         }
         document.getElementById("Gene_Names_list").innerHTML = inner_html;
     }
+
+    function resetGenes() {
+        localStorage.removeItem('key');
+        document.getElementById("Gene_Names_list").innerHTML = "";
+
+        const elements = document.querySelectorAll('.show');
+        for(let i=0; i<elements.length; i++) {
+            clear_link_styles(elements[i])
+            let mycollapse = new bootstrap.Collapse(elements[i]);
+            mycollapse.hide();
+        }
+
+    }
 </script>
 
 <div class="header">
@@ -203,7 +216,13 @@
 </div>
 
 <div class="sidebar2">
-    <h4>Gene Names</h4>
+    <div style="text-align: center; padding-top: 10px;">
+        <h4>Gene Names</h4>
+    </div>
+    <div style="text-align: right;">
+        <button onclick="resetGenes()" style="margin-right: 10px;">Reset</button>
+      </div>
+      <hr/>
     <div id="Gene_Names_list"></div>
 </div>
 
@@ -234,11 +253,12 @@
     <div>
     <h4>Catalytic Activity</h4>
         <div class="box">
+            <!-- {{gene_html}} -->
         </div>
     </div>
 
     <h4>Reaction Links</h4>
-    <table>
+    <!-- <table>
         <thead>
             <tr>
                 <th>Rhea</th>
@@ -248,16 +268,36 @@
             </tr>
         </thead>
         <tbody>
-            {% for reaction in gene_general_info|get:"Catalytic Activity" %}
+            { for reaction in gene_general_info|get:"Catalytic Activity" }
             <tr>
                 <td><a target=”_blank” href="https://www.rhea-db.org/rhea/{{reaction.0}}">{{reaction.0}}</a></td>
                 <td><a target=”_blank” href="https://iubmb.qmul.ac.uk/enzyme/EC{{reaction.1.1}}.html">{{reaction.1.0}}</a></td>
                 <td><a target=”_blank” href="https://www.brenda-enzymes.org/enzyme.php?ecno={{reaction.2}}">{{reaction.2}}</a></td>
                 <td><a target=”_blank” href="https://reactome.org/PathwayBrowser/#{{reaction.3}}">{{reaction.3}}</a></td>
             </tr>
-            {% endfor %}
+            { endfor }
         </tbody>
-    </table>
+    </table> -->
+    <div style="padding-left: 10px;">
+        <b>Rhea:</b> {% for rhea in gene_general_info|get:'Catalytic: Rhea' %} 
+        <a target=”_blank” href="https://www.rhea-db.org/rhea/{{rhea}}">{{rhea}}</a>
+        {% endfor %}
+    </div>
+    <div style="padding-left: 10px;">
+        <b>EC# :</b> {% for ec in gene_general_info|get:'Catalytic: EC' %} 
+        <a target=”_blank” href="https://iubmb.qmul.ac.uk/enzyme/EC{{ec.url}}.html">{{ec.name}}</a>
+        {% endfor %}
+    </div>
+    <div style="padding-left: 10px;">
+        <b>Brenda:</b> {% for brenda in gene_general_info.Brenda %} 
+        <a target=”_blank” href="https://www.brenda-enzymes.org/enzyme.php?ecno={{brenda}}">{{brenda}}</a>
+        {% endfor %}
+    </div>
+    <div style="padding-left: 10px;">
+        <b>Reactome :</b> {% for reactome in gene_general_info|get:'Reactome ID' %} 
+        <a target=”_blank” href="https://reactome.org/PathwayBrowser/#{{reactome}}">{{reactome}}</a>
+        {% endfor %}
+    </div>
     <div style="padding-left: 10px;">
         <b>OMIM:</b> {% for omim in gene_general_info.OMIM %} 
         <a target=”_blank” href="https://www.omim.org/entry/{{omim}}">{{omim}}</a>
@@ -268,8 +308,8 @@
     </div>
 
 <hr>
+<iframe srcdoc='{{ gene_html }}' height="600px" width="600px"></iframe>
     <!-- {{gene_general_info}} -->
-
     {% endif %}
 </div>
 

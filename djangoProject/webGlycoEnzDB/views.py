@@ -10,6 +10,7 @@ from django.http import HttpResponse
 from .models import GlycoOnto
 
 GENE_INFORMATION_FILE = '../data/gene_general_information.csv'
+HTML_FOLDER = '../data/html600/'
 
 
 def index(request):
@@ -128,37 +129,59 @@ def search(request, gene_name=''):
                                 onto_graph_pathways[path][s_path][s_s_path][s_s_s_path][s_s_s_s_path][s_s_s_s_s_path]
     # General information
     gene_general_info = {'message': "Welcome to GlycoEnzDB"}
+    gene_html = ""
     if gene_name:
-        # Get the current directory
-        current_dir = os.path.dirname(__file__)
-
-        # Construct the path to the file
-        file_path = os.path.join(current_dir, GENE_INFORMATION_FILE)
-
-        general_information_df =  pd.read_csv(file_path)
-        general_information_df.fillna("", inplace=True)
-        general_information_df = general_information_df.loc[general_information_df['Gene Name'] == gene_name]
-        general_information_df['HGNC number'] 
-        if len(general_information_df) > 0:
-            gene_general_info = general_information_df.to_dict('records')[0]
-            gene_general_info['HGNC number'] = re.sub("[^0-9]", "", gene_general_info['HGNC number'])
-            gene_general_info['GeneID'] = re.sub("[^0-9]", "", gene_general_info['GeneID'])
-            gene_general_info['CAZy'] = gene_general_info['CAZy'].replace(";","")
-            gene_general_info['Catalytic: Rhea'] = map( lambda x: re.sub("[^0-9]", "", x), gene_general_info['Catalytic: Rhea'].split(";"))
-            gene_general_info['Catalytic: EC'] = map(lambda x: (x,x.replace(".", "/")), gene_general_info['Catalytic: EC'].split(";"))
-            gene_general_info['Brenda'] = gene_general_info['Brenda'].split(";")
-            gene_general_info['Reactome ID'] = gene_general_info['Reactome ID'].split(";")
-            gene_general_info['OMIM'] = gene_general_info['OMIM'].split(";")
-
-            gene_general_info['Catalytic Activity'] = list(zip_longest(gene_general_info['Catalytic: Rhea'], gene_general_info['Catalytic: EC'], 
-                                                               gene_general_info['Brenda'], gene_general_info['Reactome ID'], fillvalue=''))
-            print(gene_name)
-        else:
-            gene_general_info['message'] = "Invalid Gene Name in the URL"
+        gene_general_info = get_gene_general_info(GENE_INFORMATION_FILE, gene_name)
+        gene_html = get_gene_html(HTML_FOLDER, gene_name)
+     
 
     return render(request, 'GlycoEnzDB.html', {'onto_graph_pathways': onto_graph_pathways,
                                                'onto_graph_functions': onto_graph_functions,
                                                'gene_names': dumps(gene_names),
                                                'gene_name':gene_name,
-                                               'gene_general_info': gene_general_info})
+                                               'gene_general_info': gene_general_info,
+                                               'gene_html': gene_html})
+
+
+def get_gene_general_info(filename, gene_name):
+       # Get the current directory
+        current_dir = os.path.dirname(__file__)
+
+        # Construct the path to the file
+        file_path = os.path.join(current_dir, filename)        
+
+        general_information_df =  pd.read_csv(file_path)
+        general_information_df.fillna("", inplace=True)
+        general_information_df = general_information_df.loc[general_information_df['Gene Name'] == gene_name]
+        general_information_df['HGNC number']
+        if len(general_information_df) > 0:
+            gene_general_info = general_information_df.to_dict('records')[0]
+            gene_general_info['HGNC number'] = re.sub("[^0-9]", "", gene_general_info['HGNC number'])
+            gene_general_info['GeneID'] = re.sub("[^0-9]", "", gene_general_info['GeneID'])
+            gene_general_info['CAZy'] = gene_general_info['CAZy'].replace(";","")
+            gene_general_info['Catalytic: Rhea'] = list(map( lambda x: re.sub("[^0-9]", "", x), gene_general_info['Catalytic: Rhea'].split(";")))
+            gene_general_info['Catalytic: EC'] = list(map(lambda x: {'name':x, 'url': x.replace(".", "/")}, gene_general_info['Catalytic: EC'].split(";")))
+            gene_general_info['Brenda'] = gene_general_info['Brenda'].split(";")
+            gene_general_info['Reactome ID'] = gene_general_info['Reactome ID'].split(";")
+            gene_general_info['OMIM'] = gene_general_info['OMIM'].split(";")
+
+            # gene_general_info['Catalytic Activity'] = list(zip_longest(gene_general_info['Catalytic: Rhea'], gene_general_info['Catalytic: EC'], 
+            #                                                    gene_general_info['Brenda'], gene_general_info['Reactome ID'], fillvalue=''))
+        else:
+            gene_general_info['message'] = "Invalid Gene Name in the URL"
+
+        return gene_general_info
+
+def get_gene_html(filename, gene_name):
+    
+    current_dir = os.path.dirname(__file__)
+    # Construct the path to the file
+    file_path = os.path.join(current_dir, filename + gene_name+ '.html')
+
+    try:
+        with open(file_path, 'r') as file:
+            html_string = file.read()
+            return html_string
+    except FileNotFoundError:
+        return ""
 
