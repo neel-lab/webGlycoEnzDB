@@ -20,7 +20,7 @@ body <- dashboardBody(
     ),
     column(width = 3,
            box(width = NULL, status = "warning",
-               uiOutput("cell_main"),
+               #uiOutput("cell_main"),
                uiOutput("glycopath"),
                textAreaInput('target_genes', 'Target Genes', value = "", width = NULL, height = "150px",
                              cols = NULL, rows = NULL, placeholder = "Target Genes (newline seperated)", resize = NULL),
