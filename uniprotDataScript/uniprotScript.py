@@ -97,6 +97,7 @@ def load_genes():
 if __name__ == '__main__':
 
     geneList, required_fields = load_genes()
+    p1.load_genes
     for gene in geneList.values:
     #gene='TPST1'
         print(gene)

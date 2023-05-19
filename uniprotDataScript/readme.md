@@ -33,7 +33,7 @@ Reactions are available, but we need to convert these to DawGlycan format
 
 4. Reaction and disease links:  
 Rhea: https://www.rhea-db.org/rhea/12404  
-E.C. Number (IUBMB): https://iubmb.qmul.ac.uk/enzyme/EC2/4/1/22.html  
+E.C. Number (IUBMB): https://iubmb.qmul.ac.uk/enzyme/EC2/4/1/275.html  
 Brenda: https://www.brenda-enzymes.org/enzyme.php?ecno=2.4.1.256  
 Reactome: https://reactome.org/PathwayBrowser/#R-HSA-1912420  
 KEGG: https://www.genome.jp/dbget-bin/www_bget?hsa:2683  
