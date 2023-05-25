@@ -1,9 +1,16 @@
 from django.shortcuts import render
 import pandas as pd
+from json import dumps
+import os
+import re
+from itertools import zip_longest
 # Create your views here.
 
 from django.http import HttpResponse
 from .models import GlycoOnto
+
+GENE_INFORMATION_FILE = '../data/gene_general_information.csv'
+HTML_FOLDER = '../data/html600/'
 
 
 def index(request):
@@ -11,8 +18,9 @@ def index(request):
     return render(request, 'GlycoEnzDB.html', {'data': data})
 
 
-def search(request, search_type='', main='', sub1='', sub2='', sub3=''):
-    gene_name = request.GET.get('geneName')
+def search(request, gene_name=''):
+
+    # Ontology Data
     onto_data = GlycoOnto.objects.all()
     onto_df = pd.DataFrame(onto_data.values())
 
@@ -45,14 +53,14 @@ def search(request, search_type='', main='', sub1='', sub2='', sub3=''):
                 gene_names[func + '_' + s_func + '_' + s_s_func + '_NULL'] = list(
                     onto_df.loc[(onto_df['function'] == func)
                                 & (onto_df['sub_function'] == s_func)
-                                & (onto_df['sub_sub_function'] == s_s_func)]['gene_name'])
+                                & (onto_df['sub_sub_function'] == s_s_func)]['gene_name'].unique())
                 
                 for s_s_s_func in sub_sub_sub_functions:
                     onto_graph_functions[func][s_func][s_s_func][s_s_s_func] = \
                         list(onto_df.loc[(onto_df['function'] == func)
                                     & (onto_df['sub_function'] == s_func)
                                     & (onto_df['sub_sub_function'] == s_s_func)
-                                    & (onto_df['sub_sub_sub_function'] == s_s_s_func)]['gene_name'])
+                                    & (onto_df['sub_sub_sub_function'] == s_s_s_func)]['gene_name'].unique())
 
                     gene_names[func + '_' + s_func + '_' + s_s_func + '_' + s_s_s_func] = \
                         onto_graph_functions[func][s_func][s_s_func][s_s_s_func]
@@ -62,7 +70,7 @@ def search(request, search_type='', main='', sub1='', sub2='', sub3=''):
     for path in pathways:
         onto_graph_pathways[path] = {}
         sub_paths = onto_df.loc[onto_df['pathway'] == path]['sub_pathway'].unique()
-        gene_names[path + '_NULL_NULL_NULL'] = list(onto_df.loc[onto_df['pathway'] == path][
+        gene_names[path + '_NULL_NULL_NULL_NULL_NULL'] = list(onto_df.loc[onto_df['pathway'] == path][
                                                                   'gene_name'])
 
         for s_path in sub_paths:
@@ -70,51 +78,110 @@ def search(request, search_type='', main='', sub1='', sub2='', sub3=''):
             sub_sub_pathways = onto_df.loc[(onto_df['pathway'] == path) &
                                             (onto_df['sub_pathway'] == s_path)]['sub_sub_pathway'].unique()
 
-            gene_names[path + '_' + s_path + '_NULL_NULL'] = list(onto_df.loc[(onto_df['pathway'] == path) &
-                                            (onto_df['sub_pathway'] == s_path)]['gene_name'])
+            gene_names[path + '_' + s_path + '_NULL_NULL_NULL_NULL'] = list(onto_df.loc[(onto_df['pathway'] == path) &
+                                            (onto_df['sub_pathway'] == s_path)]['gene_name'].unique())
             for s_s_path in sub_sub_pathways:
                 onto_graph_pathways[path][s_path][s_s_path] = {}
                 sub_sub_sub_pathways = onto_df.loc[(onto_df['pathway'] == path)
                                                     & (onto_df['sub_pathway'] == s_path)
                                                     & (onto_df['sub_sub_pathway'] == s_s_path)][
                     'sub_sub_sub_pathway'].unique()
-                gene_names[path + '_' + s_path + '_' + s_s_path + '_NULL'] = list(onto_df.loc[(onto_df['pathway'] == path)
+                gene_names[path + '_' + s_path + '_' + s_s_path + '_NULL_NULL_NULL'] = list(onto_df.loc[(onto_df['pathway'] == path)
                                                     & (onto_df['sub_pathway'] == s_path)
-                                                    & (onto_df['sub_sub_pathway'] == s_s_path)]['gene_name'])
-
+                                                    & (onto_df['sub_sub_pathway'] == s_s_path)]['gene_name'].unique())
+                
                 for s_s_s_path in sub_sub_sub_pathways:
-                    onto_graph_pathways[path][s_path][s_s_path][s_s_s_path] = \
-                        list(onto_df.loc[(onto_df['pathway'] == path)
-                                    & (onto_df['sub_pathway'] == s_path)
-                                    & (onto_df['sub_sub_pathway'] == s_s_path)
-                                    & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)]['gene_name'])
+                    onto_graph_pathways[path][s_path][s_s_path][s_s_s_path] = {}
+                    sub_sub_sub_sub_pathways = onto_df.loc[(onto_df['pathway'] == path)
+                                                        & (onto_df['sub_pathway'] == s_path)
+                                                        & (onto_df['sub_sub_pathway'] == s_s_path)
+                                                        & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)][
+                        'sub_sub_sub_sub_pathway'].unique()
+                    gene_names[path + '_' + s_path + '_' + s_s_path + '_' + s_s_s_path + '_NULL_NULL'] = list(onto_df.loc[(onto_df['pathway'] == path)
+                                                        & (onto_df['sub_pathway'] == s_path)
+                                                        & (onto_df['sub_sub_pathway'] == s_s_path)
+                                                        & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)]['gene_name'].unique())
+                    
+                    for s_s_s_s_path in sub_sub_sub_sub_pathways:
+                        onto_graph_pathways[path][s_path][s_s_path][s_s_s_path][s_s_s_s_path] = {}
+                        sub_sub_sub_sub_sub_pathways = onto_df.loc[(onto_df['pathway'] == path)
+                                                            & (onto_df['sub_pathway'] == s_path)
+                                                            & (onto_df['sub_sub_pathway'] == s_s_path)
+                                                            & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)
+                                                            & (onto_df['sub_sub_sub_sub_pathway'] == s_s_s_s_path)][
+                            'sub_sub_sub_sub_sub_pathway'].unique()
+                        gene_names[path + '_' + s_path + '_' + s_s_path + '_' + s_s_s_path + '_' + s_s_s_s_path +'_NULL'] = list(onto_df.loc[(onto_df['pathway'] == path)
+                                                            & (onto_df['sub_pathway'] == s_path)
+                                                            & (onto_df['sub_sub_pathway'] == s_s_path)
+                                                            & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)
+                                                            & (onto_df['sub_sub_sub_sub_pathway'] == s_s_s_s_path)]['gene_name'].unique())
 
-                    gene_names[path + '_' + s_path + '_' + s_s_path + '_' + s_s_s_path] = \
-                        onto_graph_pathways[path][s_path][s_s_path][s_s_s_path]
+                        for s_s_s_s_s_path in sub_sub_sub_sub_sub_pathways:
+                            onto_graph_pathways[path][s_path][s_s_path][s_s_s_path][s_s_s_s_path][s_s_s_s_s_path] = \
+                                list(onto_df.loc[(onto_df['pathway'] == path)
+                                            & (onto_df['sub_pathway'] == s_path)
+                                            & (onto_df['sub_sub_pathway'] == s_s_path)
+                                            & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)
+                                            & (onto_df['sub_sub_sub_sub_pathway'] == s_s_s_s_path )
+                                            & (onto_df['sub_sub_sub_sub_sub_pathway'] == s_s_s_s_s_path)]['gene_name'].unique())
 
-    # for row in onto_df.itertuples(index=False):
-    #     if row.function in onto_graph_functions:
-    #         if row.sub_function in onto_graph_functions[row.function]:
-    #             if row.sub_sub_function in onto_graph_functions[row.function][row.sub_function]:
-    #                 if row.sub_sub_function in onto_graph_functions[row.function][row.sub_function]
-    #             else:
-    #                 onto_graph_functions[row.function][row.sub_function] = []
-    #
-    #     else:
-    #         onto_graph_functions[row.function] = []
-    #         if row.sub_function:
-    #             onto_graph_functions[row.function].append({row.sub_function: []})
-    #
-    #             if row.sub_sub_function:
-    #                 onto_graph_functions[row.function][row.sub_function].append({row.sub_sub_function: []})
-    #
-    #                 if row.sub_sub_sub_function:
-    #                     onto_graph_functions[row.function][row.sub_function][row.sub_sub_function].append({row.sub_sub_sub_function: []})
+                            gene_names[path + '_' + s_path + '_' + s_s_path + '_' + s_s_s_path + '_' + s_s_s_s_path + '_' + s_s_s_s_s_path] = \
+                                onto_graph_pathways[path][s_path][s_s_path][s_s_s_path][s_s_s_s_path][s_s_s_s_s_path]
+    # General information
+    gene_general_info = {'message': "Welcome to GlycoEnzDB"}
+    gene_html = ""
+    if gene_name:
+        gene_general_info = get_gene_general_info(GENE_INFORMATION_FILE, gene_name)
+        gene_html = get_gene_html(HTML_FOLDER, gene_name)
+     
 
-    # return HttpResponse(f'{search_type, main, sub1, sub2, sub3, gene_name}')
-    from json import dumps
     return render(request, 'GlycoEnzDB.html', {'onto_graph_pathways': onto_graph_pathways,
                                                'onto_graph_functions': onto_graph_functions,
-                                               'gene_names': dumps(gene_names)})
-# def search_by_pathway(request, main, sub1, sub2, sub3, gene_name):
-#     return HttpResponse(f'Pathway: ${main, sub1, sub2, sub3, gene_name}')
+                                               'gene_names': dumps(gene_names),
+                                               'gene_name':gene_name,
+                                               'gene_general_info': gene_general_info,
+                                               'gene_html': gene_html})
+
+
+def get_gene_general_info(filename, gene_name):
+       # Get the current directory
+        current_dir = os.path.dirname(__file__)
+
+        # Construct the path to the file
+        file_path = os.path.join(current_dir, filename)        
+
+        general_information_df =  pd.read_csv(file_path)
+        general_information_df.fillna("", inplace=True)
+        general_information_df = general_information_df.loc[general_information_df['Gene Name'] == gene_name]
+        general_information_df['HGNC number']
+        if len(general_information_df) > 0:
+            gene_general_info = general_information_df.to_dict('records')[0]
+            gene_general_info['HGNC number'] = re.sub("[^0-9]", "", gene_general_info['HGNC number'])
+            gene_general_info['GeneID'] = re.sub("[^0-9]", "", gene_general_info['GeneID'])
+            gene_general_info['CAZy'] = gene_general_info['CAZy'].replace(";","")
+            gene_general_info['Catalytic: Rhea'] = list(map( lambda x: re.sub("[^0-9]", "", x), gene_general_info['Catalytic: Rhea'].split(";")))
+            gene_general_info['Catalytic: EC'] = list(map(lambda x: {'name':x, 'url': x.replace(".", "/")}, gene_general_info['Catalytic: EC'].split(";")))
+            gene_general_info['Brenda'] = gene_general_info['Brenda'].split(";")
+            gene_general_info['Reactome ID'] = gene_general_info['Reactome ID'].split(";")
+            gene_general_info['OMIM'] = gene_general_info['OMIM'].split(";")
+
+            # gene_general_info['Catalytic Activity'] = list(zip_longest(gene_general_info['Catalytic: Rhea'], gene_general_info['Catalytic: EC'], 
+            #                                                    gene_general_info['Brenda'], gene_general_info['Reactome ID'], fillvalue=''))
+        else:
+            gene_general_info['message'] = "Invalid Gene Name in the URL"
+
+        return gene_general_info
+
+def get_gene_html(filename, gene_name):
+    
+    current_dir = os.path.dirname(__file__)
+    # Construct the path to the file
+    file_path = os.path.join(current_dir, filename + gene_name+ '.html')
+
+    try:
+        with open(file_path, 'r') as file:
+            html_string = file.read()
+            return html_string
+    except FileNotFoundError:
+        return ""
+

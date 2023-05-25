@@ -46,3 +46,37 @@ Configrations can be changed in the python file.
 
 Note: `use host.docker.internal` instead of `localhost` when running from docker.
 
+## New Setup (No longer using docker)
+0. Env exported using ```conda env export --from-history > glyco-env.yml```
+1. Create a conda environment using :
+```conda env create --name glyco-env --file conda-env/glyco-env.yml```
+2. Activate the environment
+```conda activate glyco-env```
+
+### Database
+
+1. install postgresql 12 (https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04)
+2. Create User root/password
+3. Create database glycoenzdb (CREATE DATABASE glycoenzdb;)
+
+### DataLoader
+1. To load the ontology data from the excel file, go to the dataloader folder (```cd dataloader```) and run the following command:
+    ``` python loadGlycoEnzOnto.py```
+    Make sure to update the database details in the python file
+
+### Django Web Application
+1. update the database details in the settings.py file
+2. if it is first time connecting to DB run:
+    ```python manage.py makemigrations```
+    ```python manage.py migrate```
+3. ~~python manage.py createsuperuser (glucoAdmin/admin)~~
+4. Start the server using the following command:
+    ```python manage.py runserver 0.0.0.0:8000```
+ 
+
+
+
+Change Log:
+- April 16, 2023: 
+    1. Removed _1 to _9 from the excel file / database so that the display name is correct
+    2. Moved elongation pathways: Chondrotin/Dermatan….; Heparin…./ and Keratan sulfate elongation to be part of ‘Elongation” subclass rather than “Biosynthesis/core/GAG_1” subclass.

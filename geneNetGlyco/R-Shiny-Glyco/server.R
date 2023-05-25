@@ -23,15 +23,17 @@ con <- dbConnect(RPostgres::Postgres(),
 cell_main_types = read.csv(cell_type_config_file)
 glycoEnzOnto = read.csv(glycoEnzOnto_file)
 
-function(input, output) {
+rv <- reactiveValues()
+
+function(input, output, session) {
   
   get_data <- reactive({
-
-    cell_types = cell_main_types[cell_main_types['tissue'] == input$choose_main, 'cell_type_id']
+    
+    cell_types = cell_main_types[cell_main_types['tissue'] == 'all', 'cell_type_id']
     # cell_types = cell_main_types[cell_main_types['tissue'] == input$choose_main & cell_main_types['cellType'] == input$choose_subtype, 'cell_type_id']
     tags_txt = paste0(shQuote(cell_types), collapse=", ")
     #print(tags_txt)
-
+    
     #glycogenes = glycoEnzOnto[!glycoEnzOnto[input$choose_path]=="", input$choose_path]
     glycogenes = apply(glycoEnzOnto[input$choose_path], 1, function(x) paste(x[!is.na(x)], collapse = ", ")) 
     glycogenes = glycogenes[!glycogenes==""]
@@ -41,7 +43,7 @@ function(input, output) {
     output$checkbox <- renderUI({
       checkboxGroupInput("checkbox","Genes in Pathway", choices = glycogenes, selected = glycogenes)
     })
-    print(glycogenes)
+    # print(glycogenes)
     
     glycogenes_txt = paste0(shQuote(glycogenes), collapse=", ") 
     target_gene_list = unlist(strsplit(toupper(input$target_genes), split="\n"))
@@ -57,127 +59,148 @@ select tf, target, confidence from TF_Glyco where cell_type_id in (
 ",tags_txt, ")), dataset_filtered as ( 
 select * from dataset where confidence >= (select percentile_disc(",percentile,") WITHIN GROUP (ORDER BY confidence) from dataset))
 select * from dataset_filtered", 
-if (length(target_gene_list) > 0 || length(glycogenes) > 0) paste('where target in (', all_gene_txt, ')') else ""
-)
-
-cell_type <- dbSendQuery(con, query)
-result = dbFetch(cell_type)
-result = result[order(-result$confidence),]
-result
+                   if (length(target_gene_list) > 0 || length(glycogenes) > 0) paste('where target in (', all_gene_txt, ')') else ""
+    )
+    
+    cell_type <- dbSendQuery(con, query)
+    result = dbFetch(cell_type)
+    result = result[order(-result$confidence),]
+    result
   })
-
-render_page <- function(result) {
-  output$table <- DT::renderDataTable(
-    DT::datatable(result, options = list(pageLength = 25), 
-                  selection = list(mode = 'multiple', selected = 1:100))
-  )
   
-  value_count <-as.data.frame( table(result$tf))
-  
-  value_count = value_count[order(-value_count$Freq),]
-  
-  output$top_tfs <- DT::renderDataTable(DT::datatable(value_count))
-  
-  output$mynetworkid <- renderVisNetwork({
-    result_top100 = head(result, input$max_nodes)
-    links <- result_top100
-    names(links)[1] <- "from"
-    names(links)[2] <- "to"
+  render_page <- function() {
     
-    #from_nodes = as.data.frame(unique(links$from), col.names = c('id'), color.background = "red") 
-    #to_nodes = as.data.frame(unique(links$to), col.names = c('id'), color.background = "lightblue") 
+    output$table <- DT::renderDataTable(
+      DT::datatable(rv$selected_result, options = list(pageLength = 25), 
+                    #selection = list(mode = 'multiple', selected = 1:100)
+      )
+    )
     
-    #id = union(from_nodes,to_nodes)
-    #print(from_nodes)
+    value_count <-as.data.frame(table(rv$selected_result$tf))
     
-    target_genes = unique(links$to)
+    value_count = value_count[order(-value_count$Freq),]
     
-    id = union(links$from,links$to)
+    output$top_tfs <- DT::renderDataTable(DT::datatable(value_count))
     
-    nodes <- data.frame(id)
-    # nodes$color.background <- ifelse(nodes$id %in% target_genes, "red", "lightblue")
-    nodes$group <- ifelse(nodes$id %in% target_genes, "Target", "TF")
-    nodes$font.size = 50
-    nodes$hidden = FALSE
-    # nodes$shape = 'circle'
-    # print(nodes)
-    # nodes <- data.frame(id = 1:10, color = c(rep("blue", 6), rep("red", 3), rep("green", 1)))
-    
-    target_nodes = nodes[nodes$group == "Target", ]
-    tf_nodes = nodes[nodes$group == "TF", ]
-    # target_circle_radius = 1000
-    # tf_circle_radius = 2000
-    
-    target_circle_radius = max(500, 150 / (2*pi/nrow(target_nodes)))
-    tf_circle_radius = max(1000, 1.9 * target_circle_radius)
-    
-    
-    target_nodes$x = target_circle_radius*cos(seq(0, 2*pi, by = 2*pi/nrow(target_nodes)))[-1]
-    target_nodes$y = target_circle_radius*sin(seq(0, 2*pi, by = 2*pi/nrow(target_nodes)))[-1]
-    # target_nodes$hidden = TRUE
-    
-    tf_nodes$x = tf_circle_radius*cos(seq(0, 2*pi, by = 2*pi/nrow(tf_nodes)))[-1]
-    tf_nodes$y = tf_circle_radius*sin(seq(0, 2*pi, by = 2*pi/nrow(tf_nodes)))[-1]
-    
-    # if (length(tf_nodes) > length(target_nodes)) {
-    #   
-    #   
-    # }
-    
-    # print(target_nodes)
-    
-    # vis.nodes <- nodes
-    # print(dim(rbind(target_nodes, tf_nodes)))
-    vis.nodes <- rbind(target_nodes, tf_nodes)
-    vis.links <- links
-    
-    
-  
-    # visNetwork(vis.nodes,vis.links, width="100%", height="800px") %>%
-    #   visIgraphLayout(layout = "layout_in_circle") %>%
-    #   # visNodes(physics = TRUE) %>% 
-    #   visClusteringByGroup(groups = c('Target', 'TF')) %>%
-    #   visOptions(highlightNearest = list(enabled = TRUE, 
-    #                                      hover = TRUE, hideColor = 'rgba(200,200,200,200)'))
-    
-    
-    
-    visNetwork(vis.nodes, vis.links) %>%
-      visGroups(groupname = "Target", color = "#EF767A") %>%
-      visGroups(groupname = "TF", color = "#2364AA") %>%
-      visNodes(fixed = TRUE) %>%
-      # visIgraphLayout(layout = "layout_in_circle") %>%
-      visOptions(highlightNearest = list(enabled = TRUE,
+    output$mynetworkid <- renderVisNetwork({
+      
+      # If data is empty, return empty
+      if (nrow(rv$selected_result) == 0) {
+        return(NULL)
+      }
+      # print(nrow(rv$selected_result))
+      
+      
+      result_top100 = head(rv$selected_result, input$max_nodes)
+      links <- result_top100
+      names(links)[1] <- "from"
+      names(links)[2] <- "to"
+      
+      #from_nodes = as.data.frame(unique(links$from), col.names = c('id'), color.background = "red") 
+      #to_nodes = as.data.frame(unique(links$to), col.names = c('id'), color.background = "lightblue") 
+      
+      #id = union(from_nodes,to_nodes)
+      #print(from_nodes)
+      
+      target_genes = unique(links$to)
+      
+      id = union(links$from,links$to)
+      
+      nodes <- data.frame(id)
+      # nodes$color.background <- ifelse(nodes$id %in% target_genes, "red", "lightblue")
+      nodes$group <- ifelse(nodes$id %in% target_genes, "Target", "TF")
+      nodes$font.size = 50
+      nodes$hidden = FALSE
+      # nodes$shape = 'circle'
+      # print(nodes)
+      # nodes <- data.frame(id = 1:10, color = c(rep("blue", 6), rep("red", 3), rep("green", 1)))
+      
+      target_nodes = nodes[nodes$group == "Target", ]
+      tf_nodes = nodes[nodes$group == "TF", ]
+      # target_circle_radius = 1000
+      # tf_circle_radius = 2000
+      
+      target_circle_radius = max(500, 150 / (2*pi/nrow(target_nodes)))
+      tf_circle_radius = max(1000, 1.9 * target_circle_radius)
+      
+      
+      target_nodes$x = target_circle_radius*cos(seq(0, 2*pi, by = 2*pi/nrow(target_nodes)))[-1]
+      target_nodes$y = target_circle_radius*sin(seq(0, 2*pi, by = 2*pi/nrow(target_nodes)))[-1]
+      # target_nodes$hidden = TRUE
+      
+      tf_nodes$x = tf_circle_radius*cos(seq(0, 2*pi, by = 2*pi/nrow(tf_nodes)))[-1]
+      tf_nodes$y = tf_circle_radius*sin(seq(0, 2*pi, by = 2*pi/nrow(tf_nodes)))[-1]
+      
+      # if (length(tf_nodes) > length(target_nodes)) {
+      #   
+      #   
+      # }
+      
+      # print(target_nodes)
+      
+      # vis.nodes <- nodes
+      # print(dim(rbind(target_nodes, tf_nodes)))
+      vis.nodes <- rbind(target_nodes, tf_nodes)
+      vis.links <- links
+      
+      
+      
+      # visNetwork(vis.nodes,vis.links, width="100%", height="800px") %>%
+      #   visIgraphLayout(layout = "layout_in_circle") %>%
+      #   # visNodes(physics = TRUE) %>% 
+      #   visClusteringByGroup(groups = c('Target', 'TF')) %>%
+      #   visOptions(highlightNearest = list(enabled = TRUE, 
+      #                                      hover = TRUE, hideColor = 'rgba(200,200,200,200)'))
+      
+      
+      
+      visNetwork(vis.nodes, vis.links) %>%
+        visGroups(groupname = "Target", color = "#EF767A") %>%
+        visGroups(groupname = "TF", color = "#2364AA") %>%
+        visNodes(fixed = TRUE) %>%
+        # visIgraphLayout(layout = "layout_in_circle") %>%
+        visOptions(highlightNearest = list(enabled = TRUE,
                                            hover = TRUE, hideColor = 'rgba(200,200,200,200)')) %>%
-      # visEdges(arrows = 'to') %>%
-      visLegend(position = 'right', width = 0.1)
-    
-  })
-}
-
-   
-   observeEvent(input$searchButton, {
+        # visEdges(arrows = 'to') %>%
+        visLegend(position = 'right', width = 0.1)
+      
+    })
+  }
+  
+  
+  observeEvent(input$searchButton, {
     # print("Search")
-    result = get_data()
-    render_page(result)
-   })
-   
-   observeEvent(input$checkbox, {
-    print(input$checkbox)
-   })
-   
-    output$cell_main <- renderUI({
-      selectInput(inputId="choose_main",
-                  label="Select Tissue", 
-                  choices = unique(cell_main_types$tissue))
-    })
-
-    output$glycopath <- renderUI({
-      selectInput(inputId="choose_path",
-                  label="Select Group", 
-                  choices = colnames(glycoEnzOnto))
-    })
+    rv$result = get_data()
+    rv$selected_result = rv$result
+    render_page()
+  })
+  
+  observeEvent(input$checkbox, {
     
+    if (length(input$checkbox) > 0) {
+      select_target_genes <- strsplit(input$checkbox, " ")
+    } else {
+      select_target_genes = c()
+    }
+    rv$selected_result = rv$result[rv$result$target %in% select_target_genes,]
+  }, ignoreNULL= F)
+  
+  observeEvent(input$deselect_all, {
+    updateCheckboxGroupInput(session, "checkbox", selected = character(0))
+  })
+  
+  output$cell_main <- renderUI({
+    selectInput(inputId="choose_main",
+                label="Select Tissue", 
+                choices = unique(cell_main_types$tissue))
+  })
+  
+  output$glycopath <- renderUI({
+    selectInput(inputId="choose_path",
+                label="Select Group", 
+                choices = colnames(glycoEnzOnto))
+  })
+  
 }
 
 

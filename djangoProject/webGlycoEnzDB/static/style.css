@@ -2,8 +2,8 @@ li .submenu{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 
     .header {
@@ -18,7 +18,7 @@ li .submenu{
 
     .sidebar {
       height: 100%;
-      width: 200px;
+      width: 250px;
       position: fixed;
       left: 0;
       top: 50px;
@@ -30,17 +30,17 @@ li .submenu{
       height: 100%;
       width: 200px;
       position: fixed;
-      left: 200px;
+      left: 250px;
       top: 50px;
       background-color: #f1f1f1;
       overflow-x: hidden;
     }
 
     .main-content {
-      margin-left: 400px;
+      margin-left: 450px;
       margin-top: 50px;
       padding: 1px 16px;
-      height: 1000px;
+      height: 100%;
       overflow: scroll;
     }
 
@@ -48,3 +48,50 @@ li .submenu{
       background-color: #4CAF50;
       color: white;
     }
+
+    .no-underline {
+      text-decoration: none;
+    }
+
+    .links-container {
+      display: flex;
+      /* flex-wrap: wrap; */
+      justify-content: center;
+  }
+  .links-box {
+      width: calc(33.33% - 2px);
+      margin: 0 1px 20px;
+  }
+
+
+  .box {
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin: 10px;
+    width: 100%;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid #ddd;
+    padding: 50px;
+    margin: 10px;
+  }
+  
+  th, td {
+    padding: 2px;
+    text-align: center;
+    /* border-left: 1px solid #ddd; */
+  }
+  th {
+    /* background-color: #f2f2f2; */
+    font-weight: bold;
+    /* text-transform: uppercase; */
+  }
+  /* a {
+    text-decoration: none;
+    color: #333;
+  } */
