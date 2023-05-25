@@ -148,7 +148,7 @@ def update_graph2(sel_comp, sel_tissue):
     fig.update_layout(yaxis_zeroline=True,
                       showlegend=False,
                       title={
-                          'text': '<b>Single-cell: Gene expression of ' + sel_comp + ' cells in ' + sel_tissue + '</b>',
+                          'text': '<b>Single-cell: Gene expression of ' + sel_comp + ' cells in ' + sel_tissue + ' tissue</b>',
                           'xanchor': 'left',
                           'yanchor': 'top',
                           'xref': 'paper',
