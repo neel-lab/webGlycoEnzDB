@@ -37,10 +37,12 @@ tabula_plot_color = '#F4F4F4 '
 
 fig0 = go.Figure()
 for tissue in ccle_gene_expr['Tissue'].cat.categories:
+    text = ['Cell type: '+e for e in ccle_gene_expr['display name'][ccle_gene_expr['Tissue'] == tissue]]
     fig0.add_trace(
         go.Violin(x=ccle_gene_expr['Tissue'][ccle_gene_expr['Tissue'] == tissue],
                   y=ccle_gene_expr[sel_gene][ccle_gene_expr['Tissue'] == tissue],
-                  box_visible=True, name=tissue))
+                  hovertext=text,
+                  box_visible=False, name=tissue, points='all', pointpos=0))
 
 fig0.update_layout(yaxis_zeroline=True,
                    showlegend=False,
