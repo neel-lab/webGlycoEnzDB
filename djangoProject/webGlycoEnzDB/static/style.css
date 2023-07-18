@@ -95,3 +95,12 @@ li .submenu{
     text-decoration: none;
     color: #333;
   } */
+
+  .overlay_gene_html {
+    background:transparent; 
+    position:relative; 
+    width:601px;
+    height:600px; /* your iframe height */
+    top:600px;  /* your iframe height */
+    margin-top:-600px;  /* your iframe height */
+ }

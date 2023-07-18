@@ -152,3 +152,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // DOMContentLoaded  end
 
+window.onload = function() {
+    const ele = document.getElementById('sc_violin_iframe');
+    if (!ele){
+        return;
+    }
+    var currentUrl = window.location.href;
+    var segments = currentUrl.split('/');
+    var subpath = segments[segments.length - 2];
+    console.log(subpath)
+    var newUrl = currentUrl.replace(/:\d+/, ':5000') + `?gene_name=${subpath}`;
+    ele.src = newUrl;
+  }

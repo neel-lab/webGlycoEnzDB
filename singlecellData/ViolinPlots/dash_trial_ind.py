@@ -1,5 +1,5 @@
 # Run this app with `python app.py` and
-# visit http://127.0.0.1:8050/ in your web browser.
+# visit http://127.0.0.1:5000/GlycoEnzDB/human/FUT1/?gene_name=FUT1 in your web browser. Pass the Gene name in the `gene_name` url parameter
 
 import os
 
@@ -7,23 +7,24 @@ from dash import Dash, html, dcc, Input, Output
 import pandas as pd
 import plotly.graph_objects as go
 import dash_bootstrap_components as dbc
+from urllib.parse import urlparse, parse_qs
 
 # %% Define directories
 mainDir = os.getcwd()
 print('Current working directory: ', mainDir)
 heirDir = os.path.join(mainDir, 'inputfiles')
-
 meta_cols = ['cell_id', 'tissue_in_publication', 'cell_type', 'compartment']
-sel_gene = 'A4GALT'
+sel_gene = 'FPGT' #'A4GALT'
+ccle_gene_expr = pd.read_parquet(os.path.join(heirDir, 'CCLE_data_expr.parquet.gzip'), engine='pyarrow')
+                                #  columns=['Tissue', 'DepMapID', 'display name'] + [sel_gene])
 
-ccle_gene_expr = pd.read_parquet(os.path.join(heirDir, 'CCLE_data_expr.parquet.gzip'), engine='pyarrow',
-                                 columns=['Tissue', 'DepMapID', 'display name'] + [sel_gene])
 ccle_gene_expr['Tissue'] = ccle_gene_expr['Tissue'].astype('category')
 ccle_gene_expr['display name'] = ccle_gene_expr['display name'].astype('category')
 
 gene_expr_wmeta = (
     pd.read_parquet(os.path.join(heirDir, ''.join(['_'.join(['TS_scvi', 'all', 'glyco']), '_expr.parquet.gzip'])),
-                    engine='pyarrow', columns=meta_cols + [sel_gene]))
+                    engine='pyarrow'))
+                    # columns=meta_cols + [sel_gene]))
 gene_expr_wmeta['compartment'] = gene_expr_wmeta['compartment'].astype('category')
 gene_expr_wmeta['tissue_in_publication'] = gene_expr_wmeta['tissue_in_publication'].astype('category')
 gene_expr_wmeta['cell_type'] = gene_expr_wmeta['cell_type'].astype('category')
@@ -35,31 +36,7 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 tabula_plot_color = '#F4F4F4 '
 # %% CCLE dataset components
 
-fig0 = go.Figure()
-for tissue in ccle_gene_expr['Tissue'].cat.categories:
-    text = ['Cell type: '+e for e in ccle_gene_expr['display name'][ccle_gene_expr['Tissue'] == tissue]]
-    fig0.add_trace(
-        go.Violin(x=ccle_gene_expr['Tissue'][ccle_gene_expr['Tissue'] == tissue],
-                  y=ccle_gene_expr[sel_gene][ccle_gene_expr['Tissue'] == tissue],
-                  hovertext=text,
-                  box_visible=False, name=tissue, points='all', pointpos=0))
-
-fig0.update_layout(yaxis_zeroline=True,
-                   showlegend=False,
-                   yaxis_title='Normalized expression',
-                   xaxis_title='Tissues',
-                   title={'text': '<b>CCLE dataset</b>',
-                          'xanchor': 'left',
-                          'yanchor': 'top',
-                          'xref': 'paper',
-                          'x': 0
-                          },
-                   plot_bgcolor=tabula_plot_color,
-                   paper_bgcolor='#FFF0E3',
-                   margin={'t': 40, 'b': 40},
-                   height=300)
-
-violin_0_graph = dbc.Row(dcc.Graph(id='tissue-violin0', figure=fig0, style={'width': '95%'}), justify='center')
+violin_0_graph = dbc.Row(dcc.Graph(id='tissue-violin0', style={'width': '95%'}), justify='center')
 
 # %% Single cell dataset components
 tabula_background_col = '#DAE2FE'
@@ -98,12 +75,56 @@ app.layout = html.Div(
     dbc.Stack([violin_0_graph,
              violin_1_comp,
              violin_2_comp,
+             dcc.Location(id='url', refresh=False)
              ], className='g-0', style={'margin-top': 10}), className='g-0')
 
+@app.callback(Output('tissue-violin0', 'figure'),
+              Input('url', 'search'))
+def update_graph0(search):
+    # Parse the search string
+    parsed_query = parse_qs(urlparse(search).query)
+    # Get the value of the "gene_name" parameter
+    sel_gene = parsed_query.get("gene_name", [None])[0]
+    fig0 = go.Figure()
+
+    if not sel_gene:
+        return fig0
+
+    sel_ccle_gene_expr = ccle_gene_expr[['Tissue', 'DepMapID', 'display name', sel_gene]]
+    for tissue in sel_ccle_gene_expr['Tissue'].cat.categories:
+        text = ['Cell type: '+e for e in sel_ccle_gene_expr['display name'][sel_ccle_gene_expr['Tissue'] == tissue]]
+        fig0.add_trace(
+            go.Violin(x=sel_ccle_gene_expr['Tissue'][sel_ccle_gene_expr['Tissue'] == tissue],
+                    y=sel_ccle_gene_expr[sel_gene][sel_ccle_gene_expr['Tissue'] == tissue],
+                    hovertext=text,
+                    box_visible=False, name=tissue, points='all', pointpos=0))
+
+    fig0.update_layout(yaxis_zeroline=True,
+                    showlegend=False,
+                    yaxis_title='Normalized expression',
+                    xaxis_title='Tissues',
+                    title={'text': '<b>CCLE dataset</b>',
+                            'xanchor': 'left',
+                            'yanchor': 'top',
+                            'xref': 'paper',
+                            'x': 0
+                            },
+                    plot_bgcolor=tabula_plot_color,
+                    paper_bgcolor='#FFF0E3',
+                    margin={'t': 40, 'b': 40},
+                    height=300)
+
+    return fig0
 
 @app.callback(Output('tissue-violin', 'figure'),
-              Input('compartment-dropdown', 'value'))
-def update_graph(sel_comp):
+              Input('compartment-dropdown', 'value'),
+              Input('url', 'search'))
+def update_graph(sel_comp, search):
+        # Parse the search string
+    parsed_query = parse_qs(urlparse(search).query)
+    # Get the value of the "gene_name" parameter
+    sel_gene = parsed_query.get("gene_name", [None])[0]
+
     dff = gene_expr_wmeta[gene_expr_wmeta['compartment'] == sel_comp]
     fig = go.Figure()
 
@@ -133,8 +154,15 @@ def update_graph(sel_comp):
 
 @app.callback(Output('cell-type-violin', 'figure'),
               Input('compartment-dropdown', 'value'),
-              Input('tissue-dropdown', 'value'))
-def update_graph2(sel_comp, sel_tissue):
+              Input('tissue-dropdown', 'value'),
+              Input('url', 'search'))
+def update_graph2(sel_comp, sel_tissue, search):
+
+        # Parse the search string
+    parsed_query = parse_qs(urlparse(search).query)
+    # Get the value of the "gene_name" parameter
+    sel_gene = parsed_query.get("gene_name", [None])[0]
+
     dff1 = gene_expr_wmeta[gene_expr_wmeta['compartment'] == sel_comp]
     if sel_tissue == 'all':
         dff = dff1

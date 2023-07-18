@@ -248,7 +248,10 @@
         <div class="links-box"><b>GlyGen: </b><a target=”_blank” href="https://glygen.org/protein/{{ gene_general_info|get:'Uniprot ID'}}">{{ gene_general_info|get:'Uniprot ID'}}</a></div>
     </div>
 
-    <div><b>Notes:</b></div>
+    <div>
+        <h4>Notes:</h4>
+        <p>Notes text here</p>
+    </div>
     <hr>
     <div>
     <h4>Catalytic Activity</h4>
@@ -307,8 +310,15 @@
         {% endfor %}
     </div>
     <hr>
-    <iframe srcdoc='{{ gene_html }}' height="600px" width="600px"></iframe>
+    <!-- Overlay to prevent zoom in iframe -->
+    <!-- Use onClick="style.pointerEvents='none'" for enabling interaction after click -->
+    <div class="overlay_gene_html" ></div> 
+    <iframe srcdoc='{{ gene_html }}' height="600px" width="601px" scrolling="no"></iframe>
     <!-- {{gene_general_info}} -->
+
+    <hr>
+    <!-- <iframe src="http://127.0.0.1:5000" height="1000px" width="100%" scrolling="no"></iframe> -->
+    <iframe id="sc_violin_iframe" height="1000px" width="100%" scrolling="no"></iframe>
     {% endif %}
 </div>
 

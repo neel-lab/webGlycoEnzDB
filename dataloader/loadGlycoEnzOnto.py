@@ -9,7 +9,7 @@ FILE = "data/GlycoEnzOntoDB.xlsx"
 TABLE_NAME = "GlycoDB"
 
 
-# Connect to the database
+# Connect to the database 
 conn = psycopg2.connect(
     host=HOST,
     database=DATABASE,
