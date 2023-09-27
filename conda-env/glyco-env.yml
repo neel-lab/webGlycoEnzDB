@@ -7,4 +7,8 @@ dependencies:
   - psycopg2
   - pandas
   - openpyxl
+  - plotly
+  - dash
+  - dash_bootstrap_components
+  - pyarrow
 prefix: /opt/homebrew/Caskroom/miniconda/base/envs/glyco-env

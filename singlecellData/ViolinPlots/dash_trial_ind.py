@@ -196,4 +196,4 @@ def update_graph2(sel_comp, sel_tissue, search):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, port=5000)
+    app.run_server(host='0.0.0.0', debug=True, port=5000)

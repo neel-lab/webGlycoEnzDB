@@ -71,9 +71,9 @@ Note: `use host.docker.internal` instead of `localhost` when running from docker
     ```python manage.py migrate```
 3. ~~python manage.py createsuperuser (glucoAdmin/admin)~~
 4. Start the server using the following command:
-    ```python manage.py runserver 0.0.0.0:8000```
-5. Also start the Single cell violin plot server using the following command
-    ```python dash_trial_ind.py```
+    ```nohup python manage.py runserver 0.0.0.0:8000 &```
+5. Also go to singlecellData/ViolinPlots start the Single cell violin plot server using the following command
+    ```nohup python dash_trial_ind.py &```
  
 
 

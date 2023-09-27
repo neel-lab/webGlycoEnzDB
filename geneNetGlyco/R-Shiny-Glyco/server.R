@@ -54,12 +54,21 @@ function(input, output, session) {
     if (length(target_gene_list) > 0 && length(glycogenes) > 0) all_gene_txt = paste(glycogenes_txt, target_gene_txt, sep = ", ")
     
     
-    query <- paste("with dataset as (
-select tf, target, confidence from TF_Glyco where cell_type_id in (
-",tags_txt, ")), dataset_filtered as ( 
-select * from dataset where confidence >= (select percentile_disc(",percentile,") WITHIN GROUP (ORDER BY confidence) from dataset))
-select * from dataset_filtered", 
-                   if (length(target_gene_list) > 0 || length(glycogenes) > 0) paste('where target in (', all_gene_txt, ')') else ""
+#     query <- paste("with dataset as (
+# select tf, target, confidence from TF_Glyco where cell_type_id in (
+# ",tags_txt, ")), dataset_filtered as (
+# select * from dataset where confidence >= (select percentile_disc(",percentile,") WITHIN GROUP (ORDER BY confidence) from dataset))
+# select * from dataset_filtered",
+#                    if (length(target_gene_list) > 0 || length(glycogenes) > 0) paste('where target in (', all_gene_txt, ')') else ""
+#     )
+    
+    query <- paste(
+      "with dataset as (select tf, target, confidence from TF_Glyco where cell_type_id in (",tags_txt, ")),
+dataset_subset as (select * from dataset",
+      if (length(target_gene_list) > 0 || length(glycogenes) > 0) paste( "where target in (", all_gene_txt, "))," ) else "),",
+      "dataset_filtered as (
+select * from dataset_subset where confidence >= (select percentile_disc(",percentile,") WITHIN GROUP (ORDER BY confidence) from dataset_subset))
+select * from dataset_filtered"
     )
     
     cell_type <- dbSendQuery(con, query)
