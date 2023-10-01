@@ -2,7 +2,17 @@ library(shinydashboard)
 library('visNetwork') 
 
 header <- dashboardHeader(
-  title = "GlycoNet"
+  title = "GlycoTF",
+  titleWidth = 300,  # Adjust the width as needed
+  tags$li(
+    class = "dropdown",
+    a(
+      href = "https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fbiorxiv.org%2Fcgi%2Fcontent%2Fshort%2F2023.09.26.559616v1&data=05%7C01%7Cvghosh%40g-mail.buffalo.edu%7C8e664cf202964baca4f608dbc0855e94%7C96464a8af8ed40b199e25f6b50a20250%7C0%7C0%7C638315451290742529%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=MvUywYeLp4vSYphvWSc2IdQvteyVLcKRJot88WkkPpk%3D&reserved=0",
+      target = "_blank",  # Open link in a new tab
+      icon("external-link"),
+      "bioRxiv Link"
+    )
+  )
 )
 
 body <- dashboardBody(
