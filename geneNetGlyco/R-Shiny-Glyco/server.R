@@ -82,6 +82,8 @@ select * from dataset_filtered"
     output$table <- DT::renderDataTable(
       DT::datatable(rv$selected_result, options = list(pageLength = 25), 
                     #selection = list(mode = 'multiple', selected = 1:100)
+                    colnames = c("Transcription Factors", "Glycogenes", "NMI"),
+                    rownames = FALSE
       )
     )
     
@@ -89,7 +91,9 @@ select * from dataset_filtered"
     
     value_count = value_count[order(-value_count$Freq),]
     
-    output$top_tfs <- DT::renderDataTable(DT::datatable(value_count))
+    output$top_tfs <- DT::renderDataTable(DT::datatable(value_count,
+                                                        colnames = c("TF", "Freq"),
+                                                        rownames = FALSE))
     
     output$mynetworkid <- renderVisNetwork({
       
@@ -171,7 +175,7 @@ select * from dataset_filtered"
         visOptions(highlightNearest = list(enabled = TRUE,
                                            hover = TRUE, hideColor = 'rgba(200,200,200,200)')) %>%
         # visEdges(arrows = 'to') %>%
-        visLegend(position = 'right', width = 0.1)
+        visLegend(position = 'right', width = 0.1, zoom=FALSE)
       
     })
   }
@@ -198,6 +202,14 @@ select * from dataset_filtered"
     updateCheckboxGroupInput(session, "checkbox", selected = character(0))
   })
   
+    observeEvent(input$select_all, {
+      glycogenes = apply(glycoEnzOnto[input$choose_path], 1, function(x) paste(x[!is.na(x)], collapse = ", ")) 
+      glycogenes = glycogenes[!glycogenes==""]
+      
+      updateCheckboxGroupInput(session, "checkbox", selected = glycogenes)
+      rv$selected_result = rv$result
+  })
+  
   output$cell_main <- renderUI({
     selectInput(inputId="choose_main",
                 label="Select Tissue", 
@@ -206,7 +218,7 @@ select * from dataset_filtered"
   
   output$glycopath <- renderUI({
     selectInput(inputId="choose_path",
-                label="Select Group", 
+                label="Select Pathway", 
                 choices = colnames(glycoEnzOnto))
   })
   
