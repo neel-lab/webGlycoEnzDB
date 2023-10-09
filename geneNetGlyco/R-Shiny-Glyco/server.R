@@ -62,18 +62,45 @@ function(input, output, session) {
 #                    if (length(target_gene_list) > 0 || length(glycogenes) > 0) paste('where target in (', all_gene_txt, ')') else ""
 #     )
     
-    query <- paste(
-      "with dataset as (select tf, target, confidence from TF_Glyco where cell_type_id in (",tags_txt, ")),
-dataset_subset as (select * from dataset",
-      if (length(target_gene_list) > 0 || length(glycogenes) > 0) paste( "where target in (", all_gene_txt, "))," ) else "),",
-      "dataset_filtered as (
-select * from dataset_subset where confidence >= (select percentile_disc(",percentile,") WITHIN GROUP (ORDER BY confidence) from dataset_subset))
-select * from dataset_filtered"
-    )
+#     query <- paste(
+#       "with dataset as (select tf, target, confidence from TF_Glyco where cell_type_id in (",tags_txt, ")),
+# dataset_subset as (select * from dataset",
+#       if (length(target_gene_list) > 0 || length(glycogenes) > 0) paste( "where target in (", all_gene_txt, "))," ) else "),",
+#       "dataset_filtered as (
+# select * from dataset_subset where confidence >= (select percentile_disc(",percentile,") WITHIN GROUP (ORDER BY confidence) from dataset_subset))
+# select * from dataset_filtered"
+#     )
     
+    query <- paste(
+      "WITH dataset AS (
+    SELECT tf, target, confidence
+    FROM TF_Glyco
+    WHERE cell_type_id IN (", tags_txt, ")
+  ),
+  dataset_subset AS (
+    SELECT *
+    FROM dataset",
+      if (length(target_gene_list) > 0 || length(glycogenes) > 0) paste("WHERE target IN (", all_gene_txt, ")),") else "),",
+      "confidence_thresholds AS (
+    SELECT target,
+           percentile_disc(", percentile, ") WITHIN GROUP (ORDER BY confidence) AS threshold
+    FROM dataset_subset
+    GROUP BY target
+  ),
+  dataset_filtered AS (
+    SELECT d.*
+    FROM dataset_subset d
+    JOIN confidence_thresholds ct
+      ON d.target = ct.target
+    WHERE d.confidence >= ct.threshold
+  )
+  SELECT * FROM dataset_filtered"
+    )
+
     cell_type <- dbSendQuery(con, query)
     result = dbFetch(cell_type)
     result = result[order(-result$confidence),]
+    print(result)
     result
   })
   
@@ -88,8 +115,13 @@ select * from dataset_filtered"
     )
     
     value_count <-as.data.frame(table(rv$selected_result$tf))
-    
-    value_count = value_count[order(-value_count$Freq),]
+
+    if (nrow(value_count) == 0) {
+      # Create an empty data frame when there's no data available
+      value_count <- data.frame(TF = character(0), Freq = integer(0))
+    } else {
+      value_count = value_count[order(-value_count$Freq),]
+    }
     
     output$top_tfs <- DT::renderDataTable(DT::datatable(value_count,
                                                         colnames = c("TF", "Freq"),
