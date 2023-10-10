@@ -32,18 +32,15 @@ function(input, output, session) {
     cell_types = cell_main_types[cell_main_types['tissue'] == 'all', 'cell_type_id']
     # cell_types = cell_main_types[cell_main_types['tissue'] == input$choose_main & cell_main_types['cellType'] == input$choose_subtype, 'cell_type_id']
     tags_txt = paste0(shQuote(cell_types), collapse=", ")
-    #print(tags_txt)
     
     #glycogenes = glycoEnzOnto[!glycoEnzOnto[input$choose_path]=="", input$choose_path]
     glycogenes = apply(glycoEnzOnto[input$choose_path], 1, function(x) paste(x[!is.na(x)], collapse = ", ")) 
     glycogenes = glycogenes[!glycogenes==""]
     
     percentile = input$percentile*1e-2
-    
     output$checkbox <- renderUI({
       checkboxGroupInput("checkbox","Genes in Pathway", choices = glycogenes, selected = glycogenes)
     })
-    # print(glycogenes)
     
     glycogenes_txt = paste0(shQuote(glycogenes), collapse=", ") 
     target_gene_list = unlist(strsplit(toupper(input$target_genes), split="\n"))
@@ -100,12 +97,10 @@ function(input, output, session) {
     cell_type <- dbSendQuery(con, query)
     result = dbFetch(cell_type)
     result = result[order(-result$confidence),]
-    print(result)
     result
   })
   
   render_page <- function() {
-    
     output$table <- DT::renderDataTable(
       DT::datatable(rv$selected_result, options = list(pageLength = 25), 
                     #selection = list(mode = 'multiple', selected = 1:100)
@@ -128,13 +123,10 @@ function(input, output, session) {
                                                         rownames = FALSE))
     
     output$mynetworkid <- renderVisNetwork({
-      
       # If data is empty, return empty
       if (nrow(rv$selected_result) == 0) {
         return(NULL)
       }
-      # print(nrow(rv$selected_result))
-      
       
       result_top100 = head(rv$selected_result, input$max_nodes)
       links <- result_top100
@@ -145,7 +137,6 @@ function(input, output, session) {
       #to_nodes = as.data.frame(unique(links$to), col.names = c('id'), color.background = "lightblue") 
       
       #id = union(from_nodes,to_nodes)
-      #print(from_nodes)
       
       target_genes = unique(links$to)
       
@@ -176,15 +167,6 @@ function(input, output, session) {
       tf_nodes$x = tf_circle_radius*cos(seq(0, 2*pi, by = 2*pi/nrow(tf_nodes)))[-1]
       tf_nodes$y = tf_circle_radius*sin(seq(0, 2*pi, by = 2*pi/nrow(tf_nodes)))[-1]
       
-      # if (length(tf_nodes) > length(target_nodes)) {
-      #   
-      #   
-      # }
-      
-      # print(target_nodes)
-      
-      # vis.nodes <- nodes
-      # print(dim(rbind(target_nodes, tf_nodes)))
       vis.nodes <- rbind(target_nodes, tf_nodes)
       vis.links <- links
       
@@ -221,15 +203,19 @@ function(input, output, session) {
   })
   
   observeEvent(input$checkbox, {
+    target_gene_list = unlist(strsplit(toupper(input$target_genes), split="\n"))
     
     if (length(input$checkbox) > 0) {
       select_target_genes <- strsplit(input$checkbox, " ")
     } else {
       select_target_genes = c()
     }
+    
+    select_target_genes <- c(select_target_genes, target_gene_list)
+    
     rv$selected_result = rv$result[rv$result$target %in% select_target_genes,]
   }, ignoreNULL= F)
-  
+
   observeEvent(input$deselect_all, {
     updateCheckboxGroupInput(session, "checkbox", selected = character(0))
   })
