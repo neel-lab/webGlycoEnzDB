@@ -13,6 +13,7 @@ db_uid = "postgres"         # Specify your username. e.g. "admin"
 db_pwd = "847468"        # Specify your password. e.g. "xxx"
 cell_type_config_file = "../configs/cell_types_dropdown_config_glyco.csv"
 glycoEnzOnto_file = "../configs/glycoEnzKO.csv"
+cell_type_to_show = "MI_All"
 
 con <- dbConnect(RPostgres::Postgres(),
                  dbname = database_name,
@@ -29,7 +30,7 @@ function(input, output, session) {
   
   get_data <- reactive({
     
-    cell_types = cell_main_types[cell_main_types['tissue'] == 'all', 'cell_type_id']
+    cell_types = cell_main_types[cell_main_types['tissue'] == cell_type_to_show, 'cell_type_id']
     # cell_types = cell_main_types[cell_main_types['tissue'] == input$choose_main & cell_main_types['cellType'] == input$choose_subtype, 'cell_type_id']
     tags_txt = paste0(shQuote(cell_types), collapse=", ")
     
