@@ -250,7 +250,11 @@
 
     <div>
         <h4>Notes:</h4>
-        <p>Notes text here</p>
+        <ul>
+        {% for comment in gene_general_info.Comments %} 
+        <li>{{comment|safe}}</li>
+        {% endfor %}
+    </ul>
     </div>
     <hr>
     <div>
@@ -315,6 +319,8 @@
     <div class="overlay_gene_html" ></div> 
     <iframe srcdoc='{{ gene_html }}' height="600px" width="601px" scrolling="no"></iframe>
     <!-- {{gene_general_info}} -->
+
+    <!-- <iframe src='{{ figure_url }}' height="600px" width="1000px" scrolling="no"></iframe> -->
 
     <hr>
     <!-- <iframe src="http://127.0.0.1:5000" height="1000px" width="100%" scrolling="no"></iframe> -->

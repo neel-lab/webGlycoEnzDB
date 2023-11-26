@@ -10,7 +10,9 @@ from django.http import HttpResponse
 from .models import GlycoOnto
 
 GENE_INFORMATION_FILE = '../data/gene_general_information.csv'
+GENE_COMMENT_FILE = '../data/gene_other_information.csv'
 HTML_FOLDER = '../data/html600/'
+FIGURE_FOLDER = '../data/figures/'
 
 
 def index(request):
@@ -130,9 +132,12 @@ def search(request, gene_name=''):
     # General information
     gene_general_info = {'message': "Welcome to GlycoEnzDB"}
     gene_html = ""
+    figure_html = ""
     if gene_name:
         gene_general_info = get_gene_general_info(GENE_INFORMATION_FILE, gene_name)
+        gene_general_info['Comments'] = get_gene_other_info(GENE_COMMENT_FILE, gene_name)
         gene_html = get_gene_html(HTML_FOLDER, gene_name)
+        figure_url = f'/static/{gene_name}/{gene_name}.html'
      
 
     return render(request, 'GlycoEnzDB.html', {'onto_graph_pathways': onto_graph_pathways,
@@ -140,7 +145,8 @@ def search(request, gene_name=''):
                                                'gene_names': dumps(gene_names),
                                                'gene_name':gene_name,
                                                'gene_general_info': gene_general_info,
-                                               'gene_html': gene_html})
+                                               'gene_html': gene_html,
+                                               'figure_url': figure_url})
 
 
 def get_gene_general_info(filename, gene_name):
@@ -153,7 +159,7 @@ def get_gene_general_info(filename, gene_name):
         general_information_df =  pd.read_csv(file_path)
         general_information_df.fillna("", inplace=True)
         general_information_df = general_information_df.loc[general_information_df['Gene Name'] == gene_name]
-        general_information_df['HGNC number']
+
         if len(general_information_df) > 0:
             gene_general_info = general_information_df.to_dict('records')[0]
             gene_general_info['HGNC number'] = re.sub("[^0-9]", "", gene_general_info['HGNC number'])
@@ -171,6 +177,27 @@ def get_gene_general_info(filename, gene_name):
             gene_general_info['message'] = "Invalid Gene Name in the URL"
 
         return gene_general_info
+
+def get_gene_other_info(filename, gene_name):
+       # Get the current directory
+        current_dir = os.path.dirname(__file__)
+
+        # Construct the path to the file
+        file_path = os.path.join(current_dir, filename)        
+
+        other_info_df =  pd.read_csv(file_path)
+        other_info_df.fillna("", inplace=True)
+        other_info_df = other_info_df.loc[other_info_df['GeneSymbol'] == gene_name]
+
+        comments = []
+        if len(other_info_df) > 0:
+            comment = other_info_df['Comments'].iloc[0]
+            for c in comment.split("*"):
+                c = c.strip()
+                if c:
+                    comments.append(c)
+        return comments
+
 
 def get_gene_html(filename, gene_name):
     
