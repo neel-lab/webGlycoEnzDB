@@ -13,7 +13,7 @@ db_uid = "postgres"         # Specify your username. e.g. "admin"
 db_pwd = "847468"        # Specify your password. e.g. "xxx"
 cell_type_config_file = "../configs/cell_types_dropdown_config_glyco.csv"
 glycoEnzOnto_file = "../configs/glycoEnzKO.csv"
-cell_type_to_show = "MI_All"
+cell_type_to_show = "all"
 
 con <- dbConnect(RPostgres::Postgres(),
                  dbname = database_name,
@@ -33,7 +33,7 @@ function(input, output, session) {
     cell_types = cell_main_types[cell_main_types['tissue'] == cell_type_to_show, 'cell_type_id']
     # cell_types = cell_main_types[cell_main_types['tissue'] == input$choose_main & cell_main_types['cellType'] == input$choose_subtype, 'cell_type_id']
     tags_txt = paste0(shQuote(cell_types), collapse=", ")
-    
+    print(tags_txt)
     #glycogenes = glycoEnzOnto[!glycoEnzOnto[input$choose_path]=="", input$choose_path]
     glycogenes = apply(glycoEnzOnto[input$choose_path], 1, function(x) paste(x[!is.na(x)], collapse = ", ")) 
     glycogenes = glycogenes[!glycogenes==""]
@@ -105,7 +105,7 @@ function(input, output, session) {
     output$table <- DT::renderDataTable(
       DT::datatable(rv$selected_result, options = list(pageLength = 25), 
                     #selection = list(mode = 'multiple', selected = 1:100)
-                    colnames = c("Transcription Factors", "Glycogenes", "NMI"),
+                    colnames = c("Transcription Factors", "Glycogenes", "MI"),
                     rownames = FALSE
       )
     )
