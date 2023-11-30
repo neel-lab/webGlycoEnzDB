@@ -132,7 +132,7 @@ def search(request, gene_name=''):
     # General information
     gene_general_info = {'message': "Welcome to GlycoEnzDB"}
     gene_html = ""
-    figure_html = ""
+    figure_url = ""
     if gene_name:
         gene_general_info = get_gene_general_info(GENE_INFORMATION_FILE, gene_name)
         gene_general_info['Comments'] = get_gene_other_info(GENE_COMMENT_FILE, gene_name)

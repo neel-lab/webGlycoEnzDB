@@ -21,7 +21,7 @@ function opened_submenu() {
     const key = localStorage.getItem('key');
 
     const currentUrl = window.location.href;
-    const pattern = /^https?:\/\/(?:www\.)?.+?\/GlycoEnzDB\/human\/.+\/?$/i;
+    const pattern = /^https?:\/\/(?:www\.)?.+?\/glycoenzdb\/human\/.+\/?$/i;
 
     const part = currentUrl.split("/");
     part.pop();
