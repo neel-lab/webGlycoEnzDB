@@ -76,9 +76,18 @@ Note: `use host.docker.internal` instead of `localhost` when running from docker
     ```nohup python dash_trial_ind.py &```
  
 
-
+/home/vghosh/.local/bin/gunicorn -b 0.0.0.0:8000 -w 4 -D djangoProject.wsgi:application
 
 Change Log:
 - April 16, 2023: 
     1. Removed _1 to _9 from the excel file / database so that the display name is correct
     2. Moved elongation pathways: Chondrotin/Dermatan….; Heparin…./ and Keratan sulfate elongation to be part of ‘Elongation” subclass rather than “Biosynthesis/core/GAG_1” subclass.
+
+View DB in server:
+```
+sudo su - postgres
+psql
+```
+
+Start GlcyoEnzDB in server:
+sudo systemctl start glycoenzdb

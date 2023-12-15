@@ -161,6 +161,6 @@ window.onload = function() {
     var segments = currentUrl.split('/');
     var subpath = segments[segments.length - 2];
     console.log(subpath)
-    var newUrl = currentUrl.replace(/:\d+/, ':5000') + `?gene_name=${subpath}`;
+    var newUrl = `/violinplots?gene_name=${subpath}`;
     ele.src = newUrl;
   }

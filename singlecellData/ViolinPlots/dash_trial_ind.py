@@ -29,7 +29,7 @@ gene_expr_wmeta['compartment'] = gene_expr_wmeta['compartment'].astype('category
 gene_expr_wmeta['tissue_in_publication'] = gene_expr_wmeta['tissue_in_publication'].astype('category')
 gene_expr_wmeta['cell_type'] = gene_expr_wmeta['cell_type'].astype('category')
 
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = Dash(__name__, requests_pathname_prefix='/violinplots/', external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 # %% App title
 # overall_title = html.H1(sel_gene, style={'textAlign': 'center'})
@@ -194,6 +194,8 @@ def update_graph2(sel_comp, sel_tissue, search):
 
     return fig
 
+
+server = app.server
 
 if __name__ == '__main__':
     app.run_server(host='0.0.0.0', debug=True, port=5000)

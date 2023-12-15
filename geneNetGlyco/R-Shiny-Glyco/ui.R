@@ -12,6 +12,10 @@ header <- dashboardHeader(
       icon("external-link"),
       "bioRxiv Link"
     )
+  ),
+  tags$li(
+    class = "dropdown",
+    downloadLink("downloadPDFManual", HTML(paste0("User Manual &nbsp;", icon("download"))))
   )
 )
 
@@ -36,7 +40,7 @@ body <- dashboardBody(
                              cols = NULL, rows = NULL, placeholder = "Glycogenes (newline seperated)", resize = NULL),
                # textAreaInput('transcription_factors', 'Transcription Factors', value = "", width = NULL, height = "150px",
                #               cols = NULL, rows = NULL, placeholder = "Transcription Factors (newline seperated)", resize = NULL),
-               numericInput('percentile', "MI Pct. Threshold", value=99, min = 0, max = 100, width = NULL),
+               numericInput('percentile', "NMI Pct. Threshold", value=99, min = 0, max = 100, width = NULL),
                actionButton("searchButton", "Search")
            ),
            box(width = NULL, status = "warning",

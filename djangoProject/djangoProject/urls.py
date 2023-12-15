@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.contrib.staticfiles.views import serve
 
 urlpatterns = [
-    path('GlycoEnzDB/', include('webGlycoEnzDB.urls')),
+    path('glycoenzdb/', include('webGlycoEnzDB.urls')),
     path('admin/', admin.site.urls),
     path('static/<path:path>', serve),  # Remove
 ]

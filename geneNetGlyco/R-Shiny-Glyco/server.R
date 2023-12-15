@@ -241,6 +241,14 @@ function(input, output, session) {
                 choices = colnames(glycoEnzOnto))
   })
   
+  output$downloadPDFManual <- downloadHandler(
+    filename = function() {
+      "GlycoTF Manual"  # Replace with your PDF file name
+    },
+    content = function(file) {
+      file.copy("GlycoTF Manual.pdf", file)  # Path to the PDF file in the www directory
+    }
+  )
 }
 
 
