@@ -104,3 +104,40 @@ li .submenu{
     top:600px;  /* your iframe height */
     margin-top:-600px;  /* your iframe height */
  }
+
+ .svg-object {
+  width: 100%; /* Scale the object to its parent container's width */
+  height: auto; /* Allow the height to adjust according to the width */
+  display: block; /* Ensures proper inline rendering */
+}
+
+/* CSS */
+.image-container {
+  max-width: 100%; /* Ensure the container adjusts to the available width */
+  overflow: hidden; /* Hide overflowing image parts if any */
+}
+
+.image-container img {
+  width: 100%; /* Make the image fill the container's width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any default inline spacing */
+  max-height: 500px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.tf_table table {
+  border-collapse: collapse;
+  width: 20%;
+  max-width: 40%; /* Adjust based on container needs */
+  font-size: 12px; /* Example font size */
+  table-layout: auto;
+}
+
+.tf_table th, .tf_table td {
+  border: 1px solid #000; /* Example border style */
+  padding: 8px; /* Example padding */
+  text-align: left; /* Example alignment */
+}

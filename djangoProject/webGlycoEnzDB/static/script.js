@@ -164,3 +164,28 @@ window.onload = function() {
     var newUrl = `/violinplots?gene_name=${subpath}`;
     ele.src = newUrl;
   }
+
+  // Wait for the DOM content to load
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the SVG object
+    const svgObject = document.getElementById("svg-object");
+
+    // Function to adjust SVG dimensions based on parent container's width
+    function resizeSvg() {
+        if (!svgObject) {
+            return
+        }
+        const parentWidth = svgObject.parentElement.clientWidth;
+        svgObject.style.width = parentWidth + "px";
+        // Calculate the height to maintain the original aspect ratio
+        const originalWidth = 1500; // Replace this with the original width of your SVG
+        const originalHeight = svgObject.contentDocument.documentElement.getAttribute("height");
+        const aspectRatio = originalHeight / originalWidth;
+        const newHeight = Math.round(parentWidth * aspectRatio);
+        svgObject.style.height = newHeight + "px";
+    }
+
+    // Call resize function on initial load and resize events
+    resizeSvg();
+    window.addEventListener("resize", resizeSvg);
+});

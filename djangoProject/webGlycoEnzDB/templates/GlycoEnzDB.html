@@ -257,10 +257,13 @@
     </ul>
     </div>
     <hr>
-    <div>
+    <div style="max-width: 1600px;">
     <h4>Catalytic Activity</h4>
         <div class="box">
             <!-- {{gene_html}} -->
+            <div class="image-container">
+                <img src="{% static reaction_img %}" alt="Reaction Image">
+            </div>
         </div>
     </div>
 
@@ -316,8 +319,16 @@
     <hr>
     <!-- Overlay to prevent zoom in iframe -->
     <!-- Use onClick="style.pointerEvents='none'" for enabling interaction after click -->
-    <div class="overlay_gene_html" ></div> 
-    <iframe srcdoc='{{ gene_html }}' height="600px" width="601px" scrolling="no"></iframe>
+    <div class="flex-container">
+        <div>
+            <div class="overlay_gene_html" ></div> 
+            <iframe srcdoc='{{ gene_html }}' height="600px" width="601px" scrolling="no"></iframe>
+        </div>
+        <div class="tf_table">
+            <h4 style="text-align: center;">Top 10 TFs</h4>
+            {{ tf_table_html | safe }}
+        </div> 
+    </div>
     <!-- {{gene_general_info}} -->
 
     <!-- <iframe src='{{ figure_url }}' height="600px" width="1000px" scrolling="no"></iframe> -->

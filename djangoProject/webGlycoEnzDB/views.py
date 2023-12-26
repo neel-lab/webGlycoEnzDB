@@ -13,6 +13,7 @@ GENE_INFORMATION_FILE = '../data/gene_general_information.csv'
 GENE_COMMENT_FILE = '../data/gene_other_information.csv'
 HTML_FOLDER = '../data/html600/'
 FIGURE_FOLDER = '../data/figures/'
+MI_RESULTS_FILE = '../data/mi_results.txt'
 
 
 def index(request):
@@ -133,11 +134,15 @@ def search(request, gene_name=''):
     gene_general_info = {'message': "Welcome to GlycoEnzDB"}
     gene_html = ""
     figure_url = ""
+    reaction_img = ""
+    tf_table_html = ""
     if gene_name:
         gene_general_info = get_gene_general_info(GENE_INFORMATION_FILE, gene_name)
         gene_general_info['Comments'] = get_gene_other_info(GENE_COMMENT_FILE, gene_name)
         gene_html = get_gene_html(HTML_FOLDER, gene_name)
         figure_url = f'/static/{gene_name}/{gene_name}.html'
+        reaction_img = f'/reaction_imgs/{gene_name}.png' 
+        tf_table_html = get_tf_html(MI_RESULTS_FILE, gene_name)
      
 
     return render(request, 'GlycoEnzDB.html', {'onto_graph_pathways': onto_graph_pathways,
@@ -146,7 +151,9 @@ def search(request, gene_name=''):
                                                'gene_name':gene_name,
                                                'gene_general_info': gene_general_info,
                                                'gene_html': gene_html,
-                                               'figure_url': figure_url})
+                                               'figure_url': figure_url,
+                                               'reaction_img': reaction_img,
+                                               'tf_table_html': tf_table_html})
 
 
 def get_gene_general_info(filename, gene_name):
@@ -211,4 +218,19 @@ def get_gene_html(filename, gene_name):
             return html_string
     except FileNotFoundError:
         return ""
+
+def get_tf_html(filename, gene_name):
+    
+    current_dir = os.path.dirname(__file__)
+    # Construct the path to the file
+    file_path = os.path.join(current_dir, filename)
+
+    try:
+        tf_df = pd.read_csv(file_path, sep='\t')
+        tf_df.columns = ['TF','Gene', 'Score']
+        tf_df = tf_df[tf_df['Gene'] == gene_name]
+        tf_table_html = tf_df[['TF', 'Score']].sort_values(by='Score', ascending=False).head(10).to_html(index=False)
+        return tf_table_html
+    except FileNotFoundError:
+        return ""      
 
