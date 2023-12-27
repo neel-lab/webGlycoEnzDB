@@ -234,6 +234,9 @@
     {% else %}
     <h3>Gene Details: {{ gene_general_info|get:"Gene Name" }}</h3>
     <hr>
+    {% if figure_url %}
+    <iframe src='{{ figure_url }}' height="600px" width="1000px" scrolling="no"></iframe>
+    {% endif %}
     <h4>General Information</h4>
     <div><b>Gene Name:</b> {{ gene_general_info|get:"Gene Name" }} ({{ gene_general_info|get:"Recommended Name"}}) </div>
     <div><b>Synonym:</b> {{ gene_general_info|get:"Gene synonym" }}</div>
@@ -330,8 +333,6 @@
         </div> 
     </div>
     <!-- {{gene_general_info}} -->
-
-    <!-- <iframe src='{{ figure_url }}' height="600px" width="1000px" scrolling="no"></iframe> -->
 
     <hr>
     <!-- <iframe src="http://127.0.0.1:5000" height="1000px" width="100%" scrolling="no"></iframe> -->
