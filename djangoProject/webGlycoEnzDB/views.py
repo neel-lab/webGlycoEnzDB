@@ -37,34 +37,34 @@ def search(request, gene_name=''):
     for func in functions:
         onto_graph_functions[func] = {}
         sub_functions = onto_df.loc[onto_df['function'] == func]['sub_function'].unique()
-        gene_names[func + '_NULL_NULL_NULL'] = list(onto_df.loc[onto_df['function'] == func][
-                                                                  'gene_name'])
+        gene_names[func + '_NULL_NULL_NULL'] = sorted(list(onto_df.loc[onto_df['function'] == func][
+                                                                  'gene_name']))
 
         for s_func in sub_functions:
             onto_graph_functions[func][s_func] ={}
             sub_sub_functions = onto_df.loc[(onto_df['function'] == func) &
                                             (onto_df['sub_function'] == s_func)]['sub_sub_function'].unique()
 
-            gene_names[func + '_' + s_func + '_NULL_NULL'] = list(onto_df.loc[(onto_df['function'] == func) &
+            gene_names[func + '_' + s_func + '_NULL_NULL'] = sorted(list(onto_df.loc[(onto_df['function'] == func) &
                                                                               (onto_df['sub_function'] == s_func)][
-                                                                      'gene_name'])
+                                                                      'gene_name']))
 
             for s_s_func in sub_sub_functions:
                 onto_graph_functions[func][s_func][s_s_func] = {}
                 sub_sub_sub_functions = onto_df.loc[(onto_df['function'] == func)
                                                                                 & (onto_df['sub_function'] == s_func)
                                                                                 & (onto_df['sub_sub_function'] == s_s_func)]['sub_sub_sub_function'].unique()
-                gene_names[func + '_' + s_func + '_' + s_s_func + '_NULL'] = list(
+                gene_names[func + '_' + s_func + '_' + s_s_func + '_NULL'] = sorted(list(
                     onto_df.loc[(onto_df['function'] == func)
                                 & (onto_df['sub_function'] == s_func)
-                                & (onto_df['sub_sub_function'] == s_s_func)]['gene_name'].unique())
+                                & (onto_df['sub_sub_function'] == s_s_func)]['gene_name'].unique()))
                 
                 for s_s_s_func in sub_sub_sub_functions:
                     onto_graph_functions[func][s_func][s_s_func][s_s_s_func] = \
-                        list(onto_df.loc[(onto_df['function'] == func)
+                        sorted(list(onto_df.loc[(onto_df['function'] == func)
                                     & (onto_df['sub_function'] == s_func)
                                     & (onto_df['sub_sub_function'] == s_s_func)
-                                    & (onto_df['sub_sub_sub_function'] == s_s_s_func)]['gene_name'].unique())
+                                    & (onto_df['sub_sub_sub_function'] == s_s_s_func)]['gene_name'].unique()))
 
                     gene_names[func + '_' + s_func + '_' + s_s_func + '_' + s_s_s_func] = \
                         onto_graph_functions[func][s_func][s_s_func][s_s_s_func]
@@ -74,25 +74,25 @@ def search(request, gene_name=''):
     for path in pathways:
         onto_graph_pathways[path] = {}
         sub_paths = onto_df.loc[onto_df['pathway'] == path]['sub_pathway'].unique()
-        gene_names[path + '_NULL_NULL_NULL_NULL_NULL'] = list(onto_df.loc[onto_df['pathway'] == path][
-                                                                  'gene_name'])
+        gene_names[path + '_NULL_NULL_NULL_NULL_NULL'] = sorted(list(onto_df.loc[onto_df['pathway'] == path][
+                                                                  'gene_name']))
 
         for s_path in sub_paths:
             onto_graph_pathways[path][s_path] ={}
             sub_sub_pathways = onto_df.loc[(onto_df['pathway'] == path) &
                                             (onto_df['sub_pathway'] == s_path)]['sub_sub_pathway'].unique()
 
-            gene_names[path + '_' + s_path + '_NULL_NULL_NULL_NULL'] = list(onto_df.loc[(onto_df['pathway'] == path) &
-                                            (onto_df['sub_pathway'] == s_path)]['gene_name'].unique())
+            gene_names[path + '_' + s_path + '_NULL_NULL_NULL_NULL'] = sorted(list(onto_df.loc[(onto_df['pathway'] == path) &
+                                            (onto_df['sub_pathway'] == s_path)]['gene_name'].unique()))
             for s_s_path in sub_sub_pathways:
                 onto_graph_pathways[path][s_path][s_s_path] = {}
                 sub_sub_sub_pathways = onto_df.loc[(onto_df['pathway'] == path)
                                                     & (onto_df['sub_pathway'] == s_path)
                                                     & (onto_df['sub_sub_pathway'] == s_s_path)][
                     'sub_sub_sub_pathway'].unique()
-                gene_names[path + '_' + s_path + '_' + s_s_path + '_NULL_NULL_NULL'] = list(onto_df.loc[(onto_df['pathway'] == path)
+                gene_names[path + '_' + s_path + '_' + s_s_path + '_NULL_NULL_NULL'] = sorted(list(onto_df.loc[(onto_df['pathway'] == path)
                                                     & (onto_df['sub_pathway'] == s_path)
-                                                    & (onto_df['sub_sub_pathway'] == s_s_path)]['gene_name'].unique())
+                                                    & (onto_df['sub_sub_pathway'] == s_s_path)]['gene_name'].unique()))
                 
                 for s_s_s_path in sub_sub_sub_pathways:
                     onto_graph_pathways[path][s_path][s_s_path][s_s_s_path] = {}
@@ -101,10 +101,10 @@ def search(request, gene_name=''):
                                                         & (onto_df['sub_sub_pathway'] == s_s_path)
                                                         & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)][
                         'sub_sub_sub_sub_pathway'].unique()
-                    gene_names[path + '_' + s_path + '_' + s_s_path + '_' + s_s_s_path + '_NULL_NULL'] = list(onto_df.loc[(onto_df['pathway'] == path)
+                    gene_names[path + '_' + s_path + '_' + s_s_path + '_' + s_s_s_path + '_NULL_NULL'] = sorted(list(onto_df.loc[(onto_df['pathway'] == path)
                                                         & (onto_df['sub_pathway'] == s_path)
                                                         & (onto_df['sub_sub_pathway'] == s_s_path)
-                                                        & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)]['gene_name'].unique())
+                                                        & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)]['gene_name'].unique()))
                     
                     for s_s_s_s_path in sub_sub_sub_sub_pathways:
                         onto_graph_pathways[path][s_path][s_s_path][s_s_s_path][s_s_s_s_path] = {}
@@ -114,20 +114,20 @@ def search(request, gene_name=''):
                                                             & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)
                                                             & (onto_df['sub_sub_sub_sub_pathway'] == s_s_s_s_path)][
                             'sub_sub_sub_sub_sub_pathway'].unique()
-                        gene_names[path + '_' + s_path + '_' + s_s_path + '_' + s_s_s_path + '_' + s_s_s_s_path +'_NULL'] = list(onto_df.loc[(onto_df['pathway'] == path)
+                        gene_names[path + '_' + s_path + '_' + s_s_path + '_' + s_s_s_path + '_' + s_s_s_s_path +'_NULL'] = sorted(list(onto_df.loc[(onto_df['pathway'] == path)
                                                             & (onto_df['sub_pathway'] == s_path)
                                                             & (onto_df['sub_sub_pathway'] == s_s_path)
                                                             & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)
-                                                            & (onto_df['sub_sub_sub_sub_pathway'] == s_s_s_s_path)]['gene_name'].unique())
+                                                            & (onto_df['sub_sub_sub_sub_pathway'] == s_s_s_s_path)]['gene_name'].unique()))
 
                         for s_s_s_s_s_path in sub_sub_sub_sub_sub_pathways:
                             onto_graph_pathways[path][s_path][s_s_path][s_s_s_path][s_s_s_s_path][s_s_s_s_s_path] = \
-                                list(onto_df.loc[(onto_df['pathway'] == path)
+                                sorted(list(onto_df.loc[(onto_df['pathway'] == path)
                                             & (onto_df['sub_pathway'] == s_path)
                                             & (onto_df['sub_sub_pathway'] == s_s_path)
                                             & (onto_df['sub_sub_sub_pathway'] == s_s_s_path)
                                             & (onto_df['sub_sub_sub_sub_pathway'] == s_s_s_s_path )
-                                            & (onto_df['sub_sub_sub_sub_sub_pathway'] == s_s_s_s_s_path)]['gene_name'].unique())
+                                            & (onto_df['sub_sub_sub_sub_sub_pathway'] == s_s_s_s_s_path)]['gene_name'].unique()))
 
                             gene_names[path + '_' + s_path + '_' + s_s_path + '_' + s_s_s_path + '_' + s_s_s_s_path + '_' + s_s_s_s_s_path] = \
                                 onto_graph_pathways[path][s_path][s_s_path][s_s_s_path][s_s_s_s_path][s_s_s_s_s_path]
@@ -144,7 +144,6 @@ def search(request, gene_name=''):
         figure_url = get_pathway_fig_url(PATHWAY_GENE_MAPPING_FILE, gene_name)
         reaction_img = f'/reaction_imgs/{gene_name}.png' 
         tf_table_html = get_tf_html(MI_RESULTS_FILE, gene_name)
-     
 
     return render(request, 'GlycoEnzDB.html', {'onto_graph_pathways': onto_graph_pathways,
                                                'onto_graph_functions': onto_graph_functions,
@@ -237,12 +236,12 @@ def get_tf_html(filename, gene_name):
 
 def get_pathway_fig_url(filename, gene_name):
      
-    PATHWAY_GENE_MAPPING = {'Nucleotide': 'HK1, HK2, HK3, GCK, G6PC1, GPI, MPI, PMM1, PMM2, GMPPA, GMPPB, GNPDA1, GNPDA2, NAGK, UAP1, GNPNAT1, GFPT1, GFPT2, GALK2, NANS, CMAS, DPM1, DPM2, DPM3, GMDS, TSTA3, FPGT, FCGS, GNE, GALE, GALK1, GALT, ALG5, UGP2, HGDH, UXS1, PGM1, PGM2, PGM3, CMAH, RENBP'}
+    PATHWAY_GENE_MAPPING = {'Nucleotide': 'HK1,HK2,HK3,GCK,G6PC1,GPI,MPI,PMM1,PMM2,GMPPA,GMPPB,GNPDA1,GNPDA2,NAGK,UAP1,GNPNAT1,GFPT1,GFPT2,GALK2,NANS,CMAS,DPM1,DPM2,DPM3,GMDS,TSTA3,FPGT,FCGS,GNE,GALE,GALK1,GALT,ALG5,UGP2,HGDH,UXS1,PGM1,PGM2,PGM3,CMAH,RENBP'}
     url = ''
 
     for p in PATHWAY_GENE_MAPPING:
-        if gene_name in PATHWAY_GENE_MAPPING[p].split(','):
-            url = f'/static/pathway_figures/{p}/{p}.html'
+        if gene_name in PATHWAY_GENE_MAPPING[p].replace(' ', '').split(','):
+            url = f'/glycoenzdb/static/pathway_figures/{p}/{p}.html'
             return url
     return url
          

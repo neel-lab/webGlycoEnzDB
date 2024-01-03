@@ -18,7 +18,7 @@
 <script src="{% static 'script.js' %}"></script>
 <script type="text/javascript" >
     let gene_names = JSON.parse("{{ gene_names|escapejs }}");
-
+    const gene_search_list = new Set(Object.values(gene_names).flat());
     function showGenes(key) {
         localStorage.setItem('key', key);
         let inner_html = "";
@@ -47,7 +47,7 @@
 </div>
 
 <div class="sidebar card py-2 mb-4">
-    <b>Search By:</b>
+    <b>Select By:</b>
     <button id="btnElement1" onclick="showFunctions()"> Functions</button>
     <button id="btnElement2" onclick="showPathways()"> Pathways</button>
     {# Function Tree Menu below #}
@@ -218,7 +218,10 @@
 <div class="sidebar2">
     <div style="text-align: center; padding-top: 10px;">
         <h4>Gene Names</h4>
+        <input type="text" id="searchInput" placeholder="Search Gene">
+        <div id="suggestions"></div>
     </div>
+    <hr/>
     <div style="text-align: right;">
         <button onclick="resetGenes()" style="margin-right: 10px;">Reset</button>
       </div>
@@ -320,6 +323,10 @@
         {% endfor %}
     </div>
     <hr>
+
+    <iframe id="sc_violin_iframe" height="1000px" width="100%" scrolling="no"></iframe>
+
+    <hr>
     <!-- Overlay to prevent zoom in iframe -->
     <!-- Use onClick="style.pointerEvents='none'" for enabling interaction after click -->
     <div class="flex-container">
@@ -335,8 +342,6 @@
     <!-- {{gene_general_info}} -->
 
     <hr>
-    <!-- <iframe src="http://127.0.0.1:5000" height="1000px" width="100%" scrolling="no"></iframe> -->
-    <iframe id="sc_violin_iframe" height="1000px" width="100%" scrolling="no"></iframe>
     {% endif %}
 </div>
 

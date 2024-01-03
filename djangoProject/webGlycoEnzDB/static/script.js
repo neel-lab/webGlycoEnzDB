@@ -189,3 +189,46 @@ document.addEventListener("DOMContentLoaded", function() {
     resizeSvg();
     window.addEventListener("resize", resizeSvg);
 });
+
+
+// Gene Search
+
+document.addEventListener("DOMContentLoaded", function() {
+
+const searchInput = document.getElementById('searchInput');
+const suggestions = document.getElementById('suggestions');
+
+
+searchInput.addEventListener('input', function() {
+    const userInput = this.value.toLowerCase();
+    const matchedWords = Array.from(gene_search_list).filter(word => word.toLowerCase().includes(userInput));
+    displaySuggestions(matchedWords);
+});
+
+function displaySuggestions(matches) {
+    if (matches.length === 0) {
+        suggestions.style.display = 'none';
+        return;
+    }
+
+    const suggestionsHTML = matches.map(match => `<div class="suggestion"><a href="/glycoenzdb/human/${match}">${match}</a></div>`).join('');
+    suggestions.innerHTML = suggestionsHTML;
+    suggestions.style.display = 'block';
+
+    const suggestionItems = document.querySelectorAll('.suggestion');
+    suggestionItems.forEach(item => {
+        item.addEventListener('click', function() {
+            searchInput.value = this.textContent;
+            suggestions.style.display = 'none';
+        });
+    });
+}
+
+// Hide suggestions when clicking outside the input and suggestions div
+document.addEventListener('click', function(e) {
+    if (e.target !== searchInput && e.target !== suggestions) {
+        suggestions.style.display = 'none';
+    }
+});
+
+});

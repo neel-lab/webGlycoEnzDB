@@ -141,3 +141,27 @@ li .submenu{
   padding: 8px; /* Example padding */
   text-align: left; /* Example alignment */
 }
+
+#searchInput {
+  padding: 8px;
+  width: 150px;
+  font-size: 16px;
+}
+#suggestions {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  max-height: 500px;
+  overflow-y: auto;
+  width: 150px;
+  margin-left: 23px;
+  z-index: 10;
+}
+.suggestion {
+  padding: 8px;
+  cursor: pointer;
+}
+.suggestion:hover {
+  background-color: #e9e9e9;
+}
