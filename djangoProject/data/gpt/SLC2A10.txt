@@ -1,0 +1,21 @@
+Write a 100-350 word essay about human SLC2A10: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+Human SLC2A10, also known as GLUT10, is a member of the GLUT family of facilitative glucose transporters. Unlike its more widely studied counterparts, such as GLUT1, GLUT10 has distinct characteristics and functions. Primarily, it is involved in the transport of dehydroascorbic acid (DHA), the oxidized form of vitamin C, as well as glucose across cell membranes.
+
+SLC2A10 is predominantly localized in the mitochondria-associated membranes, suggesting a role in maintaining mitochondrial function and redox status. The transport of DHA into cells is crucial for maintaining intracellular vitamin C levels, which is vital for numerous cellular functions, including antioxidant defense, collagen synthesis, and immune function. SLC2A10 may also facilitate glucose transport, although its role in glucose metabolism is less pronounced compared to other GLUT transporters.
+
+Mutations in the SLC2A10 gene are linked to arterial tortuosity syndrome (ATS), a rare connective tissue disorder. ATS is characterized by elongation, twisting, and tortuosity of major arteries, predisposing individuals to arterial stenosis, aneurysms, and dissections. The exact mechanism by which SLC2A10 mutations lead to ATS is not fully understood, but it is believed to involve disruptions in collagen and elastin synthesis and maintenance, possibly influenced by altered vitamin C transport and mitochondrial dysfunction.
+
+For more information on SLC2A10 and its association with arterial tortuosity syndrome, the following key references are recommended:
+
+1. Coucke, P.J., et al. (2006). "Mutations in the facilitative glucose transporter GLUT10 alter angiogenesis and cause arterial tortuosity syndrome." Nature Genetics, 38(4), 452-457.
+
+2. Zaidi, S.H.E., et al. (2005). "Dehydroascorbic acid transport by GLUT10 facilitates vitamin C accumulation in mitochondria." Biochemical Journal, 386(Pt 1), 145-151.
+
+3. Ritelli, M., et al. (2014). "Clinical and molecular characterization of 40 patients with classic arterial tortuosity syndrome." American Journal of Medical Genetics Part A, 164A(1), 58-64.
+
+4. Callewaert, B., et al. (2008). "Arterial tortuosity syndrome: clinical and molecular findings in 12 newly identified families." Human Mutation, 29(1), 150-158.
+
+5. Loeys, B.L., et al. (2005). "A syndrome of altered cardiovascular, craniofacial, neurocognitive and skeletal development caused by mutations in TGFBR1 or TGFBR2." Nature Genetics, 37(3), 275-281.
+
+These references provide insights into the biochemical function of SLC2A10, its role in vitamin C transport and potential glucose metabolism, and the implications of its dysfunction in conditions such as arterial tortuosity syndrome.

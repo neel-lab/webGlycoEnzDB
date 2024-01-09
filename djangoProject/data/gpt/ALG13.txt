@@ -1,0 +1,15 @@
+Write a 100-350 word essay about human ALG13: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human ALG13, an essential gene for viability, plays a critical role in the N-linked glycosylation pathway, a process fundamental to protein folding and function. ALG13, lacking any hydrophobic membrane-spanning domain, is the catalytic subunit of the heterodimeric UDP-GlcNAc transferase complex. Its endoplasmic reticulum (ER) localization requires interaction with the integral membrane protein ALG14. This interaction is crucial as neither the human homologs of ALG13 nor ALG14 can function independently in complementing their yeast homologs' deletion​​​​.
+
+ALG13 functions in tandem with ALG14 to catalyze the addition of N-acetyl-D-glucosamine to dolichol-linked oligosaccharides, an early and vital step in the N-glycosylation pathway. The complex formed by ALG13 and ALG14 is essential for initiating N-glycosylation at the ER membrane. The cytosolic soluble form of ALG13 is inactive unless bound to ALG14, suggesting that the formation of the ALG13/14 hetero-oligomer is vital for its enzymatic activity​​.
+
+Mutations in ALG13 have been linked to a congenital disorder of glycosylation, known as ALG13-CDG (CDG-Ir). This disorder was identified in a group of CDG-I patients using whole-exome sequencing technology. The phenotypic spectrum of this disorder is broad and can be severe, leading to infant mortality in some cases​​.
+
+For more detailed information on human ALG13, the following references are recommended:
+
+Gao et al. (2005): Study on the essential nature of ALG13 and ALG14 genes and their role in protein glycosylation.
+Chantret et al. (2005); Noffz et al. (2009); Lu et al. (2012): Research on the interaction of ALG13 and ALG14 and their function in the N-glycosylation pathway.
+Timal et al. (2012): Identification of ALG13-CDG in patients using whole-exome sequencing.
+These sources provide a comprehensive understanding of the structure, function, and clinical significance of ALG13, particularly in the context of congenital disorders of glycosylation​​​​.

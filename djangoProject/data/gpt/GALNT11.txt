@@ -1,0 +1,13 @@
+Write a 100-350 word essay about human GALNT11: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human GALNT11, a member of the UDP-N-acetyl-alpha-D-galactosamine:polypeptide N-acetylgalactosaminyltransferase (ppGalNAc-T) family, plays a vital role in the process of O-glycosylation. This process involves the addition of a carbohydrate moiety, typically N-acetylgalactosamine (GalNAc), to the serine or threonine residues in proteins. GALNT11 specifically catalyzes the initial transfer of GalNAc to proteins, a critical step in the formation of mucin-type O-glycans.
+
+GALNT11 is mainly localized in the Golgi apparatus of cells, where it contributes to the glycosylation of proteins. This modification is crucial for various cellular functions, including protein folding, stability, and signaling. The enzyme's activity affects the structure and function of glycoproteins, influencing how they interact with other molecules and their roles in cellular processes.
+
+Deficiency or alterations in GALNT11 function are implicated in various diseases. For instance, mice deficient in GALNT11 exhibit low-molecular-weight proteinuria due to changes in the glycosylation of the proximal tubule endocytic receptor megalin, affecting its ability to bind ligands. This finding suggests a potential role for GALNT11 in renal function and kidney diseases. Furthermore, genome-wide association studies (GWASs) have indicated that a deficiency in GALNT11 may be etiologic in chronic kidney disease, emphasizing its role in the glycosylation of megalin, a major endocytic receptor in renal proximal tubules【39†source】【40†source】.
+
+For more detailed information and research on human GALNT11, its function, pathways, location, and related diseases, the following key scientific references are recommended:
+1. Tian, E., Wang, S., Zhang, L., Zhang, Y., Malicdan, M. C., Mao, Y., Christoffersen, C., Tabak, L. A., Schjoldager, K. T., Ten Hagen, K. G. (2019). "Galnt11 regulates kidney function by glycosylating the endocytosis receptor megalin to modulate ligand binding." Proceedings of the National Academy of Sciences, 116(47), 25196-25202.
+2. Van Tol, W., Wessels, H., Lefeber, D. J. (2019). "O-glycosylation disorders pave the road for understanding the complex human O-glycosylation machinery." Current Opinion in Structural Biology, 56, 107-118.
+3. Additional scientific journals and databases like PubMed, UniProt, or the Human Protein Atlas can provide further insights and recent studies related to GALNT11 and its role in human health and disease【41†source】.

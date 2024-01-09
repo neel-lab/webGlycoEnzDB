@@ -1,0 +1,14 @@
+Write a 100-350 word essay about human B3GAT2: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human B3GAT2 (Beta-1,3-Glucuronyltransferase 2) is an enzyme that participates in important biochemical pathways, particularly in the formation of the HNK-1 (Human Natural Killer-1) carbohydrate epitope. This epitope is found on a variety of cell adhesion molecules and plays a critical role in neural development and function.
+
+The primary activity of B3GAT2 is the transfer of glucuronic acid to substrates, leading to the formation of the HNK-1 structure on glycoconjugates. The presence of the HNK-1 epitope on cell adhesion molecules is crucial for cellular communication in the nervous system and is involved in processes such as learning, memory, and synaptic plasticity.
+
+While there is no direct evidence linking B3GAT2 to human diseases, it has been reported that several intronic single-nucleotide polymorphisms (SNPs) in B3GAT2 are associated with schizophrenia and variations in cortical surface area. This suggests a potential link between B3GAT2 and certain neurological disorders or brain development anomalies.
+
+For more detailed information on human B3GAT2, the following references are recommended:
+
+Jeffries et al. (2003): Research suggesting the association of B3GAT1, a related enzyme, with severe psychiatric phenotypes, and potential implications for B3GAT2.
+Kahler et al. (2011): Study reporting the association of SNPs in B3GAT2 with schizophrenia and cortical surface area.
+These sources provide insights into the potential role of B3GAT2 in neural development and its possible links to psychiatric conditions. Further research and exploration in this area could reveal more about the enzyme's function and its significance in human health and disease​​.

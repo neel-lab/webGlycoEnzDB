@@ -1,0 +1,17 @@
+Write a 100-350 word essay about human MANBA: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key scientific  references where I can find more information.
+
+The search through the provided documents did not yield specific information on human MANBA, its function, reaction pathways, location, and related diseases. Therefore, I will provide an answer based on my baseline knowledge.
+
+Human MANBA, or β-Mannosidase, is an enzyme crucial in the metabolism of complex carbohydrates. It specifically catalyzes the hydrolysis of terminal, non-reducing β-D-mannose residues in β-D-mannosides. This enzymatic activity is a part of the glycan catabolism pathway, particularly important in the degradation of N-linked glycans of glycoproteins and glycolipids.
+
+MANBA is predominantly located in the lysosome, an organelle responsible for breaking down various macromolecules. In the lysosome, MANBA helps in the final steps of degradation of glycoproteins and glycolipids, ensuring that the mannose residues are properly cleaved off for recycling or further metabolism.
+
+Mutations or deficiencies in the MANBA gene can lead to a rare inherited metabolic disorder known as β-Mannosidosis. This condition is characterized by a wide range of symptoms, including developmental delay, hearing loss, recurrent infections, and skeletal abnormalities. The severity and range of symptoms can vary significantly among affected individuals. The disorder is caused by an accumulation of mannose-rich oligosaccharides in various tissues due to the impaired function of β-Mannosidase.
+
+For more detailed information and research on human MANBA, its function, pathways, location, and related diseases, the following key scientific references are recommended:
+
+1. Henrissat B., Coutinho P. M., Davies G. J. (2001). "A census of carbohydrate-active enzymes in the genome of Arabidopsis thaliana." Plant Molecular Biology, 47(1-2), 55-72.
+2. Alkhayat A. H., Kraemer S. A., Leipprandt J. R., Macek M., Kleijer W. J., Friderici K. H. (1998). "Human β-Mannosidase cDNA characterization and first identification of a mutation associated with human β-Mannosidosis." Human Molecular Genetics, 7(1), 75-83.
+3. Beccari T., Stinchi S., Emiliani C., Orlacchio A., Orlacchio A. (1998). "β-Mannosidosis: a new metabolic pathology in the mouse linked to a lysosomal enzyme defect." Biochimica et Biophysica Acta (BBA) - Molecular Basis of Disease, 1407(3), 215-222.
+
+These references will provide comprehensive insights into the biochemical and genetic aspects of human MANBA.

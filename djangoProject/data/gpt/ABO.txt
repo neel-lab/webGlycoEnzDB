@@ -1,0 +1,20 @@
+Write a 100-350 word essay about human ABO: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+The ABO blood group system is one of the most significant and well-studied systems in human biology, particularly in transfusion and transplantation medicine. The ABO antigens, which are the most important blood groups, are produced by specific glycosyltransferases. These enzymes are responsible for the addition of sugar molecules to H antigen, a precursor found on red blood cells and other tissues, creating A and B antigens.
+
+The human ABO gene locus encodes three main alleles: A, B, and O. The A and B alleles encode glycosyltransferases that differ in the sugar they add to the H antigen. The A allele (GTA) adds N-acetylgalactosamine, while the B allele (GTB) adds galactose. The O gene, due to a single-nucleotide deletion, results in a truncated and inactive enzyme, and therefore, no sugar is added to the H antigen. This genetic variation leads to the four basic blood types: A, B, AB, and O​​.
+
+ABO antigens are not only crucial in determining blood compatibility for transfusions and organ transplants, but they also play roles in host-pathogen interactions in infectious diseases and cancer. Associations between ABO blood types and various diseases have been observed, suggesting that ABO antigens may influence susceptibility to certain illnesses​​.
+
+For detailed information on the ABO blood group system, the following references are recommended:
+
+Storry and Olsson (2009): A review of ABO history, genetics, biochemistry, antibodies, and clinical significance.
+Yamamoto et al. (2012): Comprehensive overview of the molecular genetics of ABO, clinical implications, evolution, and diseases.
+Patenude et al. (2002): The first crystal structure of blood group A and B synthesizing enzymes.
+Yamamoto et al. (1995): A seminal paper reporting the genetic basis of the ABO blood group system​​​​.
+These sources provide a comprehensive understanding of the ABO blood group system's genetic and biochemical basis, its role in transfusion and transplantation medicine, and its implications in human health and disease.
+
+
+
+
+

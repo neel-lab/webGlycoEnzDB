@@ -1,0 +1,30 @@
+Write a 100-350 word essay about human GNE: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+Human GNE, or UDP-N-acetylglucosamine 2-epimerase/N-acetylmannosamine kinase, is an essential enzyme in the sialic acid biosynthesis pathway.
+
+Function
+GNE has a dual enzymatic function. Firstly, it catalyzes the conversion of UDP-N-acetylglucosamine (UDP-GlcNAc) to N-acetylmannosamine (ManNAc), and then it phosphorylates ManNAc to ManNAc-6-phosphate. These reactions are crucial steps in the biosynthesis of sialic acid, a key monosaccharide that plays a significant role in cellular functions, such as cell-cell interaction, signaling, and immune response.
+
+Reaction Pathways
+GNE is involved in the biosynthesis of sialic acid, which is a vital component of glycoproteins and glycolipids on the cell surface. Sialic acid is critical for the stability and function of many proteins and is involved in processes such as cell adhesion, receptor activation, and immune recognition.
+
+Location
+GNE is primarily localized in the cytoplasm, where it participates in the biosynthesis of sialic acid. The enzyme functions at the initial stage of the sialic acid biosynthetic pathway, which is integral to the generation of sialoglycoconjugates in the Golgi apparatus.
+
+Related Diseases
+Mutations in the GNE gene are associated with a spectrum of disorders known as GNE-myopathies. These include hereditary inclusion body myopathy (HIBM), characterized by progressive muscle weakness and atrophy. Another disorder linked to GNE dysfunction is sialuria, a rare autosomal dominant inherited disease. Sialuria is caused by a metabolic defect leading to the excessive excretion of free sialic acid.
+
+Key References for Further Research
+"GNE-opathies" (Kakani et al., 2012), which provide insights into diseases due to mutations in the GNE gene​​.
+Nishino, I., & Carrillo-Carrasco, N. “GNE Myopathy: Current Update and Future Therapy,” in "Journal of Neurology, Neurosurgery, and Psychiatry," 2014.
+Celeste, F. V., et al. “Understanding the Molecular Basis of GNE Myopathy,” in "Current Molecular Medicine," 2014.
+Huizing, M., et al. “Hereditary Inclusion Body Myopathy: A Decade of Progress,” in "Biochimica et Biophysica Acta (BBA) - Molecular Basis of Disease," 2014.
+Argov, Z., & Mitrani-Rosenbaum, S. “The Hereditary Inclusion Body Myopathy Enigma and Its GNE Gene Mutation Source,” in "Neuromuscular Disorders," 2008.
+These references provide comprehensive information on GNE's role in sialic acid biosynthesis and its implications in human health, particularly concerning GNE-myopathies and sialuria.
+
+
+
+
+

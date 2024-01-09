@@ -1,0 +1,24 @@
+Write a 100-350 word essay about human ALG3: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+
+
+Human ALG3 is an essential enzyme in the N-linked glycosylation pathway, playing a pivotal role in the biosynthesis of lipid-linked oligosaccharides (LLOs), which are crucial for the attachment of carbohydrates to nascent proteins. ALG3, classified as a type C glycosyltransferase, utilizes lipid-linked sugar donors as substrates and is involved in the addition of mannose residues to these LLOs.
+
+The ALG3 protein, located in the endoplasmic reticulum (ER), has multiple transmembrane domains, with its C-terminal domain containing the ER retrieval sequence. This localization is integral to its function in the N-glycosylation process that occurs within the ER. ALG3 is responsible for adding specific mannose residues to the growing oligosaccharide chain on dolichol phosphate, a key step in the assembly of LLOs​​.
+
+Mutations in the ALG3 gene can lead to a type of congenital disorder of glycosylation known as ALG3-CDG (formerly CDG-Id). This disorder is characterized by a variety of symptoms ranging from slight mental or psychomotor impairment to severe multiple organ dysfunction and infantile lethality. The primary phenotype of ALG3 mutant cells is hypoglycosylation of N-glycoproteins, leading to the accumulation of suboptimal substrates for oligosaccharyltransferase. Despite Golgi glycosylation being able to occur normally on ALG3-derived N-glycans, the deficiencies in earlier glycosylation steps lead to significant biological consequences​​​​.
+
+For more detailed information on human ALG3, the following references are recommended:
+
+Korner et al. (1999): Discovery and characterization of a CDG syndrome caused by ALG3 deficiency.
+Aebi et al. (1996): Cloning and characterization of the ALG3 gene of Saccharomyces cerevisiae and its role in glycosylation.
+Huffaker and Robbins (1982): Initial identification of yeast mutant strains deficient in ALG3 activity.
+These references provide a comprehensive overview of ALG3's biochemical role, its significance in the N-linked glycosylation pathway, and its implications in human diseases, particularly in the context of congenital disorders of glycosylation​​.
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+Write a 100-350 word essay about human FUT6: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+Human Fucosyltransferase 6 (FUT6) is a key enzyme in glycobiology, significantly involved in the synthesis of fucose-containing structures in glycoproteins and glycolipids. FUT6 is one of the three distinct genes (FUT3, FUT5, FUT6) found in humans and higher primates, believed to have evolved from a common ancestral gene. The FUT6 gene, located on chromosome 19p13.3, is composed of seven exons and encodes an enzyme protein of 358 amino acids with four potential N-glycosylation sites​​.
+
+FUT6 is specifically recognized as the "plasma-type" α1,3 fucosyltransferase. Studies have shown that mutations in FUT6 can lead to a total loss of enzymatic activity. For example, a missense mutation (G739A) or a nonsense mutation (C945A) in the FUT6 gene can result in the absence of plasma-type fucosyltransferase activity. This deficiency has been notably observed in a significant portion of the population on the isle of Java, Indonesia​​.
+
+The expression of FUT6 is widespread in human tissues, including the liver, kidney, small intestine, colon, bladder, uterus, and salivary gland. It is also presumed to be expressed in cultured hepatocellular carcinoma cell lines like HepG2. This widespread distribution suggests a broad role for FUT6 in various physiological processes. Additionally, the coding sequence of FUT6 in chimpanzees is highly homologous to that in humans, indicating evolutionary conservation across species​​.
+
+For further detailed exploration of human FUT6, its functions, and implications in health and disease, the following key references are recommended:
+
+Dupuy et al., 2002 - Evolutionary study of FUT6 and related genes​​.
+McCurley et al., 1995; Nishihara et al., 1993 - Research on the structure and genetic location of the FUT6 gene​​.
+Mollicone et al., 1994; Brinkman-Van der Linden et al., 1996 - Investigation of plasma-type fucosyltransferase deficiency and FUT6 mutations​​.
+Cameron et al., 1995; Yago et al., 1993; Matsuura et al., 1998 - Studies on the expression of FUT6 in various human tissues and cell lines​​.
+These references provide a comprehensive overview of the enzymatic function, expression patterns, and potential clinical relevance of human FUT6.
+
+
+
+
+

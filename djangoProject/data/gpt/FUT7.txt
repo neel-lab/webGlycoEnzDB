@@ -1,0 +1,22 @@
+Write a 100-350 word essay about human FUT7 : it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human Fucosyltransferase 7 (FUT7) is an enzyme integral to the synthesis of specific carbohydrate structures on cell surfaces. Comprising 342 amino acids, FUT7 exhibits a type II transmembrane topology and contains two potential N-glycosylation sites. The gene encoding human FUT7 is located on chromosome 9q34.3​​.
+
+FUT7 is distinct in its substrate specificity, strictly forming sialyl-Lewis x (sLex) and not synthesizing other Lewis antigens such as Lex, Ley, Lea, Leb, and sLea. This specificity makes FUT7 unique among fucosyltransferases. FUT7 efficiently fucosylates only the distal N-acetyllactosamine (LN) units in α2,3-sialylated acceptors, a process crucial for the formation of selectin ligands​​​​.
+
+Significantly, FUT7 is a key enzyme in the synthesis of E-, P-, and L-selectin ligands. Experiments have demonstrated that the expression of FUT7 correlates with the synthesis of E-selectin ligands in Jurkat cells and the level of FUT7 expression in endothelial cells is closely related to the formation of L-selectin ligands in peripheral lymph nodes and other lymphoid tissues. These findings highlight the enzyme's role in cell adhesion and migration processes, which are essential in immune responses and inflammation​​.
+
+In terms of disease association, a missense mutation (G329A; Arg110→Gln) in the FUT7 gene has been identified in humans. This mutation significantly reduces the expression of sLex but does not completely impair the interaction of polymorphonuclear leukocytes (PMN) with E- and P-selectin. Such findings suggest the potential involvement of FUT7 in selectin-mediated cell adhesion processes, which are important in various physiological and pathological contexts​​.
+
+For further in-depth study of human FUT7, its function, and its implications in health and disease, the following key references are recommended:
+
+Knibbs et al., 1996; Wagers et al., 1996; Smith et al., 1996 - Research on the role of FUT7 in the synthesis of selectin ligands​​.
+Bengtson et al., 2001; Bengtson et al., 2002 - Study identifying a missense mutation in the FUT7 gene and its implications​​.
+Niemela et al. - Research focusing on the substrate specificity of FUT7 and its unique role in forming sLex​​.
+These references provide a comprehensive overview of the enzymatic function, expression patterns, and potential clinical relevance of human FUT7.
+
+
+
+
+

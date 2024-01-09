@@ -1,0 +1,16 @@
+Write a 100-350 word essay about human HEXA: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+I apologize, but I was unable to find specific information on human HEXA in the documents provided. However, based on my baseline knowledge, I can provide a general overview of human HEXA, its function, reaction pathways, location, and related diseases.
+
+Human HEXA, or hexosaminidase A, is an enzyme that plays a crucial role in the degradation of GM2 gangliosides, which are complex molecules composed of glycolipids and proteins. HEXA is located in the lysosome, where it functions in the catabolism of gangliosides.
+
+The enzyme works by cleaving N-acetyl-D-galactosamine from GM2 gangliosides. This reaction is part of the lysosomal degradation pathway of glycolipids, which is essential for the normal turnover of cellular components. HEXA requires a cofactor, the GM2 activator protein, for its enzymatic activity against GM2 gangliosides.
+
+A deficiency in HEXA activity leads to the accumulation of GM2 gangliosides in neurons, which causes a progressive deterioration of nerve cells. This deficiency is the cause of Tay-Sachs disease, a severe neurodegenerative disorder. Tay-Sachs disease is characterized by a loss of motor skills, increased startle response, and, as the disease progresses, seizures, vision and hearing loss, intellectual disability, and paralysis.
+
+For more detailed information on human HEXA, its function, reaction pathways, location, and related diseases, you may refer to the following references:
+
+Gravel, R.A., et al. (1995). The GM2 gangliosidosis. In "The Metabolic and Molecular Bases of Inherited Disease" (C.R. Scriver, et al., Eds.), pp. 2839–2879, McGraw-Hill, New York.
+Myerowitz, R., and Costigan, F.C. (1988). The major defect in Ashkenazi Jews with Tay-Sachs disease is an insertion in the gene for the alpha-chain of beta-hexosaminidase. J Biol Chem 263(35), 18587-18589.
+Sandhoff, K., et al. (1995). Enzymology of ganglioside biosynthesis. In "Handbook of Glycosyltransferases and Related Genes" (N. Taniguchi, et al., Eds.), pp. 167–181, Springer, Tokyo.
+Please note that these references are based on general knowledge and not from the specific documents provided.

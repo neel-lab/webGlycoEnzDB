@@ -1,0 +1,18 @@
+Write a 100-350 word essay about human FUT11: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human FUT11, also known as fucosyltransferase 11, is a member of the glycosyltransferase family, particularly the a3-fucosyltransferases, which are critical in various biological processes involving cell surface antigen presentation and cellular recognition. FUT11 is classified under the CAZy glycosyltransferase family GT-10 and is involved in the synthesis of complex carbohydrates by transferring fucose to acceptor molecules​​​​.
+
+The function of FUT11 is closely related to its enzymatic activity as an a3-fucosyltransferase. It exhibits five conserved peptide motifs that are characteristic of this enzyme family, with motif V being particularly vital for donor recognition​​. This suggests that FUT11, along with FUT10, uses GDP-fucose as a substrate. The duplication event leading to the origin of the FUT10 and FUT11 families is estimated to have occurred around 830 million years ago​​. These enzymes are present in both vertebrates and some invertebrates, indicating their evolutionary significance.
+
+Structurally, FUT11 is a type II transmembrane protein with a short cytosolic amino terminal tail, a single transmembrane domain anchored in the endoplasmic reticulum (ER), and a large catalytic domain in the ER lumen​​. The genomic structure of FUT11 features split polyexonic genes, differing from the terminal Golgi-resident a3/4-fucosyltransferases like FUT3, FUT4, and others​​. The subcellular location of the FUT11 variants has not been experimentally determined, but the 492 amino acid variant of FUT11 likely has an ER retention signal​​.
+
+While specific diseases directly linked to FUT11 have not been prominently reported, the role of fucosyltransferases in general is significant in various pathological conditions, including cancer, infectious diseases, and immunological disorders. This is due to their involvement in the modulation of cell surface antigens and their role in cell-cell interactions and signaling.
+
+For further detailed information on FUT11, the following references are recommended:
+
+Mollicone et al., 2009: Provides insight into the enzymatic activity and phylogeny of FUT11.
+Breton et al., 1998: Discusses the conserved motifs and donor recognition aspects of a3-fucosyltransferases.
+Cantarel et al., 2009: Explores the classification of FUT11 within the CAZy glycosyltransferase family GT-10.
+Sun et al., 2007: Though focused on a related enzyme, provides structural insights relevant to FUT11.
+Luo and Haltiwanger: Offers information on the endoplasmic reticulum localization of FUT11 and its comparison with POFUT enzymes​​.

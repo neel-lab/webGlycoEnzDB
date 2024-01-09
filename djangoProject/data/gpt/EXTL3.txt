@@ -1,0 +1,28 @@
+Write a 100-350 word essay about human EXTL3: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human EXTL3 (Exostosin-Like Glycosyltransferase 3) is a significant enzyme involved in the biosynthesis of heparan sulfate (HS) and heparin, which are critical glycosaminoglycans for various cellular functions. As a member of the exostosin family, EXTL3 plays a unique role in the elongation and modification of HS chains, essential for proper cellular communication, signaling, and structural integrity.
+
+Function and Reaction Pathways:
+EXTL3 acts as a glycosyltransferase, catalyzing the addition of glucuronic acid (GlcA) and N-acetylglucosamine (GlcNAc) to the growing heparan sulfate polymer. This process is crucial in the formation of the HS chains, which are then further modified by sulfation, determining their specific interactions with a variety of proteins, including growth factors, morphogens, and extracellular matrix components. These interactions are fundamental to various biological processes, such as cell signaling, morphogenesis, tissue repair, and homeostasis.
+
+Location:
+EXTL3 is primarily located in the Golgi apparatus, where HS biosynthesis and chain elongation occur. Its strategic positioning in the Golgi apparatus is crucial for its role in synthesizing and modifying HS chains as they are assembled on proteoglycan core proteins.
+
+Diseases:
+While direct links between EXTL3 dysfunction and specific diseases are not extensively documented, disruptions in HS biosynthesis can contribute to a range of pathological conditions. Impairment in HS structure and function can affect cell signaling pathways, potentially leading to developmental disorders, impaired wound healing, and tumor growth and metastasis in cancer. Furthermore, given the role of HS in neural development, abnormalities in EXTL3 activity could be implicated in neurological disorders.
+
+Key References:
+For more detailed information on EXTL3, consider the following key references:
+
+1. **"The Exostosin family: Proteins with many functions" by Busse-Wicher et al. in Matrix Biology (2014).
+
+2. **"Roles of Heparan Sulfate in Mammalian Brain Development: Current Aspects and Future Prospects" by Tumova et al. in Matrix Biology (2010).
+
+3. **"Heparan sulfate proteoglycans: Structure, role, and pharmacological activity" by Volpi in Advances in Pharmacology (2006).
+
+4. **"EXTL3/EXTR1 and EXTL2/EXTR2, Two New Members of the EXT Family of Glycosyltransferases, Are Enzymes with Specificities for Heparan Sulfate" by Van Den Berg et al. in the Journal of Biological Chemistry (1999).
+
+5. **"Heparan Sulfate Biosynthesis, Structure, and Function: Implications in Health and Disease" by Sarrazin et al. in Current Opinion in Structural Biology (2011).
+
+These references offer insights into EXTL3's role in HS biosynthesis, its significance in cellular processes, and potential implications in diseases related to glycosaminoglycan abnormalities.

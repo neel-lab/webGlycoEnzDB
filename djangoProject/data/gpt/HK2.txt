@@ -1,0 +1,20 @@
+Write a 100-350 word essay about human HK2: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+I wasn't able to find specific information on human hexokinase 2 (HK2) in the documents provided. However, I can offer a general overview based on widely accepted scientific knowledge.
+
+Human hexokinase 2 (HK2) is a key enzyme in the glycolytic pathway, responsible for catalyzing the first essential step in glucose metabolism: the phosphorylation of glucose to glucose-6-phosphate. This reaction is vital as it effectively traps glucose within the cell and marks its commitment to metabolic processes, including energy production and biosynthetic pathways.
+
+HK2 is predominantly found in tissues with a high rate of glycolysis, such as muscle and adipose tissue, where it plays a crucial role in regulating glucose levels within the cell. Unlike hexokinase 1 (HK1), which is broadly distributed, HK2's expression is more tightly regulated and often upregulated in rapidly growing cancer cells, making it an important marker and potential therapeutic target in oncology.
+
+The enzyme participates in the glycolytic pathway, crucial for generating ATP under both aerobic and anaerobic conditions. In cancer cells, HK2 is often involved in the Warburg effect, where cancer cells preferentially use glycolysis for energy production even in the presence of oxygen, leading to enhanced glucose consumption and lactate production.
+
+Dysregulation of HK2 has been implicated in several diseases. Most notably, its overexpression is a hallmark of many cancers, contributing to the altered metabolic state known as aerobic glycolysis or the Warburg effect. This metabolic shift allows cancer cells to proliferate rapidly and survive in less favorable environments. Consequently, HK2 is being explored as a potential target for cancer therapy, with the aim of inhibiting its activity to slow down tumor growth and proliferation.
+
+For more detailed and specific information, including recent research findings on HK2, consider consulting the following key references:
+
+Robey, R. B., & Hay, N. (2009). Is Akt the "Warburg kinase"?-Akt-energy metabolism interactions and oncogenesis. Seminars in cancer biology, 19(1), 25-31.
+Patra, K. C., & Hay, N. (2014). The pentose phosphate pathway and cancer. Trends in biochemical sciences, 39(8), 347-354.
+Wolf, A., Agnihotri, S., Micallef, J., Mukherjee, J., Sabha, N., Cairns, R., ... & Lupien, M. (2011). Hexokinase 2 is a key mediator of aerobic glycolysis and promotes tumor growth in human glioblastoma multiforme. The Journal of experimental medicine, 208(2), 313-326.
+Mathupala, S. P., Ko, Y. H., & Pedersen, P. L. (2006). Hexokinase-2 bound to mitochondria: cancer's stygian link to the "Warburg Effect" and a pivotal target for effective therapy. Seminars in cancer biology, 16(4), 288-300.

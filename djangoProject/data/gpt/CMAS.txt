@@ -1,0 +1,23 @@
+Write a 100-350 word essay about human CMAS: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+Human CMAS (Cytidine Monophosphate N-Acetylneuraminic Acid Synthetase) is an enzyme integral to the biosynthesis of sialic acids, a family of nine-carbon sugars critically involved in cellular communication and signaling. CMAS is highly conserved across species, with a sequence identity of 94% between human and murine CMAS, and between 41% and 47% with bacterial CMAS enzymes. This evolutionary conservation underscores the enzyme's fundamental role in biology​​.
+
+CMAS is unique among sugar-activating enzymes for its nuclear localization, a feature first described by Kean in 1970. This contrasts with the typical cytosolic localization of other enzymes in this category. The transport of CMAS into the nucleus is facilitated by a nuclear localization signal (NLS), which varies among species. Human CMAS contains one basic cluster that acts as an NLS​​.
+
+Functionally, CMAS catalyzes the synthesis of CMP-Neu5Ac (Cytidine Monophosphate N-Acetylneuraminic Acid), a key donor substrate for sialyltransferases in sialic acid synthesis. This process is vital for creating a wide variety of sialic acid derivatives, which are crucial for numerous biological processes, including cell-cell communication, pathogen recognition, and immune response. Interestingly, vertebrate CMAS enzymes, including the human version, show distinct substrate specificities despite high sequence identity. For example, while the recombinant human CMAS efficiently uses Neu5Ac (N-Acetylneuraminic Acid) and Neu5Gc (N-Glycolylneuraminic Acid), the rainbow trout enzyme prefers KDN (2-Keto-3-deoxy-D-glycero-D-galacto-nononic acid)​​.
+
+The importance of CMAS is further highlighted by its ubiquitous expression across human tissues, indicating its essential role in various physiological functions. Disruptions in CMAS function could potentially impact a range of biological processes, given the pivotal role of sialic acids in cellular communication and pathogen recognition.
+
+For more detailed information and further studies on human CMAS, the following references are recommended:
+
+Münster et al. (1998): Molecular cloning of the first mammalian CMAS.
+Lawrence et al. (2001): Detailed study on the substrate specificity and nuclear localization of human CMAS.
+Krapp et al. (2003): Crystal structure of the sugar activating domain of murine CMAS.
+Oschlies et al. (2009): Crystal structure of the C-terminal domain of murine CMAS.
+Kean (1970): First description of CMAS nuclear localization​​.
+
+
+
+

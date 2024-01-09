@@ -1,0 +1,25 @@
+Write a 100-350 word essay about human FUT8: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+
+Human Fucosyltransferase 8 (FUT8) is an enzyme crucial for a specific type of fucosylation, α1,6-fucosylation, of asparagine-linked oligosaccharides (N-glycans) in glycoproteins. This process is ubiquitously observed in eukaryotes, except for plants and fungi. FUT8 specifically transfers a fucose moiety from GDP-β-L-fucose to the innermost GlcNAc residue in N-glycan. The enzyme was initially purified from porcine brain and human gastric cancer cell lines, and its cDNAs were successfully cloned from these sources​​.
+
+Human FUT8 comprises 575 amino acids and is predicted as a typical type II membrane protein, localized in the Golgi apparatus. Its gene, located on chromosome 14q24.3, encompasses nine exons, including coding regions. FUT8 does not contain N-glycosylation sites​​.
+
+FUT8 is the only enzyme that catalyzes core fucosylation, a modification associated with various biological events and processes. For example, the overexpression of FUT8 in human hepatoma cells has been shown to suppress metastasis, likely due to increased levels of core fucosylation in glycoproteins such as α5β1 integrin. Core fucosylation by FUT8 also plays a role in modifying the epidermal growth factor (EGF) and transforming growth factor (TGF)-β receptors, among other molecules​​.
+
+In terms of disease association, mutations in the FUT8 gene have been reported. One such mutation, a frameshift mutation caused by the insertion of a single nucleotide, results in a truncated form of the enzyme. Additionally, a particular substitution mutation (T267K) has been associated with human pulmonary emphysema. These findings suggest a potential link between FUT8 function and various human diseases​​.
+
+For further detailed exploration of human FUT8, its functions, and implications in health and disease, the following key references are recommended:
+
+Uozumi et al., 1996b; Yanagidani et al., 1997 - Studies on the purification and cloning of FUT8 from various sources​​.
+Yamaguchi et al., 1999, 2000; Ihara et al., 2007 - Research on the structure and chromosomal mapping of the FUT8 gene​​.
+Miyoshi et al., 1999a; Wang et al., 2005; Takahashi et al., 2009 - Investigations into the biological functions and implications of core fucosylation by FUT8​​.
+Yamada et al.; Ihara et al., 2010b - Studies on mutations in the FUT8 gene and their potential disease associations​​.
+These references provide a comprehensive overview of the enzymatic function, expression patterns, and potential clinical relevance of human FUT8.
+
+
+
+
+

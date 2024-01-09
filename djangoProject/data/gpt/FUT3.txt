@@ -1,0 +1,19 @@
+Write a 100-350 word essay about human FUT3: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+Human FUT3, or Fucosyltransferase 3, is a significant enzyme in glycobiology, particularly recognized for its role in synthesizing specific histo-blood group antigens. This enzyme, also referred to as a Lewis enzyme or Fuc-TIII, catalyzes the transfer of fucose from GDP-fucose to the GlcNAc residue. The process is crucial for the creation of the Lewis blood group antigens, including Lea and Leb​​​​.
+
+The functional significance of FUT3 extends beyond its enzymatic activity. Its expression is detected in various bodily secretions like saliva and milk, where it facilitates the formation of type-1 Lewis antigens such as Lea, Leb, and sLea. The activity of FUT3 and the subsequent production of these antigens are pivotal in several biological processes and clinical settings​​.
+
+In terms of disease association, FUT3's role is particularly notable in the context of certain cancers. For instance, the tumor marker CA19-9, used clinically in diagnosing colorectal, stomach, and pancreatic cancers, recognizes the sLea epitope on mucins. This epitope's presence depends on the activity of FUT3, as Lewis-negative individuals, who lack functional FUT3, cannot produce the sLea epitope identified by CA19-9​​.
+
+The structure of human FUT3 is composed of 361 amino acids. Its involvement is also evident in various physiological and pathological contexts, as observed in studies involving populations of different ethnic backgrounds. For example, analyses of the alleles encoding FUT3 in relation to the Lewis blood group phenotype have shown differences in FUT3 activity among different ethnic groups​​.
+
+For further in-depth understanding of human FUT3, its function, and its significance in disease, key references include:
+
+Kukowska-Latallo et al. 1990 - First cloning of FUT3 as an enzyme synthesizing stage-specific embryonal antigen-1 (SSEA-1)​​.
+Johnson et al. 1992 and 1993 - Studies on the preparation of native FUT3 enzymes from human milk and culture mediums​​.
+Falk et al. 1995 - Investigation of the role of FUT3 in Helicobacter pylori attachment to carbohydrates in the gastric epithelium​​.
+Elmgren et al. 1997, Mollicone et al. 1994, Narimatsu et al. 1998, Nishihara et al. 1994 - Studies analyzing the alleles encoding FUT3 in relation to the Lewis blood group phenotype across different ethnic groups​​.
+These references provide a comprehensive insight into the enzymatic function, biological significance, and clinical implications of human FUT3.

@@ -1,0 +1,22 @@
+Write a 100-350 word essay about human DPM2: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human DPM2, or Dolichyl-Phosphate Mannosyltransferase Polypeptide 2, is a component of the enzyme complex responsible for the synthesis of dolichol-phosphate mannose (Dol-P-Man). Dol-P-Man is crucial for various glycosylation pathways, particularly N-linked glycosylation, which occurs in the endoplasmic reticulum (ER) lumen. DPM2 works in conjunction with DPM1 and DPM3 to form a stable DPM synthase complex. This complex is responsible for transferring mannose from GDP-mannose to dolichol phosphate, forming Dol-P-Man, a necessary substrate for several glycosylation reactions in the ER​​​​.
+
+Structurally, human DPM2 is a small protein consisting of only 84 amino acids and contains two transmembrane helices with both N- and C-termini oriented towards the cytoplasm. It localizes on the rough ER membrane and associates indirectly with DPM1, acting as a stabilizer for its expression in the ER​​​​.
+
+In addition to its role in the Dol-P-Man synthesis, DPM2 also interacts with other proteins involved in glycosylation. For instance, DPM2 directly associates with proteins like PIGA, PIGC, and PIGQ. Although DPM2 is not an essential subunit of the glycosylphosphatidylinositol (GPI) GlcNAc transferase (GPI-GnT) complex, it enhances GPI-GnT activity. This indicates the multifaceted role of DPM2 in glycosylation processes within the cell​​.
+
+Mutations in DPM2 have been linked to congenital disorders of glycosylation (CDG). Specifically, DPM2-CDG has been identified, where patients suffer from severe clinical manifestations. For example, Barone et al. (2012) reported compound heterozygosity for mutations in the DPM2 gene, leading to significant physiological impacts. These findings highlight the crucial role of DPM2 in normal cellular functions and human health​​.
+
+For more detailed information on human DPM2, the following key references are recommended:
+
+Maeda et al. (1998, 2000): Studies on the association of human DPM2 with DPM1 and DPM3 in the DPM synthase complex.
+Watanabe et al. (2000): Research on the role of DPM2 in enhancing GPI-GnT activity.
+Barone et al. (2012): Identification of mutations in the DPM2 gene causing DPM2-CDG.
+Investigations into the structure and function of the DPM2 protein in glycosylation pathways.
+Studies on the implications of DPM2 dysfunction in human diseases, particularly in the context of congenital disorders of glycosylation.
+
+
+
+

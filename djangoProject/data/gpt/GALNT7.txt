@@ -1,0 +1,8 @@
+Write a 100-350 word essay about human GALNT7: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+Human GALNT7, a member of the UDP-N-acetyl-alpha-D-galactosamine:polypeptide N-acetylgalactosaminyltransferases (ppGalNAc-Ts) family, plays a significant role in the process of O-glycosylation. This process involves the addition of a carbohydrate, typically N-acetylgalactosamine (GalNAc), to the serine or threonine residues in proteins. GALNT7 specifically catalyzes this initial step of O-glycosylation, which is crucial for the proper folding, stability, and function of many proteins.
+
+GALNT7 is primarily located in the Golgi apparatus of cells, where it contributes to the post-translational modification of proteins through glycosylation. The enzyme's activity influences the structure and function of glycoproteins, impacting how they interact with other molecules and their roles in various cellular processes.
+
+The function of GALNT7 in human physiology is significant in various biological processes, including cell signaling, immune responses, and protein stabilization. Interestingly, GALNT7 has been identified as a target of miR-30d, a microRNA known to promote melanoma metastasis in patients and mouse models. The down-regulation of GALNT7, which mimics the expression of miR-30d, highlights its potential role in cancer biology. This suggests that alterations in the expression or function of GALNT7 could contribute to the development and progression of certain types of cancers, particularly melanoma.
+

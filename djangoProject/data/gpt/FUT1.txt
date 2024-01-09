@@ -1,0 +1,17 @@
+Write a 100-350 word essay about human FUT1: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human FUT1, or fucosyltransferase 1, plays a critical role in the synthesis of certain types of blood group antigens and is involved in various physiological and pathological processes. It's an enzyme that participates in the reaction pathways of fucosylation, specifically transferring fucose in an alpha(1,2) linkage onto the terminal galactose of lactosamine, which is crucial for creating type 2 ABH structures on red blood cells and other tissues​​.
+
+FUT1 is expressed predominantly in erythroid tissues and primary sensory neurons. In red cells, the type 2 ABH structures linked to glycoproteins made by FUT1 serve as intrinsic antigens of the red cell membrane. This indicates its essential role in the immune system and in the structural integrity of red blood cells​​. The gene cluster for human FUT1, FUT2, and Sec1 is located on chromosome 19q13.3, highlighting its genomic significance and potential linkages with other genetic features​​.
+
+The importance of FUT1 is further highlighted in studies involving knockout animals. Mice deficient in FUT1 show absent a2-fucosylated antigens from the epididymis epithelia, indicating its role in reproductive tract and possibly in fertility. Although these mice develop normally, the absence of specific fucosylated structures suggests potential vulnerabilities or changes in physiological processes​​.
+
+Diseases related to dysfunctional FUT1 include the Bombay phenotype, where individuals lack ABH antigens on their red cells due to FUT1 mutations. This rare condition can lead to unexpected blood transfusion reactions and is just one example of how crucial FUT1's normal function is to human health.
+
+For more detailed and in-depth information, you can refer to these key references:
+
+Mollicone et al., 1986 - Provides insights into the biological aspects and expression patterns of FUT1 in different tissues.
+Reguigne-Arnould et al., 1995; Kelly et al., 1995; Rouquier et al., 1995 - Discuss the genomic aspects and localization of FUT1.
+Domino et al., 2001 - Explores the effects of FUT1 and FUT2 knockout in mice, providing clues to the enzyme's function and importance.
+These references will offer a comprehensive view of FUT1's role in human biochemistry and its implications for health and disease.

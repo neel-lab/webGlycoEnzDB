@@ -1,0 +1,21 @@
+Write a 100-350 word essay about human CMAHP : it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+As of my last update in April 2023, human CMAHP (Cytidine Monophospho-N-Acetylneuraminic Acid Hydroxylase Pseudogene) is recognized as a pseudogene and not an active gene encoding a functional protein. Pseudogenes are segments of DNA that are similar to normal genes but are non-functional; they are often considered "genomic fossils."
+
+CMAHP is related to the CMAH gene, which encodes the enzyme CMP-N-acetylneuraminic acid hydroxylase. This enzyme is involved in the conversion of N-acetylneuraminic acid (Neu5Ac) to N-glycolylneuraminic acid (Neu5Gc), a sialic acid derivative. Sialic acids are important for a variety of cellular functions, including cell signaling and recognition. They are typically found on the surfaces of cells and are components of glycoproteins and glycolipids.
+
+In humans, the loss of functional CMAH (and thus the production of Neu5Gc) occurred due to a mutation in the CMAH gene during evolution. This loss is one of the few known genetic differences between humans and other great apes and has been implicated in various aspects of human disease and biology. The absence of Neu5Gc in humans has been studied in the context of immunity, inflammation, and cancer, as the human immune system recognizes Neu5Gc as foreign.
+
+For more information on the implications of the loss of functional CMAH in humans, the following references can be consulted:
+
+1. **Varki, A. (2010). "Colloquium Paper: Uniquely human evolution of sialic acid genetics and biology." Proceedings of the National Academy of Sciences, 107(Supplement 2), 8939-8946.
+
+2. **Varki, A., & Gagneux, P. (2012). "Multifarious roles of sialic acids in immunity." Annals of the New York Academy of Sciences, 1253, 16-36.
+
+3. **Hedlund, M., et al. (2007). "Evidence for a human-specific mechanism for diet and antibody-mediated inflammation in carcinoma progression." Proceedings of the National Academy of Sciences, 104(49), 18936-18941.
+
+4. **Ghaderi, D., et al. (2010). "Implications of the presence of N-glycolylneuraminic acid in recombinant therapeutic glycoproteins." Nature Biotechnology, 28(8), 863-867.
+
+5. **Martin, M.J., et al. (2005). "Evolution of human-chimpanzee differences in malaria susceptibility: Relationship to human genetic loss of N-glycolylneuraminic acid." Proceedings of the National Academy of Sciences, 102(36), 12819-12824.
+
+These references offer insights into the evolutionary and biological significance of the CMAH mutation in humans, the resulting absence of Neu5Gc, and the potential health implications of this genetic difference.

@@ -1,0 +1,29 @@
+Write a 100-350 word essay about human GANAB: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human GANAB (Glucosidase II Alpha Neutral AB) is a crucial enzyme in glycan processing and plays a significant role in protein quality control within the endoplasmic reticulum (ER).
+
+Function
+GANAB, the α-subunit of glucosidase II, is involved in trimming glucose residues from N-linked glycoproteins. This process is essential for the proper folding and maturation of glycoproteins. The enzyme acts by sequentially removing glucose residues from the N-linked oligosaccharides on nascent proteins, which is a critical step in the quality control mechanism of protein folding within the ER.
+
+Reaction Pathways
+GANAB functions within the glycan processing pathway, specifically in the final stages of N-glycan maturation. It cleaves the terminal glucose residues from the N-linked oligosaccharides. This action is vital for the recognition and subsequent folding of glycoproteins by calnexin and calreticulin, chaperones in the ER. Proper functioning of GANAB ensures that only correctly folded proteins proceed through the secretory pathway.
+
+Location
+GANAB is located in the ER, where it interacts with nascent glycoproteins. Its role in the ER is integral to the protein quality control system, ensuring that glycoproteins are properly processed before they are transported to other parts of the cell or secreted.
+
+Related Diseases
+Dysfunction in GANAB can lead to various pathologies. For instance, a study showed that reduced levels of GANAB and its transcripts in certain cell lines resulted in head and neck cancer. Additionally, the knockdown of GANAB using shRNA constructs led to increased cell growth, indicating its role in inhibiting cell proliferation under normal conditions​​.
+
+Key References for Further Research
+Chiu et al. (2011). This study discusses the relationship between GANAB levels and cell proliferation, particularly in the context of cancer.
+Trombetta, E. S., & Parodi, A. J. (2003). “Quality control and protein folding in the secretory pathway.” Annual Review of Cell and Developmental Biology.
+Moremen, K. W., Tiemeyer, M., & Nairn, A. V. (2012). “Vertebrate protein glycosylation: diversity, synthesis and function.” Nature Reviews Molecular Cell Biology.
+Helenius, A., & Aebi, M. (2004). “Roles of N-linked glycans in the endoplasmic reticulum.” Annual Review of Biochemistry.
+Spiro, R. G. (2002). “Protein glycosylation: nature, distribution, enzymatic formation, and disease implications of glycopeptide bonds.” Glycobiology.
+These references provide a comprehensive understanding of GANAB's role in glycan processing and its implications in human health, particularly in relation to protein folding and quality control within the ER.
+
+
+
+
+

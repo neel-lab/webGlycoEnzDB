@@ -1,0 +1,19 @@
+Write a 100-350 word essay about human HPSE: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human heparanase (HPSE) is a crucial enzyme in the breakdown of heparan sulfate (HS), a key component of the extracellular matrix (ECM). This enzyme plays a significant role in modifying the ECM, which is vital for various physiological processes, including cell migration, tissue remodeling, and angiogenesis.
+
+HPSE is unique in its ability to cleave heparan sulfate at specific sites, leading to the remodeling of the ECM and the release of growth factors and other bioactive molecules bound to HS. This action is critical in both normal development and disease processes, particularly in cancer progression and metastasis. By altering the ECM, HPSE enables cancer cells to invade surrounding tissues and contributes to the creation of new blood vessels (angiogenesis), which is essential for tumor growth and dissemination.
+
+In addition to its role in cancer, HPSE is implicated in inflammation and autoimmune diseases. By modulating the ECM and cellular microenvironment, HPSE influences the migration of immune cells and the release of cytokines and chemokines, playing a role in inflammatory responses.
+
+HPSE is predominantly expressed in the placenta, immune cells, and various organs. Its expression and activity are tightly regulated, as dysregulation can lead to pathological conditions. In cancer, overexpression of HPSE is often associated with increased tumor aggressiveness, metastasis, and poor prognosis.
+
+For more detailed information on HPSE, the following references provide comprehensive insights:
+
+Vlodavsky, I., & Friedmann, Y. (2001). Molecular properties and involvement of heparanase in cancer metastasis and angiogenesis. Journal of Clinical Investigation, 108(3), 341-347.
+Sanderson, R.D., Yang, Y., Suva, L.J., & Kelly, T. (2004). Heparanase: regulation of cancer, inflammation and tissue regeneration. Trends in Biochemical Sciences, 29(6), 275-281.
+Ilan, N., Elkin, M., & Vlodavsky, I. (2006). The role of heparanase in cancer progression and metastasis. FEBS Journal, 273(11), 2303-2313.
+Parish, C.R. (2006). The role of heparan sulphate in inflammation. Nature Reviews Immunology, 6(9), 633-643.
+Zetser, A., Levy-Adam, F., Kaplan, V., Gingis-Velitski, S., Bashenko, Y., Schubert, S., et al. (2004). Processing and activation of latent heparanase occurs in lysosomes. Journal of Cell Science, 117(Pt 11), 2249-2258.
+These references delve into the biochemical properties of HPSE, its involvement in cancer and inflammatory diseases, and its potential as a therapeutic target.

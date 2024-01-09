@@ -15,6 +15,7 @@ PATHWAY_GENE_MAPPING_FILE = '../data/pathway_gene_figure_mapping.csv'
 HTML_FOLDER = '../data/html600/'
 FIGURE_FOLDER = '../data/figures/'
 MI_RESULTS_FILE = '../data/mi_results.txt'
+GPT_TEXT_FILE = '../data/gpt/'
 
 
 def index(request):
@@ -137,6 +138,7 @@ def search(request, gene_name=''):
     figure_url = ""
     reaction_img = ""
     tf_table_html = ""
+    gpt_txt = ""
     if gene_name:
         gene_general_info = get_gene_general_info(GENE_INFORMATION_FILE, gene_name)
         gene_general_info['Comments'] = get_gene_other_info(GENE_COMMENT_FILE, gene_name)
@@ -144,6 +146,7 @@ def search(request, gene_name=''):
         figure_url = get_pathway_fig_url(PATHWAY_GENE_MAPPING_FILE, gene_name)
         reaction_img = f'/reaction_imgs/{gene_name}.png' 
         tf_table_html = get_tf_html(MI_RESULTS_FILE, gene_name)
+        gpt_txt = get_gpt_txt(GPT_TEXT_FILE, gene_name)
 
     return render(request, 'GlycoEnzDB.html', {'onto_graph_pathways': onto_graph_pathways,
                                                'onto_graph_functions': onto_graph_functions,
@@ -153,7 +156,8 @@ def search(request, gene_name=''):
                                                'gene_html': gene_html,
                                                'figure_url': figure_url,
                                                'reaction_img': reaction_img,
-                                               'tf_table_html': tf_table_html})
+                                               'tf_table_html': tf_table_html,
+                                               'gpt_txt': gpt_txt})
 
 
 def get_gene_general_info(filename, gene_name):
@@ -244,4 +248,18 @@ def get_pathway_fig_url(filename, gene_name):
             url = f'/glycoenzdb/static/pathway_figures/{p}/{p}.html'
             return url
     return url
+
+def get_gpt_txt(folder_name, gene_name):
+    
+    current_dir = os.path.dirname(__file__)
+    # Construct the path to the file
+    file_path = os.path.join(current_dir, folder_name + gene_name+ '.txt')
+
+    try:
+        with open(file_path, 'r') as file:
+            gpt_txt = file.read()
+            gpt_txt = gpt_txt.strip()
+            return gpt_txt
+    except FileNotFoundError:
+        return ""
          

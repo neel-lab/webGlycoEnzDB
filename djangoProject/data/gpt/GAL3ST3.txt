@@ -1,0 +1,14 @@
+Write a 100-350 word essay about human GAL3ST3: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human Galactose-3-O-Sulfotransferase 3 (GAL3ST3) is an enzyme that plays a crucial role in the sulfation of galactose-containing oligosaccharides, a process essential for various biological functions. GAL3ST3 specifically acts on type 1 (Galβ1-3GlcNAc-R), type 2 (Galβ1-4GlcNAc-R), and O-glycan core 1 (Galβ1-3GalNAcα-R) oligosaccharides. The enzyme's activity is instrumental in modifying the properties of these oligosaccharides, influencing their roles in cell signaling, molecular recognition, and potentially the formation of the extracellular matrix.
+
+The sulfation reaction carried out by GAL3ST3 involves the transfer of a sulfate group from the donor molecule 3'-Phosphoadenosine-5'-phosphosulfate (PAPS) to the acceptor oligosaccharides. The enzyme has been shown to exhibit specificity for the type 2 chain in N- and O-glycans, highlighting its role in the specific modification of these structures​​.
+
+While the exact physiological and pathological implications of GAL3ST3 are not fully understood, disruptions in sulfation processes can have significant impacts on cellular communication and adhesion, potentially contributing to various diseases. Understanding the specific function and regulation of GAL3ST3 is crucial for comprehending its role in health and disease.
+
+For more detailed information about human GAL3ST3 and its functions, the following key references can be consulted:
+
+Honke, K., et al. (2001) - Study on the specificity and activity of GAL3ST3.
+Suzuki, A., et al. (2001); El-Fasakhany, F.M., et al. (2001) - Research focusing on the enzymatic characteristics and biological importance of GAL3ST3, including the methodologies for assaying its activity​​.
+These references should offer a comprehensive overview of the enzymatic function, biological significance, and potential clinical implications of human GAL3ST3.

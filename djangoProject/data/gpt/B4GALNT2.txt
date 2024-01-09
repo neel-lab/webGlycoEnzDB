@@ -1,0 +1,17 @@
+Write a 100-350 word essay about human B4GALNT2: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human B4GALNT2, known as beta-1,4-N-acetylgalactosaminyltransferase 2, is involved in the synthesis of complex glycan structures. It specifically catalyzes the synthesis of the Sda antigen (or Cad antigen), a type of carbohydrate antigen. This enzyme adds N-acetylgalactosamine (GalNAc) in a β1-4 linkage to specific glycan substrates​​.
+
+The B4GALNT2 gene demonstrates β1,3-N-acetylgalactosaminyltransferase activity, which is crucial in the synthesis of various glycan structures. It was identified through its ability to add GalNAc to Gal in globoside (Gb4) synthesis, and its role in glycosylation is well-conserved across species​​.
+
+In terms of tissue expression, B4GALNT2 is ubiquitously expressed across various tissues. It has been observed to be highly expressed in testis, adipose tissue, skeletal muscle, heart, and ovary. Notably, in situ hybridization analysis showed that B4GALNT2 is expressed in germ line cells of the mouse testis. Stevens et al. (2013) found that the B4GALNT2 enzyme localizes in the endoplasmic reticulum, unlike many glycosyltransferases that localize in the Golgi apparatus​​.
+
+In the context of diseases, the expression of B4GALNT2 has been studied in relation to cancer. It has been found that the expression of B4GALNT2 is suppressed in gastrointestinal cancer tissues, and specifically, its expression is downregulated in gastric cancer cell lines due to methylation upstream of the first exon. This suggests a potential role of B4GALNT2 in the progression or suppression of certain cancers​​.
+
+For more detailed information on human B4GALNT2, the following references are key:
+
+Montiel et al. (2003): Study on human cDNAs of B4GALNT2 and the identification of two isoforms.
+Dohi et al. (1996): Research on the expression of B4GALNT2 in gastrointestinal cancer tissues.
+Hiruma et al. (2004): Discovery of the B3GALNT2 gene and its enzymatic activities.
+Kawamura et al. (2008): Study on the suppression of B4GALNT2 expression in gastric cancer cell lines.

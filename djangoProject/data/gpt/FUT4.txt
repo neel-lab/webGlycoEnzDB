@@ -1,0 +1,20 @@
+Write a 100-350 word essay about human FUT4: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+Human Fucosyltransferase 4 (FUT4), also known as Fuc-TIV, is a myeloid-type α1,3-fucosyltransferase enzyme, playing a crucial role in the synthesis of specific carbohydrate structures in the human body. FUT4 consists of 530 amino acids and is characterized by a type II transmembrane topology with two potential N-glycosylation sites. The gene for human FUT4 is located on chromosome 11q21​​.
+
+Functionally, FUT4 is involved in the transfer of fucose to the inner N-acetyllactosamine (LN) units of sialylated polylactosamine acceptors, resulting in the synthesis of the VIM-2 (CDw65) epitope. However, FUT4 does not effectively act on distal α2,3-sialylated acceptors, a role contrasted by FUT7, which fucosylates only the distal LN units in these acceptors​​.
+
+FUT4 is ubiquitously expressed in almost all tissues but is most abundant in myeloid cells, such as human promyelocytic leukemia cells (HL60 cells). Its expression is significant in medullary venules of mouse peripheral lymph nodes, implying its role in immune responses and cell adhesion​​.
+
+While the specific diseases directly associated with FUT4 mutations in humans are not reported, studies in mice suggest its potential significance in thrombolysis. Mice lacking FUT4 showed increased mortality from pulmonary thromboembolism and decreased thromboemboli dissolution, indicating the importance of FUT4 activity in this process​​.
+
+For further in-depth study of human FUT4, its function, and potential implications in health and disease, the following key references are recommended:
+
+Le Marer et al., 1997; Nakayama et al., 2001 - Studies on FUT4 expression in myeloid cells​​.
+Mollicone et al., 1990 - Predicted the existence of distinct α1,3FUT enzymes including FUT4 based on substrate specificity patterns​​.
+Gersten et al., 1995; Kaneko et al., 1999 - Research on FUT4 expression in various tissues​​.
+M’Rini et al., 2003 - Examined FUT4 expression in mouse peripheral lymph nodes​​.
+Wang et al., 2013 - Investigated the role of FUT4 in thrombolysis in mice​​.
+These references provide a comprehensive overview of the enzymatic function, expression patterns, and potential clinical relevance of human FUT4.

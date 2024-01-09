@@ -1,0 +1,23 @@
+Write a 100-350 word essay about human B3GNT7: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+
+Human B3GNT7, also known as beta-1,3-N-acetylglucosaminyltransferase 7, is a member of the beta-1,3-N-acetylglucosaminyltransferase family. It plays a crucial role in the biosynthesis of complex glycans, specifically in the elongation of the keratan sulfate backbone. B3GNT7 was first reported in 2002 by Kataoka and Huh and further characterized by Seko and Yamashita in 2004​​.
+
+Structurally, human B3GNT7 is a type II membrane-bound protein with 401 amino acids. Its catalytic domain is oriented towards the lumenal side of the Golgi apparatus. It contains four putative N-glycosylation sites, with the DXD motif involved in recognizing the donor substrate UDP-GlcNAc​​.
+
+B3GNT7 acts on sulfated type 2 glycans, indicating its responsibility in the elongation of keratan sulfate's backbone structure. This activity is critical in various biological contexts, particularly in the human corneal epithelium where keratan sulfate plays a significant role​​.
+
+In terms of disease association, the expression level of B3GNT7 may be upregulated in ovarian cancer. Research has shown that an antibody against B3GNT7 can inhibit the cell adhesion of ovarian cancer cells, suggesting that B3GNT7 might control the motility and adhesiveness of certain cancer cells. However, there is no report of B3GNT7 knockout or transgenic mice, which limits the understanding of its complete biological roles​​.
+
+For further information on human B3GNT7, these references are essential:
+
+Kataoka and Huh (2002): First identification and categorization of B3GNT7.
+Seko and Yamashita (2004): Detailed study of enzymatic activity and substrate specificity of B3GNT7.
+Narimatsu (2006): Describes B3GNT7 as part of the large beta-1,3-GlcNAc/Gal/GalNAc-transferase family.
+Kitayama et al. (2007): Preparation of soluble recombinant B3GNT7 from gene-transfected cells​​.
+
+
+
+

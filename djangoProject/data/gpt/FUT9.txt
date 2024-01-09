@@ -1,0 +1,21 @@
+Write a 100-350 word essay about human FUT9 : it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human Fucosyltransferase 9 (FUT9) is an enzyme crucial for the synthesis of specific carbohydrate structures, particularly Lewis x (Lex) antigens. FUT9, also known as α1,3-Fucosyltransferase-IX or Fuc-TIX, plays a key role in the biosynthesis of Lex but not sialyl-Lewis x (sLex) epitopes. This enzyme is unique among the α1,3 fucosyltransferase family members due to its preference for transferring fucose to the distal GlcNAc residue, a characteristic that distinguishes it from other α1,3FUTs, which typically transfer fucose to the inner GlcNAc residue​​​​.
+
+FUT9, consisting of 539 amino acids, features a type II transmembrane topology and contains three potential N-glycosylation sites. It is encoded by a gene localized at 6q16 in humans. The enzyme's expression pattern varies across different cell types, with its presence being particularly noted in certain subpopulations of peripheral blood leukocytes, such as granulocytes, natural killer cells, and B cells​​.
+
+Biologically, FUT9 plays a significant role in neural differentiation. For instance, the expression of FUT9 increased during the neural differentiation of P19EC and NT2 cells, and the knockdown of FUT9 genes led to significant decreases in Lex levels and neurite outgrowth. This underscores the enzyme's importance in neurological development and function​​.
+
+For further in-depth study of human FUT9, its functions, and implications in health and disease, the following key references are recommended:
+
+Kudo et al., 1998; Ge et al., 1997 - Research on the isolation and characterization of FUT9 cDNA​​.
+Seelhorst et al., 2013 - Study demonstrating the requirement of N-glycosylation for full FUT9 enzyme activity​​.
+Kaneko et al., 1999; Nakayama et al., 2001 - Investigations into the tissue distribution and substrate specificity of FUT9​​.
+Kaneko et al., 1999; Kudo et al., 2004 - Studies on the structure and genetic localization of the FUT9 gene​​.
+These references provide a comprehensive overview of the enzymatic function, expression patterns, and potential clinical relevance of human FUT9.
+
+
+
+
+

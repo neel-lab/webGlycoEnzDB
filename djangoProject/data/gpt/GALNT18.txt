@@ -1,0 +1,24 @@
+Write a 100-350 word essay about human GALNT18: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+After reviewing the available information in my knowledge source, I couldn't find specific details about human GALNT18, its functions, reaction pathways, location, and related diseases. Therefore, I will provide an answer based on my baseline knowledge.
+
+Human GALNT18, also known as Polypeptide N-acetylgalactosaminyltransferase 18, is part of the GALNT family which plays a crucial role in mucin-type O-glycosylation. This process is significant in the modification of proteins through the addition of carbohydrates, impacting protein folding, stability, and cell signaling.
+
+Function
+GALNT18 is primarily responsible for initiating O-glycosylation. It catalyzes the transfer of N-acetylgalactosamine (GalNAc) to serine or threonine residues on proteins, forming the Tn antigen. This initial step is pivotal for the formation of more complex glycan structures.
+
+Reaction Pathways
+GALNT18 participates in the biosynthesis of O-glycans. After the initial GalNAc is attached to the protein backbone, further modification by other enzymes leads to the formation of a variety of O-glycan structures. These structures play essential roles in cell adhesion, molecular recognition, and signaling pathways.
+
+Location
+GALNT18 is expressed in various tissues, but its expression pattern may vary. The localization within a cell is typically in the Golgi apparatus, where O-glycosylation occurs.
+
+Related Diseases
+While specific diseases directly linked to GALNT18 mutations or dysfunction are not well-characterized, aberrations in O-glycosylation pathways, in general, have been associated with cancers, congenital disorders of glycosylation, and other pathologies. As with other members of the GALNT family, alterations in GALNT18's function or expression could potentially have pathological implications, particularly in cancer biology where altered glycosylation patterns are a hallmark.
+
+Key References for Further Research
+Schjoldager, K. T. et al. “O-Glycosylation Modulates Proprotein Convertase Activation of Angiopoietin-like Protein 3: Possible Role of Polypeptide GalNAc-transferases in Regulation of Concentrations of Plasma Lipids.” Journal of Biological Chemistry, 2010.
+Ten Hagen, K. G., Fritz, T. A., & Tabak, L. A. “All in the family: the UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferases.” Glycobiology, 2003.
+Bennett, E. P., Mandel, U., Clausen, H., Gerken, T. A., Fritz, T. A., & Tabak, L. A. “Control of Mucin-Type O-Glycosylation: A Classification of the Polypeptide GalNAc-Transferase Gene Family.” Glycobiology, 2012.
+These references should provide a more in-depth understanding of GALNT18 and its role in glycosylation.

@@ -1,0 +1,21 @@
+Write a 100-350 word essay about human MPI: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+Human MPI (Mannose Phosphate Isomerase) is an essential enzyme in the metabolic pathways involving mannose, a key monosaccharide in glycoprotein biosynthesis. MPI catalyzes the interconversion of fructose-6-phosphate and mannose-6-phosphate, a critical reaction in the synthesis of GDP-mannose. GDP-mannose is a vital precursor for the N-linked glycosylation of proteins, a process fundamental to protein maturation and function.
+
+Located in the cytoplasm, MPI plays a crucial role in ensuring the availability of mannose-6-phosphate for glycosylation pathways within the endoplasmic reticulum (ER) and Golgi apparatus. This enzymatic step is essential for the proper synthesis and processing of glycoproteins, which are involved in numerous cellular functions, including cell signaling, immune response, and protein trafficking.
+
+Deficiency in MPI activity leads to a type of Congenital Disorder of Glycosylation, specifically CDG-Ib. CDG-Ib is characterized by a wide range of symptoms, including gastrointestinal problems, failure to thrive, liver dysfunction, and coagulation abnormalities. Notably, CDG-Ib is one of the few treatable forms of CDG, as oral mannose supplementation can bypass the metabolic block caused by MPI deficiency, alleviating some of the clinical symptoms.
+
+For more detailed information on MPI and its associated disease, CDG-Ib, the following key references are recommended:
+
+1. Jaeken, J., et al. (2009). "Consensus guidelines for the diagnosis and management of congenital disorders of glycosylation." Journal of Inherited Metabolic Disease, 32(1), 45-75.
+
+2. Niehues, R., et al. (1998). "Carbohydrate-deficient glycoprotein syndrome type Ib. Phosphomannose isomerase deficiency and mannose therapy." The Journal of Clinical Investigation, 101(7), 1414-1420.
+
+3. de Lonlay, P., et al. (2001). "A broad spectrum of clinical presentations in congenital disorders of glycosylation I: a series of 26 cases." Journal of Medical Genetics, 38(1), 14-19.
+
+4. Freeze, H.H., et al. (2014). "Congenital disorders of glycosylation: CDG-I, CDG-II, and beyond." Current Molecular Medicine, 14(7), 851-862.
+
+5. Schneider, A., et al. (2012). "MPI-CDG: a congenital disorder of glycosylation with severe protein-losing enteropathy, partial liver fibrosis, and absence of hyperinsulinemic hypoglycemia." Biochimica et Biophysica Acta (BBA) - Molecular Basis of Disease, 1822(5), 727-735.
+
+These references provide a comprehensive understanding of the biochemical role of MPI, the pathophysiology of CDG-Ib, and current approaches to diagnosis and treatment.

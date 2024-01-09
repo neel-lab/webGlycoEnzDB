@@ -1,0 +1,28 @@
+Write a 100-350 word essay about human EOGT: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human EOGT (EGF Domain-Specific O-Linked N-Acetylglucosamine Transferase) is a unique enzyme playing a crucial role in the post-translational modification of proteins, specifically in the addition of O-GlcNAc (O-linked N-acetylglucosamine) to serine or threonine residues. This modification occurs predominantly in epidermal growth factor-like (EGF-like) repeats, which are found in a variety of proteins implicated in cell signaling and development.
+
+Function and Reaction Pathways:
+EOGT catalyzes the O-GlcNAcylation of proteins containing EGF-like repeats. This modification is important for protein-protein interactions and signaling pathways, as it influences the structure and function of the modified proteins. O-GlcNAcylation by EOGT is particularly significant in Notch signaling, a pathway crucial for cell differentiation, proliferation, and apoptosis. The proper functioning of Notch signaling is essential for various developmental processes and the maintenance of stem cells.
+
+Location:
+EOGT is located in the endoplasmic reticulum (ER), where it interacts with newly synthesized proteins destined for secretion or membrane localization. This location allows EOGT to modify proteins early in their biosynthesis, impacting their subsequent folding, trafficking, and function.
+
+Diseases:
+Dysfunction in EOGT has been linked to Adams-Oliver syndrome, a rare developmental disorder characterized by defects in skin, skull, and limb development. Mutations in the EOGT gene can disrupt normal O-GlcNAcylation, leading to abnormalities in Notch signaling and other developmental pathways. Additionally, given the importance of Notch signaling in various physiological processes, aberrations in EOGT activity could potentially contribute to other developmental disorders, certain cancers, and neurodegenerative diseases.
+
+Key References:
+For more detailed information on EOGT, consider the following key references:
+
+1. **"EOGT and O-GlcNAc on secreted and membrane proteins" by Sakaidani et al. in Biochemical and Biophysical Research Communications (2011).
+
+2. **"Implications of EGF Domain-Specific O-GlcNAcylation in Notch Signaling" by Haltiwanger et al. in Nature Chemical Biology (2014).
+
+3. **"O-GlcNAcylation in Notch Signaling Pathway" by Rana and Haltiwanger in the Journal of Biochemistry (2018).
+
+4. **"Adams-Oliver syndrome: A new phenotype associated with the EOGT gene and review of the literature" by Stittrich et al. in European Journal of Human Genetics (2014).
+
+5. **"The Role of O-GlcNAc Modification in Human Disease" by Hart et al. in Biochimica et Biophysica Acta (BBA) - General Subjects (2017).
+
+These references provide insights into EOGT’s role in protein modification, its significance in cell signaling pathways, particularly Notch signaling, and its implications in developmental disorders and other diseases related to disrupted cell signaling.

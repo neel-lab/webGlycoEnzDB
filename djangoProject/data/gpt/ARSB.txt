@@ -1,0 +1,21 @@
+Write a 100-350 word essay about human ARSB : it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+Human ARSB (Arylsulfatase B) is an important lysosomal enzyme involved in the catabolism of glycosaminoglycans (GAGs), specifically dermatan sulfate and chondroitin sulfate. It is crucial for the degradation and recycling of these complex carbohydrates, which are integral components of the extracellular matrix in various tissues.
+
+Function and Reaction Pathways:
+ARSB catalyzes the hydrolysis of sulfate groups from the N-acetyl-D-galactosamine 4-sulfate residues of dermatan sulfate and chondroitin sulfate. This desulfation is a necessary step in the sequential degradation of GAGs. Without proper functioning of ARSB, the breakdown of these molecules is incomplete, leading to their accumulation in lysosomes.
+
+Location:
+ARSB is primarily located in the lysosomes, the cellular organelles responsible for breaking down and recycling macromolecules. Lysosomal enzymes like ARSB are critical for maintaining cellular homeostasis and the overall health of tissues.
+
+Diseases:
+Deficiency or dysfunction of ARSB is associated with Mucopolysaccharidosis type VI (MPS VI), also known as Maroteaux-Lamy syndrome. This rare genetic disorder is characterized by the accumulation of partially degraded dermatan sulfate in lysosomes, leading to progressive damage and dysfunction in multiple organs and tissues. Symptoms can include skeletal abnormalities, joint stiffness, heart valve issues, and respiratory problems. The severity of MPS VI can vary widely among individuals.
+
+Key References:
+For more detailed information on ARSB, its function, and related diseases, the following key references are recommended:
+
+**Valayannopoulos, V., & Nicely, H. (2010). "Mucopolysaccharidosis VI." Orphanet Journal of Rare Diseases, 5, 5.
+
+**Litjens, T., & Hopwood, J.J. (2001). "Mucopolysaccharidosis type VI: Structural and clinical implications of mutations in N-acetylgalactosamine-4-sulfatase." Human Mutation, 18(4), 282-295.
+
+**Froissart, R., et al. (2010). "Biochemical and molecular analysis in mucopolysaccharidosis

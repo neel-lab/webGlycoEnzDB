@@ -1,0 +1,17 @@
+Write a 100-350 word essay about human MANEAL: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key scientific  references where I can find more information.
+
+The search through the provided documents did not yield specific information on human MANEAL, its function, reaction pathways, location, and related diseases. Therefore, I will provide an answer based on my baseline knowledge.
+
+As of my last training data, there is limited information available specifically about an enzyme or protein termed "MANEAL" in humans. It is possible that this is either a less commonly studied protein or it might be known by a different name or acronym in scientific literature. In biochemistry and molecular biology, it is not uncommon for proteins and enzymes to have multiple names or to be identified later as part of a larger family of proteins with more widely recognized nomenclature.
+
+If MANEAL refers to a specific enzyme involved in a particular biochemical pathway in humans, it would typically participate in reactions specific to its enzymatic activity, be located in a cellular compartment relevant to its function (such as the cytoplasm, mitochondria, endoplasmic reticulum, or Golgi apparatus), and its dysfunction could be related to certain diseases, particularly if it plays a role in critical metabolic or regulatory pathways.
+
+For more accurate and detailed information on human MANEAL, if it is a recognized protein or enzyme, I recommend consulting the latest scientific literature or databases such as PubMed, UniProt, or the Human Protein Atlas. These resources provide up-to-date information on proteins, their functions, and related research. In addition, searching scientific journals specializing in biochemistry, molecular biology, and related fields might offer more insights.
+
+Key references that might be useful for researching proteins and enzymes include:
+
+"Principles of Biochemistry" by Lehninger, Nelson, and Cox, which provides foundational knowledge in biochemistry.
+UniProt (Universal Protein Resource), a comprehensive resource for protein sequence and annotation data.
+The Human Protein Atlas, which offers information on the expression and localization of proteins in human tissues and cells.
+PubMed, a database of scientific publications, for finding the most recent and relevant research articles.
+"Molecular Biology of the Cell" by Alberts et al., for understanding the cellular and molecular context of protein function.

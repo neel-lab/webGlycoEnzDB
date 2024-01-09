@@ -1,0 +1,20 @@
+Write a 100-350 word essay about human GALNT3: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+
+Human GALNT3, a member of the polypeptide N-acetylgalactosaminyltransferase family, plays a pivotal role in the initiation of mucin-type O-linked glycosylation. This enzyme is responsible for catalyzing the transfer of N-acetylgalactosamine (GalNAc) to the hydroxyl group of serine or threonine residues in polypeptides, a fundamental step in the biosynthesis of glycoproteins.
+
+GALNT3 has been particularly associated with the regulation of the hormone fibroblast growth factor 23 (FGF23). Studies in Galnt3-deficient mice have shown that the absence of GALNT3 leads to low circulating levels of intact FGF23, hyperphosphatemia (elevated phosphate levels in the blood), and decreased alkaline phosphatase activity. These findings support the role of O-glycosylation, mediated by GALNT3, in the proteolytic processing of FGF23 and phosphate homeostasis. In humans, mutations in the GALNT3 gene are linked to familial tumoral calcinosis (FTC), a rare metabolic disorder characterized by hyperphosphatemia and the formation of calcified tumors in soft tissues. The disease is a consequence of impaired FGF23 regulation due to defective glycosylation.
+
+Additionally, Galnt3-deficient male mice exhibit growth retardation and male infertility due to defective acrosome formation, suggesting that GALNT3 may also play a role in developmental and reproductive processes.
+
+For further detailed information about human GALNT3, its functions, and its association with familial tumoral calcinosis and other physiological processes, the following key references are recommended:
+
+Ichikawa et al., 2009, 2011 - Studies on Galnt3-deficient mice highlighting the enzyme's role in FGF23 regulation and phosphate homeostasis, and its implications in familial tumoral calcinosis​​.
+These references provide a comprehensive overview of the enzymatic function, biological significance, and potential clinical implications of human GALNT3.
+
+
+
+
+

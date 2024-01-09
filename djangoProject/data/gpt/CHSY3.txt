@@ -1,0 +1,14 @@
+Write a 100-350 word essay about human CHSY3: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human CHSY3, identified as a novel gene named CSS3, is a part of the chondroitin sulfate (CS) biosynthesis pathway. It shares a significant sequence homology with CHSY1 and CHPF2, two other members of the CS biosynthetic pathway. Specifically, CHSY3 exhibits 62% and 57% sequence homology with CHSY1 and CHPF2, respectively. The enzyme has a predicted transmembrane domain and three predicted N-glycosylation sites, which are common features in many glycosyltransferases. Additionally, CHSY3 contains two DXD motifs and several other glycosyltransferase motifs​​.
+
+CHSY3 is known for its GlcAT-II (glucuronosyltransferase II) and GalNAcT-II (N-acetylgalactosaminyltransferase II) activities. However, its specific activity in these roles is considerably lower than that of CHSY1. This enzyme's substrate specificity is similar to that of CHSY1 and CHPF2 for GlcAT-II activity and to CHSY1 for GalNAcT-II activity. Notably, the typical DXD motif in the C-terminal half of CHSY3 is absent, and its amino acid sequence in this domain is distinct from that of CHPF2, which lacks GalNAcT-II activity. The putative GalNAcT domains of CHSY3 contain a non-typical GPD617 sequence that aligns with the DVD sequences in b4Gal-T1 and CHSY1. This sequence, particularly the Asp617 residue, is hypothesized to be necessary for GalNAcT-II activity​​​​.
+
+While CHSY3 transcripts are ubiquitously expressed, their levels are much lower compared to CHSY1. This suggests a wide but regulated distribution of CHSY3 in various tissues. Studies have linked the enzyme family to which CHSY3 belongs with several diseases. Specifically, mutations in CHSY1, a closely related enzyme, have been implicated in conditions like Temtamy preaxial brachydactyly syndrome, and the expression levels of chondroitin-synthesizing enzymes, including CHSY3, have been found to be significantly increased in colorectal cancer​​.
+
+For further reading and more detailed information, the following key references are recommended:
+
+Yada et al., 2003, for the identification and initial characterization of CHSY3.
+Gotoh et al., 2002, which discusses the substrate specificity and enzymatic activities of CHSY3.
+Li et al., 2010; Tian et al., 2010, for insights into diseases associated with mutations in CHSY1, a gene closely related to CHSY3.

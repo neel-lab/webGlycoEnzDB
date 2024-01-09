@@ -1,0 +1,22 @@
+Write a 100-350 word essay about human DDOST: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+
+Human DDOST, also known as Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 48 kDa or OST48, is a vital component of the oligosaccharyltransferase (OST) complex. This complex plays a critical role in the N-linked glycosylation of proteins, a fundamental process in the endoplasmic reticulum (ER) essential for the proper folding and functioning of many proteins.
+
+DDOST/OST48 shows amino acid sequence homology to the essential yeast Wbp1 protein, which is a component of the yeast OST complex. In yeast, as well as in mammals, these proteins are integral to the OST complex, which is responsible for transferring a pre-assembled oligosaccharide from a lipid carrier (dolichol) to specific asparagine residues on nascent polypeptides in the ER. This process is essential for the stability, folding, and function of a vast array of glycoproteins​​.
+
+Mutations or dysregulation in the OST complex, including the DDOST subunit, have been linked to various diseases. Specifically, mutations in DDOST have been associated with congenital disorders of glycosylation (CDG). CDG are a group of inherited metabolic disorders affecting the glycosylation process. A patient with DDOST-CDG presented with broad symptomatology and exhibited hypoglycosylation in fibroblasts. This suggests that proper function of DDOST is crucial for normal glycosylation and that its dysfunction can lead to a variety of clinical manifestations​​.
+
+For more detailed information on human DDOST and its role in diseases, the following key references are recommended:
+
+Silberstein et al. (1992): The initial cloning and characterization of the DDOST/OST48 gene.
+Kelleher and Gilmore (1994): Study on the homology and function of yeast Wbp1 and mammalian OST complex subunits, including DDOST.
+Jones et al. (2012): Research on mutations in human OST subunits, including DDOST, and their association with congenital disorders of glycosylation.
+Investigations into the N-linked glycosylation process in the ER, focusing on the role of the OST complex and its subunits like DDOST.
+Studies on the clinical presentations and molecular mechanisms underlying disorders caused by dysfunctions in glycosylation, particularly focusing on DDOST-related CDG.
+
+
+
+

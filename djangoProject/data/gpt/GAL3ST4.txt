@@ -1,0 +1,13 @@
+Write a 100-350 word essay about human GAL3ST4: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+uman Galactose-3-O-Sulfotransferase 4 (GAL3ST4) is an enzyme that plays a significant role in the sulfation of specific galactose-containing molecules. This enzyme is responsible for transferring a sulfate group to the 3-position of the galactose moiety in certain oligosaccharides, an essential modification for various biological functions.
+
+GAL3ST4 exhibits specificity for substrates such as Galβ1-3GalNAc-R and Galβ1-3(GlcNAcβ1-6)GalNAc-R, but it does not act on Galβ1-3/4GlcNAc-R oligosaccharides. The sulfation process catalyzed by GAL3ST4 involves the use of 3'-Phosphoadenosine-5'-phosphosulfate (PAPS) as a donor molecule. The reaction products of GAL3ST4 activity can be isolated and analyzed using techniques like paper electrophoresis, providing insights into its substrate specificity and enzymatic function​​.
+
+While the specific biological roles and potential disease associations of GAL3ST4 are not as well understood as some other members of the Gal3ST family, the enzyme's ability to modify the properties of galactose-containing molecules suggests its potential involvement in cell signaling and molecular recognition. Disruptions in the sulfation processes, potentially due to alterations in GAL3ST4 activity, could impact these crucial cellular functions. However, specific diseases directly linked to GAL3ST4 mutations or deficiencies are not well-documented.
+
+For more detailed information about human GAL3ST4 and its functions, the following key references can be consulted:
+
+Suzuki, A., et al. (2001); Seko, A., et al. (2001) - Research focusing on the enzymatic characteristics and biological importance of GAL3ST4, including its substrate specificity and activity assays​​.
+These references should offer a comprehensive overview of the enzymatic function, biological significance, and potential clinical implications of human GAL3ST4.

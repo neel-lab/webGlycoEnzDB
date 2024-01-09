@@ -1,0 +1,22 @@
+Write a 100-350 word essay about human SLC2A4: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human SLC2A4, better known as GLUT4, is a critical glucose transporter in the regulation of glucose homeostasis in the body. GLUT4 is distinctive for its insulin-regulated facilitative transport mechanism, playing a pivotal role in glucose uptake in adipose tissue and skeletal muscle, which are key tissues for insulin-mediated glucose disposal.
+
+Located primarily in intracellular vesicles in muscle and fat cells, GLUT4 translocates to the cell surface in response to insulin stimulation. This translocation is essential for the efficient uptake of glucose from the bloodstream into cells, particularly after meals when blood glucose levels rise. GLUT4's activity is central to maintaining normal blood glucose levels and is a key component in the body's response to insulin.
+
+Dysfunction or downregulation of GLUT4 is closely associated with insulin resistance, a hallmark of type 2 diabetes and metabolic syndrome. In these conditions, the response of muscle and adipose cells to insulin is impaired, leading to reduced GLUT4 translocation and decreased glucose uptake. This contributes to chronic high blood sugar levels, exacerbating the metabolic disorder.
+
+For more detailed information on SLC2A4/GLUT4, its function, and associated diseases, the following key references are recommended:
+
+1. Birnbaum, M.J. (1989). "Identification of a novel gene encoding an insulin-responsive glucose transporter protein." Cell, 57(2), 305-315.
+
+2. Zierath, J.R., et al. (1996). "Insulin action on glucose transport and plasma membrane GLUT4 content in skeletal muscle from patients with NIDDM." Diabetologia, 39(10), 1180-1189.
+
+3. Watson, R.T., & Pessin, J.E. (2001). "Intracellular organization of insulin signaling and GLUT4 translocation." Recent Progress in Hormone Research, 56, 175-193.
+
+4. Garvey, W.T., et al. (1998). "Pretranslational suppression of a glucose transporter protein causes insulin resistance in adipocytes from patients with non-insulin-dependent diabetes mellitus and obesity." Journal of Clinical Investigation, 81(5), 1528-1536.
+
+5. Abel, E.D., et al. (2001). "Adipose-selective targeting of the GLUT4 gene impairs insulin action in muscle and liver." Nature, 409(6821), 729-733.
+
+These references provide insights into the biochemical role of GLUT4 in glucose transport, its significance in insulin-regulated glucose uptake, and the implications of its dysfunction in conditions such as insulin resistance and type 2 diabetes.

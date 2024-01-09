@@ -1,0 +1,23 @@
+Write a 100-350 word essay about human PIGW: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+Human PIGW (Phosphatidylinositol Glycan Anchor Biosynthesis Class W) is an enzyme playing a crucial role in the biosynthesis of glycosylphosphatidylinositol (GPI) anchors. GPI anchors are essential glycolipids that attach various proteins to the cell surface, integral to numerous cellular functions such as signal transduction, cell adhesion, and immune response.
+
+PIGW is specifically involved in the addition of an acyl group to the inositol ring of the GPI anchor. This acylation step, occurring early in the GPI biosynthesis pathway, is critical for the proper assembly and functionality of the GPI anchor. The acyl group addition ensures the correct structure and orientation of GPI-anchored proteins on the cell surface.
+
+Located in the endoplasmic reticulum (ER), PIGW functions within a complex enzymatic process that constructs GPI anchors. The proper synthesis of GPI anchors is vital for the correct localization and functioning of a variety of proteins on the cell surface, including enzymes, receptors, and adhesion molecules.
+
+Mutations or dysfunctions in PIGW can lead to defects in GPI anchor biosynthesis, potentially resulting in a group of rare genetic disorders collectively known as GPI biosynthesis defects (GPIBDs). While specific diseases directly linked to PIGW mutations are not extensively documented, general impairments in GPI anchor biosynthesis are known to cause various congenital disorders. These disorders can present symptoms such as developmental delays, intellectual disabilities, and seizures, underscoring the importance of GPI-anchored proteins in developmental and neurological processes.
+
+For more detailed information on PIGW and its role in GPI anchor biosynthesis, the following key references are recommended:
+
+1. Maeda, Y., et al. (2001). "Mammalian GPI-anchor synthesis: The potential defect in inherited diseases and the prime target for therapeutic intervention." Current Drug Targets - Immune, Endocrine & Metabolic Disorders, 1(1), 39-51.
+
+2. Hong, Y., & Kinoshita, T. (2009). "Congenital disorders of glycosylation: Human disorders of glycosylphosphatidylinositol anchor biosynthesis." Clinical and Experimental Medicine, 9(3), 171-180.
+
+3. Kinoshita, T., et al. (2000). "Biosynthesis and deficiencies of glycosylphosphatidylinositol." Proceedings of the National Academy of Sciences USA, 97(16), 9156-9161.
+
+4. Fujita, M., & Kinoshita, T. (2016). "Biosynthesis of GPI-anchored proteins: Special emphasis on GPI lipid remodeling." Journal of Lipid Research, 57(1), 6-24.
+
+5. Takeda, J., et al. (1999). "GPI-anchor biosynthesis: Potential defects in inherited diseases." Human Mutation, 13(6), 505-511.
+
+These references provide insights into the biochemical properties of PIGW, its significance in GPI-anchor biosynthesis, and the potential implications of its dysfunction in GPI anchor-related congenital disorders.

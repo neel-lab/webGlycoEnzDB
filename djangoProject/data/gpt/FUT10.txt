@@ -1,0 +1,18 @@
+Write a 100-350 word essay about human FUT10: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+
+Human FUT10, a fucosyltransferase, plays a crucial role in modifying the N-glycan core structures within glycoproteins. It is a type II transmembrane protein, characterized by a short cytosolic amino-terminal tail, a single transmembrane domain anchored in the endoplasmic reticulum (ER), and a large catalytic domain located in the lumen of the ER. This structure is distinctive, as it features split polyexonic genes, contrasting with the genomic structure of terminal fucosyltransferases​​.
+
+Functionally, FUT10 is involved in the transfer of fucose to the N-glycan core. Specifically, it acts on the innermost N-acetylglucosamine (GlcNAc) of the core chitobiose of N-glycans. The enzyme modifies this GlcNAc by substitution with N-acetylmannosamine (ManNAc), an opened GlcNAc ring, or by adding an alpha(1-6) fucose. This modification is significant because it suggests that FUT10's activity is on the complete biantennary N-glycan structure rather than on shorter chitobiose substrates​​.
+
+In terms of its cellular location, FUT10 enzyme variants are generally retained in the endoplasmic reticulum. This retention is mediated by membrane retention signals at their N-terminal ends. There are different variants of FUT10, such as the embryo variant (419 amino acids) and the adult form (479 amino acids), both of which are ER-resident due to their respective NH2-ER and COOH-ER membrane retention signals. Additionally, there exists an embryo soluble form of FUT10, comprising 391 amino acids​​.
+
+While the specific diseases directly associated with FUT10 are not detailed in the provided materials, the modification of N-glycan structures by fucosylation is known to be crucial in various biological processes, including cell signaling, immune response, and disease pathogenesis. Therefore, any dysregulation in FUT10's function could potentially have significant implications in these areas.
+
+For further reading and detailed information, the following references are recommended:
+
+Mollicone et al., 2009 - For insights into the phylogenetic aspects and enzymatic activity of FUT10.
+Fabini et al., 2001 - Provides context on the classification of fucosyltransferases, including FUT10.
+Rendic et al., 2007 - Offers additional information on the structural aspects and comparative analysis of fucosyltransferases.

@@ -1,0 +1,23 @@
+Write a 100-350 word essay about human GMPPA: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+Human GMPPA (GDP-mannose pyrophosphorylase A) is a subunit of the GDP-mannose pyrophosphorylase (GMPP) complex, playing a crucial role in nucleotide sugar metabolism.
+
+Function
+GMPPA is part of the enzyme complex that catalyzes the synthesis of GDP-mannose, an essential substrate for the biosynthesis of glycoproteins and glycolipids. GDP-mannose is a key sugar nucleotide that serves as a donor of mannose residues in the process of glycosylation. Glycosylation is a fundamental biochemical process that modifies proteins and lipids, impacting their function, localization, and stability.
+
+Reaction Pathways
+GMPPA, in conjunction with GMPPB, is involved in the conversion of mannose-1-phosphate and GTP into GDP-mannose. This reaction is a critical step in the glycosylation pathway, particularly in the formation of N-linked and O-linked glycoproteins and glycolipids. These glycoconjugates play essential roles in various biological processes including cell signaling, immune response, and protein folding.
+
+Location
+The exact cellular localization of human GMPPA is not detailed in my knowledge source. However, given its role in nucleotide sugar metabolism, GMPPA is likely localized in the cytoplasm where it participates in the synthesis of GDP-mannose.
+
+Related Diseases
+While specific diseases directly associated with GMPPA dysfunction are not detailed, disruptions in nucleotide sugar metabolism, including GDP-mannose synthesis, can lead to disorders in glycosylation. Abnormal glycosylation can result in a wide range of diseases, including congenital disorders of glycosylation, which affect multiple organ systems and have various clinical manifestations.
+
+Key References for Further Research
+Ning and Elbein (2000). This study provides insights into the function of GMPPA and GMPPB in the biosynthesis of GDP-mannose​​.
+Leroy, J., et al. “Congenital Disorders of Glycosylation: An Overview,” in "Pediatric Research," 2013.
+Jaeken, J., et al. “Consensus Guidelines for the Diagnosis and Management of Congenital Disorders of Glycosylation,” in "Orphanet Journal of Rare Diseases," 2019.
+Hirschberg, C. B., et al. “GDP-Mannose Transport and Glycoprotein Glycosylation,” in "Biochimica et Biophysica Acta (BBA) - General Subjects," 2004.
+Freeze, H. H., et al. “Glycosylation Precursors,” in "Essentials of Glycobiology," 2017.
+These references provide a comprehensive understanding of GMPPA's role in nucleotide sugar metabolism and its implications in human health, particularly in relation to glycosylation disorders.

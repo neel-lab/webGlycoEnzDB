@@ -1,0 +1,29 @@
+Write a 100-350 word essay about human CALR: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+Human CALR (Calreticulin) is a multifunctional protein that plays significant roles in various cellular processes, including calcium homeostasis, protein folding, and immune response. Its diverse functions highlight its importance in cellular physiology and its involvement in several diseases.
+
+Function and Reaction Pathways:
+CALR is primarily known for its role in calcium storage and regulation within the endoplasmic reticulum (ER). It binds calcium ions, helping to maintain calcium balance in the cell, which is crucial for various cellular activities. Besides calcium regulation, CALR is involved in the proper folding of glycoproteins in the ER. It acts as a molecular chaperone, ensuring that proteins are correctly folded and assembled before they are transported to their destination. This chaperoning function is critical in maintaining protein quality control within the cell.
+
+Location:
+CALR is located in the ER, where it participates in protein folding and calcium homeostasis. Its presence in the ER is strategic for its roles in regulating calcium levels and assisting in the folding of newly synthesized proteins.
+
+Diseases:
+Mutations or dysfunctions in CALR are linked to several diseases. CALR mutations have been identified in certain myeloproliferative neoplasms, including essential thrombocythemia and primary myelofibrosis. These mutations are thought to contribute to the pathogenesis of these blood cancers. In addition, CALR's role in immune response links it to autoimmunity. The protein can act as an autoantigen in certain autoimmune conditions, such as systemic lupus erythematosus (SLE). Furthermore, as a chaperone involved in protein folding, abnormalities in CALR function can contribute to diseases related to protein misfolding.
+
+Key References:
+For more information on CALR, consider the following key references:
+
+1. **Michalak, M., Groenendyk, J., Szabo, E., Gold, L. I., & Opas, M. (2009). "Calreticulin, a multi-process calcium-buffering chaperone of the endoplasmic reticulum." Biochemical Journal, 417(3), 651-666.
+
+2. **Klampfl, T., et al. (2013). “Somatic mutations of calreticulin in myeloproliferative neoplasms.” New England Journal of Medicine, 369(25), 2379-2390.
+
+3. **Gardai, S. J., et al. (2005). “Cell-surface calreticulin initiates clearance of viable or apoptotic cells through trans-activation of LRP on the phagocyte.” Cell, 123(2), 321-334.
+
+4. **Raghavan, M., & Wijeyesakere, S. J. (2013). “Calreticulin in the immune system: ins and outs.” Trends in Immunology, 34(1), 13-21.
+
+5. **Krause, K. H., Michalak, M., (1997). "Calreticulin." Cell, 88(4), 439-443.
+
+These references provide a comprehensive overview of CALR's role in calcium regulation, protein folding, its significance in various diseases, particularly in myeloproliferative disorders and autoimmune diseases, and its overall impact on cellular function.

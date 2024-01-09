@@ -1,0 +1,22 @@
+Write a 100-350 word essay about human ALG2: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+
+Human ALG2 (Asparagine-linked glycosylation 2) is an essential enzyme in the N-linked glycosylation pathway, a critical process for the proper folding and function of many proteins. ALG2 is part of a group of mannosyltransferases located in the endoplasmic reticulum (ER) membrane, with catalytic domains facing the cytosol. It uses GDP-mannose as the sugar donor for mannosylation, a process fundamental for the assembly of lipid-linked oligosaccharides (LLOs) which are crucial for the attachment of carbohydrates to nascent proteins.
+
+The primary function of ALG2 within this pathway is to add mannose residues to the growing oligosaccharide chain on the dolichol lipid carrier in the ER. This step is pivotal in the sequential assembly and modification of the LLOs, preparing them for the transfer to proteins. The interactions of ALG2 with other mannosyltransferases, such as ALG1 and ALG11, are essential for the coordinated progression of N-linked glycosylation. These interactions ensure the sequential addition of sugar residues and limit the requirement for substrate diffusion, optimizing the glycosylation process​​​​.
+
+Mutations in the ALG2 gene can lead to congenital disorders of glycosylation (CDG). CDGs are a group of rare genetic disorders characterized by defects in the glycosylation pathway. The phenotypic consequences of these mutations can range from mild mental or psychomotor impairment to severe multiple organ dysfunction and infantile lethality. Most identified mutations in ALG2 are missense or partial-loss-of-function mutations. Due to the essential nature of ALG2 and other mannosyltransferases in humans, a complete loss of function is likely to result in embryonic lethality​​.
+
+For more detailed information on human ALG2, the following references are recommended:
+
+Chapter on "Alg1 Alg2 and Alg11 Mannosyltransferases of the Endoplasmic Reticulum" in "HB Glyco.pdf": Provides detailed information on ALG2 including its biological function, enzymatic activity, and implications in human diseases.
+Cipollo et al. (2001): Study on glycosylation mutants and the role of ALG2.
+Huffaker and Robbins (1982): Description of the ALG gene and its mutants.
+These sources offer comprehensive insights into the structure, function, and clinical significance of ALG2, particularly in the context of congenital disorders of glycosylation​​​​.
+
+
+
+
+

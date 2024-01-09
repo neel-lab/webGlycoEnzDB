@@ -1,0 +1,15 @@
+Write a 100-350 word essay about human DPM1: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+Human DPM1, or Dolichyl-Phosphate Mannosyltransferase Polypeptide 1, is an essential component of the enzyme complex responsible for the synthesis of dolichol-phosphate mannose (Dol-P-Man). This complex is crucial for various glycosylation pathways, including N-linked glycosylation, which occurs in the endoplasmic reticulum (ER) lumen. DPM1 associates with DPM2 and DPM3 proteins to form a stable DPM synthase complex. This complex is responsible for transferring mannose from GDP-mannose to dolichol phosphate, forming Dol-P-Man, which is a donor substrate for several glycosylation reactions in the ER​​​​.
+
+Structurally, human DPM1 differs from its yeast counterpart, Dpm1p, and lacks a signal sequence or a transmembrane domain. In contrast, human DPM2 and DPM3 proteins contain two transmembrane helices with both N- and C-termini oriented towards the cytoplasm​​.
+
+Mutations in the DPM1 gene have been linked to congenital disorders of glycosylation (CDG). Specifically, defects in the DPM1 gene cause CDG type Ie (DPM1-CDG). Patients with DPM1-CDG exhibit severe clinical manifestations, including developmental delays, neurological issues, and other systemic problems. For example, Kim et al. (2000) identified a homozygous mutation in the DPM1 gene that resulted in an Arg92-to-Gly substitution, leading to the disease. These findings highlight the importance of DPM1 in proper glycosylation and its impact on human health​​.
+
+For more detailed information on human DPM1, the following key references are recommended:
+
+Maeda et al. (1998, 2000): Studies on the association of human DPM1 with DPM2 and DPM3 and the formation of the DPM synthase complex.
+Kim et al. (2000): Identification of mutations in the DPM1 gene causing CDG type Ie.
+Research on the biological aspects and enzymatic activity of the DPM1-3 complex.
+Investigations into the structure and function of the DPM synthase complex in various eukaryotes.
+Studies on the role of DPM1 in glycosylation pathways and its implications in human diseases, particularly CDG.

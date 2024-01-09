@@ -1,0 +1,21 @@
+Write a 100-350 word essay about human GALNT12: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+Human GALNT12 is an enzyme belonging to the family of polypeptide N-acetylgalactosaminyltransferases (ppGalNAc-Ts), which are key players in the process of O-glycosylation. O-glycosylation is a type of protein post-translational modification where a carbohydrate, typically N-acetylgalactosamine (GalNAc), is added to the oxygen atom of serine or threonine residues in proteins. This modification is crucial for protein folding, stability, and function.
+
+GALNT12 specifically initiates the O-glycosylation process. It transfers GalNAc to specific serine or threonine residues on target proteins, marking the beginning of the formation of mucin-type O-glycans. The enzyme is located in the Golgi apparatus of cells, where glycosylation processes predominantly occur.
+
+The reaction pathways in which GALNT12 participates are integral to various biological processes, including cell signaling, protein-protein interactions, and immune responses. The proper functioning of GALNT12 is essential for the normal development and physiological functioning of cells and tissues.
+
+Alterations in the function of GALNT12 have been associated with certain diseases. For instance, inactivating germ line and somatic mutations in GALNT12 have been linked to the development of colon cancer. These mutations may lead to changes in the glycosylation patterns of proteins, potentially disrupting normal cell signaling and growth regulation pathways, which can contribute to cancer development and progression. However, the exact functional significance of these changes in terms of cancer formation or progression remains to be fully understood​​.
+
+For further detailed information and research on human GALNT12, its function, reaction pathways, and related diseases, the following key scientific references are recommended:
+
+Guda, K. et al. (2009). Inactivating germ line and somatic mutations in GALNT12 associated with colon cancer development.
+Bennett, E. P. et al. (2012). Review on alterations in ppGalNAc-Ts and cancer.
+McGuire, J. & Roseman, S. (1967). Identification of ppGalNAc-T activity.
+Raman, J. et al. (2012). Characterization of the final isoform of ppGalNAc-Ts.
+Fakhro, K. A. et al. (2011). Study on heterotaxy and congenital heart defects related to changes in LR body patterning.
+These references will provide comprehensive insights into the biochemical and genetic aspects of GALNT12 and its role in health and disease.
+
+
+

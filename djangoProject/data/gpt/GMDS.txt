@@ -1,0 +1,24 @@
+Write a 100-350 word essay about human GMDS: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+Human GMDS, or GDP-mannose 4,6-dehydratase, is an enzyme involved in the nucleotide sugar biosynthesis pathway, particularly in the synthesis of GDP-fucose.
+
+Function
+GMDS catalyzes a key step in the de novo pathway of GDP-fucose production. It converts GDP-mannose to GDP-4-dehydro-6-deoxy-D-mannose, which is then further processed to form GDP-fucose. GDP-fucose is an essential donor of fucose in the fucosylation of glycoproteins and glycolipids, a process crucial for cell-cell adhesion, signal transduction, and immune response.
+
+Reaction Pathways
+GMDS is part of the fucose biosynthesis pathway. Its action in converting GDP-mannose is critical for providing the precursor for GDP-fucose synthesis. Fucose, as a component of glycoconjugates, plays a significant role in various biological processes, including the development of the brain and immune system, as well as in pathological conditions like cancer and infectious diseases.
+
+Location
+GMDS belongs to the short-chain dehydrogenase/reductase superfamily and is a type II transmembrane protein. This suggests its localization in the Golgi apparatus, where it participates in the biosynthesis of GDP-fucose and its subsequent incorporation into glycoconjugates​​.
+
+Related Diseases
+Dysfunction in GMDS can lead to disorders related to fucose metabolism. Abnormal fucosylation patterns are associated with several diseases, including congenital disorders of glycosylation, cancer, and certain infectious diseases. Alterations in the fucosylation of cell surface molecules can affect cell signaling, adhesion, and immune recognition.
+
+Key References for Further Research
+Hwang and Horvitz (2002). This study discusses the structural aspects of GMDS and its role in fucose biosynthesis.
+Kallberg et al. (2010) and Kavanagh et al. (2008). These studies provide insights into the short-chain dehydrogenase/reductase superfamily, which includes GMDS.
+Schutzbach and Feingold (1970); Eixelsberger et al. (2012). These research articles explore the enzymatic mechanisms of GMDS in the synthesis of GDP-fucose.
+Becker, D. J., & Lowe, J. B. (2003). "Fucose: Biosynthesis and Biological Function in Mammals." Glycobiology.
+Marquardt, T., & Lühn, K. (2004). "Congenital Disorders of Glycosylation: Review of Their Molecular Bases, Clinical Presentations and Specific Therapies." European Journal of Pediatrics.
+These references provide a comprehensive understanding of GMDS's role in fucose metabolism and its implications in human health, particularly concerning disorders related to glycosylation.

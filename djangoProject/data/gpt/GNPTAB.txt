@@ -1,0 +1,26 @@
+Write a 100-350 word essay about human GNPTAB: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+Human GNPTAB, which encodes for the alpha and beta subunits of GlcNAc-1-phosphotransferase, plays a critical role in the lysosomal enzyme targeting pathway.
+
+Function
+GlcNAc-1-phosphotransferase, the enzyme for which GNPTAB codes, is responsible for the initial step in the formation of the mannose 6-phosphate (Man-6-P) recognition marker on lysosomal enzymes. This marker is crucial for directing these enzymes to the lysosome. Without it, enzymes are misdirected to the extracellular space, leading to a deficiency of essential hydrolases in lysosomes.
+
+Reaction Pathways
+The GNPTAB-encoded enzyme functions in the post-translational modification of lysosomal enzymes. It catalyzes the transfer of GlcNAc-1-phosphate to specific mannose residues on the oligosaccharides of these enzymes, which is the first step in generating the Man-6-P marker. This marker is essential for the enzymes to be correctly trafficked to the lysosomes.
+
+Location
+GNPTAB is expressed in various tissues and cells, given its fundamental role in lysosomal function. The protein product, GlcNAc-1-phosphotransferase, is located in the Golgi apparatus where it carries out its catalytic function.
+
+Related Diseases
+Mutations in the GNPTAB gene are linked to mucolipidosis types II alpha/beta (ML II alpha/beta, OMIM: 252600) and III alpha/beta (ML III alpha/beta, OMIM: 252605). These are lysosomal storage disorders characterized by skeletal abnormalities, developmental delays, and other systemic symptoms. These diseases result from the failure of lysosomal enzymes to be correctly targeted to the lysosome, leading to their deficiency within this organelle and subsequent cellular dysfunction.
+
+Key References for Further Research
+Cathey et al. (2008). This study discusses mutations in the GNPTAB gene and their link to mucolipidosis types II and III.
+Otomo et al. (2009); Tappino et al. (2008). These studies explore the genetic aspects and implications of GNPTAB mutations.
+Coutinho et al. (2011a). This research identifies large genomic rearrangements in the GNPTAB gene.
+Kornfeld, S. “Trafficking of lysosomal enzymes in normal and disease states,” in "Journal of Clinical Investigation," 1986.
+Braulke, T., & Bonifacino, J. S. “Sorting of lysosomal proteins,” in "Biochimica et Biophysica Acta (BBA) - Molecular Cell Research," 2009.
+These references provide a comprehensive understanding of GNPTAB's role in lysosomal enzyme targeting and its implications in human health, particularly concerning mucolipidosis types II and III.
+

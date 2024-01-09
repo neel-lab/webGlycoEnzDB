@@ -1,0 +1,17 @@
+Write a 100-350 word essay about human FUT2: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+Human FUT2, or fucosyltransferase 2, is an enzyme crucial for the synthesis of certain types of fucosylated glycans, which are important components of various biological processes including cell-cell recognition, microbial binding, and immune response. FUT2 is responsible for the addition of fucose, a monosaccharide, to glycoproteins and glycolipids in an α(1,2)-linkage.
+
+FUT2 plays a significant role in determining the secretor status of an individual, which refers to the presence of ABH antigens in body fluids like saliva and mucus. Non-secretors, who have inactive FUT2 due to genetic mutations, do not secrete these antigens. This distinction is important in several aspects of health and disease.
+
+One of the key roles of FUT2 is in the formation of the H antigen, the precursor for A and B antigens in the ABO blood group system. Variations in FUT2 activity can lead to differences in the expression of these antigens and influence susceptibility to various infectious diseases. For example, non-secretors are less susceptible to certain pathogens that use these antigens as entry points, such as noroviruses.
+
+Mutations in the FUT2 gene have been linked to different health outcomes. A common nonsense mutation in FUT2 is associated with the non-secretor phenotype. Interestingly, this mutation has been shown to affect the progression of HIV-1 infection.
+
+For more detailed information on human FUT2, its function, and its role in diseases, the following key references are recommended:
+
+Kelly et al. (1995): For insights into the genetic basis of the secretor and non-secretor phenotypes and the role of FUT2.
+Kindberg et al. (2006): Study on the impact of a FUT2 gene mutation on the progression of HIV-1 infection.
+Research on the role of FUT2 in the synthesis of ABH antigens and its implications in susceptibility to various infections.
+Studies on the molecular genetics of FUT2 and its association with different health outcomes and disease susceptibilities.
+Investigations into the biological and clinical significance of fucosylation in immune response and pathogen interaction​​.

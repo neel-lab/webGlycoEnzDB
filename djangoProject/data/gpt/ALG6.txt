@@ -1,0 +1,15 @@
+Write a 100-350 word essay about human ALG6: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+Human ALG6, also known as Dolichyl-Phosphate Glucosyltransferase, is an essential enzyme in the N-linked glycosylation pathway, particularly in the biosynthesis of lipid-linked oligosaccharides (LLOs). This enzyme is responsible for the addition of glucose molecules to dolichol phosphate, a lipid carrier molecule, facilitating the formation of the LLOs. These LLOs are essential for the attachment of carbohydrates to nascent proteins, a process fundamental for their proper folding and functioning.
+
+The ALG6 enzyme operates in the endoplasmic reticulum (ER) and plays a critical role in the assembly and maturation of the glycan structures necessary for protein quality control. Its function in the ER underscores the importance of proper LLO assembly and glycosylation in cellular processes.
+
+Mutations in the ALG6 gene can lead to a type of congenital disorder of glycosylation known as ALG6-CDG (CDG-Ic). This disorder is characterized by various symptoms, including psychomotor retardation, developmental delay, seizures, hypotonia, coagulopathy, feeding problems, and visual impairment. These symptoms highlight the critical role of proper glycosylation in human development and physiological functioning.
+
+For detailed information on human ALG6, the following references are recommended:
+
+Burda et al. (1998); Imbach et al. (1999): Studies demonstrating the link between deficiencies in ALG6 and the occurrence of CDG-Ic.
+Haeuptle and Hennet (2009): Research on the clinical manifestations and consequences of ALG6-CDG.
+These sources provide a comprehensive understanding of ALG6's role in the N-linked glycosylation pathway and its significance in human diseases, particularly in the context of congenital disorders of glycosylation​​.

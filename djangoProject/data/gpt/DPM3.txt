@@ -1,0 +1,16 @@
+Write a 100-350 word essay about human DPM3: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+
+
+Human DPM3, or Dolichyl-Phosphate Mannosyltransferase Polypeptide 3, is a component of the dolichol-phosphate mannose (Dol-P-Man) synthase complex. This complex, consisting of DPM1, DPM2, and DPM3, plays a critical role in various glycosylation pathways. DPM3 directly associates with both DPM1 and DPM2 proteins, contributing to the stable expression of the DPM synthase complex, essential for the biosynthesis of Dol-P-Man​​​​.
+
+Structurally, human DPM3 consists of 92 amino acids and, like DPM2, contains two transmembrane helices with both N- and C-termini oriented towards the cytoplasm. This structural feature suggests that DPM3 is integral to the membrane, playing a role in the localization and function of the DPM synthase complex within the endoplasmic reticulum (ER)​​.
+
+Deficiencies in DPM3 have been linked to congenital disorders of glycosylation (CDG). Specifically, mutations in the DPM3 gene cause CDG type Io (DPM3-CDG). Lefeber et al. (2009) identified a homozygous mutation in the DPM3 gene leading to a Leu85-to-Ser substitution. Patients with DPM3-CDG exhibit severe clinical symptoms, underscoring the importance of DPM3 in normal glycosylation processes and, consequently, human health​​.
+
+For more detailed information on human DPM3, the following key references are recommended:
+
+Maeda et al. (2000): Studies on the association of human DPM3 with DPM1 and DPM2 in the DPM synthase complex.
+Lefeber et al. (2009): Identification of mutations in the DPM3 gene causing CDG type Io.
+
+Maeda et al. (1998, 2008): Studies on the regulation of dolichol-phosphate mannose synthase and the role of DPM3 in mammalian cells.

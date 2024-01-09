@@ -1,0 +1,23 @@
+Write a 100-350 word essay about human GALT: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+
+Human Galactose-1-phosphate uridyltransferase (GALT) is a critical enzyme in the metabolism of galactose. It plays a pivotal role in the Leloir pathway, the primary route for the metabolism of galactose, by catalyzing the conversion of galactose-1-phosphate (Gal-1-P) and uridine diphosphate glucose (UDP-Glc) to uridine diphosphate galactose (UDP-Gal) and glucose-1-phosphate (Glc-1-P).
+
+Function
+The primary function of GALT is to prevent the accumulation of toxic metabolites such as Gal-1-P in the cells by facilitating the proper metabolism of galactose. It is essential for the conversion of dietary galactose into glucose, which can then be used for energy production or stored for later use.
+
+Reaction Pathways
+GALT is integral to the Leloir pathway. The enzyme uses Gal-1-P derived from dietary galactose and, in a reaction with UDP-Glc, produces UDP-Gal and Glc-1-P. This process is essential for the efficient utilization of galactose obtained from dietary sources and for maintaining the balance of galactose in the body.
+
+Location
+GALT is found in various tissues but is most active in the liver, which is the primary site for galactose metabolism.
+
+Related Diseases
+The most common disorder associated with GALT deficiency is classical galactosemia. In this condition, the lack of functional GALT leads to the accumulation of Gal-1-P and galactose in the body, causing various symptoms such as failure to thrive, jaundice, liver enlargement, and cataracts in infants. A lactose-free diet can alleviate many acute symptoms by reducing galactose levels in the body. However, long-term complications such as cognitive disabilities, growth retardation, and ovarian dysfunction may persist. Abnormal glycosylation of glycoproteins and glycolipids has been observed in some individuals with GALT deficiency, although this has not been directly linked to a lack of galactose.
+
+Key References for Further Research
+“Congenital Disorders of Glycosylation,” Handbook of Clinical Neurology, 2013.
+"Glycosylation Disorders of Membrane Trafficking," Glycoconjugate Journal, 2013.
+"Neurological Aspects of Human Glycosylation Disorders," Annual Review of Neuroscience, 2015.
+"GNE Myopathy: Current Update and Future Therapy," Journal of Neurology, Neurosurgery, and Psychiatry, 2015.
+"Bone and Connective Tissue Disorders Caused by Defects in Glycosaminoglycan Biosynthesis," FEBS Journal, 2019.
+These references offer an in-depth understanding of GALT, its role in galactose metabolism, and the broader context of glycosylation disorders, including galactosemia​​.
