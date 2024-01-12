@@ -39,7 +39,7 @@ def search(request, gene_name=''):
         onto_graph_functions[func] = {}
         sub_functions = onto_df.loc[onto_df['function'] == func]['sub_function'].unique()
         gene_names[func + '_NULL_NULL_NULL'] = sorted(list(onto_df.loc[onto_df['function'] == func][
-                                                                  'gene_name']))
+                                                                  'gene_name'].unique()))
 
         for s_func in sub_functions:
             onto_graph_functions[func][s_func] ={}
@@ -48,7 +48,7 @@ def search(request, gene_name=''):
 
             gene_names[func + '_' + s_func + '_NULL_NULL'] = sorted(list(onto_df.loc[(onto_df['function'] == func) &
                                                                               (onto_df['sub_function'] == s_func)][
-                                                                      'gene_name']))
+                                                                      'gene_name'].unique()))
 
             for s_s_func in sub_sub_functions:
                 onto_graph_functions[func][s_func][s_s_func] = {}
@@ -76,7 +76,7 @@ def search(request, gene_name=''):
         onto_graph_pathways[path] = {}
         sub_paths = onto_df.loc[onto_df['pathway'] == path]['sub_pathway'].unique()
         gene_names[path + '_NULL_NULL_NULL_NULL_NULL'] = sorted(list(onto_df.loc[onto_df['pathway'] == path][
-                                                                  'gene_name']))
+                                                                  'gene_name'].unique()))
 
         for s_path in sub_paths:
             onto_graph_pathways[path][s_path] ={}

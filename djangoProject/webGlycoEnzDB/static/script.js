@@ -152,18 +152,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // DOMContentLoaded  end
 
-window.onload = function() {
-    const ele = document.getElementById('sc_violin_iframe');
-    if (!ele){
-        return;
-    }
-    var currentUrl = window.location.href;
-    var segments = currentUrl.split('/');
-    var subpath = segments[segments.length - 2];
-    console.log(subpath)
-    var newUrl = `/violinplots?gene_name=${subpath}`;
-    ele.src = newUrl;
-  }
+// window.onload = function() {
+//     const violin_iframe = document.getElementById('sc_violin_iframe');
+//     // const violin_header = document.getElementById('sc_violin_header');
+//     if (!violin_iframe){
+//         return;
+//     }
+//     var currentUrl = window.location.href;
+//     var segments = currentUrl.split('/');
+//     var subpath = segments[segments.length - 2];
+//     var newUrl = `/violinplots?gene_name=${subpath}`;
+//     violin_iframe.src = newUrl;
+//   }
 
   // Wait for the DOM content to load
 document.addEventListener("DOMContentLoaded", function() {
