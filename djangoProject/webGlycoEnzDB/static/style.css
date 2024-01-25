@@ -1,126 +1,149 @@
-li .submenu{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+li .submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-    .header {
-      background-color: #5056d9;
-      padding: 1px 16px;
-      height: 50px;
-      width: 100%;
-      position: fixed;
-      top: 0;
-        color: white;
-    }
+.header {
+  background-color: #5056d9;
+  padding: 1px 16px;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  color: white;
+  font-size: 25px;
+  padding-top: 7px;
+  z-index: 10;
+}
 
-    .sidebar {
-      height: 100%;
-      width: 250px;
-      position: fixed;
-      left: 0;
-      top: 50px;
-      background-color: #f1f1f1;
-      overflow-x: hidden;
-    }
+.header a {
+  color: white;
+  text-decoration: none;
+}
 
-    .sidebar2 {
-      height: 100%;
-      width: 200px;
-      position: fixed;
-      left: 250px;
-      top: 50px;
-      background-color: #f1f1f1;
-      overflow-x: hidden;
-    }
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+}
 
-    .main-content {
-      margin-left: 450px;
-      margin-top: 50px;
-      padding: 1px 16px;
-      height: 100%;
-      overflow: scroll;
-    }
+.sidebar2 {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  left: 250px;
+  top: 50px;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+}
 
-        button.active {
-      background-color: #4CAF50;
-      color: white;
-    }
+.main-content {
+  margin-left: 450px;
+  margin-top: 50px;
+  padding: 1px 16px;
+  height: 100%;
+  overflow: scroll;
+}
 
-    .no-underline {
-      text-decoration: none;
-    }
+button.active {
+  background-color: #4CAF50;
+  color: white;
+}
 
-    .links-container {
-      display: flex;
-      /* flex-wrap: wrap; */
-      justify-content: center;
-  }
-  .links-box {
-      width: calc(33.33% - 2px);
-      margin: 0 1px 20px;
-  }
+.no-underline {
+  text-decoration: none;
+}
+
+.links-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+.links-box {
+  width: calc(33.33% - 2px);
+  margin: 0 1px 20px;
+}
 
 
-  .box {
-    background-color: #e9e9e9;
-    border: 1px solid #ccc;
-    padding: 50px;
-    margin: 10px;
-    width: 100%;
-  }
+.box {
+  background-color: #e9e9e9;
+  border: 1px solid #ccc;
+  padding: 50px;
+  margin: 10px;
+  width: 100%;
+}
 
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    table-layout: fixed;
-    border: 1px solid #ddd;
-    padding: 50px;
-    margin: 10px;
-  }
-  
-  th, td {
-    padding: 2px;
-    text-align: center;
-    /* border-left: 1px solid #ddd; */
-  }
-  th {
-    /* background-color: #f2f2f2; */
-    font-weight: bold;
-    /* text-transform: uppercase; */
-  }
-  /* a {
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  border: 1px solid #ddd;
+  padding: 50px;
+  margin: 10px;
+}
+
+th,
+td {
+  padding: 2px;
+  text-align: center;
+  /* border-left: 1px solid #ddd; */
+}
+
+th {
+  /* background-color: #f2f2f2; */
+  font-weight: bold;
+  /* text-transform: uppercase; */
+}
+
+/* a {
     text-decoration: none;
     color: #333;
   } */
 
-  .overlay_gene_html {
-    background:transparent; 
-    position:relative; 
-    width:601px;
-    height:600px; /* your iframe height */
-    top:600px;  /* your iframe height */
-    margin-top:-600px;  /* your iframe height */
- }
+.overlay_gene_html {
+  background: transparent;
+  position: relative;
+  width: 601px;
+  height: 600px;
+  /* your iframe height */
+  top: 600px;
+  /* your iframe height */
+  margin-top: -600px;
+  /* your iframe height */
+}
 
- .svg-object {
-  width: 100%; /* Scale the object to its parent container's width */
-  height: auto; /* Allow the height to adjust according to the width */
-  display: block; /* Ensures proper inline rendering */
+.svg-object {
+  width: 100%;
+  /* Scale the object to its parent container's width */
+  height: auto;
+  /* Allow the height to adjust according to the width */
+  display: block;
+  /* Ensures proper inline rendering */
 }
 
 /* CSS */
 .image-container {
-  max-width: 100%; /* Ensure the container adjusts to the available width */
-  overflow: hidden; /* Hide overflowing image parts if any */
+  max-width: 100%;
+  /* Ensure the container adjusts to the available width */
+  overflow: hidden;
+  /* Hide overflowing image parts if any */
 }
 
 .image-container img {
-  width: 100%; /* Make the image fill the container's width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove any default inline spacing */
+  width: 100%;
+  /* Make the image fill the container's width */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove any default inline spacing */
   max-height: 500px;
 }
 
@@ -131,15 +154,21 @@ li .submenu{
 .tf_table table {
   border-collapse: collapse;
   width: 20%;
-  max-width: 40%; /* Adjust based on container needs */
-  font-size: 12px; /* Example font size */
+  max-width: 40%;
+  /* Adjust based on container needs */
+  font-size: 12px;
+  /* Example font size */
   table-layout: auto;
 }
 
-.tf_table th, .tf_table td {
-  border: 1px solid #000; /* Example border style */
-  padding: 8px; /* Example padding */
-  text-align: left; /* Example alignment */
+.tf_table th,
+.tf_table td {
+  border: 1px solid #000;
+  /* Example border style */
+  padding: 8px;
+  /* Example padding */
+  text-align: left;
+  /* Example alignment */
 }
 
 #searchInput {
@@ -147,6 +176,7 @@ li .submenu{
   width: 150px;
   font-size: 16px;
 }
+
 #suggestions {
   display: none;
   position: absolute;
@@ -158,10 +188,47 @@ li .submenu{
   margin-left: 23px;
   z-index: 10;
 }
+
 .suggestion {
   padding: 8px;
   cursor: pointer;
 }
+
 .suggestion:hover {
   background-color: #e9e9e9;
+}
+
+.home-icon {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+/* Style for the overlay container */
+.overlay {
+  display: none;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Style for the content within the overlay */
+.overlay-content {
+  background-color: #fff;
+  /* padding: 20px;
+  border-radius: 5px; */
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+/* Style for the close button */
+.close-btn {
+  cursor: pointer;
 }

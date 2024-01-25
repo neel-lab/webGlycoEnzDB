@@ -133,7 +133,7 @@ def search(request, gene_name=''):
                             gene_names[path + '_' + s_path + '_' + s_s_path + '_' + s_s_s_path + '_' + s_s_s_s_path + '_' + s_s_s_s_s_path] = \
                                 onto_graph_pathways[path][s_path][s_s_path][s_s_s_path][s_s_s_s_path][s_s_s_s_s_path]
     # General information
-    gene_general_info = {'message': "Welcome to GlycoEnzDB"}
+    gene_general_info = {'message': "Gene Pathway Map (Clickable Blocks)"}
     gene_html = ""
     figure_url = ""
     reaction_img = ""

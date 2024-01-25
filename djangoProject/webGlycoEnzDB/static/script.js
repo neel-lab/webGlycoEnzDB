@@ -81,7 +81,9 @@ function clear_link_styles(element) {
 
         if (element !== childNode){
             const symbol_span =  childNode.querySelector('span');
-            symbol_span.innerHTML = RIGHT_ARROW;
+            if (symbol_span && symbol_span.innerHTML === DOWN_ARROW){
+                symbol_span.innerHTML = RIGHT_ARROW;
+            }
 
         }
     });
@@ -232,3 +234,91 @@ document.addEventListener('click', function(e) {
 });
 
 });
+
+var originalCoordinates = {}; // Store original coordinates
+
+// Function to resize the area coordinates based on the image size
+function resizeAreas() {
+   var image = document.getElementById('resizableImage');
+   if (!image) {
+    return;
+   }
+   var map = document.getElementById('resizableMap');
+   var areas = map.getElementsByTagName('area');
+
+   // Store original coordinates if not already stored
+   if (!originalCoordinates[image.src]) {
+      originalCoordinates[image.src] = [];
+      for (var i = 0; i < areas.length; i++) {
+         originalCoordinates[image.src][i] = areas[i].getAttribute('coords').split(',').map(Number);
+      }
+   }
+
+   var scaleFactorX = image.width / image.naturalWidth;
+   var scaleFactorY = image.height / image.naturalHeight;
+
+   // Loop through each area and update coordinates
+   for (var i = 0; i < areas.length; i++) {
+      var originalCoords = originalCoordinates[image.src][i];
+      var adjustedCoords = originalCoords.map(function(coord, index) {
+         return (index % 2 === 0) ? coord * scaleFactorX : coord * scaleFactorY;
+      });
+      areas[i].setAttribute('coords', adjustedCoords.join(','));
+   }
+}
+
+// Resize areas on image load and resize
+window.addEventListener('load', resizeAreas);
+window.addEventListener('resize', resizeAreas);
+
+function resetGenes() {
+    localStorage.removeItem('key');
+    document.getElementById("Gene_Names_list").innerHTML = "";
+
+    const elements = document.querySelectorAll('.show');
+    for(let i=0; i<elements.length; i++) {
+        clear_link_styles(elements[i])
+        let mycollapse = new bootstrap.Collapse(elements[i]);
+        mycollapse.hide();
+    }
+
+}
+
+function open_pathway_submenu(key) {
+    resetGenes()
+    showPathways();
+
+    localStorage.setItem('key', key);
+
+    const key_arr = key.split("_");
+
+    for (i = 0; i < n_subclass; i++) {
+        if(key_arr[i] === "NULL"){
+            break;
+        }
+        const id = [...key_arr].splice(0, i+1).join("_") + ("_NULL".repeat(n_subclass - i - 1));
+        const element = document.getElementById(id);
+
+        if (element) {
+            const DOWN_ARROW = '▼';
+            let spanElement = element.querySelector('span');
+            if (spanElement.innerText !== DOWN_ARROW) {
+                setTimeout( () => {element.click();}, 10);
+            }
+        }
+    }
+
+    openOverlay()
+}
+
+// Function to open the overlay
+function openOverlay() {
+    document.getElementById('myOverlay').style.display = 'flex';
+    document.getElementById('pathway_map_img').style.display = 'none';
+}
+
+// Function to close the overlay
+function closeOverlay() {
+    document.getElementById('myOverlay').style.display = 'none';
+    document.getElementById('pathway_map_img').style.display = 'block';
+}
