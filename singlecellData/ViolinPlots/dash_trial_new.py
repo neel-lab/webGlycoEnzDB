@@ -32,7 +32,7 @@ gene_expr_wmeta['cell_type'] = gene_expr_wmeta['cell_type'].astype('category')
 
 tabula_expr_summary = pd.read_csv(os.path.join(heirDir, 'tabulaSummaryTable_new.csv'), index_col=0)
 
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP])
+app = Dash(__name__, requests_pathname_prefix='/violinplots/', external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP])
 
 # %% App title
 # overall_title = html.H1(sel_gene, style={'textAlign': 'center'})
