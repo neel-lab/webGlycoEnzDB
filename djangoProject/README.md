@@ -12,6 +12,13 @@ pathway_image and genes mapping - file:data/pathway_map.json - {key: "pathway tr
 Server Steps:
 static file changes: [TODO]
 
+
+dataloader for ontology - to edit in future
+
 ## CCLE Violin Plots
 
 ## geneNetGlyco
+
+
+
+systemctl [TODO]

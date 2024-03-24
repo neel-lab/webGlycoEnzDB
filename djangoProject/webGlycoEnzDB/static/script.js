@@ -287,7 +287,6 @@ function resetGenes() {
 function open_pathway_submenu(key) {
     resetGenes()
     showPathways();
-
     localStorage.setItem('key', key);
 
     const key_arr = key.split("_");
@@ -302,9 +301,40 @@ function open_pathway_submenu(key) {
         if (element) {
             const DOWN_ARROW = '▼';
             let spanElement = element.querySelector('span');
-            if (spanElement.innerText !== DOWN_ARROW) {
+            if (spanElement == null || spanElement.innerText !== DOWN_ARROW) {
                 setTimeout( () => {element.click();}, 10);
             }
+        }
+    }
+    
+}
+
+function open_submenu_and_pathway_figures(pathway_no, slide_no) {
+
+    keys = slide_to_pathway_mapping[pathway_no]
+    localStorage.setItem('pathway_slide',slide_no);
+    document.getElementById("open_submenu_buttons").innerHTML = "";
+
+    if (keys.length == 1) {
+        open_pathway_submenu(keys[0])
+    } else {
+        var element = document.getElementById("open_submenu_buttons");
+            // Loop through the list of button names
+        for (let i = 0; i < keys.length; i++) {
+            // Create a new button element
+            var button = document.createElement("button");
+            // Set the button text to the current button name
+            button_text = keys[i].replaceAll('_NULL','').trim().replaceAll('_',' > ');
+            button.innerHTML = "Open " + button_text;
+            button.style.marginBlock = "10px";
+            // Set the onclick function for the button
+            button.onclick = function() {
+                // Call a custom function when the button is clicked
+                open_pathway_submenu(keys[i])
+            };
+
+            // Append the button to the container div
+            element.appendChild(button);
         }
     }
 
@@ -313,12 +343,31 @@ function open_pathway_submenu(key) {
 
 // Function to open the overlay
 function openOverlay() {
+    setCurrentPathwayiFrames('pathway_figures_iframe');
     document.getElementById('myOverlay').style.display = 'flex';
+    document.getElementById('openPathwayBtn').style.display = 'flex';
     document.getElementById('pathway_map_img').style.display = 'none';
 }
 
 // Function to close the overlay
 function closeOverlay() {
+    resetGenes()
+    document.getElementById("open_submenu_buttons").innerHTML = "";
     document.getElementById('myOverlay').style.display = 'none';
+    document.getElementById('openPathwayBtn').style.display = 'none';
     document.getElementById('pathway_map_img').style.display = 'block';
+}
+
+function setCurrentPathwayiFrames(element_id) {
+    const pathway_slide = localStorage.getItem('pathway_slide');
+
+    let element = document.getElementById(element_id);
+    if (element) {
+        if (slide_file_path[pathway_slide]){
+            element.src = pathway_figures_location + slide_file_path[pathway_slide];
+        } else {
+            element.src = "";
+        }
+    }
+
 }
