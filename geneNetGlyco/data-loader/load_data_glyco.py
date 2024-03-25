@@ -32,6 +32,7 @@ total_files = len(sys.argv[1:])
 print(f'######### Loading {total_files} files ##########')
 fileno = 0
 print(sys.argv[1:])
+cur.execute("TRUNCATE TABLE TF_Glyco;")
 
 for filename in sys.argv[1:]:
     fileno += 1
