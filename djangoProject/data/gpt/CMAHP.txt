@@ -1,21 +1,13 @@
-Write a 100-350 word essay about human CMAHP : it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human CMAHP . Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-As of my last update in April 2023, human CMAHP (Cytidine Monophospho-N-Acetylneuraminic Acid Hydroxylase Pseudogene) is recognized as a pseudogene and not an active gene encoding a functional protein. Pseudogenes are segments of DNA that are similar to normal genes but are non-functional; they are often considered "genomic fossils."
+### Function
+Human CMAHP, or CMP-N-acetylneuraminic acid hydroxylase pseudogene, is the non-functional human counterpart of the CMAH gene found in other mammals. In other species, the CMAH enzyme converts N-acetylneuraminic acid (Neu5Ac) to N-glycolylneuraminic acid (Neu5Gc), a process critical in the modification of sialic acids on cell surfaces. However, due to a mutation in the CMAHP gene that occurred during human evolution, the enzyme is inactive in humans. As a result, humans do not naturally produce Neu5Gc, unlike other mammals.
 
-CMAHP is related to the CMAH gene, which encodes the enzyme CMP-N-acetylneuraminic acid hydroxylase. This enzyme is involved in the conversion of N-acetylneuraminic acid (Neu5Ac) to N-glycolylneuraminic acid (Neu5Gc), a sialic acid derivative. Sialic acids are important for a variety of cellular functions, including cell signaling and recognition. They are typically found on the surfaces of cells and are components of glycoproteins and glycolipids.
+### Reaction Pathways
+In other mammals, the active CMAH enzyme catalyzes the hydroxylation of CMP-Neu5Ac to CMP-Neu5Gc, which is then integrated into glycoproteins and glycolipids on cell surfaces. In humans, due to the inactivation of CMAHP, this conversion does not occur. This leads to Neu5Ac being the predominant sialic acid in human cells. The absence of Neu5Gc production alters the way human cells interact with pathogens and the immune system, influencing susceptibility to certain diseases and immune responses.
 
-In humans, the loss of functional CMAH (and thus the production of Neu5Gc) occurred due to a mutation in the CMAH gene during evolution. This loss is one of the few known genetic differences between humans and other great apes and has been implicated in various aspects of human disease and biology. The absence of Neu5Gc in humans has been studied in the context of immunity, inflammation, and cancer, as the human immune system recognizes Neu5Gc as foreign.
+### Location
+If functional, the CMAHP enzyme would be localized in the cytoplasm, where it would participate in the modification of sialic acids. However, in humans, the CMAHP gene is a pseudogene, meaning it does not produce an active enzyme. As a result, the pathway leading to the production of Neu5Gc is absent in humans.
 
-For more information on the implications of the loss of functional CMAH in humans, the following references can be consulted:
-
-1. **Varki, A. (2010). "Colloquium Paper: Uniquely human evolution of sialic acid genetics and biology." Proceedings of the National Academy of Sciences, 107(Supplement 2), 8939-8946.
-
-2. **Varki, A., & Gagneux, P. (2012). "Multifarious roles of sialic acids in immunity." Annals of the New York Academy of Sciences, 1253, 16-36.
-
-3. **Hedlund, M., et al. (2007). "Evidence for a human-specific mechanism for diet and antibody-mediated inflammation in carcinoma progression." Proceedings of the National Academy of Sciences, 104(49), 18936-18941.
-
-4. **Ghaderi, D., et al. (2010). "Implications of the presence of N-glycolylneuraminic acid in recombinant therapeutic glycoproteins." Nature Biotechnology, 28(8), 863-867.
-
-5. **Martin, M.J., et al. (2005). "Evolution of human-chimpanzee differences in malaria susceptibility: Relationship to human genetic loss of N-glycolylneuraminic acid." Proceedings of the National Academy of Sciences, 102(36), 12819-12824.
-
-These references offer insights into the evolutionary and biological significance of the CMAH mutation in humans, the resulting absence of Neu5Gc, and the potential health implications of this genetic difference.
+### Diseases
+The inactivation of CMAHP has implications for human health and disease. Humans can incorporate Neu5Gc from dietary sources, particularly red meat, which can trigger an immune response since Neu5Gc is foreign to the human body. This immune response has been associated with chronic inflammation, and studies suggest a potential link to increased risks of cancer, atherosclerosis, and other inflammatory diseases. The evolutionary loss of CMAHP in humans is thought to have provided some advantages, such as altered susceptibility to certain pathogens, but also poses unique challenges related to modern diet and disease.

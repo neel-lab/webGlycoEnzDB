@@ -1,21 +1,13 @@
-Write a 100-350 word essay about human POMK : it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human POMK. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-Human POMK (Protein O-Mannose Kinase) is an enzyme that plays a significant role in the post-translational modification of dystroglycan, a key protein in muscle and neural cells. POMK is involved in the phosphorylation of O-mannose glycans on alpha-dystroglycan (α-DG), a crucial step in the maturation and functional expression of α-DG.
+### Function
+Human POMK, or protein-O-mannose kinase, is an enzyme that plays a critical role in the glycosylation of alpha-dystroglycan, a protein essential for the structural integrity of muscle cells and the proper functioning of the nervous system. POMK specifically phosphorylates the mannose residue on O-mannosyl glycan chains attached to alpha-dystroglycan. This phosphorylation is a key step in the maturation of alpha-dystroglycan, enabling it to bind to extracellular matrix proteins like laminin, which is crucial for maintaining the stability and function of muscle and nerve cells.
 
-POMK is predominantly located in the endoplasmic reticulum (ER) and Golgi apparatus, where it catalyzes the addition of a phosphate group to the mannose residue in O-mannose-linked glycans. This phosphorylation is essential for the subsequent addition of other sugar residues to α-DG, which is necessary for its interaction with extracellular matrix proteins like laminin. These interactions are vital for maintaining the structural integrity of muscle fibers and proper neural development.
+### Reaction Pathways
+POMK functions within the O-mannosylation glycosylation pathway. In this pathway, POMK catalyzes the transfer of a phosphate group to the mannose residue on O-mannosyl glycan chains of alpha-dystroglycan. This phosphorylation is essential for the subsequent addition of other sugars and modifications that create a fully functional glycan structure. Properly modified alpha-dystroglycan is necessary for binding to extracellular matrix components, ensuring the integrity of muscle tissues and the correct development of the brain.
 
-Mutations in the POMK gene have been linked to a group of rare genetic disorders known as dystroglycanopathies, characterized by a range of symptoms including muscular dystrophy, intellectual disabilities, and abnormalities in brain development. One such disorder associated with POMK mutations is Walker-Warburg Syndrome (WWS), a severe form of congenital muscular dystrophy that also involves brain and eye abnormalities.
+### Location
+POMK is localized in the Golgi apparatus, where it participates in the post-translational modification of proteins. The Golgi is the central hub for processing and modifying proteins before they are transported to their final destinations. The presence of POMK in the Golgi ensures that alpha-dystroglycan is correctly phosphorylated and prepared for further glycosylation steps, allowing it to function properly when it reaches the cell membrane.
 
-For more information on POMK and its role in health and disease, the following key references are recommended:
-
-1. Willer, T., et al. (2012). "Mutations in the muscle, heart, and brain-expressed protein kinase (POMK) cause Walker-Warburg syndrome." Neurology, 78(18), 1442-1449.
-
-2. Manzini, M.C., et al. (2012). "Exome sequencing and functional validation in zebrafish identify GTDC2 mutations as a cause of Walker-Warburg syndrome." American Journal of Human Genetics, 91(3), 541-547.
-
-3. Beltrán-Valero de Bernabé, D., et al. (2004). "Mutations in the O-mannosyltransferase gene POMT1 give rise to the severe neuronal migration disorder Walker-Warburg syndrome." American Journal of Human Genetics, 74(5), 1033-1041.
-
-4. Godfrey, C., et al. (2007). "Refining genotype-phenotype correlations in muscular dystrophies with defective glycosylation of dystroglycan." Brain, 130(Pt 10), 2725-2735.
-
-5. Yoshida-Moriguchi, T., & Campbell, K.P. (2015). "Matriglycan: a novel polysaccharide that links dystroglycan to the basement membrane." Glycobiology, 25(7), 702-713.
-
-These references provide insights into the biochemical role of POMK, its importance in the modification of dystroglycan, and the implications of its dysfunction in dystroglycanopathies such as Walker-Warburg Syndrome.
+### Diseases
+Mutations in the POMK gene are associated with congenital muscular dystrophies, such as Walker-Warburg syndrome (WWS) and muscle-eye-brain disease (MEB). These conditions are characterized by severe muscle weakness, brain malformations, and eye abnormalities. The diseases arise because defective POMK activity leads to insufficient phosphorylation of alpha-dystroglycan, resulting in improper glycosylation and a failure to bind to extracellular matrix proteins. This disruption in cell-matrix interactions causes the structural and functional defects observed in these disorders. Understanding POMK’s role in these pathways is crucial for diagnosing and developing treatments for these devastating diseases.

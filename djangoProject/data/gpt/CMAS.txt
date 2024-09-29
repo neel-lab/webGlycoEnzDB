@@ -1,23 +1,19 @@
-Write a 100-350 word essay about human CMAS: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human CMAS. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
+### Function
 
+Human CMAS (Cytidine Monophosphate N-acetylneuraminic Acid Synthetase) is an enzyme that catalyzes the activation of N-acetylneuraminic acid (NeuAc) and other sialic acid derivatives to form CMP-NeuAc. This activation is essential for the biosynthesis of sialoglycoconjugates, which are critical for various cellular functions including cell-cell communication, adhesion, and immune response. The reaction catalyzed by CMAS is CMP-NeuAc + PPi.
 
-Human CMAS (Cytidine Monophosphate N-Acetylneuraminic Acid Synthetase) is an enzyme integral to the biosynthesis of sialic acids, a family of nine-carbon sugars critically involved in cellular communication and signaling. CMAS is highly conserved across species, with a sequence identity of 94% between human and murine CMAS, and between 41% and 47% with bacterial CMAS enzymes. This evolutionary conservation underscores the enzyme's fundamental role in biology​​.
+### Reaction Pathways
 
-CMAS is unique among sugar-activating enzymes for its nuclear localization, a feature first described by Kean in 1970. This contrasts with the typical cytosolic localization of other enzymes in this category. The transport of CMAS into the nucleus is facilitated by a nuclear localization signal (NLS), which varies among species. Human CMAS contains one basic cluster that acts as an NLS​​.
+CMAS operates in the sialic acid biosynthesis pathway. It specifically catalyzes the formation of CMP-NeuAc from CTP and NeuAc. This reaction is a pivotal step, as only CMP-activated sialic acid can be transported into the Golgi apparatus where it is utilized by sialyltransferases to sialylate glycoproteins and glycolipids. The activation of sialic acids by CMAS is crucial for their incorporation into sialoglycoconjugates, which play roles in various physiological processes.
 
-Functionally, CMAS catalyzes the synthesis of CMP-Neu5Ac (Cytidine Monophosphate N-Acetylneuraminic Acid), a key donor substrate for sialyltransferases in sialic acid synthesis. This process is vital for creating a wide variety of sialic acid derivatives, which are crucial for numerous biological processes, including cell-cell communication, pathogen recognition, and immune response. Interestingly, vertebrate CMAS enzymes, including the human version, show distinct substrate specificities despite high sequence identity. For example, while the recombinant human CMAS efficiently uses Neu5Ac (N-Acetylneuraminic Acid) and Neu5Gc (N-Glycolylneuraminic Acid), the rainbow trout enzyme prefers KDN (2-Keto-3-deoxy-D-glycero-D-galacto-nononic acid)​​.
+### Location
 
-The importance of CMAS is further highlighted by its ubiquitous expression across human tissues, indicating its essential role in various physiological functions. Disruptions in CMAS function could potentially impact a range of biological processes, given the pivotal role of sialic acids in cellular communication and pathogen recognition.
+CMAS is uniquely localized in the nucleus, contrasting with other sugar-activating enzymes that are typically found in the cytosol. This unusual localization suggests a specialized role for CMAS in the nuclear environment, potentially linked to the regulation of its enzymatic activity or the compartmentalization of its product, CMP-NeuAc. The nuclear localization is directed by specific nuclear localization signals (NLSs) within the CMAS protein, which facilitate its transport into the nucleus.
 
-For more detailed information and further studies on human CMAS, the following references are recommended:
+### Diseases
 
-Münster et al. (1998): Molecular cloning of the first mammalian CMAS.
-Lawrence et al. (2001): Detailed study on the substrate specificity and nuclear localization of human CMAS.
-Krapp et al. (2003): Crystal structure of the sugar activating domain of murine CMAS.
-Oschlies et al. (2009): Crystal structure of the C-terminal domain of murine CMAS.
-Kean (1970): First description of CMAS nuclear localization​​.
+Mutations or dysregulation of CMAS are associated with several diseases. One significant condition linked to CMAS dysfunction is nephrotic syndrome, particularly affecting podocytes, the specialized cells in the kidney. Reduced CMAS expression in mouse models leads to defective sialylation of podocyte proteins, resulting in proteinuria and kidney failure shortly after birth. This highlights the critical role of CMAS in maintaining proper kidney function. Additionally, altered sialylation due to CMAS mutations can impact various physiological processes, potentially contributing to other diseases involving immune responses and cellular interactions.
 
-
-
-
+In summary, CMAS is a crucial enzyme in the sialic acid biosynthesis pathway, essential for the activation of sialic acids and their incorporation into sialoglycoconjugates. Its unique nuclear localization and critical role in cellular function underscore its importance, with dysregulation leading to significant pathological conditions.

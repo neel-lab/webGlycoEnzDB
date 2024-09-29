@@ -1,23 +1,13 @@
-Write a 100-350 word essay about human PIGM: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human PIGM. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-Human PIGM (Phosphatidylinositol Glycan Anchor Biosynthesis Class M) is an enzyme that plays a pivotal role in the biosynthesis of glycosylphosphatidylinositol (GPI) anchors. These anchors are complex molecules that attach a diverse range of proteins to the cell surface, playing crucial roles in various cellular functions, including signal transduction, cell adhesion, and immune regulation.
+### Function
+Human PIGM, or phosphatidylinositol glycan anchor biosynthesis class M, is an enzyme essential for the biosynthesis of glycosylphosphatidylinositol (GPI) anchors. GPI anchors are glycolipid structures that attach specific proteins to the cell membrane, playing crucial roles in cellular processes such as signal transduction, immune responses, and cell adhesion. PIGM specifically catalyzes the transfer of the first mannose to the GPI anchor precursor, a critical step in the formation of functional GPI anchors.
 
-PIGM is specifically responsible for the transfer of a mannose molecule from dolichol-phosphate-mannose (Dol-P-Man) to the growing GPI precursor, a key step in the GPI biosynthetic pathway. This mannose transfer is essential for the formation of the core glycan structure of GPI anchors.
+### Reaction Pathways
+PIGM operates within the GPI anchor biosynthesis pathway, which occurs in the endoplasmic reticulum (ER). It functions as part of a complex that transfers the first mannose from dolichol-phosphate-mannose (Dol-P-Man) to the GPI precursor, GlcNAc-inositol phospholipid. This mannose addition is essential for the subsequent steps in the GPI biosynthesis pathway, including further mannose additions and modifications that complete the GPI anchor structure. Proper functioning of PIGM is crucial for the successful assembly of GPI anchors, ensuring that proteins are correctly attached to the cell membrane.
 
-Located in the endoplasmic reticulum (ER), PIGM's activity is critical for the correct assembly and functionality of GPI-anchored proteins. These proteins include enzymes, receptors, and adhesion molecules that are vital for numerous biological processes. The proper expression and localization of GPI-anchored proteins on the cell surface are dependent on the GPI anchor biosynthesis, in which PIGM plays an integral part.
+### Location
+PIGM is localized in the endoplasmic reticulum (ER), the cellular organelle where the initial stages of GPI anchor biosynthesis take place. The ER provides the necessary environment and substrates for PIGM to catalyze the mannose transfer, a key step in the GPI anchor formation process. PIGM’s location in the ER ensures it can efficiently interact with other components of the GPI biosynthesis machinery, facilitating the proper assembly and modification of GPI anchors.
 
-While there are no widely recognized diseases directly linked to PIGM dysfunction, defects in GPI anchor biosynthesis can lead to a group of rare genetic disorders known as GPI biosynthesis defects (GPIBDs). Patients with GPIBDs can exhibit a range of symptoms, such as intellectual disability, seizures, and developmental delays, depending on the specific GPI anchor protein affected. The involvement of PIGM in GPI anchor synthesis underscores its potential significance in these disorders.
-
-For more information on PIGM and its role in GPI anchor biosynthesis, the following key references are recommended:
-
-1. Maeda, Y., et al. (2001). "PIGM, a gene involved in glycosylphosphatidylinositol anchor biosynthesis, is mutated in paroxysmal nocturnal hemoglobinuria." Nature Genetics, 28(3), 267-272.
-
-2. Kinoshita, T., et al. (2000). "Biosynthesis and deficiencies of glycosylphosphatidylinositol." Proceedings of the National Academy of Sciences USA, 97(16), 9156-9161.
-
-3. Takeda, J., et al. (1999). "GPI-anchor biosynthesis: Potential defects in inherited diseases." Human Mutation, 13(6), 505-511.
-
-4. Almeida, A.M., et al. (2006). "Biosynthesis of glycosylphosphatidylinositol anchors." Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids, 1761(5), 636-653.
-
-5. Ng, B.G., & Freeze, H.H. (2015). "Human genetic disorders of glycosylation." European Journal of Medical Genetics, 58(5), 293-309.
-
-These references provide insights into the biochemical properties of PIGM, its significance in GPI-anchor biosynthesis, and the potential implications of its dysfunction in GPI anchor-related congenital disorders.
+### Diseases
+Mutations in the PIGM gene are associated with inherited GPI deficiencies (IGDs), particularly a rare disorder known as inherited glycosylphosphatidylinositol deficiency. This condition is characterized by a variety of symptoms, including intellectual disability, seizures, and an increased risk of venous thrombosis. The disorder arises because mutations in PIGM disrupt the normal biosynthesis of GPI anchors, leading to defects in protein attachment to the cell membrane and subsequent cellular dysfunction. Understanding PIGM’s role is crucial for diagnosing and developing treatments for these conditions.

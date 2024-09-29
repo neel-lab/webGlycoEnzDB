@@ -1,23 +1,13 @@
-Write a 100-350 word essay about human PIGC: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human PIGC. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-Human PIGC (Phosphatidylinositol Glycan Anchor Biosynthesis Class C) is a crucial enzyme involved in the biosynthesis of glycosylphosphatidylinositol (GPI) anchors. These anchors are glycolipids that attach various proteins to the cell membrane, playing vital roles in cell signaling, adhesion, and recognition.
+### Function
+Human PIGC, or phosphatidylinositol glycan anchor biosynthesis class C, is an enzyme involved in the early stages of glycosylphosphatidylinositol (GPI) anchor biosynthesis. GPI anchors are glycolipid structures that tether certain proteins to the cell membrane, playing vital roles in various cellular processes, including signal transduction, immune response, and cell adhesion. PIGC is part of a multi-subunit enzyme complex responsible for transferring N-acetylglucosamine (GlcNAc) to phosphatidylinositol, the first committed step in GPI anchor assembly.
 
-PIGC is responsible for the addition of N-acetylglucosamine (GlcNAc) to phosphatidylinositol (PI), a key initial step in the complex process of GPI anchor synthesis. This step is essential for the formation of GPI anchors, which are subsequently modified and attached to proteins. GPI-anchored proteins have diverse functions, including enzymes, receptors, and adhesion molecules, and are involved in a range of biological processes.
+### Reaction Pathways
+PIGC functions within the GPI anchor biosynthesis pathway, specifically in the endoplasmic reticulum (ER). It is part of the enzyme complex that catalyzes the transfer of GlcNAc from UDP-GlcNAc to phosphatidylinositol, forming GlcNAc-phosphatidylinositol. This reaction is the initial and crucial step in the assembly of GPI anchors, which undergo further modifications and elongation before being attached to proteins. The proper function of PIGC is essential for the correct synthesis and functionality of GPI-anchored proteins.
 
-Located in the endoplasmic reticulum (ER), PIGC's activity is critical for the proper assembly and function of GPI-anchored proteins on the cell surface. Dysfunctions in the GPI anchor biosynthesis pathway, including deficiencies in PIGC, can lead to GPI anchor deficiencies, impacting a multitude of cellular processes.
+### Location
+PIGC is localized in the endoplasmic reticulum (ER), the cellular organelle where GPI anchor biosynthesis begins. The ER provides the necessary environment for PIGC to interact with other components of the GPI biosynthesis machinery, ensuring that the early steps of anchor formation occur efficiently. This localization is critical for the enzyme's role in initiating GPI anchor synthesis, which is essential for the eventual attachment of GPI-anchored proteins to the cell membrane.
 
-Defects in GPI anchor synthesis are linked to several genetic disorders collectively known as GPI biosynthesis defects (GPIBDs). These conditions can manifest with a wide array of symptoms, such as intellectual disability, seizures, and developmental delays, highlighting the importance of GPI anchors in neuronal development and function.
-
-For more detailed information on PIGC and its role in GPI anchor biosynthesis, the following key references are recommended:
-
-1. Hong, Y., et al. (1999). "PIGC, one of the genes required for the biosynthesis of glycosylphosphatidylinositols in mammals, is located on human chromosome 1q22." Genomics, 57(3), 494-497.
-
-2. Kinoshita, T., & Fujita, M. (2016). "Biosynthesis of GPI-anchored proteins: special emphasis on GPI lipid remodeling." Journal of Lipid Research, 57(1), 6-24.
-
-3. Murakami, Y., et al. (2003). "PIGC mutations cause congenital disorders of glycosylation." American Journal of Human Genetics, 73(4), 967-971.
-
-4. Almeida, A.M., et al. (2006). "Biosynthesis of glycosylphosphatidylinositol anchors." Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids, 1761(5), 636-653.
-
-5. Ng, B.G., & Freeze, H.H. (2015). "Human genetic disorders of glycosylation." European Journal of Medical Genetics, 58(5), 293-309.
-
-These references provide insights into the biochemical properties of PIGC, its significance in GPI-anchor biosynthesis, and the implications of its dysfunction in genetic disorders related to GPI anchor deficiencies.
+### Diseases
+Mutations in the PIGC gene can lead to defects in GPI anchor biosynthesis, contributing to a group of disorders known as inherited GPI deficiencies (IGDs). These disorders are characterized by a range of symptoms, including intellectual disability, seizures, developmental delays, and other neurological impairments. The improper formation of GPI anchors due to dysfunctional PIGC results in the mislocalization and loss of function of GPI-anchored proteins, which are critical for normal cellular function. Understanding PIGC's role in GPI anchor biosynthesis is vital for diagnosing and developing therapeutic approaches for these conditions.

@@ -1,22 +1,13 @@
-Write a 100-350 word essay about human NEU3: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human NEU3. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
+### Function
+Human NEU3, or neuraminidase 3, is an enzyme that plays a crucial role in the metabolism of sialic acids on glycoproteins and glycolipids. NEU3 specifically hydrolyzes terminal sialic acid residues from these sialoglycoconjugates, which is essential for regulating cell surface interactions, signal transduction, and immune responses. NEU3's activity is particularly important in modulating the composition of gangliosides, a type of glycolipid, on the cell membrane, influencing processes like cell proliferation, differentiation, and apoptosis.
 
-Human NEU3 (Sialidase-3 or Neuraminidase 3) is a crucial enzyme in the metabolism of sialic acids, particularly involved in the catabolism of gangliosides, which are sialic acid-containing glycosphingolipids. NEU3 specifically catalyzes the hydrolysis of terminal sialic acid residues from gangliosides, a process essential for the regulation of these complex lipids in cellular membranes.
+### Reaction Pathways
+NEU3 functions primarily in the degradation of gangliosides and other sialylated molecules within the plasma membrane. By removing sialic acids, NEU3 alters the structure and function of these molecules, affecting how cells interact with their environment and communicate with each other. This enzymatic activity is a key part of the broader glycosphingolipid metabolism pathway, which is vital for maintaining the balance of complex lipids on the cell surface, influencing cellular behavior and signaling.
 
-Predominantly associated with cell membranes, NEU3 is primarily active in the plasma membrane, distinguishing it from other sialidases localized in lysosomes or cytosol. This unique localization implicates NEU3 in the modulation of cell surface properties and signaling. Its enzymatic activity influences a range of cellular processes, including cell differentiation, proliferation, and apoptosis, mainly due to its role in modifying the composition of gangliosides in the cell membrane.
+### Location
+NEU3 is predominantly localized at the plasma membrane, where it associates with lipid rafts—specialized microdomains rich in cholesterol and sphingolipids. This membrane localization allows NEU3 to directly modify cell surface sialylated molecules, particularly gangliosides, thereby playing a significant role in modulating cell-cell interactions and signaling pathways. NEU3's activity at the cell surface distinguishes it from other neuraminidases like NEU1, which are primarily lysosomal.
 
-Alterations in NEU3 activity have been associated with various diseases, particularly in the context of cancer and metabolic disorders. Overexpression of NEU3 has been observed in several types of cancers and is thought to contribute to tumorigenesis and cancer progression by altering cell membrane composition and associated signaling pathways. Additionally, NEU3 activity has implications in metabolic regulation, potentially influencing insulin signaling and glucose metabolism.
-
-For more detailed information on NEU3, its function, and associated diseases, the following key references are recommended:
-
-1. Miyagi, T., & Yamaguchi, K. (2012). "Mammalian sialidases: physiological and pathological roles in cellular functions." Glycobiology, 22(7), 880-896.
-
-2. Monti, E., et al. (2004). "Sialidase expression in normal and transformed human cells." Glycoconjugate Journal, 20(8), 481-489.
-
-3. Papini, N., et al. (2004). "NEU3 sialidase as a marker of human cancers." Biotechnological Applications of Sialidases, 83-94.
-
-4. Tringali, C., et al. (2012). "Neuraminidases 3 and 4: a new class of oncogenes?" Genes & Cancer, 3(5-6), 403-415.
-
-5. Yamaguchi, K., et al. (2005). "Roles of sialidase NEU3 in human cancers." Biochimica et Biophysica Acta (BBA) - General Subjects, 1758(11), 1917-1923.
-
-These references provide a comprehensive understanding of the biochemical role of NEU3, its significance in ganglioside metabolism, and potential implications in diseases related to cell membrane dynamics and signaling.
+### Diseases
+Alterations in NEU3 activity have been implicated in various diseases, particularly cancer. Overexpression of NEU3 has been observed in several types of cancer, where it contributes to tumor progression, metastasis, and resistance to apoptosis by modifying cell surface glycosphingolipids. Additionally, NEU3 dysregulation can affect immune responses and has been linked to conditions such as atherosclerosis and neurodegenerative diseases, where abnormal sialylation patterns play a role in disease pathology. Understanding NEU3's function and regulation is crucial for exploring therapeutic strategies targeting sialic acid metabolism in these diseases.

@@ -1,24 +1,13 @@
-Write a 100-350 word essay about human PIGH: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human PIGH. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
+### Function
+Human PIGH, or phosphatidylinositol glycan anchor biosynthesis class H, is an enzyme that plays a critical role in the early stages of glycosylphosphatidylinositol (GPI) anchor biosynthesis. GPI anchors are essential for attaching specific proteins to the cell membrane, facilitating various cellular processes such as signaling, immune responses, and cell adhesion. PIGH is a part of the enzyme complex that catalyzes the transfer of N-acetylglucosamine (GlcNAc) to phosphatidylinositol, the first committed step in GPI anchor formation.
 
-Human PIGH (Phosphatidylinositol Glycan Anchor Biosynthesis Class H) is an enzyme that plays a vital role in the early stages of glycosylphosphatidylinositol (GPI) anchor biosynthesis. GPI anchors are complex glycolipids that tether a variety of proteins to the cell surface, serving crucial functions in signal transduction, cell adhesion, and immune responses.
+### Reaction Pathways
+PIGH functions within the GPI anchor biosynthesis pathway, which takes place in the endoplasmic reticulum (ER). The enzyme is a component of a multi-subunit complex that initiates the synthesis of GPI anchors by transferring GlcNAc from UDP-GlcNAc to phosphatidylinositol. This step is crucial as it sets the foundation for the subsequent steps in GPI anchor assembly, where the anchor is elongated, modified, and eventually attached to proteins destined for the cell surface.
 
-PIGH is responsible for the addition of the first mannose to the GPI precursor. This step is a critical part of GPI anchor synthesis, setting the foundation for subsequent modifications that result in the complete, functional GPI anchor. The enzyme's action is essential for the proper assembly of GPI anchors, ensuring the correct attachment and presentation of GPI-anchored proteins on the cell surface.
+### Location
+PIGH is localized in the endoplasmic reticulum (ER), the site of protein synthesis and initial post-translational modifications. The ER provides the necessary environment for PIGH to function as part of the GPI-N-acetylglucosaminyltransferase complex, ensuring the proper initiation of GPI anchor biosynthesis. This localization is essential for the enzyme’s role in the early stages of anchor formation, enabling the correct processing and modification of GPI-anchored proteins.
 
-PIGH is located in the endoplasmic reticulum (ER), where it participates in the complex GPI biosynthetic pathway. Given the importance of GPI-anchored proteins in various cellular processes, PIGH plays a significant role in maintaining cellular functionality and communication.
-
-Dysfunctions or mutations in PIGH can potentially lead to GPI anchor deficiencies, impacting the expression and function of GPI-anchored proteins. While specific diseases directly caused by PIGH mutations are not widely documented, GPI biosynthesis defects are known to result in several congenital disorders. These disorders often present with symptoms like developmental delays, intellectual disabilities, and seizures, reflecting the importance of GPI anchors in developmental and neurological processes.
-
-For more detailed information on PIGH and its role in GPI anchor biosynthesis, the following key references are recommended:
-
-1. Kinoshita, T., et al. (2000). "Biosynthesis and deficiencies of glycosylphosphatidylinositol." Proceedings of the National Academy of Sciences USA, 97(16), 9156-9161.
-
-2. Hong, Y., et al. (2000). "PIGH, a partner of PIGA in glycosylphosphatidylinositol anchor biosynthesis." FEBS Letters, 478(1-2), 57-61.
-
-3. Fujita, M., & Kinoshita, T. (2012). "Structural remodeling of GPI anchors during biosynthesis and after attachment to proteins." FEBS Letters, 586(4), 476-481.
-
-4. Murakami, Y., et al. (2003). "Defects in GPI anchor biosynthesis in PIGA-CDG patients." Biochimica et Biophysica Acta (BBA) - Molecular Basis of Disease, 1639(2), 115-121.
-
-5. Almeida, A.M., et al. (2006). "Biosynthesis of glycosylphosphatidylinositol anchors." Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids, 1761(5), 636-653.
-
-These references provide a comprehensive overview of PIGH's biochemical function, its importance in GPI anchor biosynthesis, and potential implications in congenital disorders related to GPI anchor deficiencies.
+### Diseases
+Mutations in the PIGH gene can lead to inherited GPI deficiencies (IGDs), a group of rare genetic disorders characterized by developmental delays, intellectual disability, seizures, and other neurological problems. These disorders arise from defects in the GPI anchor biosynthesis pathway, leading to the improper attachment and function of GPI-anchored proteins. As these proteins are critical for various cellular functions, their mislocalization or dysfunction can result in significant physiological and neurological challenges. Understanding PIGH’s role is vital for diagnosing and developing therapeutic approaches for these conditions.

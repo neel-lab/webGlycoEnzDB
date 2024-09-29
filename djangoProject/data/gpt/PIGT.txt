@@ -1,22 +1,13 @@
-Write a 100-350 word essay about human PIGT: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human PIGT. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
+### Function
+Human PIGT, or phosphatidylinositol glycan anchor biosynthesis class T, is an enzyme that plays a crucial role in the final step of glycosylphosphatidylinositol (GPI) anchor biosynthesis. GPI anchors are glycolipid structures that tether proteins to the cell membrane, facilitating various cellular processes such as signal transduction, immune response, and cell adhesion. PIGT is an essential component of the GPI transamidase complex, which catalyzes the transfer of the GPI anchor to proteins, enabling their attachment to the cell membrane.
 
-Human PIGT (Phosphatidylinositol Glycan Anchor Biosynthesis Class T) is a crucial enzyme in the biosynthesis of glycosylphosphatidylinositol (GPI) anchors, which are complex glycolipids that anchor various proteins to the cell membrane. PIGT plays a significant role in the later stages of GPI anchor assembly, particularly in the attachment of the GPI anchor to proteins.
+### Reaction Pathways
+PIGT functions within the GPI anchor biosynthesis pathway, specifically during the GPI transamidation process. As part of the GPI transamidase complex, PIGT facilitates the attachment of GPI anchors to the carboxyl terminus of precursor proteins after the signal peptide is cleaved. This step is critical for ensuring that proteins are correctly anchored to the cell membrane, where they can perform their biological functions. The successful attachment of GPI anchors, mediated by PIGT, is essential for the stability and functionality of many membrane-bound proteins.
 
-PIGT is primarily located in the endoplasmic reticulum (ER), where it collaborates with other enzymes to complete the GPI anchor biosynthesis and facilitate the transfer of the anchor to specific proteins. This process is essential for the correct localization and function of GPI-anchored proteins on the cell surface. GPI-anchored proteins, including enzymes, receptors, and adhesion molecules, are involved in numerous biological processes such as signal transduction, cell adhesion, and immune responses.
+### Location
+PIGT is localized in the endoplasmic reticulum (ER), the site of protein synthesis and initial post-translational modifications. The ER provides the environment necessary for PIGT to interact with other components of the GPI transamidase complex and with precursor proteins, ensuring that GPI anchors are properly attached. The enzyme's presence in the ER is vital for its role in the final stages of GPI anchor biosynthesis and protein maturation.
 
-Mutations or dysfunction in PIGT can lead to GPI anchor deficiencies, resulting in a group of rare genetic disorders known as GPI biosynthesis defects (GPIBDs). Patients with GPIBDs may exhibit a range of symptoms, including developmental delays, intellectual disabilities, seizures, and various neurological and physical abnormalities. This underscores the critical role of GPI anchors in normal development and cellular functioning.
-
-For more detailed information on PIGT and its role in GPI anchor biosynthesis and related disorders, the following key references are recommended:
-
-1. Hong, Y., et al. (2007). "Human PIG-T, a component of the GPI transamidase complex, is involved in GPI anchor biosynthesis." Journal of Biological Chemistry, 282(50), 36762-36774.
-
-2. Kinoshita, T., et al. (2008). "Biosynthesis and deficiencies of glycosylphosphatidylinositol." Proceedings of the National Academy of Sciences USA, 97(16), 9156-9161.
-
-3. Krawitz, P.M., et al. (2012). "Identity-by-descent filtering of exome sequence data for pathogenic mutations in genes implicated in GPI-anchor biosynthesis." Human Mutation, 33(1), 133-139.
-
-4. Ng, B.G., & Freeze, H.H. (2015). "Human genetic disorders of glycosylation." European Journal of Medical Genetics, 58(5), 293-309.
-
-5. Ohishi, K., et al. (2014). "PIGT, a member of the GPI transamidase complex, is required for GPI anchor attachment to proteins." Molecular and Cellular Biology, 34(10), 1610-1623.
-
-These references provide comprehensive insights into the biochemical properties of PIGT, its significance in GPI-anchor biosynthesis, and the implications of its dysfunction in GPI anchor-related congenital disorders.
+### Diseases
+Mutations in the PIGT gene are associated with a range of disorders known as inherited GPI deficiencies (IGDs). These conditions are characterized by symptoms such as intellectual disability, seizures, developmental delays, and other neurological impairments. The defective attachment of GPI anchors due to PIGT mutations results in the mislocalization and dysfunction of GPI-anchored proteins, which are critical for numerous cellular processes. Understanding PIGT’s role is important for diagnosing and potentially treating these conditions.

@@ -1,22 +1,13 @@
-Write a 100-350 word essay about human PMM1: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human PMM1. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
+### Function
+Human PMM1, or phosphomannomutase 1, is an enzyme that plays a critical role in carbohydrate metabolism, specifically in the interconversion of mannose-6-phosphate and mannose-1-phosphate. This conversion is essential for the synthesis of GDP-mannose, a key precursor required for glycosylation processes. Glycosylation is a fundamental cellular process where sugars are added to proteins and lipids, affecting their function, stability, and localization.
 
-Human PMM1 (Phosphomannomutase 1) is an enzyme that plays a critical role in the biosynthesis of glycoproteins and glycolipids. PMM1 is involved in the conversion of mannose-6-phosphate to mannose-1-phosphate, a key step in the synthesis of GDP-mannose. GDP-mannose is an essential substrate for the glycosylation of proteins and lipids, a process crucial for their proper function and cellular localization.
+### Reaction Pathways
+PMM1 functions in the mannose metabolism pathway, where it catalyzes the reversible conversion of mannose-6-phosphate to mannose-1-phosphate. Mannose-1-phosphate is then used to generate GDP-mannose, which is crucial for the synthesis of glycoproteins and glycolipids. These glycosylated molecules are vital for various biological processes, including cell-cell communication, protein folding, and immune responses. PMM1’s role is therefore integral to maintaining the proper flow of mannose intermediates through the glycosylation pathway.
 
-PMM1 is primarily located in the cytoplasm, where it facilitates the aforementioned reaction in the mannose pathway. This pathway is integral to the synthesis of N-glycans, which are attached to proteins in the endoplasmic reticulum (ER) and Golgi apparatus. N-glycosylation is essential for protein folding, stability, and trafficking.
+### Location
+PMM1 is localized in the cytoplasm, where it participates in the metabolism of sugars and the synthesis of nucleotide sugars like GDP-mannose. The cytoplasmic localization allows PMM1 to efficiently catalyze its reaction and provide mannose-1-phosphate for the subsequent steps in glycosylation. This positioning is essential for ensuring that cells have an adequate supply of the precursors needed for proper glycosylation.
 
-Deficiencies or dysfunctions in PMM1 can lead to disorders in glycosylation. One such condition is Congenital Disorders of Glycosylation (CDG), specifically PMM1-CDG (formerly known as CDG-Ia). CDG encompasses a group of rare inherited metabolic disorders characterized by defects in the glycosylation of proteins. PMM1-CDG can present with various symptoms, including developmental delay, intellectual disability, hypotonia (reduced muscle tone), and multisystemic involvement.
-
-For more detailed information on PMM1, the following key references are recommended:
-
-1. Matthijs, G., et al. (1997). "Mutations in PMM2, a phosphomannomutase gene on chromosome 16p13, in carbohydrate-deficient glycoprotein type I syndrome (Jaeken syndrome)." Nature Genetics, 16(1), 88-92.
-
-2. Jaeken, J., et al. (1998). "Phosphomannomutase deficiency is a cause of carbohydrate-deficient glycoprotein syndrome type I." FEBS Letters, 422(1), 154-158.
-
-3. Pirard, M., et al. (1999). "Phosphomannomutase activity in fibroblasts from patients with congenital disorders of glycosylation." Glycobiology, 9(3), 311-318.
-
-4. de Lonlay, P., & Seta, N. (2009). "The clinical spectrum of phosphomannomutase 2 deficiency (CDG-Ia)." Biochimica et Biophysica Acta, 1792(9), 827-834.
-
-5. Schollen, E., et al. (2000). "Clinical and molecular features of type 1 congenital disorders of glycosylation due to phosphomannomutase deficiencies." European Journal of Human Genetics, 8(9), 706-712.
-
-These references provide a comprehensive understanding of PMM1's biochemical function, its significance in glycosylation pathways, and its implications in congenital disorders like PMM1-CDG.
+### Diseases
+Unlike its close relative, PMM2, mutations in the PMM1 gene are not typically associated with severe congenital disorders. However, disruptions in PMM1 function can potentially impact glycosylation processes, leading to mild metabolic disturbances. PMM2 mutations, by contrast, cause congenital disorders of glycosylation (CDG), which highlight the importance of phosphomannomutase activity in human health. Although PMM1 has not been directly linked to major diseases, its role in glycosylation underscores its importance in maintaining cellular function and stability. Understanding PMM1's function could contribute to broader insights into metabolic and glycosylation-related disorders.

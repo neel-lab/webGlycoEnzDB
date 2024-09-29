@@ -1,16 +1,19 @@
-Write a 100-350 word essay about human DPM3: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human DPM3. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
+### Function
 
+Human DPM3 (dolichyl-phosphate mannosyltransferase subunit 3) is an essential component of the dolichyl-phosphate mannose (Dol-P-Man) synthase complex. It functions primarily as a regulatory subunit that stabilizes the catalytic subunit DPM1 and ensures its proper localization and activity within the endoplasmic reticulum (ER). DPM3 is crucial for the synthesis of Dol-P-Man, a mannose donor necessary for several glycosylation pathways, including N-glycosylation, O-mannosylation, C-mannosylation, and glycosylphosphatidylinositol (GPI) anchor biosynthesis.
 
-Human DPM3, or Dolichyl-Phosphate Mannosyltransferase Polypeptide 3, is a component of the dolichol-phosphate mannose (Dol-P-Man) synthase complex. This complex, consisting of DPM1, DPM2, and DPM3, plays a critical role in various glycosylation pathways. DPM3 directly associates with both DPM1 and DPM2 proteins, contributing to the stable expression of the DPM synthase complex, essential for the biosynthesis of Dol-P-Man​​​​.
+### Reaction Pathways
 
-Structurally, human DPM3 consists of 92 amino acids and, like DPM2, contains two transmembrane helices with both N- and C-termini oriented towards the cytoplasm. This structural feature suggests that DPM3 is integral to the membrane, playing a role in the localization and function of the DPM synthase complex within the endoplasmic reticulum (ER)​​.
+DPM3 participates in the glycosylation process by forming a complex with DPM1 and DPM2. This DPM complex catalyzes the transfer of mannose from GDP-mannose to dolichol-phosphate, resulting in the formation of Dol-P-Man. Dol-P-Man serves as a key substrate in the N-glycosylation pathway, where it donates mannose residues to growing oligosaccharide chains on nascent glycoproteins. Additionally, Dol-P-Man is critical for the biosynthesis of GPI anchors, which tether proteins to the cell membrane, and for O-mannosylation and C-mannosylation processes, which modify specific serine/threonine residues on proteins.
 
-Deficiencies in DPM3 have been linked to congenital disorders of glycosylation (CDG). Specifically, mutations in the DPM3 gene cause CDG type Io (DPM3-CDG). Lefeber et al. (2009) identified a homozygous mutation in the DPM3 gene leading to a Leu85-to-Ser substitution. Patients with DPM3-CDG exhibit severe clinical symptoms, underscoring the importance of DPM3 in normal glycosylation processes and, consequently, human health​​.
+### Location
 
-For more detailed information on human DPM3, the following key references are recommended:
+DPM3 is localized in the endoplasmic reticulum membrane, where it operates as part of the Dol-P-Man synthase complex. The ER is the site of synthesis for many glycoproteins and glycolipids, making the positioning of DPM3 crucial for its role in glycosylation. The membrane-bound nature of DPM3 allows it to interact effectively with other glycosylation enzymes and substrates, facilitating the efficient production of Dol-P-Man and subsequent glycosylation reactions.
 
-Maeda et al. (2000): Studies on the association of human DPM3 with DPM1 and DPM2 in the DPM synthase complex.
-Lefeber et al. (2009): Identification of mutations in the DPM3 gene causing CDG type Io.
+### Diseases
 
-Maeda et al. (1998, 2008): Studies on the regulation of dolichol-phosphate mannose synthase and the role of DPM3 in mammalian cells.
+Mutations in the DPM3 gene can lead to severe congenital disorders of glycosylation (CDG), specifically CDG type Ie. This disorder is characterized by defects in glycoprotein biosynthesis, leading to a wide range of symptoms including developmental delays, intellectual disabilities, hypotonia, and muscle weakness. Patients with DPM3-related CDG often exhibit a combined phenotype of CDG and dystroglycanopathies, reflecting the enzyme's role in multiple glycosylation pathways. These conditions underscore the critical importance of DPM3 in maintaining normal cellular and physiological functions.
+
+In summary, DPM3 is a crucial regulatory subunit of the Dol-P-Man synthase complex, vital for glycosylation pathways in the ER. Its proper function is essential for the stability and activity of the complex, and its deficiencies can lead to severe congenital disorders, highlighting its importance in human health.

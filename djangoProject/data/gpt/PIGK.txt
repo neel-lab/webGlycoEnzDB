@@ -1,21 +1,13 @@
-Write a 100-350 word essay about human PIGK: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human PIGK. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-Human PIGK (Phosphatidylinositol Glycan Anchor Biosynthesis Class K) is an enzyme integral to the synthesis of glycosylphosphatidylinositol (GPI) anchors, which are complex molecules that link proteins to cell membranes. PIGK is responsible for the addition of the second mannose to the GPI precursor, a critical step in the biosynthetic pathway of GPI anchors.
+### Function
+Human PIGK, or phosphatidylinositol glycan anchor biosynthesis class K, is an enzyme involved in the final step of glycosylphosphatidylinositol (GPI) anchor biosynthesis. GPI anchors are glycolipid structures that attach specific proteins to the cell membrane, playing key roles in signal transduction, immune response, and cell adhesion. PIGK is a crucial component of the GPI transamidase complex, which cleaves the signal peptide of a precursor protein and transfers the GPI anchor to the protein's newly exposed carboxyl terminus.
 
-PIGK is located in the endoplasmic reticulum (ER), where it participates in the early stages of GPI anchor assembly. GPI anchors are essential for the attachment and functionality of various proteins on the cell surface, including enzymes, receptors, and adhesion molecules. These GPI-anchored proteins play significant roles in numerous biological processes, such as signal transduction, cell adhesion, and immune responses.
+### Reaction Pathways
+PIGK functions within the GPI anchor biosynthesis pathway, particularly in the GPI transamidation process. This enzyme is part of a five-protein complex that performs the transamidation reaction, essential for attaching the preassembled GPI anchor to proteins. This step occurs after the GPI anchor is synthesized and ensures that GPI-anchored proteins are properly linked to the cell membrane, where they can perform their biological functions. The transamidation reaction facilitated by PIGK is vital for the correct localization and functionality of a wide range of proteins.
 
-Dysfunction or mutations in the genes involved in GPI anchor biosynthesis, including PIGK, can lead to GPI anchor deficiencies. These deficiencies can impact the proper expression and functionality of GPI-anchored proteins, leading to various health issues. While specific diseases directly linked to PIGK mutations are not as well-documented as those associated with some other GPI biosynthesis genes, general impairments in GPI anchor biosynthesis are known to cause several congenital disorders. Such disorders can present a range of symptoms, including intellectual disability, seizures, and developmental delays, underscoring the crucial role of GPI anchors in physiological processes and neural development.
+### Location
+PIGK is localized in the endoplasmic reticulum (ER), where it operates as part of the GPI transamidase complex. The ER is responsible for the synthesis, folding, and modification of proteins, making it the ideal location for PIGK to facilitate the attachment of GPI anchors to proteins. The proper function of PIGK in the ER is essential for the successful production and maturation of GPI-anchored proteins, which are then transported to the cell surface.
 
-For more information on PIGK and its role in GPI anchor biosynthesis, the following key references are recommended:
-
-1. Maeda, Y., et al. (2001). "PIGK, a candidate gene for 5q syndrome, modifies the GPI anchor biosynthesis." Blood, 97(6), 1451-1456.
-
-2. Kinoshita, T., et al. (2008). "Biosynthesis and deficiencies of glycosylphosphatidylinositol." Proceedings of the National Academy of Sciences USA, 97(16), 9156-9161.
-
-3. Takeda, J., et al. (1999). "GPI-anchor biosynthesis: Potential defects in inherited diseases." Human Mutation, 13(6), 505-511.
-
-4. Fujita, M., & Kinoshita, T. (2016). "Biosynthesis of GPI-anchored proteins: Special emphasis on GPI lipid remodeling." Journal of Lipid Research, 57(1), 6-24.
-
-5. Hong, Y., & Kinoshita, T. (2009). "Congenital disorders of glycosylation: Human disorders of glycosylphosphatidylinositol anchor biosynthesis." Clinical and Experimental Medicine, 9(3), 171-180.
-
-These references provide a comprehensive understanding of the biochemical role of PIGK, its significance in GPI-anchor biosynthesis, and the implications of its dysfunction in GPI anchor-related congenital disorders.
+### Diseases
+Mutations in the PIGK gene can lead to disorders known as inherited GPI deficiencies (IGDs), which are characterized by a variety of symptoms, including intellectual disability, seizures, and developmental delays. These disorders result from the improper attachment of GPI anchors to proteins, leading to their mislocalization and dysfunction. The inability of GPI-anchored proteins to function correctly due to PIGK mutations can disrupt numerous cellular processes, contributing to the clinical manifestations of IGDs. Understanding PIGK’s role is crucial for diagnosing and developing treatments for these conditions.

@@ -1,20 +1,20 @@
-Write a 100-350 word essay about human FUT4: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human FUT4. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
 
+### Function
 
-Human Fucosyltransferase 4 (FUT4), also known as Fuc-TIV, is a myeloid-type α1,3-fucosyltransferase enzyme, playing a crucial role in the synthesis of specific carbohydrate structures in the human body. FUT4 consists of 530 amino acids and is characterized by a type II transmembrane topology with two potential N-glycosylation sites. The gene for human FUT4 is located on chromosome 11q21​​.
+Human FUT4 (fucosyltransferase 4) is an enzyme involved in the synthesis of Lewis antigens, specifically the Lewis x (Lex) antigen. FUT4 transfers a fucose residue from GDP-fucose to N-acetylglucosamine (GlcNAc) residues in an α1,3 linkage on glycoproteins and glycolipids. This fucosylation is crucial for the formation of Lex structures, which play a significant role in cell adhesion, migration, and immune response, particularly in leukocyte trafficking during inflammation .
 
-Functionally, FUT4 is involved in the transfer of fucose to the inner N-acetyllactosamine (LN) units of sialylated polylactosamine acceptors, resulting in the synthesis of the VIM-2 (CDw65) epitope. However, FUT4 does not effectively act on distal α2,3-sialylated acceptors, a role contrasted by FUT7, which fucosylates only the distal LN units in these acceptors​​.
+### Reaction Pathways
 
-FUT4 is ubiquitously expressed in almost all tissues but is most abundant in myeloid cells, such as human promyelocytic leukemia cells (HL60 cells). Its expression is significant in medullary venules of mouse peripheral lymph nodes, implying its role in immune responses and cell adhesion​​.
+FUT4 functions within the fucosylation pathway, where it catalyzes the addition of fucose to Type 2 oligosaccharides, forming Lex structures. These structures are essential ligands for selectins, which are cell adhesion molecules that mediate the interaction between leukocytes and the endothelium. This process is vital for leukocyte rolling and extravasation during immune responses. FUT4, along with other fucosyltransferases like FUT7, contributes to the synthesis of these important glycans .
 
-While the specific diseases directly associated with FUT4 mutations in humans are not reported, studies in mice suggest its potential significance in thrombolysis. Mice lacking FUT4 showed increased mortality from pulmonary thromboembolism and decreased thromboemboli dissolution, indicating the importance of FUT4 activity in this process​​.
+### Location
 
-For further in-depth study of human FUT4, its function, and potential implications in health and disease, the following key references are recommended:
+FUT4 is primarily localized in the Golgi apparatus of cells, where it carries out its glycosyltransferase activity. The Golgi provides the necessary environment for FUT4 to interact with other enzymes and substrates involved in glycan synthesis. The enzyme's location in the Golgi is crucial for the proper processing and maturation of glycoproteins and glycolipids before they are transported to the cell surface or secreted .
 
-Le Marer et al., 1997; Nakayama et al., 2001 - Studies on FUT4 expression in myeloid cells​​.
-Mollicone et al., 1990 - Predicted the existence of distinct α1,3FUT enzymes including FUT4 based on substrate specificity patterns​​.
-Gersten et al., 1995; Kaneko et al., 1999 - Research on FUT4 expression in various tissues​​.
-M’Rini et al., 2003 - Examined FUT4 expression in mouse peripheral lymph nodes​​.
-Wang et al., 2013 - Investigated the role of FUT4 in thrombolysis in mice​​.
-These references provide a comprehensive overview of the enzymatic function, expression patterns, and potential clinical relevance of human FUT4.
+### Diseases
+
+Altered expression or activity of FUT4 has been implicated in several diseases, particularly in cancer and inflammatory conditions. Overexpression of FUT4 is often observed in various cancers, where it contributes to increased tumor cell invasiveness and metastasis by enhancing cell adhesion and migration through the upregulation of Lex antigens. Additionally, FUT4 plays a role in inflammatory diseases due to its involvement in leukocyte trafficking, making it a potential target for therapeutic intervention in conditions characterized by excessive inflammation .
+
+In summary, FUT4 is a critical enzyme in the biosynthesis of Lex antigens, playing a key role in immune response and cancer progression. Its Golgi localization ensures the proper fucosylation of glycoproteins and glycolipids, which is essential for normal cellular function and disease development.

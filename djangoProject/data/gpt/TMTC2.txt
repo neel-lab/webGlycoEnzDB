@@ -1,22 +1,13 @@
-Write a 100-350 word essay about human TMTC2: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human TMTC2. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
+### Function
+Human TMTC2 (Transmembrane and Tetratricopeptide Repeat Containing 2) is a protein associated with the endoplasmic reticulum (ER), believed to play a role in the regulation of protein glycosylation and quality control. Like its homolog TMTC1, TMTC2 contains tetratricopeptide repeat (TPR) domains, which are known for mediating protein-protein interactions. TMTC2 is thought to interact with components of the glycosylation machinery, influencing the proper folding and maturation of glycoproteins within the ER.
 
-Human TMTC2 (Transmembrane and Tetratricopeptide Repeat Containing 2) is a protein that belongs to the TMTC family, characterized by their transmembrane domains and tetratricopeptide repeat (TPR) motifs. TMTC2, like other members of its family, is thought to be involved in cellular processes related to protein folding, trafficking, and calcium homeostasis, although its specific functions are still being explored.
+### Reaction Pathways
+TMTC2 is likely involved in the N-glycosylation pathway, which is essential for the attachment of carbohydrate moieties to nascent proteins. This process is critical for the structural integrity and function of glycoproteins. While the exact mechanisms of TMTC2's involvement are still under investigation, it is proposed to play a role in ensuring that glycoproteins are correctly glycosylated and folded, possibly through interactions with the oligosaccharyltransferase (OST) complex or other glycosylation-related enzymes within the ER.
 
-TMTC2 is primarily located in the endoplasmic reticulum (ER), a critical site for protein synthesis and folding. The TPR motifs in TMTC2 suggest a role in protein-protein interactions, which are essential in various cellular mechanisms, including the assembly of protein complexes and the regulation of enzymatic activity.
+### Location
+TMTC2 is localized in the membrane of the endoplasmic reticulum, where it functions in close proximity to other proteins involved in glycoprotein synthesis and processing. The ER is the site of protein synthesis, folding, and post-translational modifications, including glycosylation. TMTC2’s ER localization is essential for its role in overseeing the quality control of newly synthesized glycoproteins, ensuring that they are properly modified before being sent to their final destinations within the cell.
 
-Emerging research links TMTC2 to certain health conditions, although its exact role in disease pathogenesis is still under investigation. Genetic studies have implicated TMTC2 in disorders related to calcium regulation and ER stress responses. For example, mutations in the TMTC2 gene may be associated with cardiac conditions, given the importance of calcium regulation in heart muscle function and rhythm.
-
-The research on TMTC2 is ongoing, and as such, the literature is developing. However, the following key references can provide more detailed and current information on TMTC2, its function, and its role in disease:
-
-1. Cai, X., et al. (2015). "The Orai-1 and STIM-1 complex: Piecing together an elusive structure in calcium signaling." Protein Science, 24(7), 1043-1056.
-
-2. Zhao, Q., et al. (2019). "Genetic analysis of genes involved in calcium signaling pathway with breast cancer risk in Han Chinese women." Oncotarget, 10(33), 3098-3110.
-
-3. Zhang, S.X., et al. (2016). "Endoplasmic Reticulum Protein Quality Control in Cardiac Disease." Journal of Molecular and Cellular Cardiology, 91, 94-101.
-
-4. Brandl, C., et al. (2017). "The role of Endoplasmic Reticulum Stress in Human Pathology." Annual Review of Pathology: Mechanisms of Disease, 12, 173-194.
-
-5. Wang, J., et al. (2018). "Genetic insights into the mechanisms of calcium signaling." American Journal of Physiology - Cell Physiology, 315(2), C209-C230.
-
-These references provide insights into the structural characteristics of TMTC2, its potential roles in ER-related processes, and implications of its dysfunction in diseases, particularly those involving calcium signaling and ER stress.
+### Diseases
+Mutations in the TMTC2 gene have been linked to autosomal recessive nonsyndromic hearing loss (DFNB84B). This condition suggests that TMTC2 plays a crucial role in the proper functioning of the auditory system, potentially through its involvement in glycoprotein processing. The exact mechanism by which TMTC2 mutations lead to hearing loss is not fully understood, but it is likely related to disruptions in glycosylation and protein folding in the cells of the inner ear. Further research is needed to clarify TMTC2’s broader role in human health and its potential implications in other diseases related to glycosylation defects.

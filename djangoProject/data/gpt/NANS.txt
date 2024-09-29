@@ -1,21 +1,13 @@
-Write a 100-350 word essay about human NANS: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human NANS Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-Human NANS (N-acetylneuraminic acid synthase) is a key enzyme involved in the biosynthesis of sialic acids, a family of nine-carbon sugar acids that play crucial roles in various biological processes. NANS specifically catalyzes the condensation of N-acetylmannosamine (ManNAc) with phosphoenolpyruvate (PEP) to form N-acetylneuraminic acid (Neu5Ac), the most common form of sialic acid.
+### Function
+Human NANS, or N-acetylneuraminic acid synthase, is an enzyme that plays a critical role in the biosynthesis of sialic acids, which are essential components of glycoproteins and glycolipids. NANS catalyzes the conversion of N-acetylmannosamine (ManNAc) and phosphoenolpyruvate (PEP) into N-acetylneuraminic acid (Neu5Ac), the most common form of sialic acid in humans. Sialic acids are involved in various cellular functions, including cell-cell communication, immune response, and pathogen recognition.
 
-Located predominantly in the cytoplasm, NANS is integral to the sialic acid biosynthetic pathway, which is essential for the post-translational modification of proteins and lipids. Sialic acids, added to glycoconjugates such as glycoproteins and glycolipids, are crucial for cellular recognition, signaling, and stability. They play important roles in the immune response, cell-cell adhesion, and are also involved in the pathogenesis of several diseases.
+### Reaction Pathways
+NANS functions within the sialic acid biosynthesis pathway, where it catalyzes a key step in the formation of Neu5Ac. After the initial production of ManNAc from UDP-N-acetylglucosamine (UDP-GlcNAc), NANS combines ManNAc with PEP to produce Neu5Ac. This sialic acid is then activated and attached to glycoproteins and glycolipids, influencing their stability, signaling capabilities, and interactions with other molecules. Sialylation, the addition of sialic acid to proteins and lipids, is crucial for the proper functioning of the nervous and immune systems, as well as for cellular communication.
 
-Deficiency or dysfunction in NANS leads to sialic acid storage diseases (SASDs) like Salla disease and infantile free sialic acid storage disease (ISSD). These are rare autosomal recessive disorders characterized by the abnormal accumulation of free sialic acid in lysosomes. Clinical manifestations include developmental delay, hypotonia, and neurological deterioration. While Salla disease presents a milder phenotype, ISSD is more severe and often fatal in early childhood.
+### Location
+NANS is localized in the cytoplasm, where it participates in the sialic acid biosynthesis pathway. The cytoplasmic localization allows NANS to access its substrates, ManNAc and PEP, and efficiently produce Neu5Ac, which is then used in the Golgi apparatus for the sialylation of glycoproteins and glycolipids. The enzyme’s cytoplasmic location is essential for integrating the sialic acid biosynthesis with other metabolic processes within the cell.
 
-For more detailed information on NANS and its associated diseases, the following key references are recommended:
-
-1. Seppala, R., et al. (1999). "Salla disease: A new lysosomal storage disorder with disturbed sialic acid metabolism." Neurology, 52(8), 1660-1668.
-
-2. Mühlenhoff, M., et al. (2004). "Molecular analysis of the N-acetylneuraminic acid biosynthetic pathway in humans: Identification and characterization of the sialic acid synthase." Glycobiology, 14(8), 713-726.
-
-3. Aula, N., et al. (2000). "Sialic acid storage diseases: A multiple lysosomal transport defect for acidic monosaccharides." Journal of Clinical Investigation, 105(7), 1039-1045.
-
-4. Renlund, M., et al. (1983). "Salla disease: A new lysosomal storage disorder with disturbed sialic acid metabolism." Neurology, 33(1), 57-66.
-
-5. Kleta, R., et al. (2004). "New insights into the molecular pathogenesis of sialic acid storage diseases." Journal of Inherited Metabolic Disease, 27(4), 565-579.
-
-These references provide a comprehensive understanding of the biochemical role of NANS, the biosynthesis of sialic acids, and the pathophysiology of sialic acid storage diseases.
+### Diseases
+Mutations in the NANS gene are associated with a rare genetic disorder known as spondyloepimetaphyseal dysplasia, Genevieve type (SEMD-G). This condition is characterized by severe skeletal abnormalities, developmental delays, and intellectual disabilities. The disease results from a deficiency in Neu5Ac production, leading to impaired sialylation of glycoproteins and glycolipids, which affects various biological processes, including bone development and brain function. Understanding NANS’s role in sialic acid biosynthesis is crucial for diagnosing and developing potential therapies for SEMD-G and other disorders related to sialic acid metabolism.

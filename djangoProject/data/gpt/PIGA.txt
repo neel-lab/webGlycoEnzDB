@@ -1,21 +1,13 @@
-Write a 100-350 word essay about human PIGA: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human PIGA. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-Human PIGA (Phosphatidylinositol Glycan Anchor Biosynthesis Class A) is a crucial enzyme in the biosynthesis of glycosylphosphatidylinositol (GPI) anchors, which are complex glycolipids that tether certain proteins to the cell surface. PIGA specifically catalyzes an early step in GPI anchor biosynthesis: the transfer of N-acetylglucosamine (GlcNAc) to phosphatidylinositol (PI). This reaction is essential for the formation of GPI anchors that are subsequently attached to various proteins, thereby playing a key role in protein targeting and signal transduction.
+### Function
+Human PIGA, or phosphatidylinositol glycan anchor biosynthesis class A, is an enzyme crucial for the initial step in the biosynthesis of glycosylphosphatidylinositol (GPI) anchors. GPI anchors are glycolipid structures that tether certain proteins to the cell membrane, playing essential roles in various cellular processes, including signal transduction, cell adhesion, and immune response. PIGA catalyzes the transfer of N-acetylglucosamine (GlcNAc) to phosphatidylinositol, the first step in assembling the GPI anchor.
 
-PIGA is located in the endoplasmic reticulum (ER), where it initiates the GPI anchor synthesis process. GPI-anchored proteins are involved in a range of cellular processes, including signal transduction, cell adhesion, and immune response. They are particularly important on the surface of blood cells and other types of cells in the immune system.
+### Reaction Pathways
+PIGA operates in the GPI anchor biosynthesis pathway, a multi-step process that begins with the action of PIGA in the endoplasmic reticulum (ER). PIGA transfers GlcNAc to phosphatidylinositol, forming GlcNAc-phosphatidylinositol. This molecule undergoes a series of modifications, including deacetylation, acylation, and the addition of mannose residues, ultimately resulting in a complete GPI anchor. The GPI anchor is then attached to proteins, facilitating their localization to the cell surface where they perform their functions.
 
-Mutations in the PIGA gene can lead to a rare condition known as Paroxysmal Nocturnal Hemoglobinuria (PNH). PNH is characterized by the destruction of red blood cells (hemolysis), which can lead to various symptoms, including fatigue, difficulty breathing, and an increased risk of blood clots. PNH occurs when mutations in the PIGA gene in hematopoietic stem cells lead to a deficiency of GPI-anchored proteins on the surface of blood cells, making them susceptible to destruction by the immune system.
+### Location
+PIGA is localized in the endoplasmic reticulum (ER), the site of GPI anchor assembly. The ER provides the environment necessary for the initial and subsequent steps of GPI anchor biosynthesis, ensuring that proteins destined for the cell surface are properly anchored. The ER localization of PIGA is crucial for its role in the early stages of GPI anchor formation, setting the foundation for the proper functioning of GPI-anchored proteins.
 
-For more information on PIGA and its role in health and disease, the following key references are recommended:
-
-1. Takeda, J., et al. (1993). "Paroxysmal nocturnal hemoglobinuria and related disorders: molecular basis of pathogenesis and diagnosis." Blood, 81(11), 2873-2883.
-
-2. Kinoshita, T., et al. (1997). "PIGA mutations in paroxysmal nocturnal hemoglobinuria: evidence for a dominant-negative effect." Blood, 90(3), 912-921.
-
-3. Brodsky, R.A. (2014). "Paroxysmal nocturnal hemoglobinuria." Blood, 124(18), 2804-2811.
-
-4. Miyata, T., et al. (2001). "Pathogenesis of paroxysmal nocturnal hemoglobinuria: a missing link in biosynthesis of glycosylphosphatidylinositol." Blood, 98(6), 1940-1950.
-
-5. Hillmen, P., et al. (1995). "The complement inhibitor eculizumab in paroxysmal nocturnal hemoglobinuria." New England Journal of Medicine, 355(12), 1233-1243.
-
-These references provide insights into the biochemical properties of PIGA, its significance in GPI-anchor biosynthesis, and the implications of its dysfunction in conditions such as Paroxysmal Nocturnal Hemoglobinuria.
+### Diseases
+Mutations in the PIGA gene can lead to a group of disorders known as glycosylphosphatidylinositol biosynthesis defects, the most well-known of which is paroxysmal nocturnal hemoglobinuria (PNH). PNH is a rare acquired hematological disorder characterized by the destruction of red blood cells, blood clots, and bone marrow failure. The condition arises because of somatic mutations in PIGA, leading to the absence or dysfunction of GPI-anchored proteins on blood cells, making them susceptible to immune attack. Additionally, PIGA mutations are associated with rare congenital disorders marked by developmental delays, seizures, and other systemic abnormalities. Understanding PIGA’s role is essential for diagnosing and treating these serious conditions.

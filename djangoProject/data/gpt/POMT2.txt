@@ -1,21 +1,13 @@
-Write a 100-350 word essay about human POMT2 : it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human POMT2. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-Human POMT2 (Protein O-Mannosyltransferase 2) works closely with POMT1 in the post-translational modification of proteins, specifically in the O-mannosylation of the dystroglycan complex. This complex is crucial for maintaining the structural integrity of muscle fibers and for the interaction between cells and the extracellular matrix.
+### Function
+Human POMT2, or protein O-mannosyltransferase 2, is an enzyme that is essential for the glycosylation of alpha-dystroglycan, a protein critical for maintaining the structural integrity of muscle cells and proper nervous system function. POMT2 works in tandem with POMT1 to catalyze the transfer of mannose from dolichol-phosphate-mannose to serine or threonine residues on alpha-dystroglycan. This mannosylation step is crucial for initiating the glycosylation process, which is vital for the protein's function in cell-matrix interactions.
 
-Located primarily in the endoplasmic reticulum (ER), POMT2 catalyzes the transfer of mannose to serine or threonine residues on dystroglycan proteins. This process is essential for the proper functioning of alpha-dystroglycan (α-DG), a key component of the dystrophin-glycoprotein complex. α-DG binds to laminin in the extracellular matrix, a critical interaction for muscle function and stability.
+### Reaction Pathways
+POMT2 operates within the O-mannosylation glycosylation pathway. Together with POMT1, it forms a complex that catalyzes the initial step of O-mannosylation, where a mannose molecule is attached to specific serine or threonine residues on alpha-dystroglycan. This modification is the first in a series of glycosylation steps that allow alpha-dystroglycan to bind effectively to extracellular matrix proteins like laminin. Proper glycosylation facilitated by POMT2 is essential for the structural stability of muscle tissues and the normal development of the nervous system.
 
-Mutations in the POMT2 gene can lead to a range of muscular dystrophies known as dystroglycanopathies, characterized by a spectrum of symptoms from mild to severe muscular dystrophy, intellectual disability, and brain and eye malformations. One of the most severe dystroglycanopathies associated with POMT2 mutations is Walker-Warburg Syndrome (WWS), a rare congenital muscular dystrophy that also involves significant brain and ocular abnormalities.
+### Location
+POMT2 is localized in the endoplasmic reticulum (ER), where it functions alongside POMT1 to initiate the glycosylation of proteins. The ER provides the optimal environment for these enzymes to access newly synthesized proteins and perform the mannosylation step necessary for subsequent glycosylation modifications. This ER localization is critical for ensuring that alpha-dystroglycan is properly glycosylated before it moves through the Golgi apparatus for further processing and eventual transport to the cell membrane.
 
-For more detailed information on POMT2 and its role in health and disease, the following key references are recommended:
-
-1. Manya, H., et al. (2004). "Mutations in the gene encoding protein O-mannosyltransferase 2 (POMT2) cause severe muscular dystrophy." Human Molecular Genetics, 13(11), 1155-1161.
-
-2. van Reeuwijk, J., et al. (2005). "POMT2 mutations cause alpha-dystroglycan hypoglycosylation and Walker-Warburg syndrome." Journal of Medical Genetics, 42(12), 907-912.
-
-3. Godfrey, C., et al. (2007). "Refining genotype-phenotype correlations in muscular dystrophies with defective glycosylation of dystroglycan." Brain, 130(Pt 10), 2725-2735.
-
-4. Beltrán-Valero de Bernabé, D., et al. (2002). "Mutations in the O-mannosyltransferase gene POMT2 give rise to a mild form of Walker-Warburg syndrome." Neuromuscular Disorders, 12(S1), S90-S94.
-
-5. Yoshida-Moriguchi, T., et al. (2010). "O-Mannosyl phosphorylation of alpha-dystroglycan is required for laminin binding." Science, 327(5961), 88-92.
-
-These references provide insights into the biochemical properties of POMT2, its significance in the O-mannosylation process, particularly concerning dystroglycan, and the implications of its dysfunction in conditions such as Walker-Warburg Syndrome and other dystroglycanopathies.
+### Diseases
+Mutations in the POMT2 gene are associated with several forms of congenital muscular dystrophies, including Walker-Warburg syndrome (WWS), muscle-eye-brain disease (MEB), and limb-girdle muscular dystrophy (LGMD). These disorders are characterized by severe muscle weakness, brain malformations, and, in some cases, eye abnormalities. The diseases result from impaired glycosylation of alpha-dystroglycan, leading to defective cell-matrix interactions and subsequent tissue instability. Understanding POMT2’s role is crucial for diagnosing these conditions and developing therapeutic strategies to address the underlying glycosylation defects.

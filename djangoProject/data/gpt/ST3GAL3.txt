@@ -1,23 +1,13 @@
-Write a 100-350 word essay about human ST3GAL3: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human ST3GAL3. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-Human ST3GAL3 (ST3 beta-galactoside alpha-2,3-sialyltransferase 3) is an enzyme integral to the process of sialylation, a form of glycosylation that involves the addition of sialic acid to glycoproteins and glycolipids. This enzymatic action is crucial for the biological function and structural integrity of various cellular components.
+### Function
+Human ST3GAL3, or ST3 beta-galactoside alpha-2,3-sialyltransferase 3, is an enzyme responsible for the transfer of sialic acid to glycoproteins and glycolipids. Specifically, ST3GAL3 catalyzes the addition of sialic acid in an alpha-2,3 linkage to galactose residues on N-linked and O-linked glycans. This sialylation is essential for modifying the structure and function of glycoproteins and glycolipids, affecting processes such as cell-cell communication, immune response, and protein stability.
 
-Located primarily in the Golgi apparatus, ST3GAL3 facilitates the transfer of sialic acid to the terminal galactose residues in oligosaccharides, glycoproteins, and glycolipids. The specific action of ST3GAL3 leads to the formation of alpha-2,3-linked sialic acid structures, which are critical for a range of cellular processes including cell signaling, immune responses, and cell-cell recognition. 
+### Reaction Pathways
+ST3GAL3 operates within the sialylation pathway, where it transfers sialic acid from the donor molecule CMP-sialic acid to the terminal galactose residues of glycan chains. This process is vital for creating sialylated glycans, which play critical roles in cell signaling, receptor activity, and the prevention of protein degradation. The enzyme's activity is essential for the formation of functional glycoproteins and glycolipids that are involved in various cellular processes.
 
-The role of ST3GAL3 is significant in the brain, where it contributes to neural development and cognitive function. Sialylated glycoconjugates, produced with the participation of ST3GAL3, are involved in modulating cell interactions, signal transduction, and synaptic plasticity. 
+### Location
+ST3GAL3 is localized in the Golgi apparatus, the central organelle for modifying, sorting, and packaging proteins and lipids. Within the Golgi, ST3GAL3 ensures that glycoproteins and glycolipids are properly sialylated before they are transported to their final cellular destinations. This localization is crucial for the enzyme to participate effectively in the post-translational modification of proteins, ensuring that they achieve their full functional potential.
 
-Dysfunction or mutations in the ST3GAL3 gene have been linked to several neurological disorders. Notably, mutations in ST3GAL3 are associated with intellectual disability and autism spectrum disorders. These conditions are characterized by developmental delays, learning difficulties, and behavioral challenges, which may be partly attributed to altered sialylation affecting neural function and connectivity.
-
-For more detailed information on ST3GAL3, its function, and related diseases, the following key references are recommended:
-
-1. Harduin-Lepers, A., et al. (2001). "The human sialyltransferase family." Biochimie, 83(8), 727-737.
-
-2. Yu, H., et al. (2012). "Roles of ST3GAL3, ST3GAL4, and ST3GAL6 in Glycoprotein Sialylation in Human Cancer Cells." BioMed Research International, 2013.
-
-3. Edelmann, L., et al. (2013). "Autism and intellectual disability are differentially related to sociodemographic background at birth." PLoS One, 8(3), e60021.
-
-4. Scott, H., et al. (2014). "Functional differences between the two sialyltransferases ST3GAL3 and ST3GAL4." Glycobiology, 24(9), 827-839.
-
-5. Freeze, H.H., et al. (2015). "Congenital Disorders of Glycosylation: CDG-I, CDG-II, and Beyond." Current Molecular Medicine, 12(4), 424-433.
-
-These references provide insights into the biochemical role of ST3GAL3 in sialylation, its significance in glycosylation processes, and potential implications of its dysfunction in neurological disorders such as intellectual disability and autism spectrum disorders.
+### Diseases
+Mutations or dysregulation of ST3GAL3 have been linked to several developmental and neurological disorders. For example, mutations in the ST3GAL3 gene have been associated with autosomal recessive intellectual disability, a condition characterized by cognitive impairment and developmental delays. Additionally, altered sialylation patterns influenced by ST3GAL3 activity can contribute to cancer progression, as these modifications can affect cell adhesion, migration, and immune evasion. Understanding the role of ST3GAL3 is critical for developing therapeutic strategies for conditions related to abnormal sialylation and glycosylation processes.

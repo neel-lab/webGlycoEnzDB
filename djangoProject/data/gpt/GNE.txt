@@ -1,30 +1,13 @@
-Write a 100-350 word essay about human GNE: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human GNE. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
+### Function
+Human GNE, or glucosamine (UDP-N-acetyl)-2-epimerase/N-acetylmannosamine kinase, is a bifunctional enzyme that plays a critical role in the biosynthesis of sialic acids. GNE catalyzes the first two steps in this pathway: it converts UDP-N-acetylglucosamine (UDP-GlcNAc) to N-acetylmannosamine (ManNAc) through its epimerase activity and then phosphorylates ManNAc to produce ManNAc-6-phosphate through its kinase activity. Sialic acids, the end products of this pathway, are essential for cellular functions, including cell-cell interactions, immune response, and protein stability.
 
+### Reaction Pathways
+GNE is central to the sialic acid biosynthesis pathway. The enzyme first epimerizes UDP-GlcNAc to produce ManNAc, which is subsequently phosphorylated to ManNAc-6-phosphate. This molecule is then further converted to N-acetylneuraminic acid (Neu5Ac), the most common form of sialic acid. Sialic acids are then activated to CMP-sialic acid, which is used in the glycosylation of proteins and lipids, forming sialoglycoconjugates that are crucial for many biological processes, including the regulation of immune responses and cell signaling.
 
-Human GNE, or UDP-N-acetylglucosamine 2-epimerase/N-acetylmannosamine kinase, is an essential enzyme in the sialic acid biosynthesis pathway.
+### Location
+GNE is predominantly localized in the cytoplasm, where it interacts with its substrates to initiate the sialic acid biosynthesis pathway. The cytoplasmic localization allows GNE to efficiently catalyze the early steps of sialic acid production, ensuring a steady supply of this important molecule for glycosylation processes in the Golgi apparatus and other cellular compartments.
 
-Function
-GNE has a dual enzymatic function. Firstly, it catalyzes the conversion of UDP-N-acetylglucosamine (UDP-GlcNAc) to N-acetylmannosamine (ManNAc), and then it phosphorylates ManNAc to ManNAc-6-phosphate. These reactions are crucial steps in the biosynthesis of sialic acid, a key monosaccharide that plays a significant role in cellular functions, such as cell-cell interaction, signaling, and immune response.
-
-Reaction Pathways
-GNE is involved in the biosynthesis of sialic acid, which is a vital component of glycoproteins and glycolipids on the cell surface. Sialic acid is critical for the stability and function of many proteins and is involved in processes such as cell adhesion, receptor activation, and immune recognition.
-
-Location
-GNE is primarily localized in the cytoplasm, where it participates in the biosynthesis of sialic acid. The enzyme functions at the initial stage of the sialic acid biosynthetic pathway, which is integral to the generation of sialoglycoconjugates in the Golgi apparatus.
-
-Related Diseases
-Mutations in the GNE gene are associated with a spectrum of disorders known as GNE-myopathies. These include hereditary inclusion body myopathy (HIBM), characterized by progressive muscle weakness and atrophy. Another disorder linked to GNE dysfunction is sialuria, a rare autosomal dominant inherited disease. Sialuria is caused by a metabolic defect leading to the excessive excretion of free sialic acid.
-
-Key References for Further Research
-"GNE-opathies" (Kakani et al., 2012), which provide insights into diseases due to mutations in the GNE gene​​.
-Nishino, I., & Carrillo-Carrasco, N. “GNE Myopathy: Current Update and Future Therapy,” in "Journal of Neurology, Neurosurgery, and Psychiatry," 2014.
-Celeste, F. V., et al. “Understanding the Molecular Basis of GNE Myopathy,” in "Current Molecular Medicine," 2014.
-Huizing, M., et al. “Hereditary Inclusion Body Myopathy: A Decade of Progress,” in "Biochimica et Biophysica Acta (BBA) - Molecular Basis of Disease," 2014.
-Argov, Z., & Mitrani-Rosenbaum, S. “The Hereditary Inclusion Body Myopathy Enigma and Its GNE Gene Mutation Source,” in "Neuromuscular Disorders," 2008.
-These references provide comprehensive information on GNE's role in sialic acid biosynthesis and its implications in human health, particularly concerning GNE-myopathies and sialuria.
-
-
-
-
-
+### Diseases
+Mutations in the GNE gene are associated with a rare neuromuscular disorder known as GNE myopathy, also known as hereditary inclusion body myopathy (HIBM). This condition is characterized by progressive muscle weakness and atrophy, particularly in the distal muscles. The disease results from impaired sialic acid biosynthesis due to defective GNE enzyme activity, leading to reduced sialylation of glycoproteins, which affects muscle function. In addition to GNE myopathy, altered GNE activity has been implicated in other disorders related to sialic acid metabolism, highlighting the enzyme’s critical role in maintaining cellular and systemic homeostasis.

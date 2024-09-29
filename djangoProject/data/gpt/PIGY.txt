@@ -1,23 +1,13 @@
-Write a 100-350 word essay about human PIGY: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human PIGY. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-Human PIGY (Phosphatidylinositol Glycan Anchor Biosynthesis Class Y) is an enzyme involved in the biosynthesis of glycosylphosphatidylinositol (GPI) anchors. GPI anchors are critical for attaching various proteins to the cell membrane, and they play significant roles in numerous cellular processes such as signal transduction, cell adhesion, and immune responses.
+### Function
+Human PIGY, or phosphatidylinositol glycan anchor biosynthesis class Y, is an enzyme that plays a vital role in the early stages of glycosylphosphatidylinositol (GPI) anchor biosynthesis. GPI anchors are glycolipid structures essential for attaching specific proteins to the cell membrane, where they participate in a variety of cellular processes such as signal transduction, immune response, and cell adhesion. PIGY is a component of the GPI-N-acetylglucosaminyltransferase (GPI-GnT) complex, which initiates the GPI anchor biosynthesis by transferring N-acetylglucosamine (GlcNAc) to phosphatidylinositol.
 
-PIGY functions in an early stage of the GPI anchor biosynthesis pathway. It is involved in the addition of ethanolamine phosphate to the first mannose of the GPI precursor. This step is essential for the formation of the core structure of GPI anchors, which ultimately serves as the link between specific proteins and the cell membrane.
+### Reaction Pathways
+PIGY functions in the GPI anchor biosynthesis pathway, particularly in the initial step of this process. Within the GPI-GnT complex, PIGY assists in the catalytic transfer of GlcNAc from UDP-GlcNAc to phosphatidylinositol, creating GlcNAc-phosphatidylinositol. This step is crucial as it marks the beginning of GPI anchor assembly, which will be further modified through a series of reactions to form a mature GPI anchor capable of anchoring proteins to the cell membrane.
 
-Located in the endoplasmic reticulum (ER), PIGY works alongside other enzymes in a complex process to assemble GPI anchors. Proper GPI anchor synthesis is crucial for the correct expression and functioning of GPI-anchored proteins on the cell surface, including enzymes, receptors, and adhesion molecules.
+### Location
+PIGY is localized in the endoplasmic reticulum (ER), where the GPI anchor biosynthesis pathway begins. The ER provides the necessary environment for the enzyme to interact with other components of the GPI-GnT complex, facilitating the initial steps of GPI anchor formation. This localization is critical for ensuring that the GPI anchors are correctly assembled and that proteins are properly anchored to the cell membrane, where they can perform their functions.
 
-While there are no widely recognized diseases directly linked to mutations in the PIGY gene, defects in GPI anchor biosynthesis can lead to a group of rare genetic disorders known as GPI biosynthesis defects (GPIBDs). These disorders can manifest with a variety of symptoms, including developmental delays, intellectual disabilities, and seizures. The involvement of PIGY in the GPI biosynthesis pathway underscores its potential significance in these disorders.
-
-For more detailed information on PIGY and its role in GPI anchor biosynthesis, the following key references are recommended:
-
-1. Kinoshita, T., et al. (2000). "Biosynthesis and deficiencies of glycosylphosphatidylinositol." Proceedings of the National Academy of Sciences USA, 97(16), 9156-9161.
-
-2. Maeda, Y., et al. (2001). "PIGY: a mammalian gene involved in GPI anchor biosynthesis." Biochemical Journal, 357(Pt 3), 719-725.
-
-3. Fujita, M., & Kinoshita, T. (2016). "Biosynthesis of GPI-anchored proteins: Special emphasis on GPI lipid remodeling." Journal of Lipid Research, 57(1), 6-24.
-
-4. Ng, B.G., & Freeze, H.H. (2015). "Human genetic disorders of glycosylation." European Journal of Medical Genetics, 58(5), 293-309.
-
-5. Takeda, J., et al. (1999). "GPI-anchor biosynthesis: Potential defects in inherited diseases." Human Mutation, 13(6), 505-511.
-
-These references provide insights into the biochemical properties of PIGY, its significance in the GPI-anchor biosynthesis process, and potential implications in GPI anchor-related congenital disorders.
+### Diseases
+Mutations in the PIGY gene are associated with inherited GPI deficiencies (IGDs), which are rare genetic disorders characterized by a variety of symptoms, including intellectual disability, developmental delays, seizures, and congenital anomalies. These conditions result from defective GPI anchor biosynthesis due to impaired PIGY function, leading to mislocalized or non-functional GPI-anchored proteins. The dysfunction of these proteins disrupts critical cellular processes, contributing to the clinical manifestations of IGDs. Understanding the role of PIGY in GPI anchor biosynthesis is essential for diagnosing and potentially treating these disorders.

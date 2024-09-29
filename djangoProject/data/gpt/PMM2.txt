@@ -1,21 +1,13 @@
-Write a 100-350 word essay about human PMM2: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human PMM2. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-Human PMM2 (Phosphomannomutase 2) is a critical enzyme in the biosynthesis of N-linked glycoproteins. It catalyzes the conversion of mannose-6-phosphate to mannose-1-phosphate, an essential step in the formation of GDP-mannose. GDP-mannose is a vital donor substrate for glycosylation, the process of adding sugar moieties to proteins or lipids, which is crucial for their proper function and cellular localization.
+### Function
+Human PMM2, or phosphomannomutase 2, is a crucial enzyme in the glycosylation process, responsible for the interconversion of mannose-6-phosphate and mannose-1-phosphate. This conversion is essential for the synthesis of GDP-mannose, a sugar nucleotide required for the glycosylation of proteins and lipids. Glycosylation is a key process that modifies proteins and lipids, influencing their structure, function, and stability, which is vital for proper cellular function.
 
-PMM2 is primarily located in the cytoplasm. Its role in the synthesis of GDP-mannose places it at a pivotal point in the N-glycosylation pathway. N-glycosylation, occurring in the endoplasmic reticulum and Golgi apparatus, is critical for protein folding, stability, and trafficking, affecting a wide range of cellular processes.
+### Reaction Pathways
+PMM2 operates in the mannose metabolism pathway, where it catalyzes the reversible conversion of mannose-6-phosphate to mannose-1-phosphate. The product, mannose-1-phosphate, is then converted to GDP-mannose, a critical donor molecule in the glycosylation of proteins and lipids. This process is essential for the synthesis of glycoproteins and glycolipids, which are involved in cell signaling, immune responses, and the formation of cell membranes. PMM2’s function is integral to ensuring that cells can properly glycosylate proteins and lipids, which is essential for many physiological processes.
 
-Mutations in the PMM2 gene can lead to Congenital Disorders of Glycosylation Type Ia (PMM2-CDG, formerly known as CDG-Ia). PMM2-CDG is a rare, inherited metabolic disorder characterized by a wide range of symptoms due to the under-glycosylation of glycoproteins. These symptoms can include developmental delay, intellectual disability, failure to thrive, and various other systemic issues. The severity and range of symptoms vary widely among individuals with PMM2-CDG.
+### Location
+PMM2 is primarily localized in the cytoplasm, where it carries out its role in carbohydrate metabolism and glycosylation. The cytoplasmic environment allows PMM2 to efficiently convert mannose-6-phosphate to mannose-1-phosphate, ensuring a steady supply of GDP-mannose for glycosylation. This localization is critical for maintaining the proper function of cellular glycosylation pathways.
 
-For more detailed information on PMM2, the following key references are recommended:
-
-1. Matthijs, G., et al. (1997). "Mutations in PMM2, a phosphomannomutase gene on chromosome 16p13, in carbohydrate-deficient glycoprotein type I syndrome (Jaeken syndrome)." Nature Genetics, 16(1), 88-92.
-
-2. de Lonlay, P., & Seta, N. (2009). "The clinical spectrum of phosphomannomutase 2 deficiency (CDG-Ia)." Biochimica et Biophysica Acta, 1792(9), 827-834.
-
-3. Schollen, E., et al. (2000). "Clinical and molecular features of type 1 congenital disorders of glycosylation due to phosphomannomutase 2 deficiencies." European Journal of Human Genetics, 8(9), 706-712.
-
-4. Grünewald, S. (2009). "Congenital disorders of glycosylation: rapidly enlarging group of (neuro)metabolic disorders." Early Human Development, 85(10), S27-S30.
-
-5. Jaeken, J., et al. (2009). "Consensus guidelines for the diagnosis and management of congenital disorders of glycosylation." Orphanet Journal of Rare Diseases, 4, 1-18.
-
-These references provide comprehensive insights into the biochemical role of PMM2, its significance in glycosylation pathways, and the implications of its dysfunction in congenital disorders like PMM2-CDG.
+### Diseases
+Mutations in the PMM2 gene are the most common cause of congenital disorders of glycosylation (CDG), specifically CDG type Ia (PMM2-CDG). This rare genetic disorder is characterized by a wide range of symptoms, including developmental delays, neurological issues, liver dysfunction, and coagulation problems. The disease arises from impaired PMM2 activity, leading to deficient glycosylation of proteins and lipids, which disrupts various cellular functions. PMM2-CDG highlights the critical role of PMM2 in human health, and ongoing research aims to develop therapies to manage or correct the glycosylation defects caused by PMM2 mutations.

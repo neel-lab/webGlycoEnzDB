@@ -1,19 +1,19 @@
-Write a 100-350 word essay about human FUT3: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human FUT3. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
+### Function
 
+Human FUT3 (fucosyltransferase 3) is an enzyme responsible for the synthesis of the Lewis blood group antigens, specifically the Lewis a (Lea) and Lewis b (Leb) antigens. FUT3 catalyzes the transfer of fucose from GDP-fucose to precursor oligosaccharides in an α1,3 or α1,4 linkage. This action is essential for the formation of the Lea and Leb antigens, which play important roles in cell-cell recognition, immune response, and pathogen interaction .
 
-Human FUT3, or Fucosyltransferase 3, is a significant enzyme in glycobiology, particularly recognized for its role in synthesizing specific histo-blood group antigens. This enzyme, also referred to as a Lewis enzyme or Fuc-TIII, catalyzes the transfer of fucose from GDP-fucose to the GlcNAc residue. The process is crucial for the creation of the Lewis blood group antigens, including Lea and Leb​​​​.
+### Reaction Pathways
 
-The functional significance of FUT3 extends beyond its enzymatic activity. Its expression is detected in various bodily secretions like saliva and milk, where it facilitates the formation of type-1 Lewis antigens such as Lea, Leb, and sLea. The activity of FUT3 and the subsequent production of these antigens are pivotal in several biological processes and clinical settings​​.
+FUT3 functions within the fucosylation pathway, where it specifically modifies Type 1 precursor oligosaccharides. FUT3 transfers fucose to the GlcNAc residues of these precursors, forming Lea antigens. In secretor-positive individuals, FUT2 first converts Type 1 units to Type 1 H determinants, which FUT3 can then modify to form Leb antigens. This sequence of reactions is critical for the proper expression of Lewis antigens on the cell surface  .
 
-In terms of disease association, FUT3's role is particularly notable in the context of certain cancers. For instance, the tumor marker CA19-9, used clinically in diagnosing colorectal, stomach, and pancreatic cancers, recognizes the sLea epitope on mucins. This epitope's presence depends on the activity of FUT3, as Lewis-negative individuals, who lack functional FUT3, cannot produce the sLea epitope identified by CA19-9​​.
+### Location
 
-The structure of human FUT3 is composed of 361 amino acids. Its involvement is also evident in various physiological and pathological contexts, as observed in studies involving populations of different ethnic backgrounds. For example, analyses of the alleles encoding FUT3 in relation to the Lewis blood group phenotype have shown differences in FUT3 activity among different ethnic groups​​.
+FUT3 is localized in the Golgi apparatus, where it performs its glycosyltransferase function. The Golgi is the site of glycan modification, making it the optimal location for FUT3 to interact with its substrates and other glycosyltransferases involved in the synthesis of complex glycan structures. The proper functioning of FUT3 within the Golgi ensures that Lewis antigens are correctly synthesized and presented on the cell surface .
 
-For further in-depth understanding of human FUT3, its function, and its significance in disease, key references include:
+### Diseases
 
-Kukowska-Latallo et al. 1990 - First cloning of FUT3 as an enzyme synthesizing stage-specific embryonal antigen-1 (SSEA-1)​​.
-Johnson et al. 1992 and 1993 - Studies on the preparation of native FUT3 enzymes from human milk and culture mediums​​.
-Falk et al. 1995 - Investigation of the role of FUT3 in Helicobacter pylori attachment to carbohydrates in the gastric epithelium​​.
-Elmgren et al. 1997, Mollicone et al. 1994, Narimatsu et al. 1998, Nishihara et al. 1994 - Studies analyzing the alleles encoding FUT3 in relation to the Lewis blood group phenotype across different ethnic groups​​.
-These references provide a comprehensive insight into the enzymatic function, biological significance, and clinical implications of human FUT3.
+Mutations in the FUT3 gene can lead to the Lewis-negative phenotype, where individuals lack the expression of both Lea and Leb antigens. This condition occurs in approximately 10-20% of the population and can influence susceptibility to certain infections, such as Helicobacter pylori, which binds to Lewis antigens in the gastric mucosa. Additionally, altered expression of FUT3 has been observed in certain cancers, where changes in glycosylation patterns can affect tumor progression and metastasis .
+
+In summary, FUT3 is a key enzyme in the synthesis of Lewis blood group antigens, functioning within the Golgi apparatus to modify glycan structures. Its role in disease, particularly in the context of infection and cancer, underscores the importance of fucosylation in human health.

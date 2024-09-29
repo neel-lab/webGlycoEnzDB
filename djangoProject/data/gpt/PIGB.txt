@@ -1,22 +1,13 @@
-Write a 100-350 word essay about human PIGB: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human PIGB. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
+### Function
+Human PIGB, or phosphatidylinositol glycan anchor biosynthesis class B, is an enzyme that plays a critical role in the biosynthesis of glycosylphosphatidylinositol (GPI) anchors. GPI anchors are glycolipid structures that attach certain proteins to the cell membrane, enabling them to participate in various cellular processes such as signal transduction, immune response, and cell adhesion. PIGB is specifically responsible for adding the third mannose molecule to the growing GPI anchor structure, a crucial step in the proper assembly of the anchor.
 
-Human PIGB (Phosphatidylinositol Glycan Anchor Biosynthesis Class B) is an enzyme integral to the synthesis of glycosylphosphatidylinositol (GPI) anchors, complex molecules that attach proteins to cell membranes. PIGB catalyzes the addition of ethanolamine phosphate to the first mannose in the GPI anchor precursor, a critical step in GPI biosynthesis.
+### Reaction Pathways
+PIGB functions within the GPI anchor biosynthesis pathway, which takes place in the endoplasmic reticulum (ER). This pathway involves multiple enzymatic steps, where PIGB catalyzes the addition of a mannose residue to the GPI precursor, following the actions of other enzymes that add the first two mannose residues. This mannose addition by PIGB is essential for the continued elongation and maturation of the GPI anchor, ultimately allowing the anchor to properly attach proteins to the cell membrane.
 
-Located in the endoplasmic reticulum (ER), PIGB's role is pivotal in the assembly and maturation of GPI anchors. These anchors are essential for the attachment and proper function of various proteins on the cell surface, including enzymes, adhesion molecules, and receptors. GPI-anchored proteins are involved in numerous biological processes, such as signal transduction, cell adhesion, and immune response.
+### Location
+PIGB is localized in the endoplasmic reticulum (ER), the cellular organelle where GPI anchor biosynthesis occurs. The ER provides the necessary environment for PIGB to carry out its function, ensuring that GPI anchors are correctly assembled before being transported to the Golgi apparatus for further processing and eventually to the cell surface. The precise localization of PIGB within the ER is crucial for its role in the GPI biosynthesis pathway.
 
-Dysfunction in PIGB and other enzymes of the GPI anchor biosynthesis pathway can lead to GPI anchor deficiencies. These deficiencies are associated with a group of rare genetic disorders collectively known as GPI anchor deficiencies or GPIBDs. Patients with GPIBDs can present a variety of symptoms, including intellectual disability, seizures, and congenital malformations. The specific phenotype can vary depending on the affected enzyme in the GPI biosynthesis pathway.
-
-For more detailed information on PIGB, its function, and associated diseases, the following key references are recommended:
-
-1. Kinoshita, T., et al. (2008). "Biosynthesis and deficiencies of glycosylphosphatidylinositol." Proceedings of the Japan Academy, Series B, 84(7), 287-300.
-
-2. Ng, B.G., & Freeze, H.H. (2015). "Human genetic disorders of glycosylation." European Journal of Medical Genetics, 58(5), 293-309.
-
-3. Krawitz, P.M., et al. (2012). "Identity-by-descent filtering of exome sequence data for pathogenic mutations in genes implicated in GPI-anchor biosynthesis." Human Mutation, 33(1), 133-139.
-
-4. Almeida, A.M., et al. (2006). "Biosynthesis of glycosylphosphatidylinositol anchors." Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids, 1761(5), 636-653.
-
-5. Freeze, H.H., et al. (2014). "Congenital disorders of glycosylation: CDG-I, CDG-II, and beyond." Current Molecular Medicine, 14(7), 851-862.
-
-These references provide a comprehensive overview of PIGB's biochemical role, its importance in GPI-anchor biosynthesis, and the implications of its dysfunction in GPIBDs.
+### Diseases
+Mutations in the PIGB gene can lead to defects in GPI anchor biosynthesis, which may result in a group of disorders known as inherited GPI deficiencies (IGDs). These disorders are characterized by a wide range of symptoms, including intellectual disability, seizures, developmental delays, and dysmorphic features. The dysfunction in PIGB leads to incomplete or improperly formed GPI anchors, causing a failure in the proper localization and function of GPI-anchored proteins. Understanding the role of PIGB in GPI anchor biosynthesis is essential for diagnosing and developing treatments for these conditions.

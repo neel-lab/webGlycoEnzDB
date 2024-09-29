@@ -1,17 +1,19 @@
-Write a 100-350 word essay about human FUT2: it function, reaction pathways it participates in, where it is located and diseases related to it.  Provide 3-5 key references where I can find more information.
+Write a 100-350 word essay about the enzyme human FUT2. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
 
-Human FUT2, or fucosyltransferase 2, is an enzyme crucial for the synthesis of certain types of fucosylated glycans, which are important components of various biological processes including cell-cell recognition, microbial binding, and immune response. FUT2 is responsible for the addition of fucose, a monosaccharide, to glycoproteins and glycolipids in an α(1,2)-linkage.
+### Function
 
-FUT2 plays a significant role in determining the secretor status of an individual, which refers to the presence of ABH antigens in body fluids like saliva and mucus. Non-secretors, who have inactive FUT2 due to genetic mutations, do not secrete these antigens. This distinction is important in several aspects of health and disease.
+Human FUT2 (fucosyltransferase 2) is an enzyme responsible for the synthesis of the H antigen, a precursor for the ABO blood group antigens, in secretory tissues. FUT2 transfers fucose from GDP-fucose to the terminal galactose of oligosaccharides in an α1,2 linkage. This activity is critical for producing soluble H antigens in bodily secretions like saliva, mucus, and milk. The presence of these antigens in secretions determines an individual's secretor status, which plays a significant role in host-pathogen interactions and influences susceptibility to various infections.
 
-One of the key roles of FUT2 is in the formation of the H antigen, the precursor for A and B antigens in the ABO blood group system. Variations in FUT2 activity can lead to differences in the expression of these antigens and influence susceptibility to various infectious diseases. For example, non-secretors are less susceptible to certain pathogens that use these antigens as entry points, such as noroviruses.
+### Reaction Pathways
 
-Mutations in the FUT2 gene have been linked to different health outcomes. A common nonsense mutation in FUT2 is associated with the non-secretor phenotype. Interestingly, this mutation has been shown to affect the progression of HIV-1 infection.
+FUT2 operates within the fucosylation pathway, where it specifically catalyzes the addition of fucose to Type 1 and Type 3 oligosaccharides. This reaction produces the H antigen, which can be further modified by other glycosyltransferases to generate A or B antigens in the ABO blood group system. The activity of FUT2 in secretory tissues ensures that these antigens are present in body fluids, playing a role in immune response and microbial adhesion.
 
-For more detailed information on human FUT2, its function, and its role in diseases, the following key references are recommended:
+### Location
 
-Kelly et al. (1995): For insights into the genetic basis of the secretor and non-secretor phenotypes and the role of FUT2.
-Kindberg et al. (2006): Study on the impact of a FUT2 gene mutation on the progression of HIV-1 infection.
-Research on the role of FUT2 in the synthesis of ABH antigens and its implications in susceptibility to various infections.
-Studies on the molecular genetics of FUT2 and its association with different health outcomes and disease susceptibilities.
-Investigations into the biological and clinical significance of fucosylation in immune response and pathogen interaction​​.
+FUT2 is primarily expressed in epithelial cells of secretory tissues, including the salivary glands, gastrointestinal tract, and respiratory and reproductive tracts. The enzyme is localized in the Golgi apparatus, where it carries out its fucosylation activity. This Golgi localization is essential for the proper modification of glycoproteins and glycolipids before they are secreted or transported to the cell surface.
+
+### Diseases
+
+Mutations in the FUT2 gene can lead to a condition known as non-secretor status, where individuals do not express the H antigen in their secretions. Non-secretors are more susceptible to certain infections, such as Norovirus and Helicobacter pylori, but may have protection against others. For example, non-secretors are less likely to get Norovirus infections. Additionally, non-secretor status has been associated with a higher risk of developing certain conditions, such as Crohn's disease and other inflammatory disorders.
+
+In summary, FUT2 is a crucial enzyme in the fucosylation pathway, responsible for producing the H antigen in secretory tissues. Its activity is linked to various health conditions and plays a significant role in determining an individual's susceptibility to infections and other diseases.
