@@ -15,6 +15,15 @@ header <- dashboardHeader(
   ),
   tags$li(
     class = "dropdown",
+    a(
+      href = "mailto:rgunawan@buffalo.edu",
+      target = "_blank",  # Open email link in a new tab
+      icon("envelope"),  # Font Awesome mail icon
+      "Contact us"
+    )
+  ),
+  tags$li(
+    class = "dropdown",
     downloadLink("downloadPDFManual", HTML(paste0("User Manual &nbsp;", icon("download"))))
   )
 )
@@ -24,7 +33,7 @@ body <- dashboardBody(
     column(width = 9,
            box(width = NULL, solidHeader = TRUE,
                visNetworkOutput("mynetworkid", height = '600px'),
-               sliderInput("max_nodes", "Nodes",
+               sliderInput("max_nodes", "TF-Gene Linkage",
                            min = 1, max = 2000,
                            value = 200)
            ),
@@ -36,11 +45,11 @@ body <- dashboardBody(
            box(width = NULL, status = "warning",
                #uiOutput("cell_main"),
                uiOutput("glycopath"),
-               textAreaInput('target_genes', 'Glycogenes', value = "", width = NULL, height = "150px",
-                             cols = NULL, rows = NULL, placeholder = "Glycogenes (newline seperated)", resize = NULL),
+               textAreaInput('target_genes', 'Enter genes (one gene per row):', value = "", width = NULL, height = "150px",
+                             cols = NULL, rows = NULL, placeholder = "", resize = NULL),
                # textAreaInput('transcription_factors', 'Transcription Factors', value = "", width = NULL, height = "150px",
                #               cols = NULL, rows = NULL, placeholder = "Transcription Factors (newline seperated)", resize = NULL),
-               numericInput('percentile', "NMI Pct. Threshold", value=99, min = 0, max = 100, width = NULL),
+               numericInput('percentile', "MI Pct. Threshold", value=99, min = 0, max = 100, width = NULL),
                actionButton("searchButton", "Search")
            ),
            box(width = NULL, status = "warning",
