@@ -6,6 +6,7 @@ will then be used with https://grch37.ensembl.org/index.html to find the sequenc
 
 TargetScan Files: https://www.targetscan.org/cgi-bin/targetscan/data_download.vert80.cgi
 
+TargetScan miRNA data are not part of the GlycoEnzDB currently due to insufficient experimental validation data
 
 ## How to:
 1. _targetscandata_ directory will contain the text files from TargetScan and the gene list as an excel file
