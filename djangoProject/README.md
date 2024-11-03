@@ -25,6 +25,7 @@ To run the Django Project:
 GPT text - file: djangproject/data/gpt/{gene name}.txt
 Reaction images - file: djangoproject/webGlycoEnzDB/static/reaction_imgs/{gene name}.png
 MI data (for top 10 TFs table ) - data/mi_results.txt
+Pathway images in gene details pages are configured in the gene_figure_mapping.py file, variable `PATHWAY_GENE_MAPPING`. It links the slide number and the list of genes.
 
 Pathways and Genes:
 Default Pathway image - djangoproject/webGlycoEnzDB/static/pathway*map with map
