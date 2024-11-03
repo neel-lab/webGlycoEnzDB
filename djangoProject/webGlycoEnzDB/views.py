@@ -4,6 +4,7 @@ from json import dumps
 import os
 import re
 from itertools import zip_longest
+from . import gene_figure_mapping
 # Create your views here.
 
 from django.http import HttpResponse
@@ -143,7 +144,7 @@ def search(request, gene_name=''):
         gene_general_info = get_gene_general_info(GENE_INFORMATION_FILE, gene_name)
         gene_general_info['Comments'] = get_gene_other_info(GENE_COMMENT_FILE, gene_name)
         gene_html = get_gene_html(HTML_FOLDER, gene_name)
-        figure_url = get_pathway_fig_url(PATHWAY_GENE_MAPPING_FILE, gene_name)
+        figure_url = get_pathway_fig_url(gene_name)
         reaction_img = f'/reaction_imgs/{gene_name}.png' 
         tf_table_html = get_tf_html(MI_RESULTS_FILE, gene_name)
         gpt_txt = get_gpt_txt(GPT_TEXT_FILE, gene_name)
@@ -238,14 +239,12 @@ def get_tf_html(filename, gene_name):
     except FileNotFoundError:
         return ""      
 
-def get_pathway_fig_url(filename, gene_name):
-     
-    PATHWAY_GENE_MAPPING = {'Nucleotide': 'HK1,HK2,HK3,GCK,G6PC1,GPI,MPI,PMM1,PMM2,GMPPA,GMPPB,GNPDA1,GNPDA2,NAGK,UAP1,GNPNAT1,GFPT1,GFPT2,GALK2,NANS,CMAS,DPM1,DPM2,DPM3,GMDS,TSTA3,FPGT,FCGS,GNE,GALE,GALK1,GALT,ALG5,UGP2,HGDH,UXS1,PGM1,PGM2,PGM3,CMAH,RENBP'}
+def get_pathway_fig_url(gene_name):
+    mappings = gene_figure_mapping.PATHWAY_GENE_MAPPING
     url = ''
-
-    for p in PATHWAY_GENE_MAPPING:
-        if gene_name in PATHWAY_GENE_MAPPING[p].replace(' ', '').split(','):
-            url = f'/glycoenzdb/static/pathway_figures/{p}/{p}.html'
+    for p in mappings:
+        if gene_name in mappings[p].replace(' ', '').split(','):
+            url = f'/glycoenzdb/static/pathway_figures/{p}'
             return url
     return url
 

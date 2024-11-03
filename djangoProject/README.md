@@ -24,6 +24,7 @@ To run the Django Project:
 
 GPT text - file: djangproject/data/gpt/{gene name}.txt
 Reaction images - file: djangoproject/webGlycoEnzDB/static/reaction_imgs/{gene name}.png
+MI data (for top 10 TFs table ) - data/mi_results.txt
 
 Pathways and Genes:
 Default Pathway image - djangoproject/webGlycoEnzDB/static/pathway*map with map
