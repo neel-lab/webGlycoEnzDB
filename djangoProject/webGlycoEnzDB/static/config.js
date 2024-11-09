@@ -7,7 +7,7 @@ const slide_to_pathway_mapping = {
     5:['Biosynthesis_Core_N-linked_Branching_NULL_NULL'],
     6:['Biosynthesis_Core_O-linked_O-GalNAc_NULL_NULL'],
     7:['Biosynthesis_Core_Glycolipid_GSL core_GlcCer-related_NULL'],
-    8:['Biosynthesis_Core_Glycolipid_GSL core_GlcCer-related_Ganglioside', 'Biosynthesis_Capping_Terminal sialylation_NULL_NULL_NULL'],
+    8:['Biosynthesis_Core_Glycolipid_GSL core_GlcCer-related_Ganglioside'],
     9:['Biosynthesis_Core_GAG_O-Xyl_NULL_NULL'],
     10:['Biosynthesis_Core_GAG_Hyaluronan_NULL_NULL'],
     11:['Biosynthesis_Core_O-linked_O-GlcNAc_NULL_NULL'],
