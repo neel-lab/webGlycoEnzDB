@@ -3,9 +3,11 @@ from Bio import Entrez, SeqIO
 from Bio.Seq import Seq
 import xmltodict
 
-def sub_seq(gene_symbol = 'ST3GAL4', minus=-50, plus=300, ko=True):
+
+def sub_seq(gene_symbol='ST3GAL4', minus=-50, plus=300, ko=True):
     """
     Obtain genomic sequence for gene symbol in the region minus to plus from the TSS
+
     :param gene_symbol: HGNC gene symbol
     :param minus: position prior to the transcription start site
     :param plus: position after the transcription start site
@@ -13,19 +15,20 @@ def sub_seq(gene_symbol = 'ST3GAL4', minus=-50, plus=300, ko=True):
     :return: sub_seq: sequence between minus and plus, tss_seq: first 20 bases following TSS, full_seq: full genomic seq,
     gene_start: start position of gene, gene_end: end position of gene on chromosome
     """
+    # Use gene name to get gene_id, using "gene" database
     search_term = f"GRCh38[Assembly] AND {gene_symbol}[Gene]"
     handle = Entrez.esearch(db="gene", term=search_term)
     record = Entrez.read(handle)
     ind = 0
     gene_id = record["IdList"][ind]
 
-    # get start and end of gene by searching the "gene" database
+    # Use gene_id to get start and end of gene, using "gene" database
     gene_record = Entrez.efetch(db="gene", id=gene_id, rettype="fasta", retmode="text")     # rettype can be 'gb' or 'xml'
     data = gene_record.read()
     Entrez.email = "shysriram206@gmail.com"     # Always tell NCBI who you are
     lines = data.split('\n')
     while(not(gene_symbol in lines[1])):
-        ind +=1
+        ind += 1
         gene_id = record["IdList"][ind]
         gene_record = Entrez.efetch(db="gene", id=gene_id, rettype="fasta",
                                     retmode="text")  # rettype can be 'gb' or 'xml'
@@ -41,19 +44,22 @@ def sub_seq(gene_symbol = 'ST3GAL4', minus=-50, plus=300, ko=True):
             start_end = field[3]
             positions = start_end.replace('(', '').replace(')', '').replace(',', '')
             gene_start, gene_end = positions.split('..')
+            gene_length = int(gene_end) - int(gene_start)
             if 'comp' in field[len(field) - 1]:
                 strand = '-'
             else:
                 strand = '+'
             break
         else:
-            print("Annotation line not found.")
+            pass
+#            print("Annotation line not found.")
     if not(ko):
         gene_start = int(gene_start)
         gene_start -= 600
-        gene_start = str(gene_start)
         gene_end = int(gene_end)
         gene_end +=600
+        gene_length = gene_end - gene_start
+        gene_start = str(gene_start)
         gene_end = str(gene_end)
     handle = Entrez.efetch(db="nucleotide", id=db, rettype="fasta", strand=1, seq_start=gene_start, seq_stop=gene_end)
     record = SeqIO.read(handle, "fasta")
@@ -88,7 +94,10 @@ def sub_seq(gene_symbol = 'ST3GAL4', minus=-50, plus=300, ko=True):
     start = max(0, tss + minus)
     end = min(tss + plus, len(full_seq)-1)
     sub_seq = full_seq[start:end]
-    return sub_seq, tss_seq, full_seq, gene_start, gene_end
+    print('Gene = ', gene_symbol)
+    print('Seq start = ', str(gene_start))
+    print('Seq length = ', str(gene_length))
+    return sub_seq, tss_seq, full_seq, int(gene_start), int(gene_end)
 if __name__ == "__main__":
     sub_seq, tss_seq, full_seq, gene_start, gene_end = sub_seq('GLCE')
     print(sub_seq)
