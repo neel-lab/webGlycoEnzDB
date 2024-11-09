@@ -19,10 +19,10 @@ const slide_to_pathway_mapping = {
     17:['Biosynthesis_Core_O-linked_EOGT_NULL_NULL'],
     18:['Biosynthesis_Core_O-linked_O-Fucose_POFUT2-type_NULL'],
     19:['Biosynthesis_Core_c-Mannose_NULL_NULL_NULL'],
-    20:['Biosynthesis_Elongation_Heparin sulfate elongation_NULL_NULL_NULL', 'Biosynthesis_Capping_Terminal sulfation_NULL_NULL_NULL'],
-    21:['Biosynthesis_Elongation_Chondroitin/Dermatan sulfate elongation_NULL_NULL_NULL', 'Biosynthesis_Capping_Terminal sulfation_NULL_NULL_NULL'],
-    22:['Biosynthesis_Elongation_Keratan sulfate elongation_NULL_NULL_NULL', 'Biosynthesis_Capping_Terminal sulfation_NULL_NULL_NULL'],
-    23:['Biosynthesis_Elongation_LacNAc chain_NULL_NULL_NULL', 'Biosynthesis_Elongation_LacdiNAc_NULL_NULL_NULL'],
+    20:['Biosynthesis_Elongation_Heparin sulfate elongation_NULL_NULL_NULL'],
+    21:['Biosynthesis_Elongation_Chondroitin/Dermatan sulfate elongation_NULL_NULL_NULL'],
+    22:['Biosynthesis_Elongation_Keratan sulfate elongation_NULL_NULL_NULL'],
+    23:['Biosynthesis_Elongation_LacdiNAc_NULL_NULL_NULL'],
     24:['Biosynthesis_Elongation_LacNAc chain_NULL_NULL_NULL'],
     25:['Biosynthesis_Capping_Sda_NULL_NULL_NULL'],
     26:['Biosynthesis_Core_Glycolipid_GSL core_GlcCer-related_NULL'],
@@ -74,7 +74,7 @@ const slide_file_path = {
     24: 'fucosylated_LacNAc/fucosylated_LacNAc.html',
     25: 'sialoglycans/sialoglycans.html',
     26: 'glycoproteins/glycoproteins.html',
-    27: 'N-linked/N-linked.html',
+    27: 'N-glycoproteins/N-glycoproteins.html',
     28: 'glycosaminoglycan/glycosaminoglycan.html',
     29: 'glycolipid_degradation/glycolipid_degradation.html'
 };
