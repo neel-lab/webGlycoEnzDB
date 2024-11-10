@@ -8,20 +8,24 @@ The glycan distribution on cells is governed by the stochastic activity of diffe
 This repository contains all data files and code used to develop the django web resource. THe following are the locations of relevant data files
 ### webGlycoEnzDB/dataloader/data/
 	GlycoEnzOntoDB: describes hierarchy of otology used in website
-### webGlycoEnzDB/djangoProject/data/
-	gpt/: gpt text created using Dr. Glyco GPT
-	html600/: glycol-TF interaction figures
+### webGlycoEnzDB/uniprotDataScript/
+	Scripts used to pull generic enzyme data from Uniprot
+### webGlycoEnzDB/djangoProject/data/gpt/
+	gpt text created using Dr. Glyco GPT
 ### webGlycoEnzDB/djangoProject/ webGlycoEnzDB/static/
 	reaction_imgs/: enzyme reaction
 	pathway_figures/: pathway figures used in rendering
-### webGlycoEnzDB/djangoProject/ webGlycoEnzDB/templates/
-	GlycoEnzDB.html: main page
+### webGlycoEnzDB/singlecellData/ViolinPlots/inputfiles
+	CCLE data
+ 	Tabula Sapiens ssingle cell transcriptomics data parsed for the glycogenes
 ### webGlycoEnzDB/CRISPR/
 	CRISPRa/: figures for CRISPR activation
 	CRISPRi/: figures for CRISPR inactivation
 	CRISPRko/: figures for CRISPR knockout
-### CCLE data
-### Single cell transcriptomics
+### webGlycoEnzDB/geneNetGlyco/
+	glycol-TF interaction figures
+### webGlycoEnzDB/djangoProject/ webGlycoEnzDB/templates/
+	GlycoEnzDB.html: main page
 
 
 ### Web GlycoENZ DB Django Project
