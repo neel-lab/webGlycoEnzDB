@@ -24,10 +24,11 @@ This repository contains all data files and code used to develop the django web 
 	CRISPRko/: figures for CRISPR knockout
 ### webGlycoEnzDB/geneNetGlyco/
 	glycol-TF interaction figures
-### webGlycoEnzDB/djangoProject/ webGlycoEnzDB/templates/
-	GlycoEnzDB.html: main page
+### webGlycoEnzDB/djangoProject/
+	Instuctions for setting up server
 
 
+### Vishnu-- please see if the text below is needed or can be deleted?-- if maybe not needed for the github site, cleanup and we can store this information elsewhere. Thanks!
 ### Web GlycoENZ DB Django Project
 To run the Django Project:
 1. Open PyCharm
@@ -115,3 +116,19 @@ psql
 
 Start GlcyoEnzDB in server:
 sudo systemctl start glycoenzdb
+
+<b>Data source:</b><br />
+GPT text - file: djangproject/data/gpt/{gene name}.txt<br />
+Reaction images - file: djangoproject/webGlycoEnzDB/static/reaction_imgs/{gene name}.png<br />
+MI data (for top 10 TFs table ) - data/mi_results.txt<br />
+Edit pathway html links - djangoproject/webGlycoEnzDB/static/pathway_figures <br />
+Pathway images in gene details pages are configured in the webGlycoEnzDB/gene_figure_mapping.py file, variable `PATHWAY_GENE_MAPPING`. It links the slide number and the list of genes.
+Default Pathway image - djangoproject/webGlycoEnzDB/static/pathway*map with map
+
+not used? <br />
+pathway_image and genes mapping - file:data/pathway_map.json - {key: "pathway tree seperated by '*' ", value: "gene names seperated by comma"}
+
+Server Steps:
+static file changes: [TODO]
+
+dataloader for ontology - to edit in future
