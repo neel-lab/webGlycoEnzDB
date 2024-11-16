@@ -136,12 +136,12 @@ def search(request, gene_name=''):
     # General information
     gene_general_info = {'message': "Gene Pathway Map (Clickable Blocks)"}
     gene_html = ""
-    figure_url = ""
+    figure_url = []
     reaction_img = ""
     tf_table_html = ""
     gpt_txt = ""
     if gene_name:
-        gene_general_info = get_gene_general_info(GENE_INFORMATION_FILE, gene_name)
+        gene_general_info = get_gene_general_info(GENE_INFORMATION_FILE, gene_name, gene_general_info)
         gene_general_info['Comments'] = get_gene_other_info(GENE_COMMENT_FILE, gene_name)
         gene_html = get_gene_html(HTML_FOLDER, gene_name)
         figure_url = get_pathway_fig_url(gene_name)
@@ -161,7 +161,7 @@ def search(request, gene_name=''):
                                                'gpt_txt': gpt_txt})
 
 
-def get_gene_general_info(filename, gene_name):
+def get_gene_general_info(filename, gene_name, gene_general_info):
        # Get the current directory
         current_dir = os.path.dirname(__file__)
 
@@ -186,7 +186,7 @@ def get_gene_general_info(filename, gene_name):
             # gene_general_info['Catalytic Activity'] = list(zip_longest(gene_general_info['Catalytic: Rhea'], gene_general_info['Catalytic: EC'], 
             #                                                    gene_general_info['Brenda'], gene_general_info['Reactome ID'], fillvalue=''))
         else:
-            gene_general_info['message'] = "Invalid Gene Name in the URL"
+            gene_general_info['error'] = f'Gene name ({gene_name}) not found.'
 
         return gene_general_info
 
@@ -241,11 +241,10 @@ def get_tf_html(filename, gene_name):
 
 def get_pathway_fig_url(gene_name):
     mappings = gene_figure_mapping.PATHWAY_GENE_MAPPING
-    url = ''
+    url = []
     for p in mappings:
         if gene_name in mappings[p].replace(' ', '').split(','):
-            url = f'/glycoenzdb/static/pathway_figures/{p}'
-            return url
+            url.append(f'/glycoenzdb/static/pathway_figures/{p}')
     return url
 
 def get_gpt_txt(folder_name, gene_name):

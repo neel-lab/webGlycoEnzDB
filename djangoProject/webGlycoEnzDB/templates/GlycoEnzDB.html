@@ -231,6 +231,10 @@
     {% if gene_general_info.message %}
     <h3>Welcome to GlycoEnzDB</h3>
     <hr>
+    {% if gene_general_info.error %}
+    <h5 class="error">Error: {{gene_general_info.error}}</h5>
+    <hr>
+    {% endif %}
     <!-- Pathways Image Maps -->
     <div id="pathway_map_img">
         <div>{{gene_general_info.message}}</div>
@@ -285,7 +289,34 @@
     <h3>Gene Details: {{ gene_general_info|get:"Gene Name" }}</h3>
     <hr>
     {% if figure_url %}
-    <iframe src='{{ figure_url }}' height="600px" width="1000px" scrolling="no"></iframe>
+    <!-- The iframe -->
+    <iframe id="figureIframe" src="{{ figure_url.0 }}" height="600px" width="1000px" scrolling="no"></iframe>
+    <!-- Navigation buttons -->
+    <div style="margin-top: 10px;">
+        <button id="prevButton" onclick="navigate(-1)" disabled>Previous</button>
+        <span id="figureText">1 / {{figure_url|length}}</span>
+        <button id="nextButton" onclick="navigate(1)">Next</button>
+    </div>
+    <hr>
+    <!-- JavaScript to handle navigation -->
+    {{ figure_url|json_script:"figure_url" }}
+    <script>
+        let currentFigureIndex = 0; // Start with the first URL
+        const urls = JSON.parse(document.getElementById('figure_url').textContent);
+        console.log(urls.length, urls)
+        function navigate(direction) {
+            // Update the current index
+            currentFigureIndex += direction;
+
+            // Update the iframe src to the current URL
+            document.getElementById("figureIframe").src = urls[currentFigureIndex];
+            document.getElementById("figureText").innerText = `${currentFigureIndex + 1} / ${urls.length}`;
+
+            // Enable or disable buttons based on the index
+            document.getElementById("prevButton").disabled = currentFigureIndex === 0;
+            document.getElementById("nextButton").disabled = currentFigureIndex === urls.length - 1;
+        }
+    </script>
     {% endif %}
     <h4>General Information</h4>
     <div><b>Gene Name:</b> {{ gene_general_info|get:"Gene Name" }} ({{ gene_general_info|get:"Recommended Name"}}) </div>
@@ -378,8 +409,21 @@
     </div>
     <hr>
 
-    <h4 id="sc_violin_header">Single Cell Plots <a href="/violinplots?gene_name={{ gene_name }}" target="_blank">URL</a></h4>
+    <h4 id="sc_violin_header">Transcript levels (Cell lines and Single cell data) <a href="/violinplots?gene_name={{ gene_name }}" target="_blank">URL</a></h4>
     <iframe height="1000px" width="100%" scrolling="no" src="/violinplots?gene_name={{ gene_name }}"></iframe>
+    <hr>
+    <div>
+        <h4>CRISPR-knockout</h4>
+        <img src="{% static 'CRISPR/CRISPRko/' %}{{gene_name}}-CRISPRko.png" style="max-width: 100%; height: auto;">
+    </div>
+    <div>
+        <h4>CRISPR-activation</h4>
+        <img src="{% static 'CRISPR/CRISPRa/' %}{{gene_name}}-CRISPRa.png" style="max-width: 100%; height: auto;">
+    </div>
+    <div>
+        <h4>CRISPR-inactivation</h4>
+        <img src="{% static 'CRISPR/CRISPRi/' %}{{gene_name}}-CRISPRi.png" style="max-width: 100%; height: auto;">
+    </div>
     <hr>
     <!-- Overlay to prevent zoom in iframe -->
     <!-- Use onClick="style.pointerEvents='none'" for enabling interaction after click -->
@@ -397,6 +441,11 @@
 
     <hr>
     {% endif %}
+    <hr>
+    <div>
+        <b>Licensing: </b>CC BY 4.0. You are fee to copy, redistribute, remix, transform and build upon this material for commercial 
+        and non-commercial purposes, provided source of information is attributed/credited.
+    </div>
 </div>
 
 </body>
