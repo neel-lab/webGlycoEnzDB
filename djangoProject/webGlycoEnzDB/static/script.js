@@ -19,6 +19,7 @@ function showPathways() {
 function opened_submenu() {
     const searchBy = localStorage.getItem('searchBy');
     const key = localStorage.getItem('key');
+    const slide_no = localStorage.getItem('pathway_slide');
 
     const currentUrl = window.location.href;
     const pattern = /^https?:\/\/(?:www\.)?.+?\/glycoenzdb\/human\/.+\/?$/i;
@@ -26,7 +27,7 @@ function opened_submenu() {
     const part = currentUrl.split("/");
     part.pop();
     const gene_name = part.pop();
-    
+
     n_subclass = 4;
     if (searchBy == 'pathways') {
         showPathways()
@@ -36,28 +37,35 @@ function opened_submenu() {
         n_subclass = 4;
     }
 
-    if (pattern.test(currentUrl) && key) {
-        const key_arr = key.split("_")
-        for (i = 0; i < n_subclass; i++) {
-            if(key_arr[i] === "NULL"){
-                break;
+    if (pattern.test(currentUrl)) {
+        if (key) {
+            const key_arr = key.split("_")
+            for (i = 0; i < n_subclass; i++) {
+                if (key_arr[i] === "NULL") {
+                    break;
+                }
+                const id = [...key_arr].splice(0, i + 1).join("_") + ("_NULL".repeat(n_subclass - i - 1));
+                const element = document.getElementById(id);
+                if (element) {
+                    setTimeout(() => { element.click(); }, 10);
+                }
             }
-            const id = [...key_arr].splice(0, i+1).join("_") + ("_NULL".repeat(n_subclass - i - 1));
-            const element = document.getElementById(id);
-            if (element) {
-                setTimeout( () => {element.click();}, 10);
-            }
+            setTimeout(() => {
+                selected_gene_ele = document.getElementById(gene_name);
+                if (selected_gene_ele) {
+                    selected_gene_ele.classList.add('fw-bold');
+                    selected_gene_ele.classList.add('text-primary');
+                }
+            }, 100);
+        } else if (slide_no) {
+            console.log(slide_no);
+            setTimeout(() => { open_submenu_and_pathway_figures(slide_no, false) }, 100);
+        } else {
+            localStorage.clear();
         }
-        setTimeout( () => {
-            selected_gene_ele = document.getElementById(gene_name);
-            if (selected_gene_ele) {
-                selected_gene_ele.classList.add('fw-bold');
-                selected_gene_ele.classList.add('text-primary');
-            }
-        }, 100);
 
     } else {
-      localStorage.clear();
+        localStorage.clear();
     }
 }
 
@@ -68,10 +76,10 @@ function clear_link_styles(element) {
     const childNodes = element.parentElement.querySelectorAll('a');
 
     const symbol_span = element.querySelector('span');
-    if (symbol_span && symbol_span.innerHTML === DOWN_ARROW){
+    if (symbol_span && symbol_span.innerHTML === DOWN_ARROW) {
         symbol_span.innerHTML = RIGHT_ARROW;
     }
-    else if (symbol_span && symbol_span.innerHTML === RIGHT_ARROW){
+    else if (symbol_span && symbol_span.innerHTML === RIGHT_ARROW) {
         symbol_span.innerHTML = DOWN_ARROW;
     }
 
@@ -79,9 +87,9 @@ function clear_link_styles(element) {
         childNode.classList.remove('fw-bold');
         childNode.classList.remove('text-primary');
 
-        if (element !== childNode){
-            const symbol_span =  childNode.querySelector('span');
-            if (symbol_span && symbol_span.innerHTML === DOWN_ARROW){
+        if (element !== childNode) {
+            const symbol_span = childNode.querySelector('span');
+            if (symbol_span && symbol_span.innerHTML === DOWN_ARROW) {
                 symbol_span.innerHTML = RIGHT_ARROW;
             }
 
@@ -103,30 +111,30 @@ document.addEventListener("DOMContentLoaded", function () {
             // Styling the element - START
 
             //  Clear all syblings and sub links styles            
-            if (parentEl && parentEl.parentElement){
-            const childNodes = parentEl.parentElement.querySelectorAll('a');
+            if (parentEl && parentEl.parentElement) {
+                const childNodes = parentEl.parentElement.querySelectorAll('a');
 
-            const symbol_span = element.querySelector('span');
-            if (symbol_span && symbol_span.innerHTML === DOWN_ARROW){
-                symbol_span.innerHTML = RIGHT_ARROW;
-            }
-            else if (symbol_span && symbol_span.innerHTML === RIGHT_ARROW){
-                symbol_span.innerHTML = DOWN_ARROW;
-            }
-
-            childNodes.forEach(childNode => {
-                childNode.classList.remove('fw-bold');
-                childNode.classList.remove('text-primary');
-
-                if (element !== childNode){
-                  const symbol_span =  childNode.querySelector('span');
-                    if (symbol_span && symbol_span.innerHTML === DOWN_ARROW){
-                        symbol_span.innerHTML = RIGHT_ARROW;
-                    }
+                const symbol_span = element.querySelector('span');
+                if (symbol_span && symbol_span.innerHTML === DOWN_ARROW) {
+                    symbol_span.innerHTML = RIGHT_ARROW;
                 }
-            });
+                else if (symbol_span && symbol_span.innerHTML === RIGHT_ARROW) {
+                    symbol_span.innerHTML = DOWN_ARROW;
+                }
 
-        }
+                childNodes.forEach(childNode => {
+                    childNode.classList.remove('fw-bold');
+                    childNode.classList.remove('text-primary');
+
+                    if (element !== childNode) {
+                        const symbol_span = childNode.querySelector('span');
+                        if (symbol_span && symbol_span.innerHTML === DOWN_ARROW) {
+                            symbol_span.innerHTML = RIGHT_ARROW;
+                        }
+                    }
+                });
+
+            }
             // Bold the current link
             element.classList.add('fw-bold');
             element.classList.add('text-primary');
@@ -167,8 +175,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //     violin_iframe.src = newUrl;
 //   }
 
-  // Wait for the DOM content to load
-document.addEventListener("DOMContentLoaded", function() {
+// Wait for the DOM content to load
+document.addEventListener("DOMContentLoaded", function () {
     // Get the SVG object
     const svgObject = document.getElementById("svg-object");
 
@@ -195,43 +203,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Gene Search
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
-const searchInput = document.getElementById('searchInput');
-const suggestions = document.getElementById('suggestions');
+    const searchInput = document.getElementById('searchInput');
+    const suggestions = document.getElementById('suggestions');
 
 
-searchInput.addEventListener('input', function() {
-    const userInput = this.value.toLowerCase();
-    const matchedWords = Array.from(gene_search_list).filter(word => word.toLowerCase().includes(userInput));
-    displaySuggestions(matchedWords);
-});
-
-function displaySuggestions(matches) {
-    if (matches.length === 0) {
-        suggestions.style.display = 'none';
-        return;
-    }
-
-    const suggestionsHTML = matches.map(match => `<div class="suggestion"><a href="/glycoenzdb/human/${match}">${match}</a></div>`).join('');
-    suggestions.innerHTML = suggestionsHTML;
-    suggestions.style.display = 'block';
-
-    const suggestionItems = document.querySelectorAll('.suggestion');
-    suggestionItems.forEach(item => {
-        item.addEventListener('click', function() {
-            searchInput.value = this.textContent;
-            suggestions.style.display = 'none';
-        });
+    searchInput.addEventListener('input', function () {
+        const userInput = this.value.toLowerCase();
+        const matchedWords = Array.from(gene_search_list).filter(word => word.toLowerCase().includes(userInput));
+        displaySuggestions(matchedWords);
     });
-}
 
-// Hide suggestions when clicking outside the input and suggestions div
-document.addEventListener('click', function(e) {
-    if (e.target !== searchInput && e.target !== suggestions) {
-        suggestions.style.display = 'none';
+    function displaySuggestions(matches) {
+        if (matches.length === 0) {
+            suggestions.style.display = 'none';
+            return;
+        }
+
+        const suggestionsHTML = matches.map(match => `<div class="suggestion"><a href="/glycoenzdb/human/${match}">${match}</a></div>`).join('');
+        suggestions.innerHTML = suggestionsHTML;
+        suggestions.style.display = 'block';
+
+        const suggestionItems = document.querySelectorAll('.suggestion');
+        suggestionItems.forEach(item => {
+            item.addEventListener('click', function () {
+                searchInput.value = this.textContent;
+                suggestions.style.display = 'none';
+            });
+        });
     }
-});
+
+    // Hide suggestions when clicking outside the input and suggestions div
+    document.addEventListener('click', function (e) {
+        if (e.target !== searchInput && e.target !== suggestions) {
+            suggestions.style.display = 'none';
+        }
+    });
 
 });
 
@@ -239,32 +247,32 @@ var originalCoordinates = {}; // Store original coordinates
 
 // Function to resize the area coordinates based on the image size
 function resizeAreas() {
-   var image = document.getElementById('resizableImage');
-   if (!image) {
-    return;
-   }
-   var map = document.getElementById('resizableMap');
-   var areas = map.getElementsByTagName('area');
+    var image = document.getElementById('resizableImage');
+    if (!image) {
+        return;
+    }
+    var map = document.getElementById('resizableMap');
+    var areas = map.getElementsByTagName('area');
 
-   // Store original coordinates if not already stored
-   if (!originalCoordinates[image.src]) {
-      originalCoordinates[image.src] = [];
-      for (var i = 0; i < areas.length; i++) {
-         originalCoordinates[image.src][i] = areas[i].getAttribute('coords').split(',').map(Number);
-      }
-   }
+    // Store original coordinates if not already stored
+    if (!originalCoordinates[image.src]) {
+        originalCoordinates[image.src] = [];
+        for (var i = 0; i < areas.length; i++) {
+            originalCoordinates[image.src][i] = areas[i].getAttribute('coords').split(',').map(Number);
+        }
+    }
 
-   var scaleFactorX = image.width / image.naturalWidth;
-   var scaleFactorY = image.height / image.naturalHeight;
+    var scaleFactorX = image.width / image.naturalWidth;
+    var scaleFactorY = image.height / image.naturalHeight;
 
-   // Loop through each area and update coordinates
-   for (var i = 0; i < areas.length; i++) {
-      var originalCoords = originalCoordinates[image.src][i];
-      var adjustedCoords = originalCoords.map(function(coord, index) {
-         return (index % 2 === 0) ? coord * scaleFactorX : coord * scaleFactorY;
-      });
-      areas[i].setAttribute('coords', adjustedCoords.join(','));
-   }
+    // Loop through each area and update coordinates
+    for (var i = 0; i < areas.length; i++) {
+        var originalCoords = originalCoordinates[image.src][i];
+        var adjustedCoords = originalCoords.map(function (coord, index) {
+            return (index % 2 === 0) ? coord * scaleFactorX : coord * scaleFactorY;
+        });
+        areas[i].setAttribute('coords', adjustedCoords.join(','));
+    }
 }
 
 // Resize areas on image load and resize
@@ -276,7 +284,7 @@ function resetGenes() {
     document.getElementById("Gene_Names_list").innerHTML = "";
 
     const elements = document.querySelectorAll('.show');
-    for(let i=0; i<elements.length; i++) {
+    for (let i = 0; i < elements.length; i++) {
         clear_link_styles(elements[i])
         let mycollapse = new bootstrap.Collapse(elements[i]);
         mycollapse.hide();
@@ -285,60 +293,48 @@ function resetGenes() {
 }
 
 function open_pathway_submenu(key) {
-    resetGenes()
+    resetGenes();
     showPathways();
     localStorage.setItem('key', key);
 
     const key_arr = key.split("_");
 
     for (i = 0; i < n_subclass; i++) {
-        if(key_arr[i] === "NULL"){
+        if (key_arr[i] === "NULL") {
             break;
         }
-        const id = [...key_arr].splice(0, i+1).join("_") + ("_NULL".repeat(n_subclass - i - 1));
+        const id = [...key_arr].splice(0, i + 1).join("_") + ("_NULL".repeat(n_subclass - i - 1));
         const element = document.getElementById(id);
 
         if (element) {
             const DOWN_ARROW = '▼';
             let spanElement = element.querySelector('span');
             if (spanElement == null || spanElement.innerText !== DOWN_ARROW) {
-                setTimeout( () => {element.click();}, 10);
+                setTimeout(() => { element.click(); }, 10);
             }
         }
     }
-    
+
 }
 
-function open_submenu_and_pathway_figures(pathway_no, slide_no) {
+function open_submenu_and_pathway_figures(slide_no, open = true) {
 
-    keys = slide_to_pathway_mapping[pathway_no]
-    localStorage.setItem('pathway_slide',slide_no);
-    document.getElementById("open_submenu_buttons").innerHTML = "";
-
-    if (keys.length == 1) {
-        open_pathway_submenu(keys[0])
-    } else {
-        var element = document.getElementById("open_submenu_buttons");
-            // Loop through the list of button names
-        for (let i = 0; i < keys.length; i++) {
-            // Create a new button element
-            var button = document.createElement("button");
-            // Set the button text to the current button name
-            button_text = keys[i].replaceAll('_NULL','').trim().replaceAll('_',' > ');
-            button.innerHTML = "Open " + button_text;
-            button.style.marginBlock = "10px";
-            // Set the onclick function for the button
-            button.onclick = function() {
-                // Call a custom function when the button is clicked
-                open_pathway_submenu(keys[i])
-            };
-
-            // Append the button to the container div
-            element.appendChild(button);
-        }
+    localStorage.setItem('pathway_slide', slide_no);
+    const ele = document.getElementById("open_submenu_buttons");
+    if (ele) {
+        ele.innerHTML = "";
     }
-
-    openOverlay()
+    resetGenes();
+    let gene_names = PATHWAY_GENE_MAPPING[slide_no].split(",");
+    gene_names = gene_names.map(gene => gene.trim());
+    let inner_html = "";
+    for (let i = 0; i < gene_names.length; i++) {
+        inner_html += `<div style="text-align: center;"><a class="no-underline" href="/glycoenzdb/human/${gene_names[i]}" id="${gene_names[i]}">${gene_names[i]}</a></div>`;
+    }
+    document.getElementById("Gene_Names_list").innerHTML = inner_html;
+    if (open) {
+        openOverlay();
+    }
 }
 
 // Function to open the overlay
@@ -351,7 +347,7 @@ function openOverlay() {
 
 // Function to close the overlay
 function closeOverlay() {
-    resetGenes()
+    resetGenes();
     document.getElementById("open_submenu_buttons").innerHTML = "";
     document.getElementById('myOverlay').style.display = 'none';
     document.getElementById('openPathwayBtn').style.display = 'none';
@@ -363,7 +359,7 @@ function setCurrentPathwayiFrames(element_id) {
 
     let element = document.getElementById(element_id);
     if (element) {
-        if (slide_file_path[pathway_slide]){
+        if (slide_file_path[pathway_slide]) {
             element.src = pathway_figures_location + slide_file_path[pathway_slide];
         } else {
             element.src = "";
