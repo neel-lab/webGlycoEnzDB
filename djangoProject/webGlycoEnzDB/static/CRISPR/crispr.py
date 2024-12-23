@@ -1,6 +1,7 @@
 """
 Use genomic and coding sequences to create visual representation of gene, showing start and end positions with CRISPR
 sequences. CRISPR Sequences derived from : https://portals.broadinstitute.org/gppx/crispick/public
+To download specific ENSEMBL version type at terminal: pyensembl install --release 109 --species human
 
 Functions:
 - transcript_ensembl(ensembl, ID): Obtain information about the strand direction, exon intervals, transcript sequence,
@@ -29,7 +30,8 @@ a CRISPR inactivation or activation mechanism
     if using an inactivation mechanism or 'CRISPRa' if using an activation mechanism, data file created from
     get_gene_data (gene_data), picking result file from CRISPick(crispr_data), data file created from
     extract_CRISPR_sequences (crispr_seq_data)
-    -Output: Visual representation of gene, showing exon positions as well as the positions of the gene's respective
+    -Output: Visual representation of gene, showing exon positions as well as the python3 -m pip --version
+positions of the gene's respective
     CRISPR knockout sequences denoted by C1-C5 relative to the transcription start site , as well as the location of
     the transcription start site(TSS)
 
@@ -44,7 +46,7 @@ from pyensembl import EnsemblRelease
 import pandas as pd
 import random
 from dna_features_viewer import GraphicFeature, GraphicRecord
-import mpld3
+# import mpld3
 from math import isnan
 from matplotlib import pyplot as plt
 from matplotlib.gridspec import GridSpec
@@ -53,6 +55,7 @@ from matplotlib.table import Table
 import random
 import textwrap
 from NCBI_getGRCh38 import sub_seq
+import numpy as np
 
 
 def transcript_ensembl(ensembl, ID):
@@ -102,7 +105,7 @@ def extract_CRISPR_sequences(ensembl):
     gene_transcripts = pd.read_excel('gene_transcript.xlsx')
     transcript_ids = list(gene_transcripts['ENSEMBL'])
     genes = list(gene_transcripts['Gene'])
-    crispr_data = pd.read_csv('ad1e85c4-c4f7-406c-a201-442f87ea0d53-sgrna-designs.csv', encoding='utf-8')
+    crispr_data = pd.read_csv('crispr_new_a.csv', encoding='utf-8')
     oriented_sequences_all = []
     for transcriptID in transcript_ids:
         transcript = ensembl.transcript_by_id(transcriptID)
@@ -133,7 +136,7 @@ def extract_CRISPR_sequences(ensembl):
         oriented_sequences_all.append(oriented_sequences)
     crispr_dict = {'Gene':genes, 'CRISPR Sequences': oriented_sequences_all}
     crispr_df = pd.DataFrame(crispr_dict)
-    crispr_df.to_csv('CRISPR_Data_correct_inactivated.csv',encoding='utf-8', index=True)
+    crispr_df.to_csv('CRISPR_Data_correct_Activated_new.csv',encoding='utf-8', index=True)
 
 
 def makeplot(gene_name, mechanism, chromosome_num, graph_start, gene_start, graph_end, gene_end, full_sequence,
@@ -169,14 +172,14 @@ def makeplot(gene_name, mechanism, chromosome_num, graph_start, gene_start, grap
     ax2.set_axis_off()
 #    plt.tight_layout()
 #    plt.subplots_adjust(left=0.1, bottom=0.1)
-#    plt.show()
+    plt.show()
     return fig
 
 
-def draw_CRISPR_site_for_ko(ensembl, geneID):
+def draw_CRISPR_site_for_ko(folder_path, ensembl, geneID):
     gene_data = pd.read_csv('gene_data.csv', encoding='utf-8')
-    crispr_data = pd.read_csv('f290132d-5a1e-4798-9c2a-507b5a14c1ed-sgrna-designs.csv', encoding='utf-8')
-    crispr_seq_data = pd.read_csv('CRISPR_Data_correct.csv', encoding='utf-8')
+    crispr_data = pd.read_csv('crispr_konew.csv', encoding='utf-8')
+    crispr_seq_data = pd.read_csv('CRISPR_Data_correct_KO_new.csv', encoding='utf-8')
     gene_name = ensembl.gene_name_of_gene_id(geneID)
     row_num = 0
     for row in range(gene_data.shape[0]):
@@ -312,22 +315,21 @@ def draw_CRISPR_site_for_ko(ensembl, geneID):
     record = GraphicRecord(sequence_length=len(full_sequence), features=features)
     fig = makeplot(gene_name, mechanism_pam, chromosome_num, graph_start, gene_start, graph_end, gene_end,
                    full_sequence, cell_text, columns, record, strand_dir)
-    folder_path = 'C:/Users/neel/Box/cbe-neel/cbe-neel-shared/Website_management/GlycoEnzDB/CRISPR2/'
     fig.savefig(folder_path + 'CRISPRko' + '/' + (gene_name + '-' + 'CRISPRko') + '.png')
     return
 
 
-def draw_CRISPR_site_for_activated_deactivated(ensembl, geneID, mechanism):
+def draw_CRISPR_site_for_activated_deactivated(folder_path, ensembl, geneID, mechanism):
     gene_data = pd.read_csv('gene_data.csv', encoding='utf-8')
     gene_name = ensembl.gene_name_of_gene_id(geneID)
     if mechanism == 'CRISPRa':
-        crispr_data = pd.read_csv('5841fd77-3881-4813-a1b6-d6da8e9be216-sgrna-designs.csv')
-        crispr_seq_data = pd.read_csv('CRISPR_Data_correct_activated.csv')
+        crispr_data = pd.read_csv('crispr_new_a.csv')
+        crispr_seq_data = pd.read_csv('CRISPR_Data_correct_Activated_new.csv')
         sequence_length = 700
         end = 700
     else:
-        crispr_data = pd.read_csv('ad1e85c4-c4f7-406c-a201-442f87ea0d53-sgrna-designs.csv')
-        crispr_seq_data = pd.read_csv('CRISPR_Data_correct_inactivated.csv')
+        crispr_data = pd.read_csv('crispr_new_i.csv')
+        crispr_seq_data = pd.read_csv('CRISPR_Data_correct_Inactivated_new.csv')
         sequence_length = 400
         end = 400
     row_num = 0
@@ -397,7 +399,7 @@ def draw_CRISPR_site_for_activated_deactivated(ensembl, geneID, mechanism):
     cut_sites = []
     for num in input_nums:
         if mechanism == 'CRISPRa':
-            cut_site = crispr_data.loc[num, "sgRNA Cut Site TSS Offset"]
+            cut_site = crispr_data.loc[num, "sgRNA 'Cut' Site TSS Offset"]
         else:
             cut_site = crispr_data.loc[num, "sgRNA 'Cut' Site TSS Offset"]
         cut_sites.append(cut_site)
@@ -447,38 +449,37 @@ def draw_CRISPR_site_for_activated_deactivated(ensembl, geneID, mechanism):
     record = GraphicRecord(sequence_length=sequence_length, features=features)
     fig = makeplot(gene_name, mechanism_pam, chromosome_num, graph_start, gene_start, graph_end, gene_end,
                    full_sequence, cell_text, columns, record, strand_dir, end=end)
-    folder_path = 'C:/Users/neel/Box/cbe-neel/cbe-neel-shared/Website_management/GlycoEnzDB/CRISPR2/'
     fig.savefig(folder_path+mechanism+'/'+(gene_name+'-'+mechanism)+'.png')
 
 
 if __name__ == "__main__":
-    mode = 'draw_gene_seq_for_activation_mechs'   # CHOICES: 'get_gene_data', 'draw_gene_for_ko', 'draw_gene_seq_for_activation_mechs',
-    dir = 'C:/Users/neel/Box/cbe-neel/cbe-neel-shared/Website_management/GlycoEnzDB/CRISPR2/'
+    mode = 'draw_gene_for_ko'   # CHOICES: 'get_gene_data', 'draw_gene_for_ko', 'draw_gene_seq_for_activation_mechs',
+    dir = r'C:\Users\neel\Documents\GitHub\webGlycoEnzDB\djangoProject\webGlycoEnzDB\static\CRISPR' + '/'
     ensembl = EnsemblRelease(109)
     infile = ('gene_transcript.xlsx')
-    outfile = 'introns.csv'
+    outfile = 'introns2.csv'
     if mode == 'get_gene_data':
         get_gene_data(ensembl, dir, infile, outfile)
     elif mode == 'draw_gene_for_ko':
         data = pd.read_excel(dir + infile)
         transcripts = data['ENSEMBL']
-        for num in range(0, len(transcripts)):
+        for num in range(380, len(transcripts)):
             print(num)
             transcriptID = transcripts[num]
             transcript = ensembl.transcript_by_id(transcriptID)
             gene_id = transcript.gene_id
-            draw_CRISPR_site_for_ko(ensembl, gene_id)
+            draw_CRISPR_site_for_ko(dir, ensembl, gene_id)
 
     elif mode == 'draw_gene_seq_for_activation_mechs':
         data = pd.read_excel(dir + infile)
         transcripts = data['ENSEMBL']
-        for num in range(0 ,len(transcripts)):
+        for num in range(180, len(transcripts)):
 #        num = random.randint(0, len(transcripts) - 1)
             print(num)
             transcriptID = transcripts[num]
             transcript = ensembl.transcript_by_id(transcriptID)
             geneID = transcript.gene_id
-            draw_CRISPR_site_for_activated_deactivated(ensembl, geneID, 'CRISPRi')  # can be 'CRISPRi' or 'CRISPRa'
+            draw_CRISPR_site_for_activated_deactivated(dir, ensembl, geneID, 'CRISPRi')  # can be 'CRISPRi' or 'CRISPRa'
 
 
     elif mode == 'extract_CRISPR_data':
