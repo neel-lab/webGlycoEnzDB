@@ -90,6 +90,8 @@ def load_genes():
     # Loading all the genes needed and have the required fields populated
     required_fields = pd.read_excel(r'input_files/fields.xlsx')
     geneList = pd.read_excel(r'input_files/GeneList.xlsx')
+#    data = {'Genes': ['GBA1', 'CEMIP', 'ARSA']}            # to add just a few genes to the database
+#    geneList = pd.DataFrame(data)
     return geneList, required_fields
 
 
@@ -97,7 +99,7 @@ def load_genes():
 if __name__ == '__main__':
 
     geneList, required_fields = load_genes()
-    p1.load_genes
+    # p1.load_genes
     for gene in geneList.values:
     #gene='TPST1'
         print(gene)
