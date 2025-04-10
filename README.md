@@ -41,36 +41,4 @@ Tabula Sapiens ssingle cell transcriptomics data parsed for the glycogenes
 
     glycol-TF interaction figures
 
-### webGlycoEnzDB/djangoProject/
-
-Here’s the markdown-formatted version:
-
-### Instructions for Setting Up the Server
-
-After setting up the Django application by following the instructions in `webGlycoEnzDB/djangoProject/README.md`, you can create a new service to manage the starting and stopping of the server.
-
-For example, you can create a `glycoenzdb` service using the following command:
-
-```bash
-gunicorn -b 0.0.0.0:8000 -w 4 -D djangoProject.wsgi:application
-```
-
-Once the service is created, you can start the server with:
-
-```bash
-sudo systemctl start glycoenzdb
-```
-
-**Collect Static files:** Navigate to the /webGlycoEnzDB/djangoProject/ directory and collect static files by running the following command:
-
-```bash
-python manage.py collectstatic
-```
-
-Restart the server by running the following command:
-
-```bash
-sudo systemctl restart glycoenzdb
-```
-
 Licensing: CC BY 4.0. You are fee to copy, redistribute, remix, transform and build upon this material for commercial and non-commercial purposes, provided source of information is attributed/credited.
