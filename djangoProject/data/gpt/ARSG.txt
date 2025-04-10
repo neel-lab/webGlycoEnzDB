@@ -1,0 +1,14 @@
+Write a 100-350 word essay about the enzyme human ARSG. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings 
+
+### Function
+ARSG (EC 3.1.6.1) is a member of the sulfatase family, which catalyzes the hydrolysis of sulfate esters from glycosaminoglycans and other sulfated molecules. Unlike lysosomal arylsulfatases A and B, ARSG functions with broader substrate specificity, including arylsulfate monoesters and some glycosphingolipid-derived sulfates. It contributes to the degradation of sulfated biomolecules and plays an important role in maintaining the balance of sulfation levels in the lysosome.
+
+### Reaction Pathways
+ARSG acts in the lysosomal catabolic pathway of sulfated substrates. It removes sulfate groups via hydrolysis, a process that requires the post-translational activation of the catalytic site involving formylglycine generation from a conserved cysteine or serine residue. This desulfation is a critical step in the breakdown and recycling of complex sulfated molecules like heparan sulfate and dermatan sulfate.
+
+### Location
+ARSG is primarily localized in the lysosome, the degradative organelle of the cell. It contains a signal peptide for lysosomal targeting and is expressed in many tissues, including the brain, liver, and kidney. Its broad tissue distribution suggests a systemic role in sulfate turnover and homeostasis.
+
+### Diseases
+Mutations in the ARSG gene have been linked to Usher syndrome type IV, a rare disorder characterized by progressive vision and hearing loss. Unlike other sulfatase deficiencies leading to mucopolysaccharidoses, ARSG deficiency presents more selectively with neurosensory symptoms, indicating tissue-specific functional importance. The exact mechanism by which ARSG loss leads to sensory degeneration is still under investigation, but it underscores the enzyme’s role in neuronal maintenance.
+

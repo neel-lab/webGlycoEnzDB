@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human GFUS. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+GFUS (GDP-L-fucose synthase) is a key enzyme in the de novo biosynthetic pathway of GDP-L-fucose, the activated sugar donor required for fucosylation of glycoconjugates. It catalyzes two sequential reactions: a 3,5-epimerization followed by an NADPH-dependent reduction of GDP-4-keto-6-deoxy-D-mannose to form GDP-L-fucose. This enzyme is essential for producing L-fucose from GDP-D-mannose, supporting core and terminal fucosylation of glycoproteins and glycolipids.
+
+### Reaction Pathways
+GFUS operates in the de novo fucose biosynthesis pathway. The reaction begins with GDP-D-mannose, which is converted by GDP-mannose 4,6-dehydratase (GMD) to GDP-4-keto-6-deoxy-D-mannose. GFUS then catalyzes two critical steps: (1) epimerization at the C-3 and C-5 positions, converting the D-mannose configuration to L-fucose, and (2) reduction of the C-4 keto group using NADPH to yield GDP-L-fucose​.
+
+### Location
+GFUS is a cytosolic enzyme, where the GDP-L-fucose it produces can either be used locally or transported into the Golgi apparatus by specific nucleotide sugar transporters. Its activity is ubiquitous in mammalian tissues, reflecting the widespread need for fucosylation in physiological processes including immune response, development, and intercellular signaling.
+
+### Diseases
+Although mutations in the GFUS gene have not been directly linked to known human diseases, mouse models lacking this enzyme exhibit embryonic lethality, underscoring its essential role in development​. This suggests that GFUS is likely indispensable for early embryogenesis due to its involvement in Notch signaling and cell surface glycan structure regulation.

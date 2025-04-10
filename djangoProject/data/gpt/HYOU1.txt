@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human HYOU1. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+HYOU1, also known as ORP150 (oxygen-regulated protein 150), is a molecular chaperone belonging to the heat shock protein 70 (HSP70) family. It is primarily involved in protein folding and the endoplasmic reticulum (ER) stress response, especially under hypoxic conditions. HYOU1 protects cells from hypoxia-induced apoptosis by stabilizing misfolded or unfolded proteins within the ER, maintaining protein homeostasis, and preventing proteotoxic stress.
+
+### Reaction Pathways
+Though HYOU1 is not a classical enzyme that catalyzes a chemical transformation, it plays a crucial role in the unfolded protein response (UPR) pathway. During ER stress—often triggered by hypoxia or increased secretory demands—HYOU1 is upregulated and cooperates with other chaperones to refold misfolded proteins or target them for degradation. Its protective function is mediated through binding nascent polypeptides and preventing their aggregation, aiding in cellular recovery from ER stress.
+
+### Location
+HYOU1 is localized to the lumen of the endoplasmic reticulum. It is widely expressed in tissues, but its expression is particularly induced in response to hypoxia, oxidative stress, or glucose deprivation. The ER targeting is facilitated by a signal sequence and a C-terminal ER retention motif, ensuring that HYOU1 functions where protein folding demands are highest.
+
+### Diseases
+HYOU1 is implicated in various diseases, particularly those involving ER stress and hypoxia, such as cancer, neurodegenerative disorders, and ischemic injury (e.g., stroke or myocardial infarction). Elevated levels of HYOU1 have been observed in tumors, where it helps cancer cells survive low-oxygen environments. Additionally, its neuroprotective role suggests relevance in conditions like Alzheimer’s and Parkinson’s diseases.

@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human SEL1L. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+SEL1L is a crucial component of the endoplasmic reticulum-associated degradation (ERAD) machinery, where it functions as an adaptor protein. It forms part of a multiprotein complex with the E3 ubiquitin ligase HRD1 and serves to recognize, bind, and help retrotranslocate misfolded glycoproteins from the ER lumen to the cytosol for proteasomal degradation. SEL1L does not catalyze reactions directly but facilitates protein-protein interactions essential for ER protein quality control.
+
+### Reaction Pathways
+Within the ERAD pathway, SEL1L plays a scaffolding role. It binds misfolded glycoproteins, often recognized by lectins like OS9 or ERLEC1, and connects them to the HRD1 complex. Once engaged, SEL1L helps guide the substrate through the retrotranslocation channel. The misfolded proteins are then ubiquitinated by HRD1 and extracted into the cytosol, where they are degraded by the proteasome. This pathway is critical for maintaining ER homeostasis, particularly under conditions of ER stress or high protein-folding demand.
+
+### Location
+SEL1L is an integral membrane protein of the endoplasmic reticulum, with its functional domains facing the ER lumen. This orientation allows it to detect and interact with misfolded luminal proteins and chaperones, forming a vital bridge between substrate recognition and degradation machinery.
+
+### Diseases
+Dysfunction of SEL1L is associated with several pathological conditions. Reduced or impaired SEL1L activity contributes to chronic ER stress, a feature in neurodegenerative diseases, diabetes, and cancer. Recent studies have also implicated SEL1L in pancreatic β-cell survival and insulin regulation, suggesting that SEL1L deficiency could contribute to type 2 diabetes progression. Its role in protein quality control highlights its significance in cellular resilience to proteotoxic stress.

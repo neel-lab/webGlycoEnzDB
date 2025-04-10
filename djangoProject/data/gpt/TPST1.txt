@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human TPST1. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings 
+
+### Function
+Human TPST1 (EC 2.8.2.20) is a type II transmembrane Golgi-resident enzyme that catalyzes the post-translational modification known as tyrosine O-sulfation. This reaction involves transferring a sulfonate group (SO₃⁻) from the universal sulfate donor 3′-phosphoadenosine-5′-phosphosulfate (PAPS) to the hydroxyl group of tyrosine residues within proteins. Tyrosine sulfation enhances protein-protein interactions, particularly in the extracellular matrix and at the cell surface.
+
+### Reaction Pathways
+TPST1 operates within the secretory pathway, primarily in the trans-Golgi network. It recognizes specific sequence motifs (commonly involving acidic residues) adjacent to target tyrosine residues. The sulfation reaction is an irreversible transfer of a sulfate group, forming a tyrosine-O-sulfate ester. This modification is common in proteins such as chemokine receptors and coagulation factors, influencing binding affinity and receptor activity.
+
+### Location
+TPST1 is localized in the Golgi apparatus, specifically in the trans-Golgi network, where it sulfates secreted and membrane proteins en route to the plasma membrane or extracellular space. The enzyme is expressed in various tissues, with high activity noted in the liver and lymphoid organs.
+
+### Diseases
+Although direct mutations in TPST1 have not been strongly linked to specific human diseases, dysregulation of tyrosine sulfation is implicated in several pathologies. For instance, improper sulfation of chemokine receptors can disrupt immune cell trafficking, potentially contributing to inflammatory diseases or impaired immune responses. Additionally, altered TPST1 expression or function may influence cancer progression and viral entry (e.g., HIV-1), where sulfated tyrosines are critical for co-receptor interactions.

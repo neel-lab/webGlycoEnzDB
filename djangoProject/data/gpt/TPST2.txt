@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human TPST2. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings 
+
+### Function
+TPST2 is one of two human tyrosylprotein sulfotransferases (EC 2.8.2.20), responsible for catalyzing the post-translational sulfation of tyrosine residues in secretory and membrane-bound proteins. Like its isoform TPST1, TPST2 transfers a sulfonate group from 3′-phosphoadenosine-5′-phosphosulfate (PAPS) to the hydroxyl group of tyrosine residues. This modification significantly enhances the binding affinity of proteins such as chemokine receptors and adhesion molecules, modulating immune signaling, inflammation, and intercellular communication.
+
+### Reaction Pathways
+TPST2 functions in the trans-Golgi network, where it catalyzes the transfer of sulfate groups to proteins transiting the secretory pathway. The reaction requires PAPS as the universal sulfate donor. TPST2 exhibits distinct substrate specificity compared to TPST1, although both enzymes can act on overlapping targets. Sulfation by TPST2 is irreversible and frequently precedes or complements other glycosylation and phosphorylation events, forming part of the broader landscape of protein post-translational modifications.
+
+### Location
+TPST2 is a type II transmembrane protein localized in the Golgi apparatus, specifically the trans-Golgi. It is expressed in a variety of tissues, including liver, lung, and kidney, and participates in the final processing of secreted and membrane proteins. Its Golgi localization aligns with its role in modifying proteins destined for the extracellular environment.
+
+### Diseases
+Although direct mutations in TPST2 are not currently linked to specific inherited diseases, altered tyrosine sulfation has been implicated in a range of disorders. TPST2 activity is critical for proper immune cell trafficking via sulfation of chemokine receptors such as CCR5. Defects or dysregulation in TPST2 expression or function may impact inflammatory diseases, viral infections (e.g., HIV entry), and cancer cell metastasis through disrupted cell signaling and adhesion.

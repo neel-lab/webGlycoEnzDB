@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human PGGHG. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+PGGHG (Prolyl 3-Hydroxylase 3) is a member of the prolyl 3-hydroxylase enzyme family, which modifies collagens by hydroxylating proline residues to 3-hydroxyproline. These modifications are essential for proper collagen folding, stability, and function. PGGHG works as part of a multiprotein complex involved in collagen biosynthesis, and its activity contributes to the formation of the collagen triple helix.
+
+### Reaction Pathways
+PGGHG functions within the post-translational modification pathway of collagen biosynthesis. It catalyzes the 3-hydroxylation of specific proline residues in the X-Pro-Gly repeats of fibrillar collagen. This enzymatic activity requires Fe²⁺, 2-oxoglutarate, O₂, and ascorbate—characteristic cofactors for 2-oxoglutarate-dependent dioxygenases. The hydroxylation reaction stabilizes the collagen triple helix, indirectly supporting extracellular matrix assembly and connective tissue integrity.
+
+### Location
+PGGHG is primarily localized in the endoplasmic reticulum (ER), where it is co-expressed with other collagen-modifying enzymes. The ER localization is critical for its function, as collagen synthesis and early folding steps take place within this compartment before export to the Golgi and beyond.
+
+### Diseases
+While PGGHG has not yet been directly associated with specific human genetic disorders, its role in collagen modification suggests potential implications in connective tissue diseases or fibrosis if mutated or dysregulated. Given the importance of prolyl hydroxylation in extracellular matrix biology, altered PGGHG activity could hypothetically contribute to osteogenesis imperfecta-like phenotypes or other collagenopathies, though no direct evidence currently confirms such a link.

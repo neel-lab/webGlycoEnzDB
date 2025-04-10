@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human OS9. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+OS9 is a lectin-like protein that plays a critical role in the endoplasmic reticulum-associated degradation (ERAD) pathway. It functions in recognizing and binding misfolded glycoproteins within the ER, particularly those with high-mannose N-glycans. OS9 does not catalyze a chemical reaction itself but acts as a molecular chaperone, guiding aberrant proteins toward degradation and thereby maintaining protein quality control in the secretory pathway.
+
+### Reaction Pathways
+In the ERAD pathway, OS9 identifies misfolded glycoproteins based on their glycan structures and delivers them to the HRD1-SEL1L ubiquitin ligase complex. There, the substrates are retrotranslocated into the cytosol, ubiquitinated, and ultimately degraded by the 26S proteasome. OS9 operates cooperatively with ERLEC1 and XTP3-B, forming part of a surveillance system for the ER lumen that ensures only correctly folded glycoproteins proceed through the secretory route.
+
+### Location
+OS9 is localized in the endoplasmic reticulum, where it is anchored to the ER membrane and interacts with ER-resident quality control proteins. It recognizes misfolded proteins through a mannose 6-phosphate receptor homology (MRH) domain that binds specific glycan signatures indicative of faulty folding.
+
+### Diseases
+Although mutations in OS9 itself have not been directly linked to a single genetic disorder, dysfunction or dysregulation of OS9 contributes to neurodegenerative diseases, cancer, and conditions involving ER stress. OS9 overexpression has been associated with some forms of cancer, potentially by altering glycoprotein degradation pathways or by influencing hypoxia-related gene expression. It is also considered relevant in diseases like Alzheimer’s, where proteostasis in the ER is disrupted.

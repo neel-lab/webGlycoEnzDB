@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human ERLEC1. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+ERLEC1 is a lectin-like protein involved in the recognition of misfolded glycoproteins in the endoplasmic reticulum (ER). It plays a key role in ER-associated degradation (ERAD), a quality control pathway that identifies, retrotranslocates, and targets misfolded glycoproteins for proteasomal degradation. ERLEC1 specifically binds to high-mannose N-glycans present on glycoproteins, thereby facilitating the delivery of these misfolded substrates to the ERAD machinery. It forms complexes with other ER-resident proteins like OS-9 and XTP3-B, and interacts with SEL1L and HRD1, major components of the ERAD pathway.
+
+### Reaction Pathways
+Although ERLEC1 is not an enzyme, it participates in a critical protein quality control pathway rather than catalyzing a chemical reaction. Within the ERAD pathway, ERLEC1 assists in the identification of aberrant glycoproteins and guides them toward retrotranslocation from the ER lumen to the cytosol. This is followed by ubiquitination and proteasomal degradation, thereby maintaining cellular homeostasis and preventing proteotoxic stress due to misfolded proteins.
+
+### Location
+ERLEC1 is localized to the endoplasmic reticulum, consistent with its function in glycoprotein quality control. It contains an ER signal peptide and a transmembrane domain, anchoring it in the ER membrane with its lectin domain oriented toward the ER lumen, where it interacts with nascent or misfolded glycoproteins.
+
+### Diseases
+Though ERLEC1 has not yet been directly implicated in specific monogenic diseases, it is functionally relevant in conditions involving ER stress and protein misfolding, such as neurodegenerative diseases (e.g., Alzheimer’s, Parkinson’s) and some cancers. Disruption in ERAD function, in which ERLEC1 is a component, may contribute to these pathologies through the accumulation of toxic misfolded proteins or impaired degradation of key regulatory molecules.

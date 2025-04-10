@@ -1,0 +1,14 @@
+Write a 100-350 word essay about the enzyme human HPSE2. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+HPSE2 is a homolog of heparanase 1 (HPSE1), an enzyme that degrades heparan sulfate (HS) chains in the extracellular matrix. Unlike HPSE1, HPSE2 lacks catalytic activity but plays a crucial regulatory and protective role. It binds heparan sulfate with high affinity and is believed to inhibit HPSE1 activity, thus preventing excessive degradation of HS. This suggests a function in maintaining extracellular matrix integrity and modulating signaling pathways mediated by HS.
+
+### Reaction Pathways
+HPSE2 does not catalyze a biochemical reaction but rather modulates enzymatic pathways involving HPSE1. HPSE1 cleaves HS chains, influencing cell migration, invasion, and inflammation. HPSE2 competes for HS binding and acts as a decoy, thereby indirectly regulating pathways related to tissue remodeling, angiogenesis, and tumor progression. Its expression helps maintain homeostasis in tissues where HS integrity is vital for signaling gradients and cell communication.
+
+### Location
+HPSE2 is predominantly found in the extracellular space and at the cell surface, anchored through interactions with HS or membrane-bound proteins. It is expressed in a variety of tissues, including the nervous system, kidney, and skeletal muscle, which aligns with its proposed role in protecting extracellular HS structures in tissues susceptible to stress or injury.
+
+### Diseases
+Mutations in HPSE2 are linked to urofacial syndrome (UFS), a rare autosomal recessive disorder characterized by urinary tract dysfunction and distinctive facial expressions. The loss of HPSE2’s protective function leads to abnormal HS degradation, likely impairing developmental signaling during urinary tract and facial nerve formation. HPSE2 dysregulation may also be involved in tumor progression or fibrotic diseases, though this area remains under active investigation.
+

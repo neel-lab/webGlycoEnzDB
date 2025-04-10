@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human GBA3. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings 
+
+### Function
+GBA3 (EC 3.2.1.21) is a cytosolic β-glucosidase that hydrolyzes a wide range of glycosidic bonds in small aryl- and alkyl-β-D-glucosides. Unlike the lysosomal GBA1, GBA3 is not involved in glycosphingolipid degradation. Instead, it contributes to xenobiotic detoxification, processing plant-derived glycosides (e.g., flavonoid glucosides) and pharmacologically active glucuronides in the cytosol. Its function intersects with glucuronidation and sulfation pathways, highlighting a role in metabolic clearance.
+
+### Reaction Pathways
+GBA3 acts by cleaving the glycosidic bond between glucose and an aglycone moiety. The catalytic mechanism involves general acid/base catalysis using two conserved glutamate residues within the glycoside hydrolase family 1 (GH1) domain. The enzyme helps break down dietary glycosides and can complement lysosomal pathways when substrates escape to the cytosol. It also interacts with metabolic intermediates, potentially influencing redox balance and cellular homeostasis.
+
+### Location
+GBA3 is localized in the cytosol of many tissues, with notable expression in liver and kidney. Its presence in these metabolically active organs reflects its role in the detoxification of dietary and endogenous β-glucosides. Unlike GBA1, GBA3 lacks a signal peptide and lysosomal targeting motif, affirming its non-lysosomal localization and unique substrate specificity.
+
+### Diseases
+Although GBA3 is not directly associated with a known monogenic disorder, its enzymatic activity is relevant to drug metabolism and xenobiotic clearance. Some studies have observed reduced GBA3 activity in metabolic syndromes and cancers, suggesting it could serve as a biomarker. However, more research is needed to establish its pathological significance. Its functional redundancy may mask phenotypic effects, complicating genetic and clinical correlations.

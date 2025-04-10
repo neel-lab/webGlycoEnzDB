@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human M6PR. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+M6PR (mannose-6-phosphate receptor) is a key mediator in the intracellular trafficking of lysosomal enzymes. It binds newly synthesized lysosomal hydrolases that have been tagged with mannose-6-phosphate (Man-6-P) residues in the Golgi apparatus. This receptor ensures their proper delivery from the trans-Golgi network to endosomes and eventually to lysosomes, where they perform degradative functions. There are two types: the cation-dependent (CD-M6PR) and cation-independent (CI-M6PR), each differing in size and affinity.
+
+### Reaction Pathways
+M6PRs operate within the lysosomal enzyme sorting pathway. Lysosomal hydrolases receive a Man-6-P tag in the cis-Golgi. M6PRs recognize this tag and escort the enzymes in vesicles to endosomes. Upon acidification of the endosomal environment, the hydrolases dissociate from the receptor and are routed to lysosomes, while the receptors recycle back to the Golgi. This mechanism is essential for lysosomal function and cellular homeostasis​.
+
+### Location
+M6PRs are found predominantly in the trans-Golgi network, endosomes, and the plasma membrane. They shuttle between these compartments as part of the lysosomal enzyme delivery cycle. The CI-M6PR also functions as an insulin-like growth factor II (IGF-II) receptor, adding further physiological roles beyond lysosomal trafficking.
+
+### Diseases
+Defects in M6PR function or its upstream glycosylation processes can lead to lysosomal storage disorders, notably mucolipidosis II (I-cell disease) and mucolipidosis III. These conditions result from a failure to tag lysosomal enzymes with Man-6-P, impairing M6PR recognition and causing mislocalization of enzymes to the extracellular space rather than the lysosome​. The resulting enzyme deficiency within lysosomes leads to accumulation of undegraded substrates, causing severe developmental and systemic symptoms.

@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human LMAN2. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+LMAN2, also known as VIP36-like protein, is a member of the lectin family involved in glycoprotein trafficking within the secretory pathway. It binds high-mannose-type N-glycans on glycoproteins and likely participates in quality control and sorting processes in the early secretory compartments. LMAN2 plays a role in capturing and transporting glycoproteins between the endoplasmic reticulum (ER) and the Golgi apparatus, ensuring only properly folded proteins proceed through the pathway.
+
+### Reaction Pathways
+Although LMAN2 is not an enzyme, it acts as a cargo receptor in the glycoprotein transport pathway. It operates in a Ca²⁺-dependent manner to bind high-mannose oligosaccharides in the ER and release them in the slightly more acidic environment of the Golgi. This lectin-mediated sorting system is crucial for maintaining glycoprotein homeostasis and proper glycosylation in the Golgi. LMAN2’s function overlaps with LMAN1 (ERGIC-53), but each has distinct glycan recognition preferences and trafficking roles.
+
+### Location
+LMAN2 is a type I transmembrane protein localized primarily in the Golgi apparatus and ER-Golgi intermediate compartment (ERGIC). It cycles between these organelles via COPII- and COPI-mediated vesicular transport, facilitating the retrieval and forward transport of glycoproteins during early secretory processing.
+
+### Diseases
+While mutations in LMAN2 are not currently linked to a specific monogenic disease, alterations in its expression and function have been associated with certain cancers and neurodegenerative conditions. Given its role in glycoprotein trafficking, dysregulation may affect the secretion or cell surface expression of receptors and enzymes, potentially impacting cell communication and immune function.

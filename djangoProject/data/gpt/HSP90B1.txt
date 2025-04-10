@@ -1,0 +1,15 @@
+Write a 100-350 word essay about the enzyme human HSP90B1. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+Here is an essay on human HSP90B1 (Heat Shock Protein 90 Beta Family Member 1), also known as GRP94 or gp96.
+i) Function
+HSP90B1 is a major ER-resident molecular chaperone belonging to the HSP90 family. It is essential for the proper folding, assembly, and quality control of secreted and membrane-bound proteins, including Toll-like receptors (TLRs), integrins, and immunoglobulins. HSP90B1 also helps stabilize newly synthesized polypeptides and prevents aggregation under stress conditions. As a key player in maintaining ER protein homeostasis, it contributes to the unfolded protein response (UPR) during ER stress.
+
+ii) Reaction Pathways
+HSP90B1 operates in the ER quality control and UPR pathways. Though it does not catalyze chemical reactions in the traditional sense, its ATPase activity is crucial for substrate binding and release cycles, much like other HSP90 proteins. Upon ER stress, HSP90B1 expression is upregulated to assist in managing the increased load of misfolded proteins. It collaborates with co-chaperones like calreticulin and BiP (HSPA5) to ensure proper protein maturation and trafficking.
+
+iii) Location
+HSP90B1 is localized within the endoplasmic reticulum lumen, where it functions exclusively due to an ER signal peptide and a KDEL retention sequence. It is ubiquitously expressed, but highly abundant in secretory and immune cells, where protein folding demand is particularly high.
+
+iv) Diseases
+Alterations in HSP90B1 expression are implicated in a variety of diseases. In cancer, it is often overexpressed, supporting tumor growth by stabilizing client proteins involved in proliferation and survival. In autoimmune diseases, its role in antigen presentation and TLR maturation links it to aberrant immune activation. Additionally, mutations or dysfunctions in HSP90B1 may contribute to neurodegenerative diseases and inflammatory disorders due to impaired ER stress responses.
+

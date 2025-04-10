@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human DNAJB11. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+DNAJB11 is a molecular chaperone and a member of the DnaJ/Hsp40 family, specifically localized in the endoplasmic reticulum (ER). It functions as a co-chaperone for BiP (HSPA5), the ER-resident Hsp70 chaperone. DNAJB11 stimulates the ATPase activity of BiP, enhancing its ability to bind and release unfolded or misfolded proteins. This interaction is essential for the quality control of newly synthesized secretory and membrane proteins, particularly under conditions of ER stress.
+
+### Reaction Pathways
+DNAJB11 operates within the unfolded protein response (UPR) and ER-associated degradation (ERAD) pathways. It assists BiP in monitoring the folding state of nascent polypeptides. When proteins misfold, DNAJB11 helps target them for degradation via the ERAD system. Although it does not catalyze chemical reactions itself, DNAJB11’s regulatory role in modulating BiP’s function is critical for preventing proteotoxic accumulation and maintaining ER homeostasis during stress responses.
+
+### Location
+DNAJB11 is found in the lumen of the endoplasmic reticulum, where it performs its chaperone functions. It contains an ER signal sequence that directs it into the ER and a retention motif to ensure it remains there. Its ER localization aligns with its role in the folding of glycoproteins and the degradation of misfolded proteins in the early secretory pathway.
+
+### Diseases
+While mutations in DNAJB11 are rare, recent studies have associated variants in this gene with atypical forms of autosomal dominant polycystic kidney disease (ADPKD). These cases often show milder cystic phenotypes compared to classic PKD1/PKD2 mutations. DNAJB11 dysfunction is also implicated in ER stress-related diseases, including metabolic disorders and some neurodegenerative conditions, due to its central role in protein quality control.

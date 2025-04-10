@@ -1,0 +1,14 @@
+Write a 100-350 word essay about the enzyme human IGF2R. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+IGF2R, also known as the cation-independent mannose-6-phosphate receptor (CI-M6PR), is a multifunctional receptor involved in both lysosomal enzyme trafficking and the regulation of insulin-like growth factor 2 (IGF2) signaling. It binds IGF2 and targets it for degradation, acting as a negative regulator of cell growth. Simultaneously, it recognizes mannose-6-phosphate (Man-6-P) tags on lysosomal hydrolases and mediates their transport from the Golgi to endosomes, ensuring correct lysosomal enzyme delivery.
+
+### Reaction Pathways
+IGF2R plays a critical role in two key pathways. In the lysosomal targeting pathway, it binds Man-6-P-tagged hydrolases in the trans-Golgi network and traffics them via clathrin-coated vesicles to endosomes. In parallel, IGF2R regulates the IGF signaling pathway by binding IGF2 and preventing it from activating the IGF1 receptor, thereby inhibiting mitogenic signaling. It does not have intrinsic enzymatic activity but exerts its effects through ligand binding and trafficking.
+
+### Location
+IGF2R is a type I transmembrane protein primarily found in the trans-Golgi network, endosomes, plasma membrane, and lysosomes. It continuously cycles between these compartments to carry out its trafficking functions. Its wide subcellular distribution reflects its dual role in growth factor regulation and lysosomal enzyme sorting.
+
+### Diseases
+Loss or dysfunction of IGF2R is implicated in cancer, particularly hepatocellular carcinoma and breast cancer, due to unregulated IGF2 activity that promotes cell proliferation and survival. Additionally, genomic imprinting abnormalities involving IGF2R are associated with Beckwith-Wiedemann syndrome, a pediatric overgrowth disorder. IGF2R’s role in lysosomal trafficking also suggests potential relevance in lysosomal storage disorders, although direct mutations causing such diseases are rare.
+

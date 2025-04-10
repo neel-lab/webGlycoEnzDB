@@ -1,0 +1,14 @@
+Write a 100-350 word essay about the enzyme human HSPA5. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+HSPA5, also known as BiP (Binding immunoglobulin protein) or GRP78 (glucose-regulated protein 78), is a central ER-resident molecular chaperone belonging to the heat shock protein 70 (HSP70) family. Its primary function is to assist in the folding of nascent and misfolded proteins within the endoplasmic reticulum (ER), preventing aggregation and ensuring proper protein quality control. HSPA5 also regulates the unfolded protein response (UPR) by binding to ER stress sensors such as PERK, IRE1, and ATF6, keeping them inactive under normal conditions.
+
+### Reaction Pathways
+HSPA5 operates within the ER protein folding and UPR pathways. During homeostasis, it binds transiently to newly synthesized proteins, using its ATPase activity to cycle between high- and low-affinity states for substrate binding. Under ER stress, misfolded proteins accumulate and outcompete the binding of HSPA5 to the UPR sensors, thereby activating them. This leads to transcriptional upregulation of chaperones and ERAD components, aiming to restore ER function. HSPA5 also cooperates with co-chaperones like DNAJB11 and ERdj proteins, enhancing its folding capacity.
+
+### Location
+HSPA5 is predominantly localized in the endoplasmic reticulum lumen, where it contains a C-terminal KDEL sequence that ensures its retention in the ER. It is expressed in nearly all tissues, with especially high expression in secretory cells due to their high demand for protein folding and processing.
+
+### Diseases
+Dysregulation of HSPA5 is implicated in numerous diseases. It plays a protective role in neurodegenerative diseases like Alzheimer’s and Parkinson’s, where protein misfolding is prominent. In cancer, HSPA5 is often upregulated, enabling tumor cells to cope with ER stress in hypoxic environments. Additionally, it is involved in viral infections, aiding in viral protein folding and replication. Targeting HSPA5 has been proposed as a therapeutic strategy in both oncology and virology.
+

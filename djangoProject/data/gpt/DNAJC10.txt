@@ -1,0 +1,13 @@
+Write a 100-350 word essay about the enzyme human DNAJC10. Provide information related to enzyme: i) function, ii) reaction pathways, ii) Location, and iv) diseases. In writing include these four subheadings
+
+### Function
+DNAJC10, also known as ERdj5, is a disulfide reductase and member of the DnaJ/Hsp40 family. It plays a crucial role in endoplasmic reticulum-associated degradation (ERAD), assisting in the recognition and retrotranslocation of misfolded proteins. Specifically, DNAJC10 reduces non-native disulfide bonds in misfolded glycoproteins, preparing them for retrotranslocation to the cytosol and subsequent degradation by the proteasome. Its dual role as a reductase and co-chaperone makes it vital for protein quality control in the ER.
+
+### Reaction Pathways
+In the ERAD pathway, DNAJC10 works in concert with BiP (HSPA5) and other ER-resident chaperones. Upon identifying a misfolded protein, DNAJC10 reduces improper disulfide bonds using its thioredoxin-like domains. This reduction facilitates the unfolding of the protein, allowing for efficient translocation through the ER membrane. DNAJC10’s J-domain interacts with BiP, stimulating ATPase activity and enhancing substrate delivery for degradation. Thus, DNAJC10 ensures that only properly folded proteins progress through the secretory pathway.
+
+### Location
+DNAJC10 is localized in the endoplasmic reticulum lumen, where it is anchored through an N-terminal ER signal peptide and retains its position via a C-terminal ER retention motif. This localization enables it to monitor the oxidative folding environment and assist in the ER’s stringent protein quality control mechanisms.
+
+### Diseases
+Although no single disease is solely attributed to DNAJC10 mutations, its dysregulation has been implicated in diseases characterized by ER stress, such as neurodegeneration, diabetes, and cancer. Its protective role against the accumulation of misfolded proteins suggests that impaired DNAJC10 function may contribute to pathologies where protein misfolding is a hallmark, such as Parkinson’s disease and Alzheimer’s disease.
