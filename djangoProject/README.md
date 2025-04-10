@@ -75,3 +75,31 @@ MI data (for top 10 TFs table ) - data/mi_results.txt<br />
 Edit pathway html links - djangoproject/webGlycoEnzDB/static/pathway_figures <br />
 Pathway images in gene details pages are configured in the webGlycoEnzDB/gene_figure_mapping.py file, variable `PATHWAY_GENE_MAPPING`. It links the slide number and the list of genes. Also make imilar changes in the config.js file.
 pathway_image and genes mapping - file:data/pathway_map.json - {key: "pathway tree seperated by '\*' ", value: "gene names seperated by comma"}
+
+### Instructions for Setting Up the Server
+
+After setting up the Django application by following the instructions in `webGlycoEnzDB/djangoProject/README.md`, you can create a new service to manage the starting and stopping of the server.
+
+For example, you can create a `glycoenzdb` service using the following command:
+
+```bash
+gunicorn -b 0.0.0.0:8000 -w 4 -D djangoProject.wsgi:application
+```
+
+Once the service is created, you can start the server with:
+
+```bash
+sudo systemctl start glycoenzdb
+```
+
+**Collect Static files:** Navigate to the /webGlycoEnzDB/djangoProject/ directory and collect static files by running the following command:
+
+```bash
+python manage.py collectstatic
+```
+
+Restart the server by running the following command:
+
+```bash
+sudo systemctl restart glycoenzdb
+```
