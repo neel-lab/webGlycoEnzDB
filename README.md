@@ -39,6 +39,6 @@ Tabula Sapiens ssingle cell transcriptomics data parsed for the glycogenes
 
 ### webGlycoEnzDB/geneNetGlyco/
 
-    glycol-TF interaction figures
+    Transcription Factor - Glycogene interaction figures
 
 Licensing: CC BY 4.0. You are fee to copy, redistribute, remix, transform and build upon this material for commercial and non-commercial purposes, provided source of information is attributed/credited.
