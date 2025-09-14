@@ -1,0 +1,146 @@
+.ff0{font-family:sans-serif;visibility:hidden;}
+@font-face{font-family:ff1;src:url(f1.woff)format("woff");}.ff1{font-family:ff1;line-height:0.938477;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff2;src:url(f2.woff)format("woff");}.ff2{font-family:ff2;line-height:0.938477;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff3;src:url(f3.woff)format("woff");}.ff3{font-family:ff3;line-height:0.872559;font-style:normal;font-weight:normal;visibility:visible;}
+.m0{transform:matrix(0.250000,0.000000,0.000000,0.250000,0,0);-ms-transform:matrix(0.250000,0.000000,0.000000,0.250000,0,0);-webkit-transform:matrix(0.250000,0.000000,0.000000,0.250000,0,0);}
+.m1{transform:none;-ms-transform:none;-webkit-transform:none;}
+.v0{vertical-align:0.000000px;}
+.ls0{letter-spacing:0.000000px;}
+.sc_{text-shadow:none;}
+.sc0{text-shadow:-0.015em 0 transparent,0 0.015em transparent,0.015em 0 transparent,0 -0.015em  transparent;}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.sc_{-webkit-text-stroke:0px transparent;}
+.sc0{-webkit-text-stroke:0.015em transparent;text-shadow:none;}
+}
+.ws0{word-spacing:0.000000px;}
+._0{width:3.344061px;}
+.fc2{color:rgb(192,0,0);}
+.fc1{color:rgb(68,84,106);}
+.fc0{color:rgb(0,0,0);}
+.fs3{font-size:36.000000px;}
+.fs2{font-size:40.000000px;}
+.fs1{font-size:48.000000px;}
+.fs0{font-size:80.000000px;}
+.y0{bottom:0.000000px;}
+.y2{bottom:38.441212px;}
+.y17{bottom:126.394726px;}
+.y15{bottom:129.370495px;}
+.y1a{bottom:134.823162px;}
+.y16{bottom:138.394726px;}
+.y1c{bottom:140.427078px;}
+.y14{bottom:141.370495px;}
+.y19{bottom:148.328899px;}
+.y1b{bottom:152.427079px;}
+.y13{bottom:153.370495px;}
+.y18{bottom:162.869549px;}
+.y12{bottom:165.370495px;}
+.y11{bottom:177.370495px;}
+.y10{bottom:189.370495px;}
+.yf{bottom:257.476940px;}
+.ye{bottom:261.038280px;}
+.yd{bottom:272.025677px;}
+.y8{bottom:311.607967px;}
+.yc{bottom:321.555141px;}
+.y7{bottom:321.647182px;}
+.y9{bottom:322.513409px;}
+.y3{bottom:327.832226px;}
+.y4{bottom:329.152294px;}
+.y6{bottom:332.692226px;}
+.ya{bottom:333.284969px;}
+.yb{bottom:334.168835px;}
+.y5{bottom:342.987255px;}
+.y1{bottom:491.910715px;}
+.h3{height:25.031250px;}
+.h4{height:27.812500px;}
+.h2{height:34.945312px;}
+.h1{height:58.242188px;}
+.h0{height:540.000000px;}
+.w0{width:720.000000px;}
+.x0{left:0.000000px;}
+.x3{left:94.162437px;}
+.x2{left:138.521729px;}
+.x4{left:169.852203px;}
+.x1{left:237.812485px;}
+.xc{left:263.923309px;}
+.x7{left:275.323151px;}
+.xd{left:297.823151px;}
+.xe{left:360.000000px;}
+.xb{left:361.975525px;}
+.xa{left:367.951294px;}
+.x6{left:378.471039px;}
+.x5{left:382.971191px;}
+.xf{left:475.283478px;}
+.x9{left:483.208832px;}
+.x8{left:485.458984px;}
+.x10{left:516.983398px;}
+@media print{
+.v0{vertical-align:0.000000pt;}
+.ls0{letter-spacing:0.000000pt;}
+.ws0{word-spacing:0.000000pt;}
+._0{width:4.458748pt;}
+.fs3{font-size:48.000000pt;}
+.fs2{font-size:53.333333pt;}
+.fs1{font-size:64.000000pt;}
+.fs0{font-size:106.666667pt;}
+.y0{bottom:0.000000pt;}
+.y2{bottom:51.254949pt;}
+.y17{bottom:168.526301pt;}
+.y15{bottom:172.493993pt;}
+.y1a{bottom:179.764216pt;}
+.y16{bottom:184.526301pt;}
+.y1c{bottom:187.236104pt;}
+.y14{bottom:188.493993pt;}
+.y19{bottom:197.771866pt;}
+.y1b{bottom:203.236106pt;}
+.y13{bottom:204.493993pt;}
+.y18{bottom:217.159398pt;}
+.y12{bottom:220.493993pt;}
+.y11{bottom:236.493993pt;}
+.y10{bottom:252.493993pt;}
+.yf{bottom:343.302587pt;}
+.ye{bottom:348.051041pt;}
+.yd{bottom:362.700902pt;}
+.y8{bottom:415.477290pt;}
+.yc{bottom:428.740189pt;}
+.y7{bottom:428.862910pt;}
+.y9{bottom:430.017878pt;}
+.y3{bottom:437.109634pt;}
+.y4{bottom:438.869726pt;}
+.y6{bottom:443.589635pt;}
+.ya{bottom:444.379959pt;}
+.yb{bottom:445.558446pt;}
+.y5{bottom:457.316340pt;}
+.y1{bottom:655.880953pt;}
+.h3{height:33.375000pt;}
+.h4{height:37.083333pt;}
+.h2{height:46.593750pt;}
+.h1{height:77.656250pt;}
+.h0{height:720.000000pt;}
+.w0{width:960.000000pt;}
+.x0{left:0.000000pt;}
+.x3{left:125.549917pt;}
+.x2{left:184.695638pt;}
+.x4{left:226.469604pt;}
+.x1{left:317.083313pt;}
+.xc{left:351.897746pt;}
+.x7{left:367.097534pt;}
+.xd{left:397.097534pt;}
+.xe{left:480.000000pt;}
+.xb{left:482.634033pt;}
+.xa{left:490.601725pt;}
+.x6{left:504.628052pt;}
+.x5{left:510.628255pt;}
+.xf{left:633.711304pt;}
+.x9{left:644.278442pt;}
+.x8{left:647.278646pt;}
+.x10{left:689.311198pt;}
+}
+.credit-note {
+ position: absolute;
+ width: 10%;
+ left: 10%;
+ text-align: center;
+ font-size: 240%;
+ bottom: 0;
+ padding-bottom: 10%;
+ }

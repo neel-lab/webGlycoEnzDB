@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Created by pdf2htmlEX (https://github.com/coolwanglu/pdf2htmlex) -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<link rel="stylesheet" href="base.min.css"/>
+<link rel="stylesheet" href="fancy.min.css"/>
+<link rel="stylesheet" href="main.css"/>
+<script src="compatibility.min.js"></script>
+<script src="theViewer.min.js"></script>
+<script>
+try{
+theViewer.defaultViewer = new theViewer.Viewer({});
+}catch(e){}
+</script>
+<title></title>
+</head>
+<body>
+<div id="sidebar">
+<div id="outline">
+</div>
+</div>
+<div id="page-container">
+<div id="pf1" class="pf w0 h0" data-page-no="1"><div class="pc pc1 w0 h0"><img class="bi x0 y0 w0 h0" alt="" src="bg1.png"/><div class="t m0 x1 h1 y1 ff1 fs0 fc0 sc0 ls0 ws0">Modifications of Epidermal Growth Factor (EGF) Repeats</div><div class="t m0 x2 h2 y2 ff2 fs1 fc1 sc0 ls0 ws0">Adapted from Chapter 13, Figure 1. Essentials of Glycobiology, <span class="_ _0"></span><span class="ff1 fs2">Fourth Edition</span> </div>
+<div class="t m0 x2 ff2 fc1 sc0 ls0 ws0 credit-note">
+  Cold Spring Harbor (NY): Cold Spring Harbor Laboratory Press. Copyright 2022 by The Consortium of Glycobiology Editors, La Jolla, California. All rights reserved.
+</div> 
+<div class="t m1 x3 h3 y3 ff3 fs3 fc2 sc0 ls0 ws0">POFUT1    </div><div class="t m1 x4 h3 y4 ff3 fs3 fc2 sc0 ls0 ws0">MFNG,    </div><div class="t m1 x5 h3 y5 ff3 fs3 fc2 sc0 ls0 ws0">LFNG,    </div><div class="t m1 x6 h3 y6 ff3 fs3 fc2 sc0 ls0 ws0">RFNG    </div><div class="t m1 x7 h3 y7 ff3 fs3 fc2 sc0 ls0 ws0">EOGT</div><div class="t m1 x7 h3 y8 ff3 fs3 fc2 sc0 ls0 ws0">POGLUT1</div><div class="t m1 x8 h3 y9 ff3 fs3 fc2 sc0 ls0 ws0">GXYLT1, </div><div class="t m1 x9 h3 ya ff3 fs3 fc2 sc0 ls0 ws0">XXYLT1</div><div class="t m1 x7 h3 yb ff3 fs3 fc2 sc0 ls0 ws0">2   </div><div class="t m1 xa h3 yc ff3 fs3 fc2 sc0 ls0 ws0">, 2   </div><div class="t m1 xb h3 yd ff3 fs3 fc2 sc0 ls0 ws0">, 3   </div><a class="l" target="_parent" href="/glycoenzdb/human/POFUT1"><div class="d m2" style="border-style:none;position:absolute;left:546.909546px;bottom:398.971558px;width:53.997681px;height:32.214691px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/MFNG"><div class="d m2" style="border-style:none;position:absolute;left:499.098297px;bottom:392.460205px;width:42.672943px;height:20.292450px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/LFNG"><div class="d m2" style="border-style:none;position:absolute;left:528.052063px;bottom:420.960632px;width:42.672913px;height:20.292480px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/RFNG"><div class="d m2" style="border-style:none;position:absolute;left:525.813416px;bottom:397.799377px;width:51.969177px;height:30.079102px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/EOGT"><div class="d m2" style="border-style:none;position:absolute;left:549.539551px;bottom:120.393860px;width:49.052185px;height:27.008270px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/POGLUT1"><div class="d m2" style="border-style:none;position:absolute;left:549.388611px;bottom:262.981689px;width:57.231934px;height:35.619629px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/GXYLT1"><div class="d m2" style="border-style:none;position:absolute;left:514.653992px;bottom:263.685364px;width:47.873352px;height:25.767212px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/XXYLT1"><div class="d m2" style="border-style:none;position:absolute;left:483.494293px;bottom:263.714783px;width:47.105560px;height:24.768494px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/GXYLT2"><div class="d m2" style="border-style:none;position:absolute;left:549.981506px;bottom:296.909485px;width:21.112915px;height:2.405029px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/POGLUT2"><div class="d m2" style="border-style:none;position:absolute;left:588.290161px;bottom:303.556641px;width:27.310730px;height:4.119720px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/POGLUT3"><div class="d m2" style="border-style:none;position:absolute;left:599.278748px;bottom:313.869781px;width:27.310730px;height:4.119720px;background-color:rgba(255,255,255,0.000001);"></div></a></div><div class="pi" data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'></div></div>
+</div>
+<div class="loading-indicator">
+
+</div>
+</body>
+</html>

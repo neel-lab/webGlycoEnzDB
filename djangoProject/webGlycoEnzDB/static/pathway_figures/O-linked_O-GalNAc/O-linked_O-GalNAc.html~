@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Created by pdf2htmlEX (https://github.com/coolwanglu/pdf2htmlex) -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<link rel="stylesheet" href="base.min.css"/>
+<link rel="stylesheet" href="fancy.min.css"/>
+<link rel="stylesheet" href="main.css"/>
+<script src="compatibility.min.js"></script>
+<script src="theViewer.min.js"></script>
+<script>
+try{
+theViewer.defaultViewer = new theViewer.Viewer({});
+}catch(e){}
+</script>
+<title></title>
+</head>
+<body>
+<div id="sidebar">
+<div id="outline">
+</div>
+</div>
+<div id="page-container">
+<div id="pf1" class="pf w0 h0" data-page-no="1"><div class="pc pc1 w0 h0"><img class="bi x0 y0 w0 h0" alt="" src="bg1.png"/><div class="t m0 x1 h1 y1 ff1 fs0 fc0 sc0 ls0 ws0">O-GalNAc Glycans</div><div class="t m0 x2 h2 y2 ff2 fs1 fc0 sc0 ls0 ws0">Buy the Book</div><div class="t m0 x3 h3 y3 ff3 fs2 fc1 sc0 ls0 ws0">Adapted from Chapter 10, Figure 2 and 3. Essentials of Glycobiology, <span class="_ _0"></span><span class="ff1 fs3">Fourth Edition</span> </div>
+<div class="t m0 x2 ff2 fc1 sc0 ls0 ws0 credit-note">
+  Cold Spring Harbor (NY): Cold Spring Harbor Laboratory Press. Copyright 2022 by The Consortium of Glycobiology Editors, La Jolla, California. All rights reserved.
+</div> 
+<div class="t m0 x4 h4 y4 ff4 fs4 fc2 sc0 ls0 ws0">GANT</div><div class="t m0 x5 h4 y5 ff4 fs4 fc2 sc0 ls0 ws0">ppGalNAcT1-20</div><div class="t m0 x6 h4 y6 ff4 fs4 fc2 sc0 ls0 ws0">GCNT1</div><div class="t m0 x7 h4 y7 ff4 fs4 fc2 sc0 ls0 ws0">B4GALTs</div><div class="t m0 x8 h4 y8 ff4 fs4 fc2 sc0 ls0 ws0">C1GALT1</div><div class="t m0 x9 h4 y9 ff4 fs4 fc2 sc0 ls0 ws0">(C1GALT1C1)</div><div class="t m0 xa h4 ya ff4 fs4 fc2 sc0 ls0 ws0">B3GNT6</div><div class="t m0 xb h4 yb ff4 fs4 fc2 sc0 ls0 ws0">B4GALTs</div><div class="t m0 xc h4 yc ff4 fs4 fc2 sc0 ls0 ws0">B4GALTs</div><div class="t m0 xd h4 yd ff4 fs4 fc2 sc0 ls0 ws0">B3GALT5</div><div class="t m0 xe h4 ye ff4 fs4 fc2 sc0 ls0 ws0">GCNT3 </div><div class="t m1 xf h4 yf ff4 fs4 fc2 sc0 ls0 ws0">ST3GAL1 </div><div class="t m2 x10 h4 y10 ff4 fs4 fc2 sc0 ls0 ws0"> ST6GALNAC1 </div><div class="t m3 x11 h4 y11 ff4 fs4 fc2 sc0 ls0 ws0">B3GNT3</div><a class="l" target="_parent" href="/glycoenzdb/human/GALNT1"><div class="d m4" style="border-style:none;position:absolute;left:334.268188px;bottom:421.885742px;width:58.692596px;height:21.810944px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/GCNT1"><div class="d m4" style="border-style:none;position:absolute;left:361.172760px;bottom:249.377411px;width:32.893066px;height:18.175751px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/B4GALT1"><div class="d m4" style="border-style:none;position:absolute;left:185.867477px;bottom:374.454712px;width:32.943619px;height:10.905457px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/C1GALT1"><div class="d m4" style="border-style:none;position:absolute;left:348.020477px;bottom:347.221344px;width:33.574799px;height:10.905426px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/C1GALT1C1"><div class="d m4" style="border-style:none;position:absolute;left:340.573456px;bottom:334.320801px;width:48.468842px;height:10.905426px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/B3GNT6"><div class="d m4" style="border-style:none;position:absolute;left:319.194397px;bottom:384.079529px;width:30.419220px;height:10.905426px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/B4GALT1"><div class="d m4" style="border-style:none;position:absolute;left:188.560623px;bottom:285.121277px;width:32.943634px;height:10.905396px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/B4GALT1"><div class="d m4" style="border-style:none;position:absolute;left:352.769226px;bottom:163.937958px;width:40.213928px;height:18.175751px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/B3GALT5"><div class="d m4" style="border-style:none;position:absolute;left:220.561890px;bottom:239.280853px;width:41.097565px;height:18.175751px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/GCNT3"><div class="d m4" style="border-style:none;position:absolute;left:226.323380px;bottom:328.166687px;width:34.912674px;height:18.175751px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/ST3GAL1"><div class="d m4" style="border-style:none;position:absolute;left:440.358459px;bottom:328.296509px;width:45.765442px;height:5.498016px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/ST6GALNAC1"><div class="d m4" style="border-style:none;position:absolute;left:424.101959px;bottom:404.492187px;width:56.005219px;height:29.556976px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" target="_parent" href="/glycoenzdb/human/B3GNT3"><div class="d m4" style="border-style:none;position:absolute;left:460.301086px;bottom:268.362183px;width:22.821655px;height:35.071808px;background-color:rgba(255,255,255,0.000001);"></div></a></div><div class="pi" data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'></div></div>
+</div>
+<div class="loading-indicator">
+
+</div>
+</body>
+</html>

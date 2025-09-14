@@ -1,0 +1,418 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 18, 2023 - 05:00:25
+Django version 3.2.17, using settings 'djangoProject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /
+[18/Jul/2023 05:03:57] "GET / HTTP/1.1" 404 2301
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 18, 2023 - 13:12:18
+Django version 3.2.17, using settings 'djangoProject.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 18, 2023 - 13:12:30
+Django version 3.2.17, using settings 'djangoProject.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[18/Jul/2023 13:13:27] "GET /GlycoEnzDB/human/FUT4/ HTTP/1.1" 200 393953
+Not Found: /GlycoEnzDB/human/FUT4/lib/bindings/utils.js
+[18/Jul/2023 13:13:27] "GET /GlycoEnzDB/human/FUT4/lib/bindings/utils.js HTTP/1.1" 404 2904
+[18/Jul/2023 13:13:45] "GET /static/style.css HTTP/1.1" 200 1890
+[18/Jul/2023 13:13:45] "GET /static/script.js HTTP/1.1" 200 5617
+[18/Jul/2023 13:13:45] "GET /GlycoEnzDB/human/FUT4/ HTTP/1.1" 200 393953
+[18/Jul/2023 13:13:45] "GET /static/script.js HTTP/1.1" 200 5617
+Not Found: /GlycoEnzDB/human/FUT4/lib/bindings/utils.js
+[18/Jul/2023 13:13:45] "GET /GlycoEnzDB/human/FUT4/lib/bindings/utils.js HTTP/1.1" 404 2904
+[18/Jul/2023 13:17:07] "GET /GlycoEnzDB/human/FUT4/ HTTP/1.1" 200 393953
+[18/Jul/2023 13:17:07] "GET /static/style.css HTTP/1.1" 200 1890
+[18/Jul/2023 13:17:07] "GET /static/script.js HTTP/1.1" 200 5617
+Not Found: /GlycoEnzDB/human/FUT4/lib/bindings/utils.js
+[18/Jul/2023 13:17:07] "GET /GlycoEnzDB/human/FUT4/lib/bindings/utils.js HTTP/1.1" 404 2904
+Not Found: /favicon.ico
+[18/Jul/2023 13:17:08] "GET /favicon.ico HTTP/1.1" 404 2366
+[18/Jul/2023 13:19:51] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[18/Jul/2023 13:19:51] "GET /static/style.css HTTP/1.1" 200 1890
+[18/Jul/2023 13:19:51] "GET /static/script.js HTTP/1.1" 200 5617
+[18/Jul/2023 13:19:58] "GET /GlycoEnzDB/human/FUT4/ HTTP/1.1" 200 393953
+Not Found: /GlycoEnzDB/human/FUT4/lib/bindings/utils.js
+[18/Jul/2023 13:19:58] "GET /GlycoEnzDB/human/FUT4/lib/bindings/utils.js HTTP/1.1" 404 2904
+[18/Jul/2023 13:20:10] "GET /GlycoEnzDB/human/PIGL HTTP/1.1" 301 0
+[18/Jul/2023 13:20:11] "GET /GlycoEnzDB/human/PIGL/ HTTP/1.1" 200 392742
+Not Found: /GlycoEnzDB/human/PIGL/lib/bindings/utils.js
+[18/Jul/2023 13:20:11] "GET /GlycoEnzDB/human/PIGL/lib/bindings/utils.js HTTP/1.1" 404 2904
+[18/Jul/2023 13:20:21] "GET /GlycoEnzDB/human/SIAE HTTP/1.1" 301 0
+[18/Jul/2023 13:20:22] "GET /GlycoEnzDB/human/SIAE/ HTTP/1.1" 200 392814
+Not Found: /GlycoEnzDB/human/SIAE/lib/bindings/utils.js
+[18/Jul/2023 13:20:22] "GET /GlycoEnzDB/human/SIAE/lib/bindings/utils.js HTTP/1.1" 404 2904
+[18/Jul/2023 13:22:40] "GET /GlycoEnzDB/human/GLCE HTTP/1.1" 301 0
+[18/Jul/2023 13:22:41] "GET /GlycoEnzDB/human/GLCE/ HTTP/1.1" 200 392834
+Not Found: /GlycoEnzDB/human/GLCE/lib/bindings/utils.js
+[18/Jul/2023 13:22:42] "GET /GlycoEnzDB/human/GLCE/lib/bindings/utils.js HTTP/1.1" 404 2904
+[18/Jul/2023 13:23:00] "GET /GlycoEnzDB/human/SIAE/ HTTP/1.1" 200 392814
+Not Found: /GlycoEnzDB/human/SIAE/lib/bindings/utils.js
+[18/Jul/2023 13:23:00] "GET /GlycoEnzDB/human/SIAE/lib/bindings/utils.js HTTP/1.1" 404 2904
+[18/Jul/2023 17:00:20] "GET /static/style.css HTTP/1.1" 304 0
+[18/Jul/2023 17:00:20] "GET /static/script.js HTTP/1.1" 304 0
+[18/Jul/2023 17:00:20] "GET /GlycoEnzDB/human/FUT4/ HTTP/1.1" 200 393953
+Not Found: /GlycoEnzDB/human/FUT4/lib/bindings/utils.js
+[18/Jul/2023 17:00:20] "GET /GlycoEnzDB/human/FUT4/lib/bindings/utils.js HTTP/1.1" 404 2904
+[25/Jul/2023 04:54:13] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[25/Jul/2023 04:54:14] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[25/Jul/2023 04:54:14] "GET /static/style.css HTTP/1.1" 200 1890
+[25/Jul/2023 04:54:14] "GET /static/script.js HTTP/1.1" 200 5617
+Not Found: /favicon.ico
+[25/Jul/2023 04:54:14] "GET /favicon.ico HTTP/1.1" 404 2366
+[25/Jul/2023 04:54:28] "GET /GlycoEnzDB/human/FUT4 HTTP/1.1" 301 0
+[25/Jul/2023 04:54:29] "GET /GlycoEnzDB/human/FUT4/ HTTP/1.1" 200 393953
+Not Found: /GlycoEnzDB/human/FUT4/lib/bindings/utils.js
+[25/Jul/2023 04:54:29] "GET /GlycoEnzDB/human/FUT4/lib/bindings/utils.js HTTP/1.1" 404 2904
+[25/Jul/2023 04:55:52] "GET /GlycoEnzDB/human/ST6GAL2 HTTP/1.1" 301 0
+[25/Jul/2023 04:55:53] "GET /GlycoEnzDB/human/ST6GAL2/ HTTP/1.1" 200 392743
+Not Found: /GlycoEnzDB/human/ST6GAL2/lib/bindings/utils.js
+[25/Jul/2023 04:55:53] "GET /GlycoEnzDB/human/ST6GAL2/lib/bindings/utils.js HTTP/1.1" 404 2913
+[01/Aug/2023 19:38:04] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[01/Aug/2023 19:38:05] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[01/Aug/2023 19:38:05] "GET /static/style.css HTTP/1.1" 200 1890
+[01/Aug/2023 19:38:05] "GET /static/script.js HTTP/1.1" 200 5617
+[01/Aug/2023 19:38:40] "GET /GlycoEnzDB/human/GXYLT2 HTTP/1.1" 301 0
+[01/Aug/2023 19:38:41] "GET /GlycoEnzDB/human/GXYLT2/ HTTP/1.1" 200 392545
+Not Found: /GlycoEnzDB/human/GXYLT2/lib/bindings/utils.js
+[01/Aug/2023 19:38:41] "GET /GlycoEnzDB/human/GXYLT2/lib/bindings/utils.js HTTP/1.1" 404 2910
+[01/Aug/2023 19:45:23] "GET /GlycoEnzDB/human/GALNT18 HTTP/1.1" 301 0
+[01/Aug/2023 19:45:24] "GET /GlycoEnzDB/human/GALNT18/ HTTP/1.1" 200 393952
+Not Found: /GlycoEnzDB/human/GALNT18/lib/bindings/utils.js
+[01/Aug/2023 19:45:24] "GET /GlycoEnzDB/human/GALNT18/lib/bindings/utils.js HTTP/1.1" 404 2913
+Not Found: /glycoTF
+[16/Aug/2023 17:36:53] "GET /glycoTF HTTP/1.1" 404 2354
+Not Found: /favicon.ico
+[16/Aug/2023 17:36:53] "GET /favicon.ico HTTP/1.1" 404 2366
+[19/Aug/2023 16:43:44] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[19/Aug/2023 16:43:45] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[19/Aug/2023 16:43:45] "GET /static/script.js HTTP/1.1" 200 5617
+[19/Aug/2023 16:43:45] "GET /static/style.css HTTP/1.1" 200 1890
+Not Found: /favicon.ico
+[19/Aug/2023 16:43:45] "GET /favicon.ico HTTP/1.1" 404 2366
+[19/Aug/2023 19:57:51] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+Not Found: /favicon.ico
+[19/Aug/2023 19:57:51] "GET /favicon.ico HTTP/1.1" 404 2366
+[19/Aug/2023 19:58:18] "GET /GlycoEnzDB/human/TMTC1 HTTP/1.1" 301 0
+[19/Aug/2023 19:58:19] "GET /GlycoEnzDB/human/TMTC1/ HTTP/1.1" 200 393588
+Not Found: /GlycoEnzDB/human/TMTC1/lib/bindings/utils.js
+[19/Aug/2023 19:58:19] "GET /GlycoEnzDB/human/TMTC1/lib/bindings/utils.js HTTP/1.1" 404 2907
+[19/Aug/2023 19:59:04] "GET /GlycoEnzDB/human/TMTC2 HTTP/1.1" 301 0
+[19/Aug/2023 19:59:05] "GET /GlycoEnzDB/human/TMTC2/ HTTP/1.1" 200 393597
+Not Found: /GlycoEnzDB/human/TMTC2/lib/bindings/utils.js
+[19/Aug/2023 19:59:05] "GET /GlycoEnzDB/human/TMTC2/lib/bindings/utils.js HTTP/1.1" 404 2907
+[19/Aug/2023 19:59:52] "GET /GlycoEnzDB/human/TMTC3 HTTP/1.1" 301 0
+[19/Aug/2023 19:59:53] "GET /GlycoEnzDB/human/TMTC3/ HTTP/1.1" 200 393752
+Not Found: /GlycoEnzDB/human/TMTC3/lib/bindings/utils.js
+[19/Aug/2023 19:59:53] "GET /GlycoEnzDB/human/TMTC3/lib/bindings/utils.js HTTP/1.1" 404 2907
+[19/Aug/2023 20:00:03] "GET /GlycoEnzDB/human/TMTC4 HTTP/1.1" 301 0
+[19/Aug/2023 20:00:04] "GET /GlycoEnzDB/human/TMTC4/ HTTP/1.1" 200 393602
+Not Found: /GlycoEnzDB/human/TMTC4/lib/bindings/utils.js
+[19/Aug/2023 20:00:04] "GET /GlycoEnzDB/human/TMTC4/lib/bindings/utils.js HTTP/1.1" 404 2907
+[19/Aug/2023 20:03:55] "GET /GlycoEnzDB/human/TMTC1/ HTTP/1.1" 200 393588
+Not Found: /GlycoEnzDB/human/TMTC1/lib/bindings/utils.js
+[19/Aug/2023 20:03:55] "GET /GlycoEnzDB/human/TMTC1/lib/bindings/utils.js HTTP/1.1" 404 2907
+[19/Aug/2023 20:16:15] "GET /GlycoEnzDB/human/HAS1 HTTP/1.1" 301 0
+[19/Aug/2023 20:16:16] "GET /GlycoEnzDB/human/HAS1/ HTTP/1.1" 200 393374
+Not Found: /GlycoEnzDB/human/HAS1/lib/bindings/utils.js
+[19/Aug/2023 20:16:16] "GET /GlycoEnzDB/human/HAS1/lib/bindings/utils.js HTTP/1.1" 404 2904
+[19/Aug/2023 20:16:27] "GET /GlycoEnzDB/human/HAS2 HTTP/1.1" 301 0
+[19/Aug/2023 20:16:28] "GET /GlycoEnzDB/human/HAS2/ HTTP/1.1" 200 393360
+Not Found: /GlycoEnzDB/human/HAS2/lib/bindings/utils.js
+[19/Aug/2023 20:16:28] "GET /GlycoEnzDB/human/HAS2/lib/bindings/utils.js HTTP/1.1" 404 2904
+[19/Aug/2023 20:16:45] "GET /GlycoEnzDB/human/HAS3 HTTP/1.1" 301 0
+[19/Aug/2023 20:16:46] "GET /GlycoEnzDB/human/HAS3/ HTTP/1.1" 200 393390
+Not Found: /GlycoEnzDB/human/HAS3/lib/bindings/utils.js
+[19/Aug/2023 20:16:46] "GET /GlycoEnzDB/human/HAS3/lib/bindings/utils.js HTTP/1.1" 404 2904
+[19/Aug/2023 20:17:04] "GET /GlycoEnzDB/human/HAS1/ HTTP/1.1" 200 393374
+Not Found: /GlycoEnzDB/human/HAS1/lib/bindings/utils.js
+[19/Aug/2023 20:17:04] "GET /GlycoEnzDB/human/HAS1/lib/bindings/utils.js HTTP/1.1" 404 2904
+[19/Aug/2023 20:28:58] "GET /GlycoEnzDB/human/EXT1 HTTP/1.1" 301 0
+[19/Aug/2023 20:28:59] "GET /GlycoEnzDB/human/EXT1/ HTTP/1.1" 200 394970
+Not Found: /GlycoEnzDB/human/EXT1/lib/bindings/utils.js
+[19/Aug/2023 20:28:59] "GET /GlycoEnzDB/human/EXT1/lib/bindings/utils.js HTTP/1.1" 404 2904
+[19/Aug/2023 20:29:52] "GET /GlycoEnzDB/human/CHSY3 HTTP/1.1" 301 0
+[19/Aug/2023 20:29:53] "GET /GlycoEnzDB/human/CHSY3/ HTTP/1.1" 200 396240
+Not Found: /GlycoEnzDB/human/CHSY3/lib/bindings/utils.js
+[19/Aug/2023 20:29:53] "GET /GlycoEnzDB/human/CHSY3/lib/bindings/utils.js HTTP/1.1" 404 2907
+[19/Aug/2023 20:30:12] "GET /GlycoEnzDB/human/POFUT1 HTTP/1.1" 301 0
+[19/Aug/2023 20:30:13] "GET /GlycoEnzDB/human/POFUT1/ HTTP/1.1" 200 393491
+Not Found: /GlycoEnzDB/human/POFUT1/lib/bindings/utils.js
+[19/Aug/2023 20:30:13] "GET /GlycoEnzDB/human/POFUT1/lib/bindings/utils.js HTTP/1.1" 404 2910
+[19/Aug/2023 20:30:37] "GET /GlycoEnzDB/human/POFUT2 HTTP/1.1" 301 0
+[19/Aug/2023 20:30:38] "GET /GlycoEnzDB/human/POFUT2/ HTTP/1.1" 200 393370
+Not Found: /GlycoEnzDB/human/POFUT2/lib/bindings/utils.js
+[19/Aug/2023 20:30:38] "GET /GlycoEnzDB/human/POFUT2/lib/bindings/utils.js HTTP/1.1" 404 2910
+[19/Aug/2023 20:31:21] "GET /GlycoEnzDB/human/FUT7 HTTP/1.1" 301 0
+[19/Aug/2023 20:31:22] "GET /GlycoEnzDB/human/FUT7/ HTTP/1.1" 200 396013
+Not Found: /GlycoEnzDB/human/FUT7/lib/bindings/utils.js
+[19/Aug/2023 20:31:22] "GET /GlycoEnzDB/human/FUT7/lib/bindings/utils.js HTTP/1.1" 404 2904
+[19/Aug/2023 20:32:31] "GET /GlycoEnzDB/human/ST3GAL1 HTTP/1.1" 301 0
+[19/Aug/2023 20:32:32] "GET /GlycoEnzDB/human/ST3GAL1/ HTTP/1.1" 200 395350
+Not Found: /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js
+[19/Aug/2023 20:32:32] "GET /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js HTTP/1.1" 404 2913
+[19/Aug/2023 20:37:20] "GET /GlycoEnzDB/human/MGAT4A HTTP/1.1" 301 0
+[19/Aug/2023 20:37:21] "GET /GlycoEnzDB/human/MGAT4A/ HTTP/1.1" 200 398551
+Not Found: /GlycoEnzDB/human/MGAT4A/lib/bindings/utils.js
+[19/Aug/2023 20:37:21] "GET /GlycoEnzDB/human/MGAT4A/lib/bindings/utils.js HTTP/1.1" 404 2910
+[19/Aug/2023 20:38:21] "GET /GlycoEnzDB/human/FUT7/ HTTP/1.1" 200 396013
+Not Found: /GlycoEnzDB/human/FUT7/lib/bindings/utils.js
+[19/Aug/2023 20:38:21] "GET /GlycoEnzDB/human/FUT7/lib/bindings/utils.js HTTP/1.1" 404 2904
+[19/Aug/2023 20:53:40] "GET /GlycoEnzDB/human/UGDH HTTP/1.1" 301 0
+[19/Aug/2023 20:53:41] "GET /GlycoEnzDB/human/UGDH/ HTTP/1.1" 200 392554
+Not Found: /GlycoEnzDB/human/UGDH/lib/bindings/utils.js
+[19/Aug/2023 20:53:41] "GET /GlycoEnzDB/human/UGDH/lib/bindings/utils.js HTTP/1.1" 404 2904
+[19/Aug/2023 20:55:31] "GET /GlycoEnzDB/human/SLC35C1 HTTP/1.1" 301 0
+[19/Aug/2023 20:55:32] "GET /GlycoEnzDB/human/SLC35C1/ HTTP/1.1" 200 392527
+Not Found: /GlycoEnzDB/human/SLC35C1/lib/bindings/utils.js
+[19/Aug/2023 20:55:32] "GET /GlycoEnzDB/human/SLC35C1/lib/bindings/utils.js HTTP/1.1" 404 2913
+[19/Aug/2023 20:55:37] "GET /GlycoEnzDB/human/SLC35A1 HTTP/1.1" 301 0
+[19/Aug/2023 20:55:38] "GET /GlycoEnzDB/human/SLC35A1/ HTTP/1.1" 200 393321
+Not Found: /GlycoEnzDB/human/SLC35A1/lib/bindings/utils.js
+[19/Aug/2023 20:55:38] "GET /GlycoEnzDB/human/SLC35A1/lib/bindings/utils.js HTTP/1.1" 404 2913
+[19/Aug/2023 22:21:26] "GET /GlycoEnzDB/human/B4GALNT2 HTTP/1.1" 301 0
+[19/Aug/2023 22:21:27] "GET /GlycoEnzDB/human/B4GALNT2/ HTTP/1.1" 200 392529
+Not Found: /GlycoEnzDB/human/B4GALNT2/lib/bindings/utils.js
+[19/Aug/2023 22:21:27] "GET /GlycoEnzDB/human/B4GALNT2/lib/bindings/utils.js HTTP/1.1" 404 2916
+Not Found: /GlycoTF
+[19/Aug/2023 22:50:51] "GET /GlycoTF HTTP/1.1" 404 2354
+[03/Sep/2023 20:11:11] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[03/Sep/2023 20:11:12] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[03/Sep/2023 20:11:12] "GET /static/script.js HTTP/1.1" 200 5617
+[03/Sep/2023 20:11:12] "GET /static/style.css HTTP/1.1" 200 1890
+Not Found: /favicon.ico
+[03/Sep/2023 20:11:12] "GET /favicon.ico HTTP/1.1" 404 2366
+[03/Sep/2023 20:11:46] "GET /GlycoEnzDB/human/ST8SIA5 HTTP/1.1" 301 0
+[03/Sep/2023 20:11:47] "GET /GlycoEnzDB/human/ST8SIA5/ HTTP/1.1" 200 393202
+Not Found: /GlycoEnzDB/human/ST8SIA5/lib/bindings/utils.js
+[03/Sep/2023 20:11:47] "GET /GlycoEnzDB/human/ST8SIA5/lib/bindings/utils.js HTTP/1.1" 404 2913
+[03/Sep/2023 20:13:15] "GET /GlycoEnzDB/human/ST3GAL1 HTTP/1.1" 301 0
+[03/Sep/2023 20:13:16] "GET /GlycoEnzDB/human/ST3GAL1/ HTTP/1.1" 200 395350
+Not Found: /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js
+[03/Sep/2023 20:13:16] "GET /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js HTTP/1.1" 404 2913
+[03/Sep/2023 20:13:25] "GET /GlycoEnzDB/human/ST3GAL2 HTTP/1.1" 301 0
+[03/Sep/2023 20:13:26] "GET /GlycoEnzDB/human/ST3GAL2/ HTTP/1.1" 200 395606
+Not Found: /GlycoEnzDB/human/ST3GAL2/lib/bindings/utils.js
+[03/Sep/2023 20:13:26] "GET /GlycoEnzDB/human/ST3GAL2/lib/bindings/utils.js HTTP/1.1" 404 2913
+[03/Sep/2023 20:14:50] "GET /GlycoEnzDB/human/ST8SIA5/ HTTP/1.1" 200 393202
+Not Found: /GlycoEnzDB/human/ST8SIA5/lib/bindings/utils.js
+[03/Sep/2023 20:14:50] "GET /GlycoEnzDB/human/ST8SIA5/lib/bindings/utils.js HTTP/1.1" 404 2913
+[04/Sep/2023 14:20:49] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[04/Sep/2023 14:20:49] "GET /static/style.css HTTP/1.1" 200 1890
+[04/Sep/2023 14:20:49] "GET /static/script.js HTTP/1.1" 200 5617
+Not Found: /favicon.ico
+[04/Sep/2023 14:20:49] "GET /favicon.ico HTTP/1.1" 404 2366
+[04/Sep/2023 14:21:38] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[04/Sep/2023 14:21:38] "GET /static/script.js HTTP/1.1" 200 5617
+[04/Sep/2023 14:21:38] "GET /static/style.css HTTP/1.1" 200 1890
+Not Found: /favicon.ico
+[04/Sep/2023 14:21:38] "GET /favicon.ico HTTP/1.1" 404 2366
+[04/Sep/2023 14:21:43] "GET /GlycoEnzDB/human/FUT1 HTTP/1.1" 301 0
+[04/Sep/2023 14:21:44] "GET /GlycoEnzDB/human/FUT1/ HTTP/1.1" 200 394766
+Not Found: /GlycoEnzDB/human/FUT1/lib/bindings/utils.js
+[04/Sep/2023 14:21:44] "GET /GlycoEnzDB/human/FUT1/lib/bindings/utils.js HTTP/1.1" 404 2904
+[04/Sep/2023 14:23:20] "GET /GlycoEnzDB/human/ST3GAL1 HTTP/1.1" 301 0
+[04/Sep/2023 14:23:21] "GET /GlycoEnzDB/human/ST3GAL1/ HTTP/1.1" 200 395350
+Not Found: /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js
+[04/Sep/2023 14:23:21] "GET /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js HTTP/1.1" 404 2913
+[04/Sep/2023 14:37:47] "GET /GlycoEnzDB/human/ST3GAL3 HTTP/1.1" 301 0
+[04/Sep/2023 14:37:48] "GET /GlycoEnzDB/human/ST3GAL3/ HTTP/1.1" 200 394524
+Not Found: /GlycoEnzDB/human/ST3GAL3/lib/bindings/utils.js
+[04/Sep/2023 14:37:48] "GET /GlycoEnzDB/human/ST3GAL3/lib/bindings/utils.js HTTP/1.1" 404 2913
+[04/Sep/2023 14:40:58] "GET /GlycoEnzDB/human/ST3GAL1/ HTTP/1.1" 200 395350
+Not Found: /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js
+[04/Sep/2023 14:40:58] "GET /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js HTTP/1.1" 404 2913
+[13/Sep/2023 19:38:11] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[13/Sep/2023 19:38:11] "GET /static/style.css HTTP/1.1" 304 0
+[13/Sep/2023 19:38:11] "GET /static/script.js HTTP/1.1" 304 0
+[13/Sep/2023 19:38:58] "GET /GlycoEnzDB/human/ST3GAL1 HTTP/1.1" 301 0
+[13/Sep/2023 19:38:59] "GET /GlycoEnzDB/human/ST3GAL1/ HTTP/1.1" 200 395350
+Not Found: /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js
+[13/Sep/2023 19:38:59] "GET /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js HTTP/1.1" 404 2913
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 02, 2023 - 22:04:54
+Django version 3.2.17, using settings 'djangoProject.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[02/Oct/2023 22:05:06] "GET /static/style.css HTTP/1.1" 200 1890
+[02/Oct/2023 22:05:06] "GET /static/script.js HTTP/1.1" 200 5617
+[02/Oct/2023 22:05:06] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+Not Found: /favicon.ico
+[02/Oct/2023 22:05:06] "GET /favicon.ico HTTP/1.1" 404 2366
+[02/Oct/2023 22:05:10] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[02/Oct/2023 22:05:12] "GET /GlycoEnzDB/human/PIGW HTTP/1.1" 301 0
+[02/Oct/2023 22:05:13] "GET /GlycoEnzDB/human/PIGW/ HTTP/1.1" 200 392045
+Not Found: /GlycoEnzDB/human/PIGW/lib/bindings/utils.js
+[02/Oct/2023 22:05:14] "GET /GlycoEnzDB/human/PIGW/lib/bindings/utils.js HTTP/1.1" 404 2904
+[02/Oct/2023 22:12:13] "GET /GlycoEnzDB/human/PIGW/ HTTP/1.1" 200 392045
+Not Found: /GlycoEnzDB/human/PIGW/lib/bindings/utils.js
+[02/Oct/2023 22:12:13] "GET /GlycoEnzDB/human/PIGW/lib/bindings/utils.js HTTP/1.1" 404 2904
+[02/Oct/2023 22:12:19] "GET /GlycoEnzDB/human/PIGW/ HTTP/1.1" 200 392045
+Not Found: /GlycoEnzDB/human/PIGW/lib/bindings/utils.js
+[02/Oct/2023 22:12:19] "GET /GlycoEnzDB/human/PIGW/lib/bindings/utils.js HTTP/1.1" 404 2904
+[02/Oct/2023 22:14:00] "GET /GlycoEnzDB/human/PIGW/ HTTP/1.1" 200 392045
+Not Found: /GlycoEnzDB/human/PIGW/lib/bindings/utils.js
+[02/Oct/2023 22:14:00] "GET /GlycoEnzDB/human/PIGW/lib/bindings/utils.js HTTP/1.1" 404 2904
+[02/Oct/2023 22:15:45] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[02/Oct/2023 22:15:48] "GET /GlycoEnzDB/human/GFPT2 HTTP/1.1" 301 0
+[02/Oct/2023 22:15:49] "GET /GlycoEnzDB/human/GFPT2/ HTTP/1.1" 200 392551
+Not Found: /GlycoEnzDB/human/GFPT2/lib/bindings/utils.js
+[02/Oct/2023 22:15:49] "GET /GlycoEnzDB/human/GFPT2/lib/bindings/utils.js HTTP/1.1" 404 2907
+[02/Oct/2023 22:15:57] "GET /GlycoEnzDB/human/GFPT2/ HTTP/1.1" 200 392551
+Not Found: /GlycoEnzDB/human/GFPT2/lib/bindings/utils.js
+[02/Oct/2023 22:15:57] "GET /GlycoEnzDB/human/GFPT2/lib/bindings/utils.js HTTP/1.1" 404 2907
+[02/Oct/2023 22:21:28] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[02/Oct/2023 22:21:29] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[02/Oct/2023 22:21:29] "GET /static/script.js HTTP/1.1" 200 5617
+[02/Oct/2023 22:21:29] "GET /static/style.css HTTP/1.1" 200 1890
+Not Found: /favicon.ico
+[02/Oct/2023 22:21:30] "GET /favicon.ico HTTP/1.1" 404 2366
+[04/Oct/2023 22:08:46] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[04/Oct/2023 22:08:47] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[04/Oct/2023 22:08:47] "GET /static/style.css HTTP/1.1" 200 1890
+[04/Oct/2023 22:08:47] "GET /static/script.js HTTP/1.1" 200 5617
+[04/Oct/2023 22:12:06] "GET /GlycoEnzDB/human/DPM1 HTTP/1.1" 301 0
+[04/Oct/2023 22:12:07] "GET /GlycoEnzDB/human/DPM1/ HTTP/1.1" 200 393466
+Not Found: /GlycoEnzDB/human/DPM1/lib/bindings/utils.js
+[04/Oct/2023 22:12:07] "GET /GlycoEnzDB/human/DPM1/lib/bindings/utils.js HTTP/1.1" 404 2904
+[04/Oct/2023 22:12:17] "GET /GlycoEnzDB/human/ALG1L2 HTTP/1.1" 301 0
+[04/Oct/2023 22:12:18] "GET /GlycoEnzDB/human/ALG1L2/ HTTP/1.1" 200 391628
+Not Found: /GlycoEnzDB/human/ALG1L2/lib/bindings/utils.js
+[04/Oct/2023 22:12:18] "GET /GlycoEnzDB/human/ALG1L2/lib/bindings/utils.js HTTP/1.1" 404 2910
+[04/Oct/2023 22:12:43] "GET /GlycoEnzDB/human/RPN2 HTTP/1.1" 301 0
+[04/Oct/2023 22:12:44] "GET /GlycoEnzDB/human/RPN2/ HTTP/1.1" 200 392590
+Not Found: /GlycoEnzDB/human/RPN2/lib/bindings/utils.js
+[04/Oct/2023 22:12:44] "GET /GlycoEnzDB/human/RPN2/lib/bindings/utils.js HTTP/1.1" 404 2904
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 09, 2023 - 22:04:24
+Django version 3.2.17, using settings 'djangoProject.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[09/Nov/2023 22:04:31] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[09/Nov/2023 22:04:32] "GET /static/style.css HTTP/1.1" 200 1890
+[09/Nov/2023 22:04:32] "GET /static/script.js HTTP/1.1" 200 5617
+[09/Nov/2023 22:04:32] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+Not Found: /favicon.ico
+[09/Nov/2023 22:04:33] "GET /favicon.ico HTTP/1.1" 404 2366
+[09/Nov/2023 22:04:50] "GET /GlycoEnzDB/human/FUT4 HTTP/1.1" 301 0
+[09/Nov/2023 22:04:51] "GET /GlycoEnzDB/human/FUT4/ HTTP/1.1" 200 393953
+Not Found: /GlycoEnzDB/human/FUT4/lib/bindings/utils.js
+[09/Nov/2023 22:04:51] "GET /GlycoEnzDB/human/FUT4/lib/bindings/utils.js HTTP/1.1" 404 2904
+[09/Nov/2023 22:19:34] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[09/Nov/2023 22:19:37] "GET /GlycoEnzDB/human/PIGW HTTP/1.1" 301 0
+[09/Nov/2023 22:19:38] "GET /GlycoEnzDB/human/PIGW/ HTTP/1.1" 200 392045
+Not Found: /GlycoEnzDB/human/PIGW/lib/bindings/utils.js
+[09/Nov/2023 22:19:38] "GET /GlycoEnzDB/human/PIGW/lib/bindings/utils.js HTTP/1.1" 404 2904
+[09/Nov/2023 22:21:14] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[09/Nov/2023 22:21:15] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[09/Nov/2023 22:21:15] "GET /static/style.css HTTP/1.1" 200 1890
+[09/Nov/2023 22:21:15] "GET /static/script.js HTTP/1.1" 200 5617
+[09/Nov/2023 22:21:31] "GET /GlycoEnzDB/human/GCNT1 HTTP/1.1" 301 0
+[09/Nov/2023 22:21:32] "GET /GlycoEnzDB/human/GCNT1/ HTTP/1.1" 200 394468
+Not Found: /GlycoEnzDB/human/GCNT1/lib/bindings/utils.js
+[09/Nov/2023 22:21:32] "GET /GlycoEnzDB/human/GCNT1/lib/bindings/utils.js HTTP/1.1" 404 2907
+[09/Nov/2023 22:22:04] "GET /GlycoEnzDB/human/GCNT4 HTTP/1.1" 301 0
+[09/Nov/2023 22:22:05] "GET /GlycoEnzDB/human/GCNT4/ HTTP/1.1" 200 393682
+Not Found: /GlycoEnzDB/human/GCNT4/lib/bindings/utils.js
+[09/Nov/2023 22:22:05] "GET /GlycoEnzDB/human/GCNT4/lib/bindings/utils.js HTTP/1.1" 404 2907
+[09/Nov/2023 22:22:35] "GET /GlycoEnzDB/human/GCNT2 HTTP/1.1" 301 0
+[09/Nov/2023 22:22:36] "GET /GlycoEnzDB/human/GCNT2/ HTTP/1.1" 200 392887
+Not Found: /GlycoEnzDB/human/GCNT2/lib/bindings/utils.js
+[09/Nov/2023 22:22:36] "GET /GlycoEnzDB/human/GCNT2/lib/bindings/utils.js HTTP/1.1" 404 2907
+[09/Nov/2023 22:23:03] "GET /GlycoEnzDB/human/GCNT1/ HTTP/1.1" 200 394468
+Not Found: /GlycoEnzDB/human/GCNT1/lib/bindings/utils.js
+[09/Nov/2023 22:23:03] "GET /GlycoEnzDB/human/GCNT1/lib/bindings/utils.js HTTP/1.1" 404 2907
+[09/Nov/2023 22:23:33] "GET /GlycoEnzDB/human/ST3GAL1 HTTP/1.1" 301 0
+[09/Nov/2023 22:23:34] "GET /GlycoEnzDB/human/ST3GAL1/ HTTP/1.1" 200 395350
+Not Found: /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js
+[09/Nov/2023 22:23:34] "GET /GlycoEnzDB/human/ST3GAL1/lib/bindings/utils.js HTTP/1.1" 404 2913
+[10/Nov/2023 15:58:04] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[10/Nov/2023 15:58:05] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[10/Nov/2023 15:58:05] "GET /static/style.css HTTP/1.1" 200 1890
+[10/Nov/2023 15:58:05] "GET /static/script.js HTTP/1.1" 200 5617
+[10/Nov/2023 16:47:43] code 400, message Bad request version ('@ÂÇ\x13÷N´]')
+[10/Nov/2023 16:47:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[10/Nov/2023 16:47:43] code 400, message Bad request version ('çÖ¼\x00\x1b\x00\x03\x02\x00\x02\x00\x17\x00\x00\x00')
+[10/Nov/2023 16:47:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[10/Nov/2023 16:47:43] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[10/Nov/2023 16:47:44] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[10/Nov/2023 16:47:44] "GET /static/style.css HTTP/1.1" 200 1890
+[10/Nov/2023 16:47:44] "GET /static/script.js HTTP/1.1" 200 5617
+Not Found: /favicon.ico
+[10/Nov/2023 16:47:44] "GET /favicon.ico HTTP/1.1" 404 2366
+[10/Nov/2023 16:48:17] "GET /GlycoEnzDB/human/FUT1 HTTP/1.1" 301 0
+[10/Nov/2023 16:48:17] code 400, message Bad request version ('\x02h2\x08http/1.1\x00#\x00\x00Di\x00\x05\x00\x03\x02h2\x00')
+[10/Nov/2023 16:48:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[10/Nov/2023 16:48:17] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\xadZZ\x00\x00\x00')
+[10/Nov/2023 16:48:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[10/Nov/2023 16:48:18] "GET /GlycoEnzDB/human/FUT1/ HTTP/1.1" 200 394766
+Not Found: /GlycoEnzDB/human/FUT1/lib/bindings/utils.js
+[10/Nov/2023 16:48:18] "GET /GlycoEnzDB/human/FUT1/lib/bindings/utils.js HTTP/1.1" 404 2904
+[10/Nov/2023 16:48:30] "GET /GlycoEnzDB/human/CHSY3 HTTP/1.1" 301 0
+[10/Nov/2023 16:48:31] "GET /GlycoEnzDB/human/CHSY3/ HTTP/1.1" 200 396240
+Not Found: /GlycoEnzDB/human/CHSY3/lib/bindings/utils.js
+[10/Nov/2023 16:48:31] "GET /GlycoEnzDB/human/CHSY3/lib/bindings/utils.js HTTP/1.1" 404 2907
+[10/Nov/2023 19:09:22] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[10/Nov/2023 19:09:23] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[10/Nov/2023 19:09:23] "GET /static/script.js HTTP/1.1" 200 5617
+[10/Nov/2023 19:09:23] "GET /static/style.css HTTP/1.1" 200 1890
+Not Found: /favicon.ico
+[10/Nov/2023 19:09:23] "GET /favicon.ico HTTP/1.1" 404 2366
+[13/Nov/2023 13:24:30] "GET /GlycoEnzDB/human/FUT2 HTTP/1.1" 301 0
+[13/Nov/2023 13:24:32] "GET /GlycoEnzDB/human/FUT2/ HTTP/1.1" 200 396821
+[13/Nov/2023 13:24:32] "GET /static/style.css HTTP/1.1" 200 1890
+Not Found: /GlycoEnzDB/human/FUT2/lib/bindings/utils.js
+[13/Nov/2023 13:24:32] "GET /GlycoEnzDB/human/FUT2/lib/bindings/utils.js HTTP/1.1" 404 2904
+[14/Nov/2023 15:43:02] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[14/Nov/2023 15:43:03] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[14/Nov/2023 15:43:03] "GET /static/style.css HTTP/1.1" 200 1890
+[14/Nov/2023 15:43:03] "GET /static/script.js HTTP/1.1" 200 5617
+[14/Nov/2023 18:11:29] "GET /GlycoEnzDB HTTP/1.1" 301 0
+[14/Nov/2023 18:11:30] "GET /GlycoEnzDB/ HTTP/1.1" 200 359339
+[14/Nov/2023 18:11:30] "GET /static/script.js HTTP/1.1" 200 5617
+[14/Nov/2023 18:11:30] "GET /static/style.css HTTP/1.1" 200 1890
+[14/Nov/2023 18:11:34] "GET /GlycoEnzDB/human/FUT7 HTTP/1.1" 301 0
+[14/Nov/2023 18:11:35] "GET /GlycoEnzDB/human/FUT7/ HTTP/1.1" 200 396013
+Not Found: /GlycoEnzDB/human/FUT7/lib/bindings/utils.js
+[14/Nov/2023 18:11:35] "GET /GlycoEnzDB/human/FUT7/lib/bindings/utils.js HTTP/1.1" 404 2904
+[14/Nov/2023 18:12:46] "GET /GlycoEnzDB/human/ST3GAL4 HTTP/1.1" 301 0
+[14/Nov/2023 18:12:47] "GET /GlycoEnzDB/human/ST3GAL4/ HTTP/1.1" 200 397078
+Not Found: /GlycoEnzDB/human/ST3GAL4/lib/bindings/utils.js
+[14/Nov/2023 18:12:47] "GET /GlycoEnzDB/human/ST3GAL4/lib/bindings/utils.js HTTP/1.1" 404 2913
+[14/Nov/2023 18:29:13] "GET /GlycoEnzDB/human/GALC HTTP/1.1" 301 0
+[14/Nov/2023 18:29:14] "GET /GlycoEnzDB/human/GALC/ HTTP/1.1" 200 393101
+Not Found: /GlycoEnzDB/human/GALC/lib/bindings/utils.js
+[14/Nov/2023 18:29:14] "GET /GlycoEnzDB/human/GALC/lib/bindings/utils.js HTTP/1.1" 404 2904
+[14/Nov/2023 18:30:03] "GET /GlycoEnzDB/human/GLA HTTP/1.1" 301 0
+[14/Nov/2023 18:30:04] "GET /GlycoEnzDB/human/GLA/ HTTP/1.1" 200 393257
+Not Found: /GlycoEnzDB/human/GLA/lib/bindings/utils.js
+[14/Nov/2023 18:30:04] "GET /GlycoEnzDB/human/GLA/lib/bindings/utils.js HTTP/1.1" 404 2901
+[14/Nov/2023 18:30:23] "GET /GlycoEnzDB/human/CMAHP HTTP/1.1" 301 0
+[14/Nov/2023 18:30:24] "GET /GlycoEnzDB/human/CMAHP/ HTTP/1.1" 200 364078
+[14/Nov/2023 22:30:37] "GET /GlycoEnzDB/human/GBGT1 HTTP/1.1" 301 0
+[14/Nov/2023 22:30:38] "GET /GlycoEnzDB/human/GBGT1/ HTTP/1.1" 200 391998
+Not Found: /GlycoEnzDB/human/GBGT1/lib/bindings/utils.js
+[14/Nov/2023 22:30:38] "GET /GlycoEnzDB/human/GBGT1/lib/bindings/utils.js HTTP/1.1" 404 2907
+[14/Nov/2023 22:30:46] "GET /GlycoEnzDB/human/CMAHP/ HTTP/1.1" 200 364078

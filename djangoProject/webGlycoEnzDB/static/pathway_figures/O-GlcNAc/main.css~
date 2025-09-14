@@ -1,0 +1,61 @@
+.ff0{font-family:sans-serif;visibility:hidden;}
+@font-face{font-family:ff1;src:url(f1.woff)format("woff");}.ff1{font-family:ff1;line-height:0.938477;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff2;src:url(f2.woff)format("woff");}.ff2{font-family:ff2;line-height:0.874023;font-style:normal;font-weight:normal;visibility:visible;}
+.m0{transform:matrix(0.250000,0.000000,0.000000,0.250000,0,0);-ms-transform:matrix(0.250000,0.000000,0.000000,0.250000,0,0);-webkit-transform:matrix(0.250000,0.000000,0.000000,0.250000,0,0);}
+.m1{transform:none;-ms-transform:none;-webkit-transform:none;}
+.v0{vertical-align:0.000000px;}
+.ls0{letter-spacing:0.000000px;}
+.sc_{text-shadow:none;}
+.sc0{text-shadow:-0.015em 0 transparent,0 0.015em transparent,0.015em 0 transparent,0 -0.015em  transparent;}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.sc_{-webkit-text-stroke:0px transparent;}
+.sc0{-webkit-text-stroke:0.015em transparent;text-shadow:none;}
+}
+.ws0{word-spacing:0.000000px;}
+.fc1{color:rgb(192,0,0);}
+.fc0{color:rgb(0,0,0);}
+.fs1{font-size:64.000000px;}
+.fs0{font-size:80.000000px;}
+.y0{bottom:0.000000px;}
+.y3{bottom:302.644712px;}
+.y6{bottom:314.896833px;}
+.y5{bottom:318.934401px;}
+.y4{bottom:337.884321px;}
+.y2{bottom:467.697571px;}
+.y1{bottom:491.697571px;}
+.h2{height:46.468750px;}
+.h1{height:58.242188px;}
+.h0{height:540.000000px;}
+.w0{width:720.000000px;}
+.x0{left:0.000000px;}
+.x1{left:95.172638px;}
+.x5{left:142.701401px;}
+.x2{left:255.495865px;}
+.x3{left:356.846472px;}
+.x4{left:365.314822px;}
+.x6{left:426.277710px;}
+@media print{
+.v0{vertical-align:0.000000pt;}
+.ls0{letter-spacing:0.000000pt;}
+.ws0{word-spacing:0.000000pt;}
+.fs1{font-size:85.333333pt;}
+.fs0{font-size:106.666667pt;}
+.y0{bottom:0.000000pt;}
+.y3{bottom:403.526283pt;}
+.y6{bottom:419.862445pt;}
+.y5{bottom:425.245867pt;}
+.y4{bottom:450.512428pt;}
+.y2{bottom:623.596761pt;}
+.y1{bottom:655.596761pt;}
+.h2{height:61.958333pt;}
+.h1{height:77.656250pt;}
+.h0{height:720.000000pt;}
+.w0{width:960.000000pt;}
+.x0{left:0.000000pt;}
+.x1{left:126.896851pt;}
+.x5{left:190.268534pt;}
+.x2{left:340.661153pt;}
+.x3{left:475.795296pt;}
+.x4{left:487.086430pt;}
+.x6{left:568.370280pt;}
+}

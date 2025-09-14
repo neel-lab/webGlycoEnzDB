@@ -1,0 +1,22 @@
+● glycoenzdb.service - service glycocarta
+     Loaded: loaded (/etc/systemd/system/glycoenzdb.service; enabled; vendor preset: enabled)
+     Active: active (running) since Fri 2023-12-01 01:16:34 UTC; 1 day 16h ago
+   Main PID: 2247133 (gunicorn)
+      Tasks: 4 (limit: 38068)
+     Memory: 215.9M
+     CGroup: /system.slice/glycoenzdb.service
+             ├─2247133 /usr/local/anaconda3/bin/python /home/vghosh/.local/bin/gunicorn -b 0.0.0.0:8000 --access-logfile /glycoEnzDB/logs/glycoEnzDB.log --workers 3 djangoProject.wsgi:application
+             ├─2247150 /usr/local/anaconda3/bin/python /home/vghosh/.local/bin/gunicorn -b 0.0.0.0:8000 --access-logfile /glycoEnzDB/logs/glycoEnzDB.log --workers 3 djangoProject.wsgi:application
+             ├─2247151 /usr/local/anaconda3/bin/python /home/vghosh/.local/bin/gunicorn -b 0.0.0.0:8000 --access-logfile /glycoEnzDB/logs/glycoEnzDB.log --workers 3 djangoProject.wsgi:application
+             └─2889781 /usr/local/anaconda3/bin/python /home/vghosh/.local/bin/gunicorn -b 0.0.0.0:8000 --access-logfile /glycoEnzDB/logs/glycoEnzDB.log --workers 3 djangoProject.wsgi:application
+
+Dec 01 01:16:34 vgdev.cedar.buffalo.edu gunicorn[2247133]: [2023-12-01 01:16:34 +0000] [2247133] [INFO] Listening at: http://0.0.0.0:8000 (2247133)
+Dec 01 01:16:34 vgdev.cedar.buffalo.edu gunicorn[2247133]: [2023-12-01 01:16:34 +0000] [2247133] [INFO] Using worker: sync
+Dec 01 01:16:34 vgdev.cedar.buffalo.edu gunicorn[2247149]: [2023-12-01 01:16:34 +0000] [2247149] [INFO] Booting worker with pid: 2247149
+Dec 01 01:16:34 vgdev.cedar.buffalo.edu gunicorn[2247150]: [2023-12-01 01:16:34 +0000] [2247150] [INFO] Booting worker with pid: 2247150
+Dec 01 01:16:34 vgdev.cedar.buffalo.edu gunicorn[2247151]: [2023-12-01 01:16:34 +0000] [2247151] [INFO] Booting worker with pid: 2247151
+Dec 01 22:35:55 vgdev.cedar.buffalo.edu gunicorn[2247133]: [2023-12-01 22:35:55 +0000] [2247133] [CRITICAL] WORKER TIMEOUT (pid:2247149)
+Dec 01 22:35:55 vgdev.cedar.buffalo.edu gunicorn[2247149]: [2023-12-01 22:35:55 +0000] [2247149] [INFO] Worker exiting (pid: 2247149)
+Dec 01 22:35:55 vgdev.cedar.buffalo.edu gunicorn[2247133]: [2023-12-01 22:35:55 +0000] [2247133] [ERROR] Worker (pid:2247149) exited with code 1
+Dec 01 22:35:55 vgdev.cedar.buffalo.edu gunicorn[2247133]: [2023-12-01 22:35:55 +0000] [2247133] [ERROR] Worker (pid:2247149) exited with code 1.
+Dec 01 22:35:55 vgdev.cedar.buffalo.edu gunicorn[2889781]: [2023-12-01 22:35:55 +0000] [2889781] [INFO] Booting worker with pid: 2889781

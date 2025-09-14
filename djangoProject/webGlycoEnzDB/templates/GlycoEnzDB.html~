@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load custom_filters %}
+<head>
+    <meta charset="UTF-8">
+    <title>{{ gene_name }} 🧬 GlycoEnzDB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+<script>
+    const pathway_figures_location = "{% static '/pathway_figures/'%}"
+</script>
+<script src="{% static 'script.js' %}"></script>
+<script src="{% static 'config.js' %}"></script>
+<script type="text/javascript" >
+    let gene_names = JSON.parse("{{ gene_names|escapejs }}");
+    const gene_search_list = new Set(Object.values(gene_names).flat());
+    function showGenes(key) {
+        localStorage.setItem('key', key);
+        let inner_html = "";
+        for (let i = 0;  i < gene_names[key].length; i++ ){
+            inner_html += `<div style="text-align: center;"><a class="no-underline" href="/glycoenzdb/human/${gene_names[key][i]}" id="${ gene_names[key][i]}">${ gene_names[key][i]}</a></div>`;
+        }
+        document.getElementById("Gene_Names_list").innerHTML = inner_html;
+    }
+
+</script>
+
+<div class="header">
+    <a href="/glycoenzdb/"><i class="fas fa-home home-icon"></i>&nbsp;GlycoEnzDB</a>
+</div>
+
+<div class="sidebar card py-2 mb-4">
+    <b>Select By:</b>
+    <button id="btnElement1" onclick="showFunctions()"> Functions</button>
+    <button id="btnElement2" onclick="showPathways()"> Pathways</button>
+    {# Function Tree Menu below #}
+    <div id="element1" class="element1">
+        <ul class="nav flex-column" id="nav_accordion">
+            {% for func in onto_graph_functions %}
+                {% if func != 'NULL' %}
+                    <li class="nav-item {% if onto_graph_functions|get:func|length > 0 %} has-submenu {% endif %}" id="{{ func }}">
+                        <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ func }}_NULL_NULL_NULL')" id="{{ func }}_NULL_NULL_NULL"> 
+                            {% if onto_graph_functions|get:func|length > 1 %} 
+                            <span>&#x25B6;</span> 
+                            {% else %}
+                            <span></span>
+                            {% endif %}
+                            {{ func }} </a>
+                        {% if onto_graph_functions|get:func|length > 0 %}
+                            <ul class="submenu collapse">
+                            {% for s_f in onto_graph_functions|get:func %}
+                                {% if s_f != 'NULL' %}
+                                <li>
+                                    <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_NULL_NULL')" id="{{ func }}_{{ s_f }}_NULL_NULL">
+                                        {% if onto_graph_functions|get:func|get:s_f|length > 1 %} 
+                                        <span>&#x25B6;</span>
+                                        {% else %}
+                                        <span></span>
+                                        {% endif %}
+                                        {{ s_f }} </a>
+                                {% if onto_graph_functions|get:func|get:s_f|length > 0 %}
+                                    <ul class="submenu collapse">
+                                    {% for s_s_f in onto_graph_functions|get:func|get:s_f %}
+                                        {% if s_s_f != 'NULL' %}
+                                        <li>
+                                            <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_{{ s_s_f }}_NULL')" id="{{ func }}_{{ s_f }}_{{ s_s_f }}_NULL">
+                                                {% if onto_graph_functions|get:func|get:s_f|get:s_s_f|length > 1 %} 
+                                                <span>&#x25B6;</span>
+                                                {% else %}
+                                                <span></span>
+                                                {% endif %}
+                                                {{ s_s_f }}</a>
+                                            {% if onto_graph_functions|get:func|get:s_f|get:s_s_f|length > 0 %}
+                                                <ul class="submenu collapse">
+                                                {% for s_s_s_f in onto_graph_functions|get:func|get:s_f|get:s_s_f %}
+                                                {% if s_s_s_f != 'NULL' %}
+                                                    <li>
+                                                    <a class="nav-link" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_{{ s_s_f }}_{{ s_s_s_f }}')" id="{{ func }}_{{ s_f }}_{{ s_s_f }}_{{ s_s_s_f }}">{{ s_s_s_f }}</a>
+                                                    </li>
+                                                {% endif %}
+                                                {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                        </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                    </ul>
+                                {% endif %}
+                                </li>
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div id="element2" class="element2">
+        <ul class="nav flex-column" id="nav_accordion">
+            {% for path in onto_graph_pathways %}
+                {% if path != 'NULL' %}
+                    <li class="nav-item {% if onto_graph_pathways|get:path|length > 0 %} has-submenu {% endif %}" id="{{ path }}">
+                        <a class="nav-link" href="#" onclick="showGenes('{{ path }}_NULL_NULL_NULL_NULL_NULL')" id="{{ path }}_NULL_NULL_NULL_NULL_NULL"> 
+                            {% if onto_graph_pathways|get:path|length > 1 %} 
+                            <span>&#x25B6;</span>
+                            {% else %}
+                            <span>&#7032;</span>
+                            {% endif %}
+                            {{ path }} </a>
+                        {% if onto_graph_pathways|get:path|length > 0 %}
+                            <ul class="submenu collapse">
+                            {% for s_p in onto_graph_pathways|get:path %}
+                                {% if s_p != 'NULL' %}
+                                <li>
+                                    <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_NULL_NULL_NULL_NULL')" id="{{ path }}_{{ s_p }}_NULL_NULL_NULL_NULL"> 
+                                        {% if onto_graph_pathways|get:path|get:s_p|length > 1 %} 
+                                        <span>&#x25B6;</span>
+                                        {% else %}
+                                        <span></span>
+                                        {% endif %}
+                                        {{ s_p }} </a>
+                                {% if onto_graph_pathways|get:path|get:s_p|length > 0 %}
+                                    <ul class="submenu collapse">
+                                    {% for s_s_p in onto_graph_pathways|get:path|get:s_p %}
+                                        {% if s_s_p != 'NULL' %}
+                                        <li>
+                                            <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_NULL_NULL_NULL')" id="{{ path }}_{{ s_p }}_{{ s_s_p }}_NULL_NULL_NULL">
+                                                {% if onto_graph_pathways|get:path|get:s_p|get:s_s_p|length > 1 %} 
+                                                <span>&#x25B6;</span>
+                                                {% else %}
+                                                <span></span>
+                                                {% endif %}
+                                                {{ s_s_p }}</a>
+                                            {% if onto_graph_pathways|get:path|get:s_p|get:s_s_p|length > 0 %}
+                                                <ul class="submenu collapse">
+                                                {% for s_s_s_p in onto_graph_pathways|get:path|get:s_p|get:s_s_p %}
+                                                {% if s_s_s_p != 'NULL' %}
+                                                    <li>
+                                                    <a class="nav-link" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_NULL_NULL')" id="{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_NULL_NULL">
+                                                        {% if onto_graph_pathways|get:path|get:s_p|get:s_s_p|get:s_s_s_p|length > 1 %} 
+                                                        <span>&#x25B6;</span>
+                                                        {% else %}
+                                                        <span></span>
+                                                        {% endif %}
+                                                        {{ s_s_s_p }}</a>
+                                                    {% if onto_graph_pathways|get:path|get:s_p|get:s_s_p|get:s_s_s_p|length > 0 %}
+                                                    <ul class="submenu collapse">
+                                                    {% for s_s_s_s_p in onto_graph_pathways|get:path|get:s_p|get:s_s_p|get:s_s_s_p %}
+                                                    {% if s_s_s_s_p != 'NULL' %}
+                                                        <li>
+                                                        <a class="nav-link" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_{{s_s_s_s_p}}_NULL')" id="{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_{{s_s_s_s_p}}_NULL">
+                                                            {% if onto_graph_pathways|get:path|get:s_p|get:s_s_p|get:s_s_s_p|get:s_s_s_s_p|length > 1 %} 
+                                                            <span>&#x25B6;</span>
+                                                            {% else %}
+                                                            <span></span>
+                                                            {% endif %}
+                                                            {{ s_s_s_s_p }}</a>
+                                                        {% if onto_graph_pathways|get:path|get:s_p|get:s_s_p|get:s_s_s_p|get:s_s_s_s_p|length > 0 %}
+                                                        <ul class="submenu collapse">
+                                                        {% for s_s_s_s_s_p in onto_graph_pathways|get:path|get:s_p|get:s_s_p|get:s_s_s_p|get:s_s_s_s_p %}
+                                                        {% if s_s_s_s_s_p != 'NULL' %}
+                                                            <li>
+                                                            <a class="nav-link" href="#" onclick="showGenes('{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_{{s_s_s_s_p}}_{{s_s_s_s_s_p}}')" id="{{ path }}_{{ s_p }}_{{ s_s_p }}_{{ s_s_s_p }}_{{s_s_s_s_p}}_{{s_s_s_s_s_p}}">{{ s_s_s_s_s_p }}</a>
+                                                            </li>
+                                                        {% endif %}
+                                                        {% endfor %}
+                                                        </ul>
+                                                    {% endif %}
+                                                        </li>
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                    </ul>
+                                                {% endif %}
+                                                    </li>
+                                                {% endif %}
+                                                {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                        </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                    </ul>
+                                {% endif %}
+                                </li>
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+
+</div>
+</div>
+
+<div class="sidebar2">
+    <div style="text-align: center; padding-top: 10px;">
+        <h4>Gene Names</h4>
+        <input type="text" id="searchInput" placeholder="Search Gene">
+        <div id="suggestions"></div>
+    </div>
+    <hr/>
+    <div style="text-align: right;">
+        <button onclick="resetGenes()" style="margin-right: 10px;">Reset</button>
+      </div>
+      <hr/>
+    <div id="Gene_Names_list"></div>
+</div>
+
+<div class="main-content">
+    {% if gene_general_info.message %}
+    <h3>Welcome to GlycoEnzDB</h3>
+    <hr>
+    {% if gene_general_info.error %}
+    <h5 class="error">Error: {{gene_general_info.error}}</h5>
+    <hr>
+    {% endif %}
+    <!-- Pathways Image Maps -->
+    <div id="pathway_map_img">
+        <div>{{gene_general_info.message}}</div>
+        <div style="position: relative;">
+            <img id="resizableImage" src="{% static 'pathway_figures/Pathway_map.png' %}" usemap="#image_map" style="max-width: 100%; width: 1200px; height: auto;">
+                <map name="image_map" id="resizableMap">
+                    <area alt="Nucleotide-sugar-synthesis" title="Nucleotide-sugar-synthesis" onclick="open_submenu_and_pathway_figures(1)" coords="7,7,306,336" shape="rect">
+                    <area alt="Donor-transport" title="Donor-transport" onclick="open_submenu_and_pathway_figures(2)" coords="309,7,606,343" shape="rect">
+                    <area alt="Dolicol" title="Dolicol" onclick="open_submenu_and_pathway_figures(3)" coords="608,7,908,338" shape="rect">
+                    <area alt="Trimming" title="Trimming" onclick="open_submenu_and_pathway_figures(4)" coords="910,7,1210,338" shape="rect">
+                    <area alt="Branching" title="Branching" onclick="open_submenu_and_pathway_figures(5)" coords="1212,7,1511,337" shape="rect">
+                    <area alt="O-GalNAc" title="O-GalNAc" onclick="open_submenu_and_pathway_figures(6)" coords="1512,6,1812,337" shape="rect">
+                    <area alt="Glycolipid" title="Glycolipid" onclick="open_submenu_and_pathway_figures(7)" coords="9,343,306,563" shape="rect">
+                    <area alt="Glycolipid Ganglioside" title="Glycolipid Ganglioside" onclick="open_submenu_and_pathway_figures(8)" coords="309,341,606,563" shape="rect">
+                    <area alt="HS CS Initiation" title="HS CS Initiation" onclick="open_submenu_and_pathway_figures(9)" coords="608,341,906,561" shape="rect">
+                    <area alt="HA Biosynthesis" title="HA Biosynthesis" onclick="open_submenu_and_pathway_figures(10)" coords="912,343,1209,561" shape="rect">
+                    <area alt="O-GlcNac" title="O-GlcNac" onclick="open_submenu_and_pathway_figures(11)" coords="1212,341,1509,561" shape="rect">
+                    <area alt="GPI-anchored protein" title="GPI-anchored protein" onclick="open_submenu_and_pathway_figures(12)" coords="1514,341,1810,561" shape="rect">
+                    <area alt="O-Mannose" title="O-Mannose" onclick="open_submenu_and_pathway_figures(13)" coords="7,568,306,785" shape="rect">
+                    <area alt="O-linked, O-Mannose, POMT-type" title="O-linked, O-Mannose, POMT-type" onclick="open_submenu_and_pathway_figures(14)" coords="309,568,606,786" shape="rect">
+                    <area alt="O-linked, O-Fucose" title="O-linked, O-Fucose" onclick="open_submenu_and_pathway_figures(15)" coords="608,566,907,786" shape="rect">
+                    <area alt="O-linked, O-Glucose" title="O-linked, O-Glucose" onclick="open_submenu_and_pathway_figures(15)" coords="910,565,1207,786" shape="rect">
+                    <area alt="O-linked EOGT" title="O-linked EOGT" onclick="open_submenu_and_pathway_figures(15)" coords="1212,566,1510,786" shape="rect">
+                    <area alt="O-linked O-Fucose" title="O-linked O-Fucose" onclick="open_submenu_and_pathway_figures(16)" coords="1517,568,1810,788" shape="rect">
+                    <area alt="C-mannosylation" title="C-mannosylation" onclick="open_submenu_and_pathway_figures(17)" coords="7,790,306,1042" shape="rect">
+                    <area alt="Heparan sulfate" title="Heparan sulfate" onclick="open_submenu_and_pathway_figures(18)" coords="309,791,605,1041" shape="rect">
+                    <area alt="Chondroitin, dermantan sulfate" title="Chondroitin, dermantan sulfate" onclick="open_submenu_and_pathway_figures(18)" coords="610,793,908,1041" shape="rect">
+                    <area alt="KS extension" title="KS extension" onclick="open_submenu_and_pathway_figures(19)" coords="912,791,1209,1042" shape="rect">
+                    <area alt="LacNAc and diLacNAc chain" title="LacNAc and diLacNAc chain" onclick="open_submenu_and_pathway_figures(20)" coords="1214,791,1510,1041" shape="rect">
+                    <area alt="poly-LacNAc and I branching" title="poly-LacNAc and I branching" onclick="open_submenu_and_pathway_figures(21)" coords="1514,793,1807,1040" shape="rect">
+                    <area alt="Terminal Sda and GM2" title="Terminal Sda and GM2" onclick="open_submenu_and_pathway_figures(22)" coords="7,1046,303,1237" shape="rect">
+                    <area alt="Terminal P1PK" title="Terminal P1PK" onclick="open_submenu_and_pathway_figures(23)" coords="309,1047,605,1237" shape="rect">
+                    <area alt="fucosylation" title="fucosylation" onclick="open_submenu_and_pathway_figures(24)" coords="610,1046,907,1236" shape="rect">
+                    <area alt="Sialylation" title="Sialylation" onclick="open_submenu_and_pathway_figures(25)" coords="912,1047,1207,1235" shape="rect">
+                    <area alt="Carbohydrate sulfation" title="Carbohydrate sulfation" onclick="open_submenu_and_pathway_figures(26)" coords="1212,1047,1507,1235" shape="rect">
+                    <area alt="Degradation: N-Linked" title="Degradation: N-Linked" onclick="open_submenu_and_pathway_figures(27)" coords="1514,1044,1809,1235" shape="rect">
+                    <area alt="Glycosaminoglycans" title="Glycosaminoglycans" onclick="open_submenu_and_pathway_figures(28)" coords="7,1242,303,1407" shape="rect">
+                    <area alt="Glycolipid" title="Glycolipid" onclick="open_submenu_and_pathway_figures(29)" coords="309,1241,605,1407" shape="rect">
+                </map>
+        </div>
+    </div>
+
+  <button id="openPathwayBtn" onclick="closeOverlay()" style="display: none; padding: 5px; margin-block: 10px;">← Open Pathway Map</button>
+   <!-- Overlay container -->
+   <div id="myOverlay" class="overlay">
+      <div class="overlay-content">
+         <iframe id = 'pathway_figures_iframe' src="{% static '/pathway_figures/Nucleotide/Nucleotide.html' %}" width="100%" height="580px" ></iframe>
+      </div>
+   </div>
+   <div id="open_submenu_buttons"></div>
+    {% else %}
+    <h3>Gene Details: {{ gene_general_info|get:"Gene Name" }}</h3>
+    <hr>
+    {% if figure_url %}
+    <!-- The iframe -->
+    <iframe id="figureIframe" src="{{ figure_url.0 }}" height="600px" width="1000px" scrolling="no"></iframe>
+    <!-- Navigation buttons -->
+    <div style="margin-top: 10px;">
+        <button id="prevButton" onclick="navigate(-1)" disabled>Previous</button>
+        <span id="figureText">1 / {{figure_url|length}}</span>
+        <button id="nextButton" onclick="navigate(1)">Next</button>
+    </div>
+    <hr>
+    <!-- JavaScript to handle navigation -->
+    {{ figure_url|json_script:"figure_url" }}
+    <script>
+        let currentFigureIndex = 0; // Start with the first URL
+        const urls = JSON.parse(document.getElementById('figure_url').textContent);
+        // Enable or disable buttons based on the index
+        document.getElementById("prevButton").disabled = currentFigureIndex === 0;
+        document.getElementById("nextButton").disabled = currentFigureIndex === urls.length - 1;
+
+        function navigate(direction) {
+            // Update the current index
+            currentFigureIndex += direction;
+
+            // Update the iframe src to the current URL
+            document.getElementById("figureIframe").src = urls[currentFigureIndex];
+            document.getElementById("figureText").innerText = `${currentFigureIndex + 1} / ${urls.length}`;
+
+            // Enable or disable buttons based on the index
+            document.getElementById("prevButton").disabled = currentFigureIndex === 0;
+            document.getElementById("nextButton").disabled = currentFigureIndex === urls.length - 1;
+        }
+    </script>
+    {% endif %}
+    <h4>General Information</h4>
+    <div><b>Gene Name:</b> {{ gene_general_info|get:"Gene Name" }} ({{ gene_general_info|get:"Recommended Name"}}) </div>
+    <div><b>Synonym:</b> {{ gene_general_info|get:"Gene synonym" }}</div>
+    <div><b>Short Names:</b> {{ gene_general_info|get:"Short Names"}}</div>
+    <div><b>Alternative Names:</b> {{ gene_general_info|get:"Alternative Names"}}</div>
+    
+    <div class="links-container">
+        <div class="links-box"><b>HGNC: </b><a target=”_blank” href="https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:{{ gene_general_info|get:'HGNC number'}}">{{ gene_general_info|get:'HGNC number'}}</a></div>
+        <div class="links-box"><b>NCBI: </b><a target=”_blank” href="https://www.ncbi.nlm.nih.gov/gene/{{ gene_general_info|get:'GeneID'}}">{{ gene_general_info|get:'GeneID'}}</a></div>
+        <div class="links-box"><b>UniProt: </b><a target=”_blank” href="https://www.uniprot.org/uniprotkb/{{ gene_general_info|get:'Uniprot ID'}}/entry">{{ gene_general_info|get:'Uniprot ID'}}</a></div>
+        <div class="links-box"><b>CAZy: </b><a target=”_blank” href="http://www.cazy.org/{{ gene_general_info|get:'CAZy'}}.html">{{ gene_general_info|get:'CAZy'}}</a></div>
+        <div class="links-box"><b>GlyGen: </b><a target=”_blank” href="https://glygen.org/protein/{{ gene_general_info|get:'Uniprot ID'}}">{{ gene_general_info|get:'Uniprot ID'}}</a></div>
+    </div>
+
+    <div>
+        <h4>Notes:</h4>
+        <ul>
+        {% for comment in gene_general_info.Comments %} 
+        <li>{{comment|safe}}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h4>Description from <a href="https://chat.openai.com/g/g-oVvZ8xe4a-dr-glyco" target="_blank">Dr.Glyco-GPT</a>: </h4>
+        <div><b>Warning:</b> LLMs can generate factually incorrect information, as they simply predict the next word based on training data. <b>Always</b> verify LLM output by cross-checking with reliable sources!</div>
+        <div class="box">
+            <pre>{{gpt_txt|safe}}</pre>
+        </div>
+    </div>
+    <hr>
+    <div style="max-width: 1600px;">
+    <h4>Catalytic Activity</h4>
+        <div class="box">
+            <!-- {{gene_html}} -->
+            <div class="image-container">
+                <img src="{% static reaction_img %}" alt="Reaction Image">
+            </div>
+        </div>
+    </div>
+
+    <h4>Reaction and Disease Links</h4>
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>Rhea</th>
+                <th>EC #</th>
+                <th>Brenda</th>
+                <th>Reactome</th>
+            </tr>
+        </thead>
+        <tbody>
+            { for reaction in gene_general_info|get:"Catalytic Activity" }
+            <tr>
+                <td><a target=”_blank” href="https://www.rhea-db.org/rhea/{{reaction.0}}">{{reaction.0}}</a></td>
+                <td><a target=”_blank” href="https://iubmb.qmul.ac.uk/enzyme/EC{{reaction.1.1}}.html">{{reaction.1.0}}</a></td>
+                <td><a target=”_blank” href="https://www.brenda-enzymes.org/enzyme.php?ecno={{reaction.2}}">{{reaction.2}}</a></td>
+                <td><a target=”_blank” href="https://reactome.org/PathwayBrowser/#{{reaction.3}}">{{reaction.3}}</a></td>
+            </tr>
+            { endfor }
+        </tbody>
+    </table> -->
+    <div style="padding-left: 10px;">
+        <b>EC # (IUBMB):</b> {% for ec in gene_general_info|get:'Catalytic: EC' %} 
+        <a target=”_blank” href="https://iubmb.qmul.ac.uk/enzyme/EC{{ec.url}}.html">{{ec.name}}</a>
+        {% endfor %}
+    </div>
+    <div style="padding-left: 10px;">
+        <b>Brenda:</b> {% for brenda in gene_general_info.Brenda %} 
+        <a target=”_blank” href="https://www.brenda-enzymes.org/enzyme.php?ecno={{brenda}}">{{brenda}}</a>
+        {% endfor %}
+    </div>
+    <div style="padding-left: 10px;">
+        <b>OMIM:</b> {% for omim in gene_general_info.OMIM %} 
+        <a target=”_blank” href="https://www.omim.org/entry/{{omim}}">{{omim}}</a>
+        {% endfor %}
+    </div>
+    <div style="padding-left: 10px;">
+        <b>KEGG:</b> <a target="_blank" href="https://www.genome.jp/dbget-bin/www_bget?hsa:{{gene_general_info.GeneID}}">{{gene_general_info.GeneID}}</a>
+    </div>
+    <div style="padding-left: 10px;">
+        <b>Rhea:</b> {% for rhea in gene_general_info|get:'Catalytic: Rhea' %} 
+        <a target=”_blank” href="https://www.rhea-db.org/rhea/{{rhea}}">{{rhea}}</a>
+        {% endfor %}
+    </div>
+    <div style="padding-left: 10px;">
+        <b>Reactome :</b> {% for reactome in gene_general_info|get:'Reactome ID' %} 
+        <a target=”_blank” href="https://reactome.org/PathwayBrowser/#{{reactome}}">{{reactome}}</a>
+        {% endfor %}
+    </div>
+    <hr>
+
+    <h4 id="sc_violin_header">Transcript levels (Cell lines and Single cell data) <a href="/violinplots?gene_name={{ gene_name }}" target="_blank">URL</a></h4>
+    <iframe height="1000px" width="100%" scrolling="no" src="/violinplots?gene_name={{ gene_name }}"></iframe>
+    <hr>
+    <div>
+        <h4>CRISPR-knockout</h4>
+        <img src="{% static 'CRISPR/CRISPRko/' %}{{gene_name}}-CRISPRko.png" style="max-width: 100%; height: auto;">
+    </div>
+    <div>
+        <h4>CRISPR-activation</h4>
+        <img src="{% static 'CRISPR/CRISPRa/' %}{{gene_name}}-CRISPRa.png" style="max-width: 100%; height: auto;">
+    </div>
+    <div>
+        <h4>CRISPR-inactivation</h4>
+        <img src="{% static 'CRISPR/CRISPRi/' %}{{gene_name}}-CRISPRi.png" style="max-width: 100%; height: auto;">
+    </div>
+    <hr>
+    <!-- Overlay to prevent zoom in iframe -->
+    <!-- Use onClick="style.pointerEvents='none'" for enabling interaction after click -->
+    <div class="flex-container">
+        <div>
+            <div class="overlay_gene_html" ></div> 
+            <iframe srcdoc='{{ gene_html }}' height="600px" width="601px" scrolling="no"></iframe>
+        </div>
+        <div class="tf_table">
+            <h4 style="text-align: center;">Top 10 TFs</h4>
+            {{ tf_table_html | safe }}
+        </div> 
+    </div>
+    <!-- {{gene_general_info}} -->
+
+    <hr>
+    {% endif %}
+    <hr>
+    <div>
+        <b>Licensing: </b>CC BY 4.0. You are fee to copy, redistribute, remix, transform and build upon all material, except for textbook figures from the Essentials. Please cite to for attribution/credit.
+    </div>
+</div>
+
+</body>
+</html>
