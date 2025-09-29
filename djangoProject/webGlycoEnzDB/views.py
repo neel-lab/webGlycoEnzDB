@@ -5,9 +5,9 @@ import os
 import re
 from itertools import zip_longest
 from . import gene_figure_mapping
-# Create your views here.
 
 from django.http import HttpResponse
+from django.views.decorators.http import require_GET
 from .models import GlycoOnto
 
 GENE_INFORMATION_FILE = '../data/gene_general_information.csv'
@@ -32,6 +32,7 @@ def search(request, gene_name=''):
 
     onto_graph_functions = {}
     onto_graph_pathways = {}
+    onto_graph_ecs = {}
     gene_names = {}
 
     functions = onto_df['function'].unique()
@@ -133,6 +134,44 @@ def search(request, gene_name=''):
 
                             gene_names[path + '_' + s_path + '_' + s_s_path + '_' + s_s_s_path + '_' + s_s_s_s_path + '_' + s_s_s_s_s_path] = \
                                 onto_graph_pathways[path][s_path][s_s_path][s_s_s_path][s_s_s_s_path][s_s_s_s_s_path]
+    
+    ecs = onto_df['ec'].unique()
+
+    for ecn in ecs:
+        onto_graph_ecs[ecn] = {}
+        sub_ecs = onto_df.loc[onto_df['ec'] == ecn]['sub_ec'].unique()
+        gene_names[ecn + '_NULL_NULL_NULL'] = sorted(list(onto_df.loc[onto_df['ec'] == ecn][
+                                                                  'gene_name'].unique()))
+
+        for s_ecn in sub_ecs:
+            onto_graph_ecs[ecn][s_ecn] ={}
+            sub_sub_ecs = onto_df.loc[(onto_df['ec'] == ecn) &
+                                            (onto_df['sub_ec'] == s_ecn)]['sub_sub_ec'].unique()
+
+            gene_names[ecn + '_' + s_ecn + '_NULL_NULL'] = sorted(list(onto_df.loc[(onto_df['ec'] == ecn) &
+                                                                              (onto_df['sub_ec'] == s_ecn)][
+                                                                      'gene_name'].unique()))
+
+            for s_s_ecn in sub_sub_ecs:
+                onto_graph_ecs[ecn][s_ecn][s_s_ecn] = {}
+                sub_sub_sub_ecs = onto_df.loc[(onto_df['ec'] == ecn)
+                                                                                & (onto_df['sub_ec'] == s_ecn)
+                                                                                & (onto_df['sub_sub_ec'] == s_s_ecn)]['sub_sub_sub_ec'].unique()
+                gene_names[ecn + '_' + s_ecn + '_' + s_s_ecn + '_NULL'] = sorted(list(
+                    onto_df.loc[(onto_df['ec'] == ecn)
+                                & (onto_df['sub_ec'] == s_ecn)
+                                & (onto_df['sub_sub_ec'] == s_s_ecn)]['gene_name'].unique()))
+                
+                for s_s_s_ecn in sub_sub_sub_ecs:
+                    onto_graph_ecs[ecn][s_ecn][s_s_ecn][s_s_s_ecn] = \
+                        sorted(list(onto_df.loc[(onto_df['ec'] == ecn)
+                                    & (onto_df['sub_ec'] == s_ecn)
+                                    & (onto_df['sub_sub_ec'] == s_s_ecn)
+                                    & (onto_df['sub_sub_sub_ec'] == s_s_s_ecn)]['gene_name'].unique()))
+
+                    gene_names[ecn + '_' + s_ecn + '_' + s_s_ecn + '_' + s_s_s_ecn] = \
+                        onto_graph_ecs[ecn][s_ecn][s_s_ecn][s_s_s_ecn]
+
     # General information
     gene_general_info = {'message': "Gene Pathway Map (Clickable Blocks)"}
     gene_html = ""
@@ -151,6 +190,7 @@ def search(request, gene_name=''):
 
     return render(request, 'GlycoEnzDB.html', {'onto_graph_pathways': onto_graph_pathways,
                                                'onto_graph_functions': onto_graph_functions,
+                                               'onto_graph_ecs': onto_graph_ecs,
                                                'gene_names': dumps(gene_names),
                                                'gene_name':gene_name,
                                                'gene_general_info': gene_general_info,
@@ -261,3 +301,11 @@ def get_gpt_txt(folder_name, gene_name):
     except FileNotFoundError:
         return ""
          
+
+@require_GET
+def get_gpt_text(request, gene_name):
+    gpt_txt = get_gpt_txt(GPT_TEXT_FILE, gene_name)
+    
+    response = HttpResponse(gpt_txt, content_type='text/plain')
+    response['X-Robots-Tag'] = 'noindex, nofollow'  # <-- Tells bots not to index this response
+    return response

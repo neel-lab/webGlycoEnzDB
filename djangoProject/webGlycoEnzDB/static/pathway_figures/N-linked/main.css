@@ -181,3 +181,12 @@
 .x1d{left:633.679810pt;}
 .x14{left:640.155477pt;}
 }
+.credit-note {
+ position: absolute;
+ width: 10%;
+ left: 6%;
+ text-align: center;
+ font-size: 240%;
+ bottom: 0;
+ padding-bottom: 5%;
+ }

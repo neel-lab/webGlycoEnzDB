@@ -127,3 +127,12 @@
 .x11{left:727.115522pt;}
 .x10{left:736.282188pt;}
 }
+.credit-note {
+ position: absolute;
+ width: 10%;
+ left: 10%;
+ text-align: center;
+ font-size: 240%;
+ bottom: 0;
+ padding-bottom: 10%;
+ }

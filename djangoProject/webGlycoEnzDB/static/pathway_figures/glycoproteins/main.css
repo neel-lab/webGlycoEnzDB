@@ -95,3 +95,12 @@
 .x9{left:600.388743pt;}
 .x6{left:629.989299pt;}
 }
+.credit-note {
+ position: absolute;
+ width: 10%;
+ left: 7%;
+ text-align: center;
+ font-size: 240%;
+ bottom: 0;
+ padding-bottom: 10%;
+ }

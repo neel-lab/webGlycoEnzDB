@@ -199,3 +199,12 @@
 .x1b{left:827.680420pt;}
 .x1c{left:872.147542pt;}
 }
+.credit-note {
+ position: absolute;
+ width: 10%;
+ left: 6%;
+ text-align: center;
+ font-size: 240%;
+ bottom: 0;
+ padding-bottom: 10%;
+ }

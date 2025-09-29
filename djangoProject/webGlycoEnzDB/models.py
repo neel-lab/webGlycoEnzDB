@@ -18,6 +18,11 @@ class GlycoOnto(models.Model):
     sub_sub_sub_sub_pathway = models.CharField(max_length=100)
     sub_sub_sub_sub_sub_pathway = models.CharField(max_length=100)
 
+    ec = models.CharField(max_length=100)
+    sub_ec = models.CharField(max_length=100)
+    sub_sub_ec = models.CharField(max_length=100)
+    sub_sub_sub_ec = models.CharField(max_length=100)
+
     gene_name = models.CharField(max_length=100)
 
     class Meta:

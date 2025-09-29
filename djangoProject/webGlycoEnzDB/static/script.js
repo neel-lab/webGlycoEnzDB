@@ -1,8 +1,10 @@
 function showFunctions() {
     document.getElementById("element1").style.display = "block";
     document.getElementById("element2").style.display = "none";
+    document.getElementById("element3").style.display = "none";
     document.getElementById("btnElement1").classList.add("active");
     document.getElementById("btnElement2").classList.remove("active");
+    document.getElementById("btnElement3").classList.remove("active");
     localStorage.setItem('searchBy', 'functions');
     localStorage.removeItem('key');
 }
@@ -10,9 +12,22 @@ function showFunctions() {
 function showPathways() {
     document.getElementById("element1").style.display = "none";
     document.getElementById("element2").style.display = "block";
+    document.getElementById("element3").style.display = "none";
     document.getElementById("btnElement1").classList.remove("active");
     document.getElementById("btnElement2").classList.add("active");
+    document.getElementById("btnElement3").classList.remove("active");
     localStorage.setItem('searchBy', 'pathways');
+    localStorage.removeItem('key');
+}
+
+function showECNumbers() {
+    document.getElementById("element1").style.display = "none";
+    document.getElementById("element2").style.display = "none";
+    document.getElementById("element3").style.display = "block";
+    document.getElementById("btnElement1").classList.remove("active");
+    document.getElementById("btnElement2").classList.remove("active");
+    document.getElementById("btnElement3").classList.add("active");
+    localStorage.setItem('searchBy', 'ecs');
     localStorage.removeItem('key');
 }
 
@@ -32,6 +47,9 @@ function opened_submenu() {
     if (searchBy == 'pathways') {
         showPathways()
         n_subclass = 6;
+    } else if (searchBy == 'ecs') {
+        showECNumbers();
+        n_subclass = 4;
     } else {
         showFunctions();
         n_subclass = 4;

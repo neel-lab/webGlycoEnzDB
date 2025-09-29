@@ -311,3 +311,12 @@
 .x3c{left:805.887451pt;}
 .x3b{left:813.131104pt;}
 }
+.credit-note {
+ position: absolute;
+ width: 10%;
+ left: 10%;
+ text-align: center;
+ font-size: 240%;
+ bottom: 0;
+ padding-bottom: 10%;
+ }

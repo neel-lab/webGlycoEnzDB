@@ -87,3 +87,13 @@
 .x3{left:434.260831pt;}
 .x6{left:594.183735pt;}
 }
+.credit-note {
+ position: absolute;
+ width: 10%;
+ left: 8%;
+ text-align: center;
+ font-size: 240%;
+ bottom: 0;
+ padding-bottom: 10%;
+ }
+ 

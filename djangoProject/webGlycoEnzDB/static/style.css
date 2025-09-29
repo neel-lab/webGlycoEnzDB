@@ -8,15 +8,14 @@ li .submenu {
 
 .header {
   background-color: #5056d9;
-  padding: 1px 16px;
-  height: 50px;
   width: 100%;
   position: fixed;
   top: 0;
   color: white;
-  font-size: 25px;
-  padding-top: 7px;
+  padding: 8px 16px;
   z-index: 10;
+  font-size: 25px;
+  height: auto;
 }
 
 .header a {
@@ -24,12 +23,20 @@ li .submenu {
   text-decoration: none;
 }
 
+.header .citation{
+  font-size: 0.7em;
+  font-style: italic;
+  margin-top: 3px;
+  line-height: 1.15
+  color: #FFEB3B;
+}
+
 .sidebar {
   height: 100%;
   width: 250px;
   position: fixed;
   left: 0;
-  top: 50px;
+  top: 80px;
   background-color: #f1f1f1;
   overflow-x: hidden;
 }
@@ -39,14 +46,14 @@ li .submenu {
   width: 200px;
   position: fixed;
   left: 250px;
-  top: 50px;
+  top: 80px;
   background-color: #f1f1f1;
   overflow-x: hidden;
 }
 
 .main-content {
   margin-left: 450px;
-  margin-top: 50px;
+  margin-top: 80px;
   padding: 1px 16px;
   height: 100%;
   overflow: scroll;

@@ -94,3 +94,12 @@
 .xa{left:797.054799pt;}
 .xb{left:811.706248pt;}
 }
+.credit-note {
+ position: absolute;
+ width: 10%;
+ left: 7%;
+ text-align: center;
+ font-size: 240%;
+ bottom: 0;
+ padding-bottom: 10%;
+ }

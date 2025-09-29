@@ -135,3 +135,12 @@
 .x8{left:647.278646pt;}
 .x10{left:689.311198pt;}
 }
+.credit-note {
+ position: absolute;
+ width: 10%;
+ left: 7%;
+ text-align: center;
+ font-size: 240%;
+ bottom: 0;
+ padding-bottom: 10%;
+ }
