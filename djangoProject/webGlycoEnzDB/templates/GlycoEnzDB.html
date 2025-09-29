@@ -59,6 +59,7 @@
     <b>Select By:</b>
     <button id="btnElement1" onclick="showFunctions()"> Functions</button>
     <button id="btnElement2" onclick="showPathways()"> Pathways</button>
+    <button id="btnElement3" onclick="showECNumbers()"> EC Numbers</button>
     {# Function Tree Menu below #}
     <div id="element1" class="element1">
         <ul class="nav flex-column" id="nav_accordion">
@@ -220,6 +221,74 @@
         </ul>
     </div>
 
+        <div id="element3" class="element3">
+            <ul class="nav flex-column" id="nav_accordion">
+                {% for func in onto_graph_ecs %}
+                {% if func != 'NULL' %}
+                <li class="nav-item {% if onto_graph_ecs|get:func|length > 0 %} has-submenu {% endif %}" id="{{ func }}">
+                    <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ func }}_NULL_NULL_NULL')"
+                        id="{{ func }}_NULL_NULL_NULL">
+                        {% if onto_graph_ecs|get:func|length > 1 %}
+                        <span>&#x25B6;</span>
+                        {% else %}
+                        <span></span>
+                        {% endif %}
+                        {{ func }} </a>
+                    {% if onto_graph_ecs|get:func|length > 0 %}
+                    <ul class="submenu collapse">
+                        {% for s_f in onto_graph_ecs|get:func %}
+                        {% if s_f != 'NULL' %}
+                        <li>
+                            <a class="nav-link has-submenu" href="#" onclick="showGenes('{{ func }}_{{ s_f }}_NULL_NULL')"
+                                id="{{ func }}_{{ s_f }}_NULL_NULL">
+                                {% if onto_graph_ecs|get:func|get:s_f|length > 1 %}
+                                <span>&#x25B6;</span>
+                                {% else %}
+                                <span></span>
+                                {% endif %}
+                                {{ s_f }} </a>
+                            {% if onto_graph_ecs|get:func|get:s_f|length > 0 %}
+                            <ul class="submenu collapse">
+                                {% for s_s_f in onto_graph_ecs|get:func|get:s_f %}
+                                {% if s_s_f != 'NULL' %}
+                                <li>
+                                    <a class="nav-link has-submenu" href="#"
+                                        onclick="showGenes('{{ func }}_{{ s_f }}_{{ s_s_f }}_NULL')"
+                                        id="{{ func }}_{{ s_f }}_{{ s_s_f }}_NULL">
+                                        {% if onto_graph_ecs|get:func|get:s_f|get:s_s_f|length > 1 %}
+                                        <span>&#x25B6;</span>
+                                        {% else %}
+                                        <span></span>
+                                        {% endif %}
+                                        {{ s_s_f }}</a>
+                                    {% if onto_graph_ecs|get:func|get:s_f|get:s_s_f|length > 0 %}
+                                    <ul class="submenu collapse">
+                                        {% for s_s_s_f in onto_graph_ecs|get:func|get:s_f|get:s_s_f %}
+                                        {% if s_s_s_f != 'NULL' %}
+                                        <li>
+                                            <a class="nav-link" href="#"
+                                                onclick="showGenes('{{ func }}_{{ s_f }}_{{ s_s_f }}_{{ s_s_s_f }}')"
+                                                id="{{ func }}_{{ s_f }}_{{ s_s_f }}_{{ s_s_s_f }}">{{ s_s_s_f }}</a>
+                                        </li>
+                                        {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </li>
+                                {% endif %}
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
 
 </div>
 </div>
@@ -358,10 +427,26 @@
     <div>
         <h4>Description from <a href="https://chat.openai.com/g/g-oVvZ8xe4a-dr-glyco" target="_blank">Dr.Glyco-GPT</a>: </h4>
         <div><b>Warning:</b> LLMs can generate factually incorrect information, as they simply predict the next word based on training data. <b>Always</b> verify LLM output by cross-checking with reliable sources!</div>
-        <div class="box">
-            <pre>{{gpt_txt|safe}}</pre>
+        <button id="loadGptTextBtn">Show Description</button>
+    
+        <div class="box" id="gptTextBox" style="display: none;">
+            <pre id="gptText"></pre>
         </div>
     </div>
+<!-- BEGIN GPT Text Hide from crawler -->
+    <script>
+        document.getElementById('loadGptTextBtn').addEventListener('click', function() {
+            const geneName = "{{ gene_name }}";  // Make sure gene_name is passed to the template
+            fetch(`/get-gpt-text/${geneName}/`)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('gptText').textContent = data;
+                    document.getElementById('gptTextBox').style.display = 'block';
+                    this.style.display = 'none';  // Hide button after loading
+                });
+        });
+    </script>
+<!-- END GPT Text Hide from crawler -->
     <hr>
     <div style="max-width: 1600px;">
     <h4>Catalytic Activity</h4>
