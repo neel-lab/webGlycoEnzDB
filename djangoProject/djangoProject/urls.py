@@ -16,11 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.staticfiles.views import serve
-from webGlycoEnzDB.views import get_gpt_text
 
 urlpatterns = [
     path('glycoenzdb/', include('webGlycoEnzDB.urls')),
     path('admin/', admin.site.urls),
     path('static/<path:path>', serve),  # Remove
-    path('get-gpt-text/<str:gene_name>/', get_gpt_text, name='get_gpt_text'),
 ]

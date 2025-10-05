@@ -1,6 +1,7 @@
 from django.urls import path
 
 from . import views
+from .views import get_gpt_text
 
 urlpatterns = [
     # path('', views.index, name='index'),
@@ -9,6 +10,7 @@ urlpatterns = [
     # path('<str:search_type>/<str:main>/<str:sub1>/', views.search, name='search'),
     # path('<str:search_type>/<str:main>/', views.search, name='search'),
     # path('<str:search_type>/', views.search, name='search'),
+    path('get-gpt-text/<str:gene_name>/', get_gpt_text, name='get_gpt_text'),
     path('human/<str:gene_name>/', views.search, name='search'),
     path('human/', views.search, name='search'),
     path('', views.search, name='search'),

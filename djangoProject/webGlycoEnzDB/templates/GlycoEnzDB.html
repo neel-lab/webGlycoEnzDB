@@ -437,7 +437,7 @@
     <script>
         document.getElementById('loadGptTextBtn').addEventListener('click', function() {
             const geneName = "{{ gene_name }}";  // Make sure gene_name is passed to the template
-            fetch(`/get-gpt-text/${geneName}/`)
+            fetch(`/glycoenzdb/get-gpt-text/${geneName}/`)
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('gptText').textContent = data;
