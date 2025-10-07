@@ -137,13 +137,16 @@ def search(request, gene_name=''):
     
     ecs = onto_df['ec'].unique()
 
-    for ecn in ecs:
+    for ecn in sorted(ecs):
+        if ecn == 'NULL':
+            continue
         onto_graph_ecs[ecn] = {}
         sub_ecs = onto_df.loc[onto_df['ec'] == ecn]['sub_ec'].unique()
         gene_names[ecn + '_NULL_NULL_NULL'] = sorted(list(onto_df.loc[onto_df['ec'] == ecn][
                                                                   'gene_name'].unique()))
-
-        for s_ecn in sub_ecs:
+        for s_ecn in sort_by_dot_value(sub_ecs, n=1):
+            if s_ecn == 'NULL':
+                continue
             onto_graph_ecs[ecn][s_ecn] ={}
             sub_sub_ecs = onto_df.loc[(onto_df['ec'] == ecn) &
                                             (onto_df['sub_ec'] == s_ecn)]['sub_sub_ec'].unique()
@@ -152,7 +155,9 @@ def search(request, gene_name=''):
                                                                               (onto_df['sub_ec'] == s_ecn)][
                                                                       'gene_name'].unique()))
 
-            for s_s_ecn in sub_sub_ecs:
+            for s_s_ecn in sort_by_dot_value(sub_sub_ecs, n=2):
+                if s_s_ecn == 'NULL':
+                    continue
                 onto_graph_ecs[ecn][s_ecn][s_s_ecn] = {}
                 sub_sub_sub_ecs = onto_df.loc[(onto_df['ec'] == ecn)
                                                                                 & (onto_df['sub_ec'] == s_ecn)
@@ -162,7 +167,9 @@ def search(request, gene_name=''):
                                 & (onto_df['sub_ec'] == s_ecn)
                                 & (onto_df['sub_sub_ec'] == s_s_ecn)]['gene_name'].unique()))
                 
-                for s_s_s_ecn in sub_sub_sub_ecs:
+                for s_s_s_ecn in sort_by_dot_value(sub_sub_sub_ecs, n=3):
+                    if s_s_s_ecn == 'NULL':
+                        continue
                     onto_graph_ecs[ecn][s_ecn][s_s_ecn][s_s_s_ecn] = \
                         sorted(list(onto_df.loc[(onto_df['ec'] == ecn)
                                     & (onto_df['sub_ec'] == s_ecn)
@@ -309,3 +316,12 @@ def get_gpt_text(request, gene_name):
     response = HttpResponse(gpt_txt, content_type='text/plain')
     response['X-Robots-Tag'] = 'noindex, nofollow'  # <-- Tells bots not to index this response
     return response
+
+def sort_by_dot_value(arr, n=0):
+    def sort_key(x):
+        parts = x.split('.')
+        if len(parts) > n and parts[n].isdigit():
+            return int(parts[n])
+        return 0
+
+    return sorted(arr, key=sort_key)
