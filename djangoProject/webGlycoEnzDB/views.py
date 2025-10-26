@@ -225,7 +225,7 @@ def get_gene_general_info(filename, gene_name, gene_general_info):
             gene_general_info['GeneID'] = re.sub("[^0-9]", "", gene_general_info['GeneID'])
             gene_general_info['CAZy'] = gene_general_info['CAZy'].replace(";","")
             gene_general_info['Catalytic: Rhea'] = list(map( lambda x: re.sub("[^0-9]", "", x), gene_general_info['Catalytic: Rhea'].split(";")))
-            gene_general_info['Catalytic: EC'] = list(map(lambda x: {'name':x, 'url': x.replace(".", "/")}, gene_general_info['Catalytic: EC'].split(";")))
+            gene_general_info['Catalytic: EC'] = gene_general_info['Catalytic: EC'].split(";")
             gene_general_info['Brenda'] = gene_general_info['Brenda'].split(";")
             gene_general_info['Reactome ID'] = gene_general_info['Reactome ID'].split(";")
             gene_general_info['OMIM'] = gene_general_info['OMIM'].split(";")

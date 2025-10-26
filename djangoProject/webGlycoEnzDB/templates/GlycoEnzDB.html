@@ -481,7 +481,7 @@
     </table> -->
     <div style="padding-left: 10px;">
         <b>EC # (IUBMB):</b> {% for ec in gene_general_info|get:'Catalytic: EC' %} 
-        <a target=”_blank” href="https://iubmb.qmul.ac.uk/enzyme/EC{{ec.url}}.html">{{ec.name}}</a>
+        <a target=”_blank” href="http://www.enzyme-database.org/query.php?ec={{ec}}">{{ec}}</a>
         {% endfor %}
     </div>
     <div style="padding-left: 10px;">
